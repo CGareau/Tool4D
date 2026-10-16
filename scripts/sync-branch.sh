@@ -14,8 +14,16 @@ work="$(mktemp -d)"; trap 'rm -rf "$work"' EXIT
 echo "== $branch ($mode)"
 git clone -q --depth 1 --branch "$branch" "$TOOLS_URL" "$work/tools"
 subject="$(git -C "$work/tools" log -1 --format=%s)"
-build="$(grep -oE 'build [0-9]+' <<< "$subject" | grep -oE '[0-9]+' | tail -1 || true)"
-[ -n "$build" ] || { echo "::error::no build number in Tools commit '$subject'"; exit 1; }
+msg_build="$(grep -oE 'build [0-9]+' <<< "$subject" | grep -oE '[0-9]+' | tail -1 || true)"
+# the build number of the tool4d that is really shipped (e.g. "21.1 build 21.100575", "21 R4 build 21R4.100203")
+plist="$work/tools/tool4d_mac/tool4d.app/Contents/Info.plist"
+shown="$(python3 -I -c 'import plistlib,sys;print(plistlib.load(open(sys.argv[1],"rb")).get("CFBundleShortVersionString",""))' "$plist" 2>/dev/null || true)"
+build="$(grep -oE '[0-9]+$' <<< "$shown" || true)"
+version_label="${shown%% build*}"
+[ -n "$build" ] || { echo "::error::cannot read the build number of tool4d_mac in $branch"; exit 1; }
+if [ -n "$msg_build" ] && [ "$msg_build" != "$build" ]; then
+  echo "::warning::$branch: the Tools commit says build $msg_build but tool4d is '$shown'; publishing what the binary says"
+fi
 
 exists=0
 if git ls-remote --exit-code --heads "$PUBLIC_URL" "$branch" >/dev/null 2>&1; then exists=1; fi
@@ -30,7 +38,7 @@ else
   "$here/scripts/stage.sh" "$work/tools" "$work/out" builder
 fi
 
-printf 'branch=%s\nbuild=%s\nsource=%s\n' "$branch" "$build" "$subject" > "$work/out/VERSION"
+printf 'branch=%s\nversion=%s\nbuild=%s\nsource=%s\n' "$branch" "$version_label" "$build" "$subject" > "$work/out/VERSION"
 "$here/scripts/secret-guard.sh" "$work/out"
 
 if [ "$exists" = 1 ] && diff -rq --exclude=.git "$work/pub" "$work/out" >/dev/null 2>&1; then

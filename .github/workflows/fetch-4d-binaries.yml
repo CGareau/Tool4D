@@ -56,6 +56,5 @@ jobs:
       - name: Fetch ${{ matrix.branch }}
         env:
           PRODUCT_DOWNLOAD_TOKEN: ${{ secrets.PRODUCT_DOWNLOAD_TOKEN }}
-          TOOLS_TOKEN: ${{ secrets.TOOLS_READ_TOKEN }}
           GH_TOKEN: ${{ github.token }}
         run: ./scripts/fetch-binaries.sh "${{ matrix.branch }}"

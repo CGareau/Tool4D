@@ -5,17 +5,17 @@
 # Older releases of the same branch are deleted. Idempotent: nothing happens if the release exists.
 # usage: fetch-binaries.sh <branch>
 # env: PRODUCT_DOWNLOAD_TOKEN  4D API key (secret, never printed or written outside a 0600 curl config)
-#      TOOLS_TOKEN             read access to 4eDimension/Tools (build number lookup)
 #      GH_TOKEN                token allowed to create releases in this repository
 set -euo pipefail
 branch="${1:?branch}"
-: "${PRODUCT_DOWNLOAD_TOKEN:?}" "${TOOLS_TOKEN:?}" "${GH_TOKEN:?}" "${GITHUB_REPOSITORY:?}"
+: "${PRODUCT_DOWNLOAD_TOKEN:?}" "${GH_TOKEN:?}" "${GITHUB_REPOSITORY:?}"
 B=https://product-download.4d.com/release
 PUB=https://resources-download.4d.com/release
 
-subject="$(GH_TOKEN="$TOOLS_TOKEN" gh api "repos/4eDimension/Tools/commits?sha=$branch&per_page=1" --jq '.[0].commit.message' | head -1)"
-build="$(grep -oE 'build [0-9]+' <<< "$subject" | grep -oE '[0-9]+' | tail -1 || true)"
-[ -n "$build" ] || { echo "::error::no build number in '$subject'"; exit 1; }
+# version of the tool4d published in this repository's branch (written by sync-branch.sh)
+vfile="$(gh api "repos/$GITHUB_REPOSITORY/contents/VERSION?ref=$branch" --jq .content | base64 -d)"
+build="$(sed -n 's/^build=//p' <<< "$vfile" | head -1)"
+[ -n "$build" ] || { echo "::error::no VERSION file on branch $branch (run Sync tool4d first)"; exit 1; }
 tag="$branch-$build"
 
 if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
