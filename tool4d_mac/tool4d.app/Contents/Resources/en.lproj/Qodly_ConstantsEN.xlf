@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com">
+  <file datatype="x-QDK#" original="undefined" product-version="v17" source-language="en-US" target-language="en-US">
+    <header>
+      <note>
+				The character "%" (out of a numerical context) is a meta-character that
+				will be replaced (often by a numeric value) before the string is displayed
+				Text between less than (&lt;) and greater than (&gt;) symbols is a variable's
+				name and must not be localised
+				\r, \t and \n are meta-characters.
+      </note>
+    </header>
+    <body>
+      <!--   Localized constant names -->
+
+      <group d4:groupID="1" d4:groupName="ConstTheme_1" restype="x-QDK#">
+        <trans-unit d4:value="1" id="1_1">
+          <source>kSystemDateShort</source>
+          <target>kSystemDateShort</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="1_2">
+          <source>kSystemDateAbbreviated</source>
+          <target>kSystemDateAbbreviated</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="1_3">
+          <source>kSystemDateLong</source>
+          <target>kSystemDateLong</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="1_4">
+          <source>kInternalDateShortSpecial</source>
+          <target>kInternalDateShortSpecial</target>
+        </trans-unit>
+        <trans-unit d4:value="5" id="1_5">
+          <source>kInternalDateLong</source>
+          <target>kInternalDateLong</target>
+        </trans-unit>
+        <trans-unit d4:value="6" id="1_6">
+          <source>kInternalDateAbbreviated</source>
+          <target>kInternalDateAbbreviated</target>
+        </trans-unit>
+        <trans-unit d4:value="7" id="1_7">
+          <source>kInternalDateShort</source>
+          <target>kInternalDateShort</target>
+        </trans-unit>
+        <trans-unit d4:value="8" id="1_8">
+          <source>kISODate</source>
+          <target>kISODate</target>
+        </trans-unit>
+        <trans-unit d4:value="100" id="1_9">
+          <source>kBlankIfNullDate</source>
+          <target>kBlankIfNullDate</target>
+        </trans-unit>
+        <trans-unit d4:value="9" id="1_10">
+          <source>kISODateGMT</source>
+          <target>kISODateGMT</target>
+        </trans-unit>
+        <trans-unit d4:value="10" id="1_11">
+          <source>kDateRFC1123</source>
+          <target>kDateRFC1123</target>
+        </trans-unit>
+      </group>
+
+      <group d4:groupID="7" d4:groupName="ConstTheme_7" restype="x-QDK#">
+        <trans-unit d4:value="1" id="7_1">
+          <source>kHHMMSS</source>
+          <target>kHHMMSS</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="7_2">
+          <source>kHHMM</source>
+          <target>kHHMM</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="7_3">
+          <source>kHourMinSec</source>
+          <target>kHourMinSec</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="7_4">
+          <source>kHourMin</source>
+          <target>kHourMin</target>
+        </trans-unit>
+        <trans-unit d4:value="5" id="7_5">
+          <source>kHHMMAMPM</source>
+          <target>kHHMMAMPM</target>
+        </trans-unit>
+        <trans-unit d4:value="6" id="7_6">
+          <source>kMMSS</source>
+          <target>kMMSS</target>
+        </trans-unit>
+        <trans-unit d4:value="7" id="7_7">
+          <source>kMinSec</source>
+          <target>kMinSec</target>
+        </trans-unit>
+        <trans-unit d4:value="8" id="7_8">
+          <source>kISOTime</source>
+          <target>kISOTime</target>
+        </trans-unit>
+        <trans-unit d4:value="9" id="7_9">
+          <source>kSystemTimeShort</source>
+          <target>kSystemTimeShort</target>
+        </trans-unit>
+        <trans-unit d4:value="10" id="7_10">
+          <source>kSystemTimeLongAbbreviated</source>
+          <target>kSystemTimeLongAbbreviated</target>
+        </trans-unit>
+        <trans-unit d4:value="11" id="7_11">
+          <source>kSystemTimeLong</source>
+          <target>kSystemTimeLong</target>
+        </trans-unit>
+        <trans-unit d4:value="100" id="7_12">
+          <source>kBlankIfNullTime</source>
+          <target>kBlankIfNullTime</target>
+        </trans-unit>
+      </group>
+
+      <group d4:groupID="30" d4:groupName="ConstTheme_30" restype="x-QDK#">
+        <trans-unit d4:value="3.141592653589793239" id="30_1">
+          <source>kPi</source>
+          <target>kPi</target>
+        </trans-unit>
+        <trans-unit d4:value="0.0174532925199432958" id="30_2">
+          <source>kDegree</source>
+          <target>kDegree</target>
+        </trans-unit>
+        <trans-unit d4:value="57.29577951308232088" id="30_3">
+          <source>kRadian</source>
+          <target>kRadian</target>
+        </trans-unit>
+        <trans-unit d4:value="2.71828182845904524" id="30_4">
+          <source>kENumber</source>
+          <target>kENumber</target>
+        </trans-unit>
+      </group>
+
+      <group d4:groupID="6" d4:groupName="ConstTheme_6" restype="x-QDK#">
+        <trans-unit id="6_1"/>
+        <trans-unit d4:value="2" id="6_2">
+          <source>kScaledToFit</source>
+          <target>kScaledToFit</target>
+        </trans-unit>
+        <trans-unit id="6_3"/>
+        <trans-unit id="6_4"/>
+        <trans-unit d4:value="5" id="6_5">
+          <source>kScaledToFitProportional</source>
+          <target>kScaledToFitProportional</target>
+        </trans-unit>
+        <trans-unit d4:value="6" id="6_6">
+          <source>kScaledToFitPropCentered</source>
+          <target>kScaledToFitPropCentered</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="8" d4:groupName="ConstTheme_8" restype="x-QDK#">
+        <trans-unit id="8_1"/>
+        <trans-unit id="8_2"/>
+        <trans-unit d4:value="2" id="8_3">
+          <source>kString</source>
+          <target>kString</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="8_4">
+          <source>kNumber</source>
+          <target>kNumber</target>
+        </trans-unit>
+        <trans-unit id="8_5"/>
+        <trans-unit d4:value="9" id="8_6">
+          <source>kInteger</source>
+          <target>kInteger</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="8_7">
+          <source>kDate</source>
+          <target>kDate</target>
+        </trans-unit>
+        <trans-unit d4:value="11" id="8_8">
+          <source>kTime</source>
+          <target>kTime</target>
+        </trans-unit>
+        <trans-unit d4:value="6" id="8_9">
+          <source>kBoolean</source>
+          <target>kBoolean</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="8_10">
+          <source>kPicture</source>
+          <target>kPicture</target>
+        </trans-unit>
+        <trans-unit id="8_11"/>
+        <trans-unit d4:value="30" id="8_12">
+          <source>kBlob</source>
+          <target>kBlob</target>
+        </trans-unit>
+        <trans-unit d4:value="5" id="8_13">
+          <source>kUndefined</source>
+          <target>kUndefined</target>
+        </trans-unit>
+        <trans-unit id="8_14"/>
+        <trans-unit id="8_15"/>
+        <trans-unit id="8_16"/>
+        <trans-unit id="8_17"/>
+        <trans-unit id="8_18"/>
+        <trans-unit id="8_19"/>
+        <trans-unit id="8_20"/>
+        <trans-unit id="8_21"/>
+        <trans-unit id="8_22"/>
+        <trans-unit id="8_23"/>
+        <trans-unit id="8_24"/>
+        <trans-unit id="8_25"/>
+        <trans-unit id="8_26"/>
+        <trans-unit d4:value="38" id="8_27">
+          <source>kObject</source>
+          <target>kObject</target>
+        </trans-unit>
+        <trans-unit id="8_28"/>
+        <trans-unit id="8_29"/>
+        <trans-unit id="8_30"/>
+        <trans-unit d4:value="255" id="8_31">
+          <source>kNull</source>
+          <target>kNull</target>
+        </trans-unit>
+        <trans-unit d4:value="42" id="8_32">
+          <source>kCollection</source>
+          <target>kCollection</target>
+        </trans-unit>
+        <trans-unit d4:value="12" id="8_33">
+          <source>kVariant</source>
+          <target>kVariant</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="13" d4:groupName="ConstTheme_13" restype="x-QDK#">
+        <trans-unit d4:value="-1" id="13_1">
+          <source>kAborted</source>
+          <target>kAborted</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="13_2">
+          <source>kDelayed</source>
+          <target>kDelayed</target>
+        </trans-unit>
+        <trans-unit d4:value="-100" id="13_3">
+          <source>kDoesNotExist</source>
+          <target>kDoesNotExist</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="13_4">
+          <source>kExecuting</source>
+          <target>kExecuting</target>
+        </trans-unit>
+        <trans-unit id="13_5"/>
+        <trans-unit d4:value="5" id="13_6">
+          <source>kPaused</source>
+          <target>kPaused</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="13_7">
+          <source>kWaitingForInputOutput</source>
+          <target>kWaitingForInputOutput</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="13_8">
+          <source>kWaitingForInternalFlag</source>
+          <target>kWaitingForInternalFlag</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="13_9">
+          <source>kWaitingForUserEvent</source>
+          <target>kWaitingForUserEvent</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="24" d4:groupName="ConstTheme_24" restype="x-QDK#">
+        <trans-unit id="24_1"/>
+        <trans-unit id="24_2"/>
+        <trans-unit id="24_3"/>
+        <trans-unit id="24_4"/>
+        <trans-unit id="24_5"/>
+        <trans-unit id="24_6"/>
+        <trans-unit id="24_7"/>
+        <trans-unit id="24_8"/>
+        <trans-unit id="24_9"/>
+        <trans-unit id="24_10"/>
+        <trans-unit id="24_11"/>
+        <trans-unit id="24_12"/>
+        <trans-unit id="24_13"/>
+        <trans-unit id="24_14"/>
+        <trans-unit id="24_15"/>
+        <trans-unit id="24_16"/>
+        <trans-unit id="24_17"/>
+        <trans-unit d4:value="0" id="24_18">
+          <source>kDocumentUnchanged</source>
+          <target>kDocumentUnchanged</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="24_19">
+          <source>kDocumentWithNativeFormat</source>
+          <target>kDocumentWithNativeFormat</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="24_20">
+          <source>kDocumentWithCRLF</source>
+          <target>kDocumentWithCRLF</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="24_21">
+          <source>kDocumentWithCR</source>
+          <target>kDocumentWithCR</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="24_22">
+          <source>kDocumentWithLF</source>
+          <target>kDocumentWithLF</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="24_23">
+          <source>kDeleteOnlyIfEmpty</source>
+          <target>kDeleteOnlyIfEmpty</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="24_24">
+          <source>kDeleteWithContents</source>
+          <target>kDeleteWithContents</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="36" d4:groupName="ConstTheme_36" restype="x-QDK#">
+        <trans-unit d4:value="-10" id="36_1">
+          <source>kOtherProcess</source>
+          <target>kOtherProcess</target>
+        </trans-unit>
+        <trans-unit id="36_2"/>
+        <trans-unit d4:value="-8" id="36_3">
+          <source>kEventManager</source>
+          <target>kEventManager</target>
+        </trans-unit>
+        <trans-unit id="36_4"/>
+        <trans-unit id="36_5"/>
+        <trans-unit d4:value="-5" id="36_6">
+          <source>kIndexingProcess</source>
+          <target>kIndexingProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="-4" id="36_7">
+          <source>kCacheManager</source>
+          <target>kCacheManager</target>
+        </trans-unit>
+        <trans-unit d4:value="-3" id="36_8">
+          <source>kWebProcessWithNoContext</source>
+          <target>kWebProcessWithNoContext</target>
+        </trans-unit>
+        <trans-unit d4:value="-2" id="36_9">
+          <source>kDesignProcess</source>
+          <target>kDesignProcess</target>
+        </trans-unit>
+        <trans-unit id="36_10"/>
+        <trans-unit d4:value="0" id="36_11">
+          <source>kNone</source>
+          <target>kNone</target>
+        </trans-unit>
+        <trans-unit id="36_12"/>
+        <trans-unit id="36_13"/>
+        <trans-unit id="36_14"/>
+        <trans-unit d4:value="4" id="36_15">
+          <source>kOtherUserProcess</source>
+          <target>kOtherUserProcess</target>
+        </trans-unit>
+        <trans-unit id="36_16"/>
+        <trans-unit id="36_17"/>
+        <trans-unit d4:value="-13" id="36_18">
+          <source>kWebServerProcess</source>
+          <target>kWebServerProcess</target>
+        </trans-unit>
+        <trans-unit id="36_19"/>
+        <trans-unit id="36_20"/>
+        <trans-unit d4:value="-16" id="36_21">
+          <source>kOnExitProcess</source>
+          <target>kOnExitProcess</target>
+        </trans-unit>
+        <trans-unit id="36_22"/>
+        <trans-unit d4:value="-18" id="36_23">
+          <source>kInternalProcess</source>
+          <target>kInternalProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="-19" id="36_24">
+          <source>kBackupProcess</source>
+          <target>kBackupProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="-20" id="36_25">
+          <source>kLogFileProcess</source>
+          <target>kLogFileProcess</target>
+        </trans-unit>
+        <trans-unit id="36_26"/>
+        <trans-unit id="36_27"/>
+        <trans-unit id="36_28"/>
+        <trans-unit d4:value="-25" id="36_29">
+          <source>kInternalTimerProcess</source>
+          <target>kInternalTimerProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="-26" id="36_30">
+          <source>kMonitorProcess</source>
+          <target>kMonitorProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="-31" id="36_31">
+          <source>kClientManagerProcess</source>
+          <target>kClientManagerProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="5" id="36_32">
+          <source>kWorkerProcess</source>
+          <target>kWorkerProcess</target>
+        </trans-unit>
+        <trans-unit id="36_33"/>
+        <trans-unit id="36_34"/>
+        <trans-unit id="36_35"/>
+        <trans-unit id="36_36"/>
+        <trans-unit id="36_37"/>
+        <trans-unit id="36_38"/>
+        <trans-unit id="36_39"/>
+        <trans-unit id="36_40"/>
+        <trans-unit id="36_41"/>
+        <trans-unit id="36_42"/>
+        <trans-unit id="36_43"/>
+        <trans-unit id="36_44"/>
+        <trans-unit id="36_45"/>
+        <trans-unit id="36_46"/>
+        <trans-unit id="36_47"/>
+        <trans-unit id="36_48"/>
+        <trans-unit id="36_49"/>
+        <trans-unit id="36_50"/>
+        <trans-unit d4:value="-29" id="36_51">
+          <source>kCompilerProcess</source>
+          <target>kCompilerProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="-39" id="36_52">
+          <source>kMainProcess</source>
+          <target>kMainProcess</target>
+        </trans-unit>
+        <trans-unit d4:value="-58" id="36_53">
+          <source>kHTTPLogFlusher</source>
+          <target>kHTTPLogFlusher</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="61" d4:groupName="ConstTheme_61" restype="x-QDK#">
+        <trans-unit d4:value="0" id="61_1">
+          <source>kReset</source>
+          <target>kReset</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="61_2">
+          <source>kScale</source>
+          <target>kScale</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="61_3">
+          <source>kTranslate</source>
+          <target>kTranslate</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="61_4">
+          <source>kFlipHorizontally</source>
+          <target>kFlipHorizontally</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="61_5">
+          <source>kFlipVertically</source>
+          <target>kFlipVertically</target>
+        </trans-unit>
+        <trans-unit d4:value="101" id="61_6">
+          <source>kFadeToGreyScale</source>
+          <target>kFadeToGreyScale</target>
+        </trans-unit>
+        <trans-unit d4:value="100" id="61_7">
+          <source>kCrop</source>
+          <target>kCrop</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="61_8">
+          <source>kHorizontalConcatenation</source>
+          <target>kHorizontalConcatenation</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="61_9">
+          <source>kVerticalConcatenation</source>
+          <target>kVerticalConcatenation</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="61_10">
+          <source>kSuperimposition</source>
+          <target>kSuperimposition</target>
+        </trans-unit>
+        <trans-unit d4:value="102" id="61_11">
+          <source>kTransparency</source>
+          <target>kTransparency</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="66" d4:groupName="ConstTheme_66" restype="x-QDK#">
+        <trans-unit d4:value="0" id="66_1">
+          <source>kMD5Digest</source>
+          <target>kMD5Digest</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="66_2">
+          <source>kSHA1Digest</source>
+          <target>kSHA1Digest</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="66_3">
+          <source>k4DRESTDigest</source>
+          <target>k4DRESTDigest</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="66_4">
+          <source>kSHA256Digest</source>
+          <target>kSHA256Digest</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="66_5">
+          <source>kSHA512Digest</source>
+          <target>kSHA512Digest</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="68" d4:groupName="ConstTheme_68" restype="x-QDK#">
+        <trans-unit d4:value="EXIF/ApertureValue" id="68_1">
+          <source>kEXIFApertureValue</source>
+          <target>kEXIFApertureValue</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/BrightnessValue" id="68_2">
+          <source>kEXIFBrightnessValue</source>
+          <target>kEXIFBrightnessValue</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ColorSpace" id="68_3">
+          <source>kEXIFColorSpace</source>
+          <target>kEXIFColorSpace</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ComponentsConfiguration" id="68_4">
+          <source>kEXIFComponentsConfiguration</source>
+          <target>kEXIFComponentsConfiguration</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/CompressedBitsPerPixel" id="68_5">
+          <source>kEXIFCompressedBitsPerPixel</source>
+          <target>kEXIFCompressedBitsPerPixel</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Contrast" id="68_6">
+          <source>kEXIFContrast</source>
+          <target>kEXIFContrast</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/CustomRendered" id="68_7">
+          <source>kEXIFCustomRendered</source>
+          <target>kEXIFCustomRendered</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/DateTimeDigitized" id="68_8">
+          <source>kEXIFDateTimeDigitized</source>
+          <target>kEXIFDateTimeDigitized</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/DateTimeOriginal" id="68_9">
+          <source>kEXIFDateTimeOriginal</source>
+          <target>kEXIFDateTimeOriginal</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/DigitalZoomRatio" id="68_10">
+          <source>kEXIFDigitalZoomRatio</source>
+          <target>kEXIFDigitalZoomRatio</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ExifVersion" id="68_11">
+          <source>kEXIFEXIFVersion</source>
+          <target>kEXIFEXIFVersion</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ExposureBiasValue" id="68_12">
+          <source>kEXIFExposureBiasValue</source>
+          <target>kEXIFExposureBiasValue</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ExposureIndex" id="68_13">
+          <source>kEXIFExposureIndex</source>
+          <target>kEXIFExposureIndex</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ExposureMode" id="68_14">
+          <source>kEXIFExposureMode</source>
+          <target>kEXIFExposureMode</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ExposureProgram" id="68_15">
+          <source>kEXIFExposureProgram</source>
+          <target>kEXIFExposureProgram</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ExposureTime" id="68_16">
+          <source>kEXIFExposureTime</source>
+          <target>kEXIFExposureTime</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FileSource" id="68_17">
+          <source>kEXIFFileSource</source>
+          <target>kEXIFFileSource</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Flash" id="68_18">
+          <source>kEXIFFlash</source>
+          <target>kEXIFFlash</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FlashEnergy" id="68_19">
+          <source>kEXIFFlashEnergy</source>
+          <target>kEXIFFlashEnergy</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FlashPixVersion" id="68_20">
+          <source>kEXIFFlashPixVersion</source>
+          <target>kEXIFFlashPixVersion</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Flash/Fired" id="68_21">
+          <source>kEXIFFlashFired</source>
+          <target>kEXIFFlashFired</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Flash/FunctionPresent" id="68_22">
+          <source>kEXIFFlashFunctionPresent</source>
+          <target>kEXIFFlashFunctionPresent</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Flash/Mode" id="68_23">
+          <source>kEXIFFlashMode</source>
+          <target>kEXIFFlashMode</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Flash/RedEyeReduction" id="68_24">
+          <source>kEXIFFlashRedEyeReduction</source>
+          <target>kEXIFFlashRedEyeReduction</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Flash/ReturnLight" id="68_25">
+          <source>kEXIFFlashReturnLight</source>
+          <target>kEXIFFlashReturnLight</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FNumber" id="68_26">
+          <source>kEXIFFNumber</source>
+          <target>kEXIFFNumber</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FocalLenIn35mmFilm" id="68_27">
+          <source>kEXIFFocalLenIn35MmFilm</source>
+          <target>kEXIFFocalLenIn35MmFilm</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FocalLength" id="68_28">
+          <source>kEXIFFocalLength</source>
+          <target>kEXIFFocalLength</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FocalPlaneResolutionUnit" id="68_29">
+          <source>kEXIFFocalPlaneResolutionUnit</source>
+          <target>kEXIFFocalPlaneResolutionUnit</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FocalPlaneXResolution" id="68_30">
+          <source>kEXIFFocalPlaneXResolution</source>
+          <target>kEXIFFocalPlaneXResolution</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/FocalPlaneYResolution" id="68_31">
+          <source>kEXIFFocalPlaneYResolution</source>
+          <target>kEXIFFocalPlaneYResolution</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/GainControl" id="68_32">
+          <source>kEXIFGainControl</source>
+          <target>kEXIFGainControl</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Gamma" id="68_33">
+          <source>kEXIFGamma</source>
+          <target>kEXIFGamma</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ImageUniqueID" id="68_34">
+          <source>kEXIFImageUniqueID</source>
+          <target>kEXIFImageUniqueID</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ISOSpeedRatings" id="68_35">
+          <source>kEXIFISOSpeedRatings</source>
+          <target>kEXIFISOSpeedRatings</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/LightSource" id="68_36">
+          <source>kEXIFLightSource</source>
+          <target>kEXIFLightSource</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/MakerNote" id="68_37">
+          <source>kEXIFMakerNote</source>
+          <target>kEXIFMakerNote</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/MaxApertureValue" id="68_38">
+          <source>kEXIFMaxApertureValue</source>
+          <target>kEXIFMaxApertureValue</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/MeteringMode" id="68_39">
+          <source>kEXIFMeteringMode</source>
+          <target>kEXIFMeteringMode</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/PixelXDimension" id="68_40">
+          <source>kEXIFPixelXDimension</source>
+          <target>kEXIFPixelXDimension</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/PixelYDimension" id="68_41">
+          <source>kEXIFPixelYDimension</source>
+          <target>kEXIFPixelYDimension</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/RelatedSoundFile" id="68_42">
+          <source>kEXIFRelatedSoundFile</source>
+          <target>kEXIFRelatedSoundFile</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Saturation" id="68_43">
+          <source>kEXIFSaturation</source>
+          <target>kEXIFSaturation</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SceneCaptureType" id="68_44">
+          <source>kEXIFSceneCaptureType</source>
+          <target>kEXIFSceneCaptureType</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SceneType" id="68_45">
+          <source>kEXIFSceneType</source>
+          <target>kEXIFSceneType</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SensingMethod" id="68_46">
+          <source>kEXIFSensingMethod</source>
+          <target>kEXIFSensingMethod</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/Sharpness" id="68_47">
+          <source>kEXIFSharpness</source>
+          <target>kEXIFSharpness</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/ShutterSpeedValue" id="68_48">
+          <source>kEXIFShutterSpeedValue</source>
+          <target>kEXIFShutterSpeedValue</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SpectralSensitivity" id="68_49">
+          <source>kEXIFSpectralSensitivity</source>
+          <target>kEXIFSpectralSensitivity</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SubjectArea" id="68_50">
+          <source>kEXIFSubjectArea</source>
+          <target>kEXIFSubjectArea</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SubjectDistRange" id="68_51">
+          <source>kEXIFSubjectDistRange</source>
+          <target>kEXIFSubjectDistRange</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SubjectDistance" id="68_52">
+          <source>kEXIFSubjectDistance</source>
+          <target>kEXIFSubjectDistance</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/SubjectLocation" id="68_53">
+          <source>kEXIFSubjectLocation</source>
+          <target>kEXIFSubjectLocation</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/UserComment" id="68_54">
+          <source>kEXIFUserComment</source>
+          <target>kEXIFUserComment</target>
+        </trans-unit>
+        <trans-unit d4:value="EXIF/WhiteBalance" id="68_55">
+          <source>kEXIFWhiteBalance</source>
+          <target>kEXIFWhiteBalance</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Altitude" id="68_56">
+          <source>kGPSAltitude</source>
+          <target>kGPSAltitude</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/AltitudeRef" id="68_57">
+          <source>kGPSAltitudeRef</source>
+          <target>kGPSAltitudeRef</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/AreaInformation" id="68_58">
+          <source>kGPSAreaInformation</source>
+          <target>kGPSAreaInformation</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DateTime" id="68_59">
+          <source>kGPSDateTime</source>
+          <target>kGPSDateTime</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestBearing" id="68_60">
+          <source>kGPSDestBearing</source>
+          <target>kGPSDestBearing</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestBearingRef" id="68_61">
+          <source>kGPSDestBearingRef</source>
+          <target>kGPSDestBearingRef</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestDistance" id="68_62">
+          <source>kGPSDestDistance</source>
+          <target>kGPSDestDistance</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestDistanceRef" id="68_63">
+          <source>kGPSDestDistanceRef</source>
+          <target>kGPSDestDistanceRef</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLatitude" id="68_64">
+          <source>kGPSDestLatitude</source>
+          <target>kGPSDestLatitude</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLatitude/Deg" id="68_65">
+          <source>kGPSDestLatitudeDeg</source>
+          <target>kGPSDestLatitudeDeg</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLatitude/Dir" id="68_66">
+          <source>kGPSDestLatitudeDir</source>
+          <target>kGPSDestLatitudeDir</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLatitude/Min" id="68_67">
+          <source>kGPSDestLatitudeMin</source>
+          <target>kGPSDestLatitudeMin</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLatitude/Sec" id="68_68">
+          <source>kGPSDestLatitudeSec</source>
+          <target>kGPSDestLatitudeSec</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLongitude" id="68_69">
+          <source>kGPSDestLongitude</source>
+          <target>kGPSDestLongitude</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLongitude/Deg" id="68_70">
+          <source>kGPSDestLongitudeDeg</source>
+          <target>kGPSDestLongitudeDeg</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLongitude/Dir" id="68_71">
+          <source>kGPSDestLongitudeDir</source>
+          <target>kGPSDestLongitudeDir</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLongitude/Min" id="68_72">
+          <source>kGPSDestLongitudeMin</source>
+          <target>kGPSDestLongitudeMin</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DestLongitude/Sec" id="68_73">
+          <source>kGPSDestLongitudeSec</source>
+          <target>kGPSDestLongitudeSec</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Differential" id="68_74">
+          <source>kGPSDifferential</source>
+          <target>kGPSDifferential</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/DOP" id="68_75">
+          <source>kGPSDOP</source>
+          <target>kGPSDOP</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/ImgDirection" id="68_76">
+          <source>kGPSImgDirection</source>
+          <target>kGPSImgDirection</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/ImgDirectionRef" id="68_77">
+          <source>kGPSImgDirectionRef</source>
+          <target>kGPSImgDirectionRef</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Latitude" id="68_78">
+          <source>kGPSLatitude</source>
+          <target>kGPSLatitude</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Latitude/Deg" id="68_79">
+          <source>kGPSLatitudeDeg</source>
+          <target>kGPSLatitudeDeg</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Latitude/Dir" id="68_80">
+          <source>kGPSLatitudeDir</source>
+          <target>kGPSLatitudeDir</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Latitude/Min" id="68_81">
+          <source>kGPSLatitudeMin</source>
+          <target>kGPSLatitudeMin</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Latitude/Sec" id="68_82">
+          <source>kGPSLatitudeSec</source>
+          <target>kGPSLatitudeSec</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Longitude" id="68_83">
+          <source>kGPSLongitude</source>
+          <target>kGPSLongitude</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Longitude/Deg" id="68_84">
+          <source>kGPSLongitudeDeg</source>
+          <target>kGPSLongitudeDeg</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Longitude/Dir" id="68_85">
+          <source>kGPSLongitudeDir</source>
+          <target>kGPSLongitudeDir</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Longitude/Min" id="68_86">
+          <source>kGPSLongitudeMin</source>
+          <target>kGPSLongitudeMin</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Longitude/Sec" id="68_87">
+          <source>kGPSLongitudeSec</source>
+          <target>kGPSLongitudeSec</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/MapDatum" id="68_88">
+          <source>kGPSMapDatum</source>
+          <target>kGPSMapDatum</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/MeasureMode" id="68_89">
+          <source>kGPSMeasureMode</source>
+          <target>kGPSMeasureMode</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/ProcessingMethod" id="68_90">
+          <source>kGPSProcessingMethod</source>
+          <target>kGPSProcessingMethod</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Satellites" id="68_91">
+          <source>kGPSSatellites</source>
+          <target>kGPSSatellites</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Speed" id="68_92">
+          <source>kGPSSpeed</source>
+          <target>kGPSSpeed</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/SpeedRef" id="68_93">
+          <source>kGPSSpeedRef</source>
+          <target>kGPSSpeedRef</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Status" id="68_94">
+          <source>kGPSStatus</source>
+          <target>kGPSStatus</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/Track" id="68_95">
+          <source>kGPSTrack</source>
+          <target>kGPSTrack</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/TrackRef" id="68_96">
+          <source>kGPSTrackRef</source>
+          <target>kGPSTrackRef</target>
+        </trans-unit>
+        <trans-unit d4:value="GPS/VersionID" id="68_97">
+          <source>kGPSVersionID</source>
+          <target>kGPSVersionID</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Byline" id="68_98">
+          <source>kIPTCByline</source>
+          <target>kIPTCByline</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/BylineTitle" id="68_99">
+          <source>kIPTCBylineTitle</source>
+          <target>kIPTCBylineTitle</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/CaptionAbstract" id="68_100">
+          <source>kIPTCCaptionAbstract</source>
+          <target>kIPTCCaptionAbstract</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Category" id="68_101">
+          <source>kIPTCCategory</source>
+          <target>kIPTCCategory</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/City" id="68_102">
+          <source>kIPTCCity</source>
+          <target>kIPTCCity</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Contact" id="68_103">
+          <source>kIPTCContact</source>
+          <target>kIPTCContact</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ContentLocationCode" id="68_104">
+          <source>kIPTCContentLocationCode</source>
+          <target>kIPTCContentLocationCode</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ContentLocationName" id="68_105">
+          <source>kIPTCContentLocationName</source>
+          <target>kIPTCContentLocationName</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/CopyrightNotice" id="68_106">
+          <source>kIPTCCopyrightNotice</source>
+          <target>kIPTCCopyrightNotice</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/CountryPrimaryLocationCode" id="68_107">
+          <source>kIPTCCountryPrimaryLocationCode</source>
+          <target>kIPTCCountryPrimaryLocationCode</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/CountryPrimaryLocationName" id="68_108">
+          <source>kIPTCCountryPrimaryLocationName</source>
+          <target>kIPTCCountryPrimaryLocationName</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Credit" id="68_109">
+          <source>kIPTCCredit</source>
+          <target>kIPTCCredit</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/DateTimeCreated" id="68_110">
+          <source>kIPTCDateTimeCreated</source>
+          <target>kIPTCDateTimeCreated</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/DigitalCreationDateTime" id="68_111">
+          <source>kIPTCDigitalCreationDateTime</source>
+          <target>kIPTCDigitalCreationDateTime</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/EditStatus" id="68_112">
+          <source>kIPTCEditStatus</source>
+          <target>kIPTCEditStatus</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ExpirationDateTime" id="68_113">
+          <source>kIPTCExpirationDateTime</source>
+          <target>kIPTCExpirationDateTime</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/FixtureIdentifier" id="68_114">
+          <source>kIPTCFixtureIdentifier</source>
+          <target>kIPTCFixtureIdentifier</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Headline" id="68_115">
+          <source>kIPTCHeadline</source>
+          <target>kIPTCHeadline</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ImageOrientation" id="68_116">
+          <source>kIPTCImageOrientation</source>
+          <target>kIPTCImageOrientation</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ImageType" id="68_117">
+          <source>kIPTCImageType</source>
+          <target>kIPTCImageType</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Keywords" id="68_118">
+          <source>kIPTCKeywords</source>
+          <target>kIPTCKeywords</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/LanguageIdentifier" id="68_119">
+          <source>kIPTCLanguageIdentifier</source>
+          <target>kIPTCLanguageIdentifier</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ObjectAttributeReference" id="68_120">
+          <source>kIPTCObjectAttributeReference</source>
+          <target>kIPTCObjectAttributeReference</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ObjectCycle" id="68_121">
+          <source>kIPTCObjectCycle</source>
+          <target>kIPTCObjectCycle</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ObjectName" id="68_122">
+          <source>kIPTCObjectName</source>
+          <target>kIPTCObjectName</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/OriginalTransmissionReference" id="68_123">
+          <source>kIPTCOriginalTransmissionReference</source>
+          <target>kIPTCOriginalTransmissionReference</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/OriginatingProgram" id="68_124">
+          <source>kIPTCOriginatingProgram</source>
+          <target>kIPTCOriginatingProgram</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ProgramVersion" id="68_125">
+          <source>kIPTCProgramVersion</source>
+          <target>kIPTCProgramVersion</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ProvinceState" id="68_126">
+          <source>kIPTCProvinceState</source>
+          <target>kIPTCProvinceState</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/ReleaseDateTime" id="68_127">
+          <source>kIPTCReleaseDateTime</source>
+          <target>kIPTCReleaseDateTime</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Scene" id="68_128">
+          <source>kIPTCScene</source>
+          <target>kIPTCScene</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Source" id="68_129">
+          <source>kIPTCSource</source>
+          <target>kIPTCSource</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/SpecialInstructions" id="68_130">
+          <source>kIPTCSpecialInstructions</source>
+          <target>kIPTCSpecialInstructions</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/StarRating" id="68_131">
+          <source>kIPTCStarRating</source>
+          <target>kIPTCStarRating</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/SubLocation" id="68_132">
+          <source>kIPTCSubLocation</source>
+          <target>kIPTCSubLocation</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/SubjectReference" id="68_133">
+          <source>kIPTCSubjectReference</source>
+          <target>kIPTCSubjectReference</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/SupplementalCategory" id="68_134">
+          <source>kIPTCSupplementalCategory</source>
+          <target>kIPTCSupplementalCategory</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/Urgency" id="68_135">
+          <source>kIPTCUrgency</source>
+          <target>kIPTCUrgency</target>
+        </trans-unit>
+        <trans-unit d4:value="IPTC/WriterEditor" id="68_136">
+          <source>kIPTCWriterEditor</source>
+          <target>kIPTCWriterEditor</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/Artist" id="68_137">
+          <source>kTIFFArtist</source>
+          <target>kTIFFArtist</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/Compression" id="68_138">
+          <source>kTIFFCompression</source>
+          <target>kTIFFCompression</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/Copyright" id="68_139">
+          <source>kTIFFCopyright</source>
+          <target>kTIFFCopyright</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/DateTime" id="68_140">
+          <source>kTIFFDateTime</source>
+          <target>kTIFFDateTime</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/DocumentName" id="68_141">
+          <source>kTIFFDocumentName</source>
+          <target>kTIFFDocumentName</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/HostComputer" id="68_142">
+          <source>kTIFFHostComputer</source>
+          <target>kTIFFHostComputer</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/ImageDescription" id="68_143">
+          <source>kTIFFImageDescription</source>
+          <target>kTIFFImageDescription</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/Make" id="68_144">
+          <source>kTIFFMake</source>
+          <target>kTIFFMake</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/Model" id="68_145">
+          <source>kTIFFModel</source>
+          <target>kTIFFModel</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/Orientation" id="68_146">
+          <source>kTIFFOrientation</source>
+          <target>kTIFFOrientation</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/PhotometricInterpretation" id="68_147">
+          <source>kTIFFPhotometricInterpretation</source>
+          <target>kTIFFPhotometricInterpretation</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/ResolutionUnit" id="68_148">
+          <source>kTIFFResolutionUnit</source>
+          <target>kTIFFResolutionUnit</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/Software" id="68_149">
+          <source>kTIFFSoftware</source>
+          <target>kTIFFSoftware</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/XResolution" id="68_150">
+          <source>kTIFFXResolution</source>
+          <target>kTIFFXResolution</target>
+        </trans-unit>
+        <trans-unit d4:value="TIFF/YResolution" id="68_151">
+          <source>kTIFFYResolution</source>
+          <target>kTIFFYResolution</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="73" d4:groupName="ConstTheme_73" restype="x-QDK#">
+        <trans-unit d4:value="70" id="73_1">
+          <source>kWebLegacySession</source>
+          <target>kWebLegacySession</target>
+        </trans-unit>
+        <trans-unit d4:value="71" id="73_2">
+          <source>kWebMaxSessions</source>
+          <target>kWebMaxSessions</target>
+        </trans-unit>
+        <trans-unit d4:value="72" id="73_3">
+          <source>kWebInactiveSessionTimeout</source>
+          <target>kWebInactiveSessionTimeout</target>
+        </trans-unit>
+        <trans-unit d4:value="73" id="73_4">
+          <source>kWebSessionCookieName</source>
+          <target>kWebSessionCookieName</target>
+        </trans-unit>
+        <trans-unit d4:value="16" id="73_5">
+          <source>kWebIPAddressToListen</source>
+          <target>kWebIPAddressToListen</target>
+        </trans-unit>
+        <trans-unit d4:value="17" id="73_6">
+          <source>kWebCharacterSet</source>
+          <target>kWebCharacterSet</target>
+        </trans-unit>
+        <trans-unit d4:value="18" id="73_7">
+          <source>kWebMaxConcurrentProcesses</source>
+          <target>kWebMaxConcurrentProcesses</target>
+        </trans-unit>
+        <trans-unit d4:value="27" id="73_8">
+          <source>kWebMaximumRequestsSize</source>
+          <target>kWebMaximumRequestsSize</target>
+        </trans-unit>
+        <trans-unit d4:value="29" id="73_9">
+          <source>kWebLogRecording</source>
+          <target>kWebLogRecording</target>
+        </trans-unit>
+        <trans-unit d4:value="39" id="73_10">
+          <source>kWebHTTPSPortID</source>
+          <target>kWebHTTPSPortID</target>
+        </trans-unit>
+        <trans-unit d4:value="50" id="73_11">
+          <source>kWebHTTPCompressionLevel</source>
+          <target>kWebHTTPCompressionLevel</target>
+        </trans-unit>
+        <trans-unit d4:value="51" id="73_12">
+          <source>kWebHTTPCompressionThreshold</source>
+          <target>kWebHTTPCompressionThreshold</target>
+        </trans-unit>
+        <trans-unit d4:value="78" id="73_13">
+          <source>kWebInactiveProcessTimeout</source>
+          <target>kWebInactiveProcessTimeout</target>
+        </trans-unit>
+        <trans-unit d4:value="15" id="73_14">
+          <source>kWebPortID</source>
+          <target>kWebPortID</target>
+        </trans-unit>
+        <trans-unit d4:value="81" id="73_15">
+          <source>kWebSessionCookieDomain</source>
+          <target>kWebSessionCookieDomain</target>
+        </trans-unit>
+        <trans-unit d4:value="82" id="73_16">
+          <source>kWebSessionCookiePath</source>
+          <target>kWebSessionCookiePath</target>
+        </trans-unit>
+        <trans-unit d4:value="83" id="73_17">
+          <source>kWebSessionEnableIPAddressValidation</source>
+          <target>kWebSessionEnableIPAddressValidation</target>
+        </trans-unit>
+        <trans-unit d4:value="84" id="73_18">
+          <source>kWebDebugLog</source>
+          <target>kWebDebugLog</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="73_19">
+          <source>kWdlDisableWebLog</source>
+          <target>kWdlDisableWebLog</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="73_20">
+          <source>kWdlEnableWithoutBody</source>
+          <target>kWdlEnableWithoutBody</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="73_21">
+          <source>kWdlEnableWithRequestBody</source>
+          <target>kWdlEnableWithRequestBody</target>
+        </trans-unit>
+        <trans-unit d4:value="5" id="73_22">
+          <source>kWdlEnableWithResponseBody</source>
+          <target>kWdlEnableWithResponseBody</target>
+        </trans-unit>
+        <trans-unit d4:value="7" id="73_23">
+          <source>kWdlEnableWithAllBodyParts</source>
+          <target>kWdlEnableWithAllBodyParts</target>
+        </trans-unit>
+        <trans-unit d4:value="85" id="73_24">
+          <source>kWebHTTPTRACE</source>
+          <target>kWebHTTPTRACE</target>
+        </trans-unit>
+        <trans-unit d4:value="23" id="73_25">
+          <source>kWebClientIPAddressToListen</source>
+          <target>kWebClientIPAddressToListen</target>
+        </trans-unit>
+        <trans-unit d4:value="86" id="73_26">
+          <source>kWebHSTSEnabled</source>
+          <target>kWebHSTSEnabled</target>
+        </trans-unit>
+        <trans-unit d4:value="87" id="73_27">
+          <source>kWebHSTSMaxAge</source>
+          <target>kWebHSTSMaxAge</target>
+        </trans-unit>
+        <trans-unit d4:value="88" id="73_28">
+          <source>kWebHTTPEnabled</source>
+          <target>kWebHTTPEnabled</target>
+        </trans-unit>
+        <trans-unit d4:value="89" id="73_29">
+          <source>kWebHTTPSEnabled</source>
+          <target>kWebHTTPSEnabled</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="73_30">
+          <source>kWebServerDatabase</source>
+          <target>kWebServerDatabase</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="73_31">
+          <source>kWebServerHostDatabase</source>
+          <target>kWebServerHostDatabase</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="73_32">
+          <source>kWebServerReceivingRequest</source>
+          <target>kWebServerReceivingRequest</target>
+        </trans-unit>
+        <trans-unit d4:value="92" id="73_33">
+          <source>kWebCORSEnabled</source>
+          <target>kWebCORSEnabled</target>
+        </trans-unit>
+        <trans-unit d4:value="93" id="73_34">
+          <source>kWebCORSSettings</source>
+          <target>kWebCORSSettings</target>
+        </trans-unit>
+        <trans-unit d4:value="90" id="73_35">
+          <source>kWebScalableSession</source>
+          <target>kWebScalableSession</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="85" d4:groupName="ConstTheme_85" restype="x-QDK#">
+        <trans-unit d4:value="2" id="85_1">
+          <source>kKeepNull</source>
+          <target>kKeepNull</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="85_2">
+          <source>kKeepEmptyStrings</source>
+          <target>kKeepEmptyStrings</target>
+        </trans-unit>
+        <trans-unit d4:value="8" id="85_3">
+          <source>kDiacritical</source>
+          <target>kDiacritical</target>
+        </trans-unit>
+        <trans-unit d4:value="16" id="85_4">
+          <source>kDisableWildchar</source>
+          <target>kDisableWildchar</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_5">
+          <source>kIgnoreNullOrEmpty</source>
+          <target>kIgnoreNullOrEmpty</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_6">
+          <source>kWithPrimaryKey</source>
+          <target>kWithPrimaryKey</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_7">
+          <source>kResolvePointers</source>
+          <target>kResolvePointers</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_8">
+          <source>kDescending</source>
+          <target>kDescending</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="85_9">
+          <source>kAscending</source>
+          <target>kAscending</target>
+        </trans-unit>
+        <trans-unit d4:value="8" id="85_10">
+          <source>kDiacritical</source>
+          <target>kDiacritical</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_11">
+          <source>kKeepOrdered</source>
+          <target>kKeepOrdered</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="85_12">
+          <source>kNonOrdered</source>
+          <target>kNonOrdered</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_13">
+          <source>kDistinctValues</source>
+          <target>kDistinctValues</target>
+        </trans-unit>
+        <trans-unit id="85_14"/>
+        <trans-unit d4:value="1" id="85_15">
+          <source>kReloadIfStampChanged</source>
+          <target>kReloadIfStampChanged</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_16">
+          <source>kKeyAsString</source>
+          <target>kKeyAsString</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="85_17">
+          <source>kForceDropIfStampChanged</source>
+          <target>kForceDropIfStampChanged</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="85_18">
+          <source>kStatusSuccess</source>
+          <target>kStatusSuccess</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="85_19">
+          <source>kStatusWrongPermission</source>
+          <target>kStatusWrongPermission</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="85_20">
+          <source>kStatusStampHasChanged</source>
+          <target>kStatusStampHasChanged</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="85_21">
+          <source>kStatusLocked</source>
+          <target>kStatusLocked</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="85_22">
+          <source>kStatusSeriousError</source>
+          <target>kStatusSeriousError</target>
+        </trans-unit>
+        <trans-unit d4:value="5" id="85_23">
+          <source>kStatusEntityDoesNotExistAnymore</source>
+          <target>kStatusEntityDoesNotExistAnymore</target>
+        </trans-unit>
+        <trans-unit d4:value="32" id="85_24">
+          <source>kAutoMerge</source>
+          <target>kAutoMerge</target>
+        </trans-unit>
+        <trans-unit d4:value="6" id="85_25">
+          <source>kStatusAutomergeFailed</source>
+          <target>kStatusAutomergeFailed</target>
+        </trans-unit>
+        <trans-unit d4:value="8" id="85_26">
+          <source>kStopDroppingOnFirstError</source>
+          <target>kStopDroppingOnFirstError</target>
+        </trans-unit>
+        <trans-unit id="85_27"/>
+        <trans-unit d4:value="2" id="85_28">
+          <source>kWithStamp</source>
+          <target>kWithStamp</target>
+        </trans-unit>
+        <trans-unit d4:value="16" id="85_29">
+          <source>kShared</source>
+          <target>kShared</target>
+        </trans-unit>
+        <trans-unit id="85_30"/>
+        <trans-unit id="85_31"/>
+        <trans-unit id="85_32"/>
+        <trans-unit id="85_33"/>
+        <trans-unit id="85_34"/>
+        <trans-unit id="85_35"/>
+        <trans-unit d4:value="32" id="85_36">
+          <source>kCountValues</source>
+          <target>kCountValues</target>
+        </trans-unit>
+        <trans-unit id="85_37"/>
+      </group>
+      <group d4:groupID="86" d4:groupName="ConstTheme_86" restype="x-QDK#">
+        <trans-unit d4:value="1" id="86_1">
+          <source>kIgnoreEmptyStrings</source>
+          <target>kIgnoreEmptyStrings</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="86_2">
+          <source>kTrimSpaces</source>
+          <target>kTrimSpaces</target>
+        </trans-unit>
+        <trans-unit id="86_3"/>
+        <trans-unit d4:value="0" id="86_4">
+          <source>kStrict</source>
+          <target>kStrict</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="86_5">
+          <source>kCharCodes</source>
+          <target>kCharCodes</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="86_6">
+          <source>kCaseInsensitive</source>
+          <target>kCaseInsensitive</target>
+        </trans-unit>
+        <trans-unit d4:value="4" id="86_7">
+          <source>kDiacriticInsensitive</source>
+          <target>kDiacriticInsensitive</target>
+        </trans-unit>
+        <trans-unit d4:value="8" id="86_8">
+          <source>kKanaInsensitive</source>
+          <target>kKanaInsensitive</target>
+        </trans-unit>
+        <trans-unit d4:value="16" id="86_9">
+          <source>kWidthInsensitive</source>
+          <target>kWidthInsensitive</target>
+        </trans-unit>
+        <trans-unit d4:value="32" id="86_10">
+          <source>kWholeWord</source>
+          <target>kWholeWord</target>
+        </trans-unit>	
+      </group>
+      <group d4:groupID="87" d4:groupName="ConstTheme_87" restype="x-QDK#">
+        <trans-unit id="87_1"/>
+        <trans-unit id="87_2"/>
+        <trans-unit id="87_3"/>
+        <trans-unit id="87_4"/>
+        <trans-unit d4:value="4" id="87_5">
+          <source>kOverwrite</source>
+          <target>kOverwrite</target>
+        </trans-unit>
+        <trans-unit id="87_6"/>
+        <trans-unit d4:value="1" id="87_7">
+          <source>kRecursive</source>
+          <target>kRecursive</target>
+        </trans-unit>
+        <trans-unit id="87_8"/>
+        <trans-unit id="87_9"/>
+        <trans-unit id="87_10"/>
+        <trans-unit id="87_11"/>
+        <trans-unit id="87_12"/>
+        <trans-unit id="87_13"/>
+        <trans-unit id="87_14"/>
+        <trans-unit id="87_15"/>
+        <trans-unit id="87_16"/>
+        <trans-unit id="87_17"/>
+        <trans-unit id="87_18"/>
+        <trans-unit id="87_19"/>
+        <trans-unit id="87_20"/>
+        <trans-unit id="87_21"/>
+        <trans-unit d4:value="8" id="87_22">
+          <source>kIgnoreInvisible</source>
+          <target>kIgnoreInvisible</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="88" d4:groupName="ConstTheme_88" restype="x-QDK#">
+        <trans-unit id="88_1"/>
+        <trans-unit id="88_2"/>
+        <trans-unit id="88_3"/>
+        <trans-unit d4:value="0" id="88_4">
+          <source>kExecuteInCurrent</source>
+          <target>kExecuteInCurrent</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="88_5">
+          <source>kExecuteInHost</source>
+          <target>kExecuteInHost</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="90" d4:groupName="ConstTheme_90" restype="x-QDK#">
+        <trans-unit d4:value="PLAIN" id="90_1">
+          <source>kSMTPAuthenticationPlain</source>
+          <target>kSMTPAuthenticationPlain</target>
+        </trans-unit>
+        <trans-unit d4:value="LOGIN" id="90_2">
+          <source>kSMTPAuthenticationLogin</source>
+          <target>kSMTPAuthenticationLogin</target>
+        </trans-unit>
+        <trans-unit d4:value="CRAM-MD5" id="90_3">
+          <source>kSMTPAuthenticationCRAMMD</source>
+          <target>kSMTPAuthenticationCRAMMD</target>
+        </trans-unit>
+        <trans-unit d4:value="attachment" id="90_4">
+          <source>kMailDispositionAttachment</source>
+          <target>kMailDispositionAttachment</target>
+        </trans-unit>
+        <trans-unit d4:value="inline" id="90_5">
+          <source>kMailDispositionInline</source>
+          <target>kMailDispositionInline</target>
+        </trans-unit>
+        <trans-unit d4:value="US-ASCII_UTF8_QP" id="90_6">
+          <source>kMailModeUTF8</source>
+          <target>kMailModeUTF8</target>
+        </trans-unit>
+        <trans-unit id="90_7"/>
+        <trans-unit id="90_8"/>
+        <trans-unit d4:value="US-ASCII_UTF8_B64" id="90_9">
+          <source>kMailModeUTF8InBase64</source>
+          <target>kMailModeUTF8InBase64</target>
+        </trans-unit>
+        <trans-unit d4:value="APOP" id="90_10">
+          <source>kPOP3AuthenticationAPOP</source>
+          <target>kPOP3AuthenticationAPOP</target>
+        </trans-unit>
+        <trans-unit d4:value="PLAIN" id="90_11">
+          <source>kPOP3AuthenticationPlain</source>
+          <target>kPOP3AuthenticationPlain</target>
+        </trans-unit>
+        <trans-unit d4:value="LOGIN" id="90_12">
+          <source>kPOP3AuthenticationLogin</source>
+          <target>kPOP3AuthenticationLogin</target>
+        </trans-unit>
+        <trans-unit d4:value="CRAM-MD5" id="90_13">
+          <source>kPOP3AuthenticationCRAMMD5</source>
+          <target>kPOP3AuthenticationCRAMMD5</target>
+        </trans-unit>
+        <trans-unit id="90_14"/>
+        <trans-unit d4:value="PLAIN" id="90_15">
+          <source>kIMAPAuthenticationPlain</source>
+          <target>kIMAPAuthenticationPlain</target>
+        </trans-unit>
+        <trans-unit d4:value="LOGIN" id="90_16">
+          <source>kIMAPAuthenticationLogin</source>
+          <target>kIMAPAuthenticationLogin</target>
+        </trans-unit>
+        <trans-unit d4:value="CRAM-MD5" id="90_17">
+          <source>kIMAPAuthenticationCRAMMD5</source>
+          <target>kIMAPAuthenticationCRAMMD5</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="90_18">
+          <source>kIMAPReadWriteState</source>
+          <target>kIMAPReadWriteState</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="90_19">
+          <source>kIMAPReadOnlyState</source>
+          <target>kIMAPReadOnlyState</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="90_20">
+          <source>kIMAPAll</source>
+          <target>kIMAPAll</target>
+        </trans-unit>
+        <trans-unit d4:value="OAUTH2" id="90_21">
+          <source>kSMTPAuthenticationOAUTH2</source>
+          <target>kSMTPAuthenticationOAUTH2</target>
+        </trans-unit>
+        <trans-unit d4:value="OAUTH2" id="90_22">
+          <source>kPOP3AuthenticationOAUTH2</source>
+          <target>kPOP3AuthenticationOAUTH2</target>
+        </trans-unit>
+        <trans-unit d4:value="OAUTH2" id="90_23">
+          <source>kIMAPAuthenticationOAUTH2</source>
+          <target>kIMAPAuthenticationOAUTH2</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="91" d4:groupName="ConstTheme_91" restype="x-QDK#">
+        <trans-unit d4:value="0" id="91_1">
+          <source>kZipCompressionStandard</source>
+          <target>kZipCompressionStandard</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="91_2">
+          <source>kZipCompressionNone</source>
+          <target>kZipCompressionNone</target>
+        </trans-unit>
+        <trans-unit d4:value="0" id="91_3">
+          <source>kZipEncryptionNone</source>
+          <target>kZipEncryptionNone</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="91_4">
+          <source>kZipEncryptionAES128</source>
+          <target>kZipEncryptionAES128</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="91_5">
+          <source>kZipEncryptionAES192</source>
+          <target>kZipEncryptionAES192</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="91_6">
+          <source>kZipEncryptionAES256</source>
+          <target>kZipEncryptionAES256</target>
+        </trans-unit>
+        <trans-unit id="91_7"/>
+        <trans-unit id="91_8"/>
+        <trans-unit d4:value="2" id="91_9">
+          <source>kZipCompressionLZMA</source>
+          <target>kZipCompressionLZMA</target>
+        </trans-unit>
+        <trans-unit d4:value="3" id="91_10">
+          <source>kZipCompressionXZ</source>
+          <target>kZipCompressionXZ</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="92" d4:groupName="ConstTheme_92" restype="x-QDK#">
+        <trans-unit d4:value="0" id="92_1">
+          <source>kLocal</source>
+          <target>kLocal</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="92_2">
+          <source>kGlobal</source>
+          <target>kGlobal</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="92_3">
+          <source>kErrorsFromComponents</source>
+          <target>kErrorsFromComponents</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="38" d4:groupName="ConstTheme_38" restype="x-QDK#">
+        <trans-unit d4:value="0" id="38_1">
+          <source>kInformationMessage</source>
+          <target>kInformationMessage</target>
+        </trans-unit>
+        <trans-unit d4:value="1" id="38_2">
+          <source>kWarningMessage</source>
+          <target>kWarningMessage</target>
+        </trans-unit>
+        <trans-unit d4:value="2" id="38_3">
+          <source>kErrorMessage</source>
+          <target>kErrorMessage</target>
+        </trans-unit>
+      </group>
+      <group d4:groupID="95" d4:groupName="ConstTheme_95" restype="x-QDK#">
+        <note>For `.query()` on `4D.Vector` attributes in dataclasses and entity selections</note>
+        <trans-unit d4:value="cosine" id="95_1">
+          <source>kMetricCosine</source>
+          <target>kMetricCosine</target>
+        </trans-unit>
+        <trans-unit d4:value="dot" id="95_2">
+          <source>kMetricDot</source>
+          <target>kMetricDot</target>
+        </trans-unit>
+        <trans-unit d4:value="euclidean" id="95_3">
+          <source>kMetricEuclidean</source>
+          <target>kMetricEuclidean</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

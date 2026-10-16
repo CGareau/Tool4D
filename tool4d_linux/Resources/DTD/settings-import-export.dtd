@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT field EMPTY>
+<!ATTLIST field
+  kind (alpha|text|date|time|boolean|int16|int32|int64|real|float|blob|picture|object) #REQUIRED
+  table_no CDATA #IMPLIED
+  field_no CDATA #IMPLIED
+  name CDATA #IMPLIED
+  fixed_size CDATA #IMPLIED
+  value_format CDATA #IMPLIED
+  value_format_no CDATA #IMPLIED
+>
+
+<!ELEMENT text_settings EMPTY>
+<!ATTLIST text_settings
+  delimiter_record CDATA #REQUIRED
+  delimiter_field CDATA #REQUIRED
+  delimiter_file CDATA #IMPLIED
+  title CDATA #IMPLIED
+  with_column_title (true|false) #IMPLIED
+  with_line_number (true|false) #IMPLIED
+  first_imported_line CDATA #IMPLIED
+  with_bom (true|false) #IMPLIED
+  padding_alpha CDATA #IMPLIED
+  padding_numerical CDATA #IMPLIED
+  padding_date CDATA #IMPLIED
+>
+
+<!ELEMENT xml_settings EMPTY>
+<!ATTLIST xml_settings
+  export_dtd_mode (none|generate-inside|generate-outside|reference) #REQUIRED
+  export_xsl_mode (none|apply|reference) #REQUIRED
+  export_dtd_name CDATA #IMPLIED
+  import_alternate_dtd CDATA #IMPLIED
+  export_xsl_name CDATA #IMPLIED
+  replace_spaces (true|false) #IMPLIED
+  validate_xml (true|false) #IMPLIED
+  encode_picture_as_png (true|false) #IMPLIED
+  encode_binary_as_base64 (true|false) #IMPLIED
+  with_indentation (true|false) #IMPLIED
+>
+
+
+<!ELEMENT settings-import-export (field*,text_settings?,xml_settings?)>
+<!ATTLIST settings-import-export
+  file_path CDATA #IMPLIED
+  table_no CDATA #IMPLIED
+  format (text|fixed-text|DIFF|SYLK|DBF|4D|XML|ODBC) #REQUIRED
+  char_display_format (decimal|character|hexa) #IMPLIED
+  form_name CDATA #IMPLIED
+  platform (automatic|custom|mac|win|windows|unix) #IMPLIED
+  create_table (true|false) #IMPLIED
+  all_records (true|false) #IMPLIED
+  import_mode (create|update|replace) #IMPLIED
+  rebuild_indexes (true|false) #IMPLIED
+  table_name CDATA #IMPLIED
+  encoding (437|ANSI_X3.4-1968|ANSI_X3.4-1986|arabic|ASCII|ASMO-708|
+            Big5|cp037|cp367|cp437|CP819|CP936|
+            cyrillic|csASCII|csBig5|csEUCKR|csGB2312|csIBM037|csISO2022JP|csISO58GB231280|
+            csISOLatin1|csISOLatin2|csISOLatin3|csISOLatin4|csISOLatin5|csISOLatin6|
+            csISOLatinArabic|csISOLatinCyrillic|csISOLatinGreek|csISOLatinHebrew|
+            csKOI8R|csMacintosh|csPC8CodePage437|csShiftJIS|csWindows31J|
+            ebcdic-cp-ca|ebcdic-cp-nl|ebcdic-cp-us|ebcdic-cp-wt|
+            ECMA-114|ECMA-118|ELOT_928|EUC-KR|
+            GB_2312-80|GB2312|GBK|greek|greek8|hebrew|
+            IBM037|IBM367|IBM437|IBM819|
+            ISO_646.irv:1991|ISO_8859-1:1987|ISO_8859-1|ISO_8859-10:1992|ISO_8859-10|
+            ISO_8859-2:1987|ISO_8859-2|ISO_8859-3|ISO_8859-4|ISO_8859-5|ISO_8859-6|
+            ISO_8859-7:1987|ISO_8859-7|ISO_8859-8:1988|ISO_8859-8|ISO_8859-9:1989|ISO_8859-9|
+            ISO-2022-JP|ISO646-US|
+            ISO-8859-1|ISO-8859-10|ISO-8859-13|ISO-8859-15|ISO-8859-2|ISO-8859-3:1988|ISO-8859-3|
+            ISO-8859-4:1988|ISO-8859-4|ISO-8859-5:1988|ISO-8859-5|ISO-8859-6:1987|ISO-8859-6|
+            ISO-8859-7|ISO-8859-8|ISO-8859-9|
+            iso-ir-100|iso-ir-101|iso-ir-109|iso-ir-110|iso-ir-126|
+            iso-ir-127|iso-ir-138|iso-ir-144|iso-ir-148|iso-ir-157|
+            iso-ir-6|KOI8-R|l1|l2|l3|l4|l5|l6|
+            latin1|latin2|latin3|latin4|latin5|latin6|Latin-9|
+            mac|MacCE|macintosh|MacRoman|MS_Kanji|MS936|Shift_JIS|Shift-JIS|
+            UCS_4|UCS_4BE|UCS_4LE|UCS4|UCS-4|UCS4BE|UCS-4BE|UCS4LE|UCS-4LE|
+            us|US-ASCII|
+            UTF-16|UTF-16BE|UTF-16LE|UTF-32|UTF-32BE|UTF-32LE|UTF-7|UTF-8|
+            windows-1250|windows-1251|windows-1252|windows-1253|windows-1254|
+            windows-1255|windows-1256|windows-1257|Windows-31J|windows-936|
+            x-mac-arabic|x-mac-ce|x-mac-chinesesimp|x-mac-cyrillic|
+            x-mac-greek|x-mac-hebrew|x-mac-japanese|x-mac-roman|x-mac-turkish
+            ) #IMPLIED
+>
+
