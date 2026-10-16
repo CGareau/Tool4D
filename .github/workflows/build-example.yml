@@ -82,7 +82,8 @@ jobs:
           if ('${{ inputs.client_server }}' -eq 'true') { $expected += 'Build\Client\MyAppClient', 'Build\Server\MyAppServer' }
           $missing = $expected | Where-Object { -not (Test-Path $_) }
           if ($missing) { throw "Not built: $($missing -join ', ')" }
-          if ((Test-Path build.log) -and (Select-String -Path build.log -Pattern '\*\*\*ERROR\*\*\*' -Quiet)) { throw 'Build_Application reported errors' }
+          # older Build4D versions log a harmless ERROR line when no license file is configured
+          if ((Test-Path build.log) -and (Select-String -Path build.log -Pattern '\*\*\*ERROR\*\*\*' | Where-Object { $_.Line -notmatch 'License file checking' })) { throw 'Build_Application reported errors' }
 
       - uses: actions/upload-artifact@v7
         if: inputs.upload
@@ -135,13 +136,14 @@ jobs:
             "$GITHUB_WORKSPACE/tools/tool4d_mac/tool4d.app/Contents/MacOS/tool4d" --dataless \
               -s "$GITHUB_WORKSPACE/tools/Build_Application/Project/Build_Application.4DProject" \
               --user-param "$PARAM" 2>&1 | tee build.log
-            ! grep -q '\*\*\*ERROR\*\*\*' build.log && break
+            ! { grep '\*\*\*ERROR\*\*\*' build.log | grep -vq 'License file checking'; } && break
             echo "::warning::attempt $attempt reported errors"
           done
           find Build -maxdepth 3
           [ "$BUILD_STANDALONE" != true ] || [ -d Build/Standalone/MyApp.app ]
           [ "$BUILD_CS" != true ] || { [ -d Build/Client/MyAppClient.app ] && [ -d Build/Server/MyAppServer.app ]; }
-          ! grep -q '\*\*\*ERROR\*\*\*' build.log
+          # older Build4D versions log a harmless ERROR line when no license file is configured
+          ! { grep '\*\*\*ERROR\*\*\*' build.log | grep -vq 'License file checking'; }
 
       - name: Archive (symbolic links must be kept)
         if: inputs.upload
