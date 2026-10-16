@@ -106,6 +106,14 @@ tools\tool4d_win\tool4d.exe --dataless -s tools\Build_Application\Project\Build_
 
 `Build_Application` can **sign** the applications it builds; **notarization** (required for apps distributed outside the Mac App Store, so that Gatekeeper accepts them) is a separate step you run afterwards. Both need an Apple Developer account and a *Developer ID Application* certificate. Without them, keep the default ad hoc signature (`"adHocSignature": true`): the app runs on the machine that built it, but not on other Macs without a warning.
 
+**What you have to do, in short**
+
+1. Get an Apple Developer account and create a *Developer ID Application* certificate; note your **Team ID**.
+2. Create an **app-specific password** for your Apple ID (account.apple.com → Sign-In and Security).
+3. Put the certificate in the keychain of the Mac that builds (your Mac or a self-hosted runner), or import it from a secret on a hosted runner.
+4. Set `macSignature` to `true` and your certificate name in the macOS build JSON files.
+5. After the build, notarize with `notarytool` and staple the result.
+
 ### Sign during the build
 
 In `buildStandaloneMac.json`, `buildClientMac.json` and `buildServerMac.json`:
@@ -118,6 +126,16 @@ In `buildStandaloneMac.json`, `buildClientMac.json` and `buildServerMac.json`:
 ```
 
 The certificate must be installed in a keychain that is available to the build. On your own Mac it already is. On a CI runner, import it into a temporary keychain first.
+
+### On your own Mac or a self-hosted runner
+
+Install the certificate once (double-click the `.p12` in Keychain Access, or `security import certificate.p12 -k ~/Library/Keychains/login.keychain-db -T /usr/bin/codesign`), then store the notarization credentials once in the keychain so that no password appears in scripts:
+
+```bash
+xcrun notarytool store-credentials "notary" --apple-id "you@example.com" --team-id "TEAMID" --password "app-specific-password"
+```
+
+and notarize with `--keychain-profile "notary"` instead of the three `--apple-id/--team-id/--password` options below. On a shared runner use a dedicated keychain and user rather than a personal one.
 
 ### In GitHub Actions
 
