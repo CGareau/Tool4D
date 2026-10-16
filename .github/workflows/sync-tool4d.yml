@@ -1,0 +1,99 @@
+name: Sync tool4d
+
+# Publishes, for every public 4D version between the latest LTS and the latest R, one branch
+# (21, 21R2, 21R3, 21R4 ...) with tool4d for Windows, macOS and Linux. A new branch (with
+# 4DBuilder and Build_Application) is created as soon as a new public LTS/R appears in Tools.
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+    inputs:
+      branches:
+        description: 'Branches to process, comma separated (empty = all public versions)'
+        required: false
+        default: ''
+      mode:
+        description: 'auto = update tool4d only (create the branch if missing); full = rebuild 4DBuilder + Build_Application too'
+        type: choice
+        options: [auto, full]
+        default: auto
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sync-tool4d
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    outputs:
+      branches: ${{ steps.r.outputs.branches }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false  # keep github.com requests free of the GITHUB_TOKEN header
+      - id: r
+        env:
+          TOOLS_URL: https://x-access-token:${{ secrets.TOOLS_READ_TOKEN }}@github.com/4eDimension/Tools.git
+          FORCED: ${{ inputs.branches }}
+        run: |
+          if [ -n "$FORCED" ]; then
+            json="$(tr ',' '\n' <<< "$FORCED" | sed 's/ //g' | grep -E '^[0-9]+(R[0-9]+)?$' | jq -R . | jq -sc .)"
+            echo "branches=$json" >> "$GITHUB_OUTPUT"
+            echo "$json"
+          else
+            ./scripts/resolve-versions.sh
+          fi
+
+  sync:
+    needs: resolve
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        branch: ${{ fromJSON(needs.resolve.outputs.branches) }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false  # keep github.com requests free of the GITHUB_TOKEN header
+      - name: Sync ${{ matrix.branch }}
+        env:
+          TOOLS_URL: https://x-access-token:${{ secrets.TOOLS_READ_TOKEN }}@github.com/4eDimension/Tools.git
+          PUBLIC_URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+          MODE: ${{ inputs.mode || 'auto' }}
+        run: ./scripts/sync-branch.sh "${{ matrix.branch }}" "$MODE"
+
+  keepalive:
+    # GitHub disables scheduled workflows after 60 days without repository activity
+    needs: [sync]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: |
+          age=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+          if [ "$age" -gt $((45*24*3600)) ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "chore: keepalive"
+            git push
+          fi
+
+  notify:
+    needs: [resolve, sync]
+    if: always() && (needs.resolve.result == 'failure' || needs.sync.result == 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Sync tool4d failed"
+          if [ -z "$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "$title in:title" --json number --jq '.[0].number')" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" \
+              --body "A run failed: $RUN_URL. Most likely TOOLS_READ_TOKEN expired, or a new 4D version changed the layout."
+          fi

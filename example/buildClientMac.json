@@ -1,0 +1,7 @@
+{
+	"buildName": "MyAppClient",
+	"publishName": "MyAppServer",
+	"compilerOptions": { "targets": ["arm64_macOS_lib", "x86_64_generic"] },
+	"versioning": { "copyright": "Copyright My company", "companyName": "My company" },
+	"signApplication": { "macSignature": false, "adHocSignature": true }
+}

@@ -1,0 +1,6 @@
+{
+	"buildName": "MyApp",
+	"compilerOptions": { "targets": ["x86_64_generic"] },
+	"startElevated": false,
+	"versioning": { "copyright": "Copyright My company", "companyName": "My company" }
+}

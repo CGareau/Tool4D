@@ -1,0 +1,5 @@
+{
+	"buildName": "MyAppServer",
+	"compilerOptions": { "targets": ["x86_64_generic"] },
+	"versioning": { "copyright": "Copyright My company", "companyName": "My company" }
+}

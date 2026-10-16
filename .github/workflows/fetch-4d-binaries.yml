@@ -1,0 +1,61 @@
+name: Fetch 4D binaries
+
+# Downloads 4D Server / 4D Volume Desktop / 4D for each published version with the 4D API key
+# (secret PRODUCT_DOWNLOAD_TOKEN) and stores them as GitHub Releases, so that Build_Application
+# can fetch them from this repository (TOOL4D_DOWNLOAD_BASE) without ever seeing the key.
+on:
+  schedule:
+    - cron: '47 4 * * *'
+  workflow_dispatch:
+    inputs:
+      branches:
+        description: 'Branches to process, comma separated (empty = all public versions)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-4d-binaries
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    outputs:
+      branches: ${{ steps.r.outputs.branches }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false  # keep github.com requests free of the GITHUB_TOKEN header
+      - id: r
+        env:
+          TOOLS_URL: https://x-access-token:${{ secrets.TOOLS_READ_TOKEN }}@github.com/4eDimension/Tools.git
+          FORCED: ${{ inputs.branches }}
+        run: |
+          if [ -n "$FORCED" ]; then
+            json="$(tr ',' '\n' <<< "$FORCED" | sed 's/ //g' | grep -E '^[0-9]+(R[0-9]+)?$' | jq -R . | jq -sc .)"
+            echo "branches=$json" >> "$GITHUB_OUTPUT"
+          else
+            ./scripts/resolve-versions.sh
+          fi
+
+  fetch:
+    needs: resolve
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        branch: ${{ fromJSON(needs.resolve.outputs.branches) }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false  # keep github.com requests free of the GITHUB_TOKEN header
+      - name: Fetch ${{ matrix.branch }}
+        env:
+          PRODUCT_DOWNLOAD_TOKEN: ${{ secrets.PRODUCT_DOWNLOAD_TOKEN }}
+          TOOLS_TOKEN: ${{ secrets.TOOLS_READ_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: ./scripts/fetch-binaries.sh "${{ matrix.branch }}"

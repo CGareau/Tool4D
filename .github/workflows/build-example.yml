@@ -1,0 +1,151 @@
+name: Build example application
+
+# Builds the sample project in ./example with Build_Application and the tool4d of a Tool4D branch:
+#   - standalone (single-user) application
+#   - client + server applications
+# on Windows and on macOS. Copy this file to your own repository and adapt the paths.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Tool4D branch = 4D version (21 = LTS, 21R2, 21R3, 21R4 ...)'
+        required: true
+        default: '21R4'
+      standalone:
+        description: 'Build the single-user (standalone) application'
+        type: boolean
+        default: true
+      client_server:
+        description: 'Build the client and the server applications'
+        type: boolean
+        default: true
+      upload:
+        description: 'Upload the built applications as workflow artifacts'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+env:
+  # Where Build_Application downloads 4D Server / 4D Volume Desktop from (Releases of this repository)
+  TOOL4D_DOWNLOAD_REPO: ${{ github.repository }}
+  TOOL4D_GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+  windows:
+    name: Windows (standalone, client, server)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Get tool4d and Build_Application (branch ${{ inputs.version }})
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ github.repository }}
+          ref: ${{ inputs.version }}
+          path: tools
+          sparse-checkout: |
+            tool4d_win
+            Build_Application
+            4DBuilder
+          persist-credentials: false
+
+      - name: Build
+        shell: cmd
+        env:
+          BUILD_STANDALONE: ${{ inputs.standalone }}
+          BUILD_CS: ${{ inputs.client_server }}
+        run: |
+          SET "PROJECTFILE=%GITHUB_WORKSPACE%\example\Project\MyApp.4DProject"
+          SET "OUTPUTDIR=%GITHUB_WORKSPACE%\Build"
+          MKDIR "%OUTPUTDIR%"
+          REM paths escaped for JSON (\\ instead of \)
+          SET "PROJECTFILE_JSON=%PROJECTFILE:\=\\%"
+          SET "OUTPUTDIR_JSON=%OUTPUTDIR:\=\\%"
+          SET "USERPARAM={\"projectPath\":\"%PROJECTFILE_JSON%\",\"verbose\":true,\"buildStandalone\":%BUILD_STANDALONE%,\"buildClient\":%BUILD_CS%,\"buildServer\":%BUILD_CS%,\"buildNumber\":\"1.0.0\",\"output\":\"%OUTPUTDIR_JSON%\"}"
+          "%GITHUB_WORKSPACE%\tools\tool4d_win\tool4d.exe" --dataless -s "%GITHUB_WORKSPACE%\tools\Build_Application\Project\Build_Application.4DProject" --user-param "%USERPARAM%" > "%GITHUB_WORKSPACE%\build.log" 2>&1
+          EXIT /B 0
+
+      - name: Check the result
+        shell: pwsh
+        run: |
+          if (Test-Path build.log) { Get-Content build.log }
+          Get-ChildItem Build -Recurse -Depth 2 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+          $expected = @()
+          if ('${{ inputs.standalone }}' -eq 'true') { $expected += 'Build\Standalone\MyApp' }
+          if ('${{ inputs.client_server }}' -eq 'true') { $expected += 'Build\Client\MyAppClient', 'Build\Server\MyAppServer' }
+          $missing = $expected | Where-Object { -not (Test-Path $_) }
+          if ($missing) { throw "Not built: $($missing -join ', ')" }
+          if ((Test-Path build.log) -and (Select-String -Path build.log -Pattern '\*\*\*ERROR\*\*\*' -Quiet)) { throw 'Build_Application reported errors' }
+
+      - uses: actions/upload-artifact@v7
+        if: inputs.upload
+        with:
+          name: windows-${{ inputs.version }}
+          path: Build
+          retention-days: 3
+
+  macos:
+    name: macOS (standalone, client, server)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Get tool4d and Build_Application (branch ${{ inputs.version }})
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ github.repository }}
+          ref: ${{ inputs.version }}
+          path: tools
+          sparse-checkout: |
+            tool4d_mac
+            Build_Application
+            4DBuilder
+          persist-credentials: false
+
+      - name: Install Rosetta (tool4d for macOS is an Intel build)
+        run: sudo softwareupdate --install-rosetta --agree-to-license || true
+
+      - name: Check the Apple compiler (needed to compile for Apple silicon)
+        run: |
+          xcode-select -p
+          clang --version
+          xcrun --find clang
+
+      - name: Build
+        env:
+          BUILD_STANDALONE: ${{ inputs.standalone }}
+          BUILD_CS: ${{ inputs.client_server }}
+        run: |
+          PARAM="$(jq -nc --arg p "$GITHUB_WORKSPACE/example/Project/MyApp.4DProject" --arg o "$GITHUB_WORKSPACE/Build" \
+            --argjson st "$BUILD_STANDALONE" --argjson cs "$BUILD_CS" \
+            '{projectPath:$p, verbose:true, buildStandalone:$st, buildClient:$cs, buildServer:$cs, buildNumber:"1.0.0", output:$o}')"
+          # The Apple silicon compiler check is occasionally flaky on hosted runners: retry
+          for attempt in 1 2 3; do
+            rm -rf Build; mkdir -p Build
+            "$GITHUB_WORKSPACE/tools/tool4d_mac/tool4d.app/Contents/MacOS/tool4d" --dataless \
+              -s "$GITHUB_WORKSPACE/tools/Build_Application/Project/Build_Application.4DProject" \
+              --user-param "$PARAM" 2>&1 | tee build.log
+            ! grep -q '\*\*\*ERROR\*\*\*' build.log && break
+            echo "::warning::attempt $attempt reported errors"
+          done
+          find Build -maxdepth 3
+          [ "$BUILD_STANDALONE" != true ] || [ -d Build/Standalone/MyApp.app ]
+          [ "$BUILD_CS" != true ] || { [ -d Build/Client/MyAppClient.app ] && [ -d Build/Server/MyAppServer.app ]; }
+          ! grep -q '\*\*\*ERROR\*\*\*' build.log
+
+      - name: Archive (symbolic links must be kept)
+        if: inputs.upload
+        run: tar -cf build-mac.tar Build
+
+      - uses: actions/upload-artifact@v7
+        if: inputs.upload
+        with:
+          name: macos-${{ inputs.version }}
+          path: build-mac.tar
+          retention-days: 3
