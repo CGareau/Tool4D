@@ -28,6 +28,9 @@ permissions:
   contents: read
 
 env:
+  # Runners: GitHub-hosted by default. To use your own (recommended for regular builds), define the
+  # repository variables RUNNER_WINDOWS / RUNNER_MACOS as JSON, e.g. ["self-hosted","windows"]
+  # and ["self-hosted","macOS","ARM64"] (see README).
   # Where Build_Application downloads 4D Server / 4D Volume Desktop from (Releases of this repository)
   TOOL4D_DOWNLOAD_REPO: ${{ github.repository }}
   TOOL4D_GITHUB_TOKEN: ${{ github.token }}
@@ -35,7 +38,7 @@ env:
 jobs:
   windows:
     name: Windows (standalone, client, server)
-    runs-on: windows-latest
+    runs-on: ${{ fromJSON(vars.RUNNER_WINDOWS || '"windows-latest"') }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -90,7 +93,7 @@ jobs:
 
   macos:
     name: macOS (standalone, client, server)
-    runs-on: macos-latest
+    runs-on: ${{ fromJSON(vars.RUNNER_MACOS || '"macos-latest"') }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -109,6 +112,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Rosetta (tool4d for macOS is an Intel build)
+        if: runner.environment == 'github-hosted'
         run: sudo softwareupdate --install-rosetta --agree-to-license || true
 
       - name: Check the Apple compiler (needed to compile for Apple silicon)

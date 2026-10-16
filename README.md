@@ -176,10 +176,34 @@ Windows code signing (for example with `signtool` and a code signing certificate
 
 ## Continuous integration example
 
-[`.github/workflows/build-example.yml`](.github/workflows/build-example.yml) builds [`example/`](example) on `windows-latest` and `macos-latest`: standalone, client and server. Run it from the *Actions* tab (*Build example application* → *Run workflow*, choose the 4D version) and copy it to your own repository.
+[`.github/workflows/build-example.yml`](.github/workflows/build-example.yml) builds [`example/`](example) on Windows and macOS: standalone, client and server. Run it from the *Actions* tab (*Build example application* → *Run workflow*, choose the 4D version) and copy it to your own repository.
 
-Notes from that workflow:
+### GitHub-hosted or self-hosted runners?
 
-* on `macos-latest` (Apple silicon) install Rosetta first (`softwareupdate --install-rosetta --agree-to-license`);
+The example runs on GitHub-hosted runners (`windows-latest`, `macos-latest`) so that it works out of the box. **For regular builds, your own self-hosted runners are usually the better choice:**
+
+| | GitHub-hosted | Self-hosted |
+|---|---|---|
+| Setup | nothing | a Windows and a Mac machine to install and maintain |
+| Cost | macOS minutes cost several times the Linux price | your own hardware |
+| macOS compiler | Xcode installed by GitHub; the Apple silicon compiler check is occasionally flaky (the example retries) | Xcode / Command Line Tools and Rosetta installed once, stable |
+| Signing | the certificate must be imported from a secret in every run | the certificate stays in the runner's keychain (still use a dedicated keychain, never a personal login) |
+| Speed | clean machine: 4D Server and Volume Desktop (hundreds of MB) are downloaded on each run | the same machine every time: keep a cache or a copy of the archives and use `TOOL4D_DOWNLOAD_BASE` |
+| Isolation | a fresh VM every run | the workspace is reused: clean `Build/` and the downloaded `4D Server.app` / `4D Volume Desktop` folders at the start of each job |
+
+To switch the example to your own runners, define two **repository variables** (Settings → Secrets and variables → Actions → *Variables*; they are not secrets) with the runner labels as JSON:
+
+| Variable | Example |
+|---|---|
+| `RUNNER_WINDOWS` | `["self-hosted","windows"]` |
+| `RUNNER_MACOS` | `["self-hosted","macOS","ARM64"]` |
+
+Prerequisites on the machines: `git`, `curl` and `tar` (macOS also `jq`), Xcode or the Command Line Tools and Rosetta for macOS (`softwareupdate --install-rosetta --agree-to-license`), and, for Windows applications, a Windows machine. Nothing else is installed: `tool4d` comes from this repository.
+
+> **Security:** never run workflows from untrusted pull requests (for example forks of a public repository) on a self-hosted runner: they would run arbitrary code on your machines. Use self-hosted runners only in private repositories, or restrict them to trusted workflows and branches.
+
+### Notes from the example workflow
+
+* on GitHub-hosted `macos-latest` (Apple silicon) Rosetta is installed first, because `tool4d` for macOS is an Intel build (the step is skipped on self-hosted runners);
 * compiling for Apple silicon (`arm64_macOS_lib`) needs Xcode or the Command Line Tools; the compiler check is occasionally flaky on hosted runners, so the macOS build is retried up to 3 times;
 * archive macOS builds with `tar` (bundles contain symbolic links) before uploading them as artifacts.
