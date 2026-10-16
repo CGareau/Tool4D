@@ -47,7 +47,7 @@ MyRepo/
 }
 ```
 
-A 4D license is needed to **run** the built applications, not to build them. Signing with a Developer ID certificate and notarization (macOS), and code signing on Windows, are up to you.
+A 4D license is needed to **run** the built applications, not to build them. Signing with a Developer ID certificate and notarization are covered in [Sign and notarize on macOS](#sign-and-notarize-on-macos-optional); Windows code signing is up to you.
 
 ### 2. Get the tools
 
@@ -101,6 +101,78 @@ tools\tool4d_win\tool4d.exe --dataless -s tools\Build_Application\Project\Build_
 | Server | `Build/Server/MyAppServer.app` | `Build/Server/MyAppServer/` |
 
 `tool4d` quits when it is done: check that the folders exist and that the log has no `***ERROR***` line to detect a failed build.
+
+## Sign and notarize on macOS (optional)
+
+`Build_Application` can **sign** the applications it builds; **notarization** (required for apps distributed outside the Mac App Store, so that Gatekeeper accepts them) is a separate step you run afterwards. Both need an Apple Developer account and a *Developer ID Application* certificate. Without them, keep the default ad hoc signature (`"adHocSignature": true`): the app runs on the machine that built it, but not on other Macs without a warning.
+
+### Sign during the build
+
+In `buildStandaloneMac.json`, `buildClientMac.json` and `buildServerMac.json`:
+
+```json
+"signApplication": {
+  "macSignature": true,
+  "macCertificate": "Developer ID Application: Your Name (TEAMID)"
+}
+```
+
+The certificate must be installed in a keychain that is available to the build. On your own Mac it already is. On a CI runner, import it into a temporary keychain first.
+
+### In GitHub Actions
+
+Create these repository **secrets** (Settings → Secrets and variables → Actions → *Secrets*; never *Variables*, which are readable in clear):
+
+| Secret | Value |
+|---|---|
+| `APPLE_CERTIFICATE_P12` | your Developer ID Application certificate exported from Keychain Access as `.p12`, encoded with `base64 -i certificate.p12` |
+| `APPLE_CERTIFICATE_PASSWORD` | password chosen when exporting the `.p12` |
+| `KEYCHAIN_PASSWORD` | any random password, used for the temporary keychain |
+| `NOTARY_APPLE_ID` | your Apple ID |
+| `NOTARY_TEAM_ID` | your Apple Developer Team ID |
+| `NOTARY_PASSWORD` | an [app-specific password](https://support.apple.com/102654) for that Apple ID |
+
+Add this step **before** the build, and the cleanup step at the end of the job:
+
+```yaml
+- name: Import the signing certificate
+  env:
+    APPLE_CERTIFICATE_P12: ${{ secrets.APPLE_CERTIFICATE_P12 }}
+    APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+    KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+  run: |
+    KEYCHAIN="$RUNNER_TEMP/build.keychain-db"
+    echo -n "$APPLE_CERTIFICATE_P12" | base64 --decode > "$RUNNER_TEMP/cert.p12"
+    security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+    security set-keychain-settings -lut 21600 "$KEYCHAIN"
+    security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+    security import "$RUNNER_TEMP/cert.p12" -P "$APPLE_CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN"
+    security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+    security list-keychains -d user -s "$KEYCHAIN" $(security list-keychains -d user | tr -d '"')
+    rm "$RUNNER_TEMP/cert.p12"
+
+# ... build with macSignature = true ...
+
+- name: Remove the temporary keychain
+  if: always()
+  run: security delete-keychain "$RUNNER_TEMP/build.keychain-db" || true
+```
+
+### Notarize
+
+Notarize the built application (for a client/server pair, the server and the client app each), then staple the ticket:
+
+```bash
+ditto -c -k --keepParent "Build/Standalone/MyApp.app" MyApp.zip
+xcrun notarytool submit MyApp.zip --apple-id "$NOTARY_APPLE_ID" --team-id "$NOTARY_TEAM_ID" --password "$NOTARY_PASSWORD" --wait
+xcrun stapler staple "Build/Standalone/MyApp.app"
+```
+
+The submission must end with `status: Accepted`. If it is rejected, `xcrun notarytool log <submission-id> ...` explains why (usually a binary that is not signed with the hardened runtime and a secure timestamp). Re-archive the stapled `.app` afterwards (`tar` or `ditto`), and keep your Apple credentials in secrets only.
+
+> These steps follow Apple's documented tooling; the sample workflow in this repository builds with the ad hoc signature and does not sign or notarize.
+
+Windows code signing (for example with `signtool` and a code signing certificate) is not handled by `Build_Application` either.
 
 ## Continuous integration example
 
