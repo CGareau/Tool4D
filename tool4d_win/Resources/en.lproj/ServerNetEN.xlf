@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Translation file for 4D products.
+   Copyright (C) 2009-2013 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" source-language="en-US" target-language="en-US" product-version="v14">
+    <header>
+      <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+      <group resname="ServerNet_Errors">
+        <trans-unit id="1" resname="ERR_srvr_1">
+          <source>Read failed</source>
+          <target>Read failed</target>
+        </trans-unit>
+        <trans-unit id="2" resname="SNET_UNKNOWN_ERROR">
+          <source>Unknown error code</source>
+          <target>Unknown error code</target>
+        </trans-unit>
+        <trans-unit id="3" resname="ERR_srvr_2">
+          <source>Write failed</source>
+          <target>Write failed</target>
+        </trans-unit>
+        <trans-unit id="4" resname="ERR_srvr_3">
+          <source>Connection is broken</source>
+          <target>Connection is broken</target>
+        </trans-unit>
+        <trans-unit id="5" resname="ERR_srvr_4">
+          <source>Connection failed</source>
+          <target>Connection failed</target>
+        </trans-unit>
+        <trans-unit id="6" resname="ERR_srvr_6">
+          <source>End-point is already reading</source>
+          <target>End-point is already reading</target>
+        </trans-unit>
+        <trans-unit id="7" resname="ERR_srvr_7">
+          <source>End-point is not reading</source>
+          <target>End-point is not reading</target>
+        </trans-unit>
+        <trans-unit id="8" resname="ERR_srvr_9">
+          <source>Invalid parameter</source>
+          <target>Invalid parameter</target>
+        </trans-unit>
+        <trans-unit id="9" resname="ERR_srvr_10">
+          <source>Invalid internal state</source>
+          <target>Invalid internal state</target>
+        </trans-unit>
+        <trans-unit id="10" resname="ERR_srvr_12">
+          <source>Failed to start listener</source>
+          <target>Failed to start listener</target>
+        </trans-unit>
+        <trans-unit id="12" resname="ERR_srvr_14">
+          <source>Session not found</source>
+          <target>Session not found</target>
+        </trans-unit>
+        <trans-unit id="13" resname="ERR_srvr_15">
+          <source>Postponed session expired</source>
+          <target>Postponed session expired</target>
+        </trans-unit>
+        <trans-unit id="14" resname="ERR_srvr_16">
+          <source>NULL end-point</source>
+          <target>NULL end-point</target>
+        </trans-unit>
+        <trans-unit id="15" resname="ERR_srvr_17">
+          <source>Read failed (timeout error)</source>
+          <target>Read failed (timeout error)</target>
+        </trans-unit>
+        <trans-unit id="16" resname="ERR_srvr_18">
+          <source>Write failed (timeout error)</source>
+          <target>Write failed (timeout error)</target>
+        </trans-unit>
+        <trans-unit id="17" resname="ERR_srvr_19">
+          <source>Keep-alive failed</source>
+          <target>Keep-alive failed</target>
+        </trans-unit>
+        <trans-unit id="18" resname="ERR_srvr_20">
+          <source>SSL certificate not found</source>
+          <target>SSL certificate not found</target>
+        </trans-unit>
+        <trans-unit id="19" resname="ERR_srvr_5">
+          <source>Network resource temporarily unavailable</source>
+          <target>Network resource temporarily unavailable</target>
+        </trans-unit>
+        <trans-unit id="20" resname="ERR_srvr_8">
+          <source>Too much sockets to watch</source>
+          <target>Too much sockets to watch</target>
+        </trans-unit>
+        <trans-unit id="21" resname="ERR_srvr_11">
+          <source>Encryption failed</source>
+          <target>Encryption failed</target>
+        </trans-unit>
+        <trans-unit id="22" resname="ERR_srvr_21">
+          <source>Can't subscribe to multicast</source>
+          <target>Can't subscribe to multicast</target>
+        </trans-unit>
+        <trans-unit id="23" resname="ERR_srvr_22">
+          <source>Socket already watched</source>
+          <target>Socket already watched</target>
+        </trans-unit>
+        <trans-unit id="24" resname="ERR_srvr_23">
+          <source>Socket stream is over</source>
+          <target>Socket stream is over</target>
+        </trans-unit>
+        <trans-unit id="25" resname="ERR_srvr_30">
+          <source>Failed to create a connected socket</source>
+          <target>Failed to create a connected socket</target>
+        </trans-unit>
+        <trans-unit id="26" resname="ERR_srvr_31">
+          <source>Failed to create a listening socket</source>
+          <target>Failed to create a listening socket</target>
+        </trans-unit>
+        <trans-unit id="27" resname="ERR_srvr_40">
+          <source>Failed to init SSL framework</source>
+          <target>Failed to init SSL framework</target>
+        </trans-unit>
+        <trans-unit id="28" resname="ERR_srvr_41">
+          <source>Failed to create a new SSL context</source>
+          <target>Failed to create a new SSL context</target>
+        </trans-unit>
+        <trans-unit id="29" resname="ERR_srvr_42">
+          <source>SSL read failed</source>
+          <target>SSL read failed</target>
+        </trans-unit>
+        <trans-unit id="30" resname="ERR_srvr_43">
+          <source>SSL write failed</source>
+          <target>SSL write failed</target>
+        </trans-unit>
+        <trans-unit id="31" resname="ERR_srvr_44">
+          <source>SSL shutdown failed</source>
+          <target>SSL shutdown failed</target>
+        </trans-unit>
+        <trans-unit id="32" resname="ERR_srvr_45">
+          <source>Failed to get SSL certificate</source>
+          <target>Failed to get SSL certificate</target>
+        </trans-unit>
+        <trans-unit id="33" resname="ERR_srvr_46">
+          <source>Failed to set SSL certificate</source>
+          <target>Failed to set SSL certificate</target>
+        </trans-unit>
+        <trans-unit id="34" resname="ERR_srvr_47">
+          <source>Failed to get SSL private key</source>
+          <target>Failed to get SSL private key</target>
+        </trans-unit>
+        <trans-unit id="35" resname="ERR_srvr_48">
+          <source>Failed to set SSL private key</source>
+          <target>Failed to set SSL private key</target>
+        </trans-unit>
+        <trans-unit id="36" resname="ERR_srvr_49">
+          <source>SSL internal error : {p1}</source>
+          <target>SSL internal error : {p1}</target>
+        </trans-unit>
+        <trans-unit id="37" resname="ERR_srvr_50">
+          <source>Socket timeout</source>
+          <target>Socket timeout</target>
+        </trans-unit>
+        <trans-unit id="38" resname="ERR_srvr_51">
+          <source>Socket connection broken</source>
+          <target>Socket connection broken</target>
+        </trans-unit>
+        <trans-unit id="39" resname="ERR_srvr_52">
+          <source>Resource unavailable</source>
+          <target>Resource unavailable</target>
+        </trans-unit>
+        <trans-unit id="40" resname="ERR_srvr_53">
+          <source>Socket read failed</source>
+          <target>Socket read failed</target>
+        </trans-unit>
+        <trans-unit id="41" resname="ERR_srvr_54">
+          <source>Socket write failed</source>
+          <target>Socket write failed</target>
+        </trans-unit>
+        <trans-unit id="42" resname="ERR_srvr_55">
+          <source>Unexpected socket family</source>
+          <target>Unexpected socket family</target>
+        </trans-unit>
+        <trans-unit id="43" resname="ERR_srvr_56">
+          <source>Failed to secure connection with SSL</source>
+          <target>Failed to secure connection with SSL</target>
+        </trans-unit>
+        <trans-unit id="44" resname="ERR_srvr_58">
+          <source>Could not set certificate and/or private key</source>
+          <target>Could not set certificate and/or private key</target>
+        </trans-unit>
+        <trans-unit id="45" resname="ERR_srvr_59">
+          <source>Socket shut down by peer</source>
+          <target>Socket shut down by peer</target>
+        </trans-unit>
+        <trans-unit id="76" resname="ERR_srvr_71">
+          <source>Unknow digest algorithm</source>
+          <target>Unknow digest algorithm</target>
+        </trans-unit>
+        <trans-unit id="77" resname="ERR_srvr_72">
+          <source>Invalid encoding type</source>
+          <target>Invalid encoding type</target>
+        </trans-unit>
+        <trans-unit id="46" resname="ERR_srvr_101">
+          <source>Failed to acquire lock</source>
+          <target>Failed to acquire lock</target>
+        </trans-unit>
+        <trans-unit id="47" resname="ERR_srvr_102">
+          <source>Localizer not available</source>
+          <target>Localizer not available</target>
+        </trans-unit>
+        <trans-unit id="48" resname="ERR_srvr_103">
+          <source>Localization failed</source>
+          <target>Localization failed</target>
+        </trans-unit>
+        <trans-unit id="49" resname="ERR_srvr_301">
+          <source>Bonjour name is too long</source>
+          <target>Bonjour name is too long</target>
+        </trans-unit>
+        <trans-unit id="50" resname="ERR_srvr_302">
+          <source>Do not fit in Bonjour packet</source>
+          <target>Do not fit in Bonjour packet</target>
+        </trans-unit>
+        <trans-unit id="51" resname="ERR_srvr_303">
+          <source>Malformed Bonjour packet</source>
+          <target>Malformed Bonjour packet</target>
+        </trans-unit>
+        <trans-unit id="52" resname="ERR_srvr_304">
+          <source>Invalid Bonjour attribute</source>
+          <target>Invalid Bonjour attribute</target>
+        </trans-unit>
+        <trans-unit id="53" resname="ERR_srvr_305">
+          <source>Bonjour text should be ASCII</source>
+          <target>Bonjour text should be ASCII</target>
+        </trans-unit>
+        <trans-unit id="54" resname="ERR_srvr_306">
+          <source>Bonjour network failure</source>
+          <target>Bonjour network failure</target>
+        </trans-unit>
+        <trans-unit id="55" resname="ERR_srvr_307">
+          <source>Bonjour record already exists</source>
+          <target>Bonjour record already exists</target>
+        </trans-unit>
+        <trans-unit id="56" resname="ERR_srvr_308">
+          <source>Bonjour record not found</source>
+          <target>Bonjour record not found</target>
+        </trans-unit>
+        <trans-unit id="57" resname="ERR_srvr_309">
+          <source>Bonjour server is not running</source>
+          <target>Bonjour server is not running</target>
+        </trans-unit>
+        <trans-unit id="58" resname="ERR_srvr_401">
+          <source>Need more bytes to get complete frame header.</source>
+          <target>Need more bytes to get complete frame header.</target>
+        </trans-unit>
+        <trans-unit id="59" resname="ERR_srvr_402">
+          <source>Frame header is incorrect.</source>
+          <target>Frame header is incorrect.</target>
+        </trans-unit>
+        <trans-unit id="60" resname="ERR_srvr_403">
+          <source>Need more bytes to get frame payload.</source>
+          <target>Need more bytes to get frame payload.</target>
+        </trans-unit>
+        <trans-unit id="61" resname="ERR_srvr_404">
+          <source>Invalid state for reading WebSocket.</source>
+          <target>Invalid state for reading WebSocket.</target>
+        </trans-unit>
+        <trans-unit id="62" resname="ERR_srvr_405">
+          <source>Invalid state for writing WebSocket.</source>
+          <target>Invalid state for writing WebSocket.</target>
+        </trans-unit>
+        <trans-unit id="63" resname="ERR_srvr_406">
+          <source>Invalid state for closing WebSocket.</source>
+          <target>Invalid state for closing WebSocket.</target>
+        </trans-unit>
+        <trans-unit id="64" resname="ERR_srvr_407">
+          <source>WebSocket operation valid only in OPEN state.</source>
+          <target>WebSocket operation valid only in OPEN state.</target>
+        </trans-unit>
+        <trans-unit id="65" resname="ERR_srvr_408">
+          <source>WebSocket message already started.</source>
+          <target>WebSocket message already started.</target>
+        </trans-unit>
+        <trans-unit id="66" resname="ERR_srvr_409">
+          <source>WebSocket message not started.</source>
+          <target>WebSocket message not started.</target>
+        </trans-unit>
+        <trans-unit id="67" resname="ERR_srvr_410">
+          <source>WebSocket protocol error.</source>
+          <target>WebSocket protocol error.</target>
+        </trans-unit>
+        <trans-unit id="68" resname="ERR_srvr_411">
+          <source>WebSocket opening handshake needs more bytes.</source>
+          <target>WebSocket opening handshake needs more bytes.</target>
+        </trans-unit>
+        <trans-unit id="69" resname="ERR_srvr_412">
+          <source>Connection to WebSocket server failed (not a 101 response).</source>
+          <target>Connection to WebSocket server failed (not a 101 response).</target>
+        </trans-unit>
+        <trans-unit id="70" resname="ERR_srvr_413">
+          <source>Invalid server response (does not comply with WebSocket specification).</source>
+          <target>Invalid server response (does not comply with WebSocket specification).</target>
+        </trans-unit>
+        <trans-unit id="71" resname="ERR_srvr_414">
+          <source>Wrong WebSocket acceptance key.</source>
+          <target>Wrong WebSocket acceptance key.</target>
+        </trans-unit>
+        <trans-unit id="72" resname="ERR_srvr_415">
+          <source>Invalid WebSocket client request (start of opening handshake).</source>
+          <target>Invalid WebSocket client request (start of opening handshake).</target>
+        </trans-unit>
+        <trans-unit id="73" resname="ERR_srvr_69">
+          <source>The connection to the server has been lost (SSL error: {p1})</source>
+          <target>The connection to the server has been lost (SSL error: {p1})</target>
+        </trans-unit>
+        <trans-unit id="74" resname="ERR_srvr_70">
+          <source>Packet has been compromised (SSL error: {p1})</source>
+          <target>Packet has been compromised (SSL error: {p1})</target>
+        </trans-unit>
+        <trans-unit id="75" resname="ERR_srvr_79">
+          <source>HTTP Client received an invalid response (header shouldn't be that big).</source>
+          <target>HTTP Client received an invalid response (header shouldn't be that big).</target>
+        </trans-unit>
+        <trans-unit id="78" resname="ERR_srvr_75">
+          <source>SSL handshake failed.</source>
+          <target>SSL handshake failed.</target>
+        </trans-unit>
+        <trans-unit id="79" resname="ERR_srvr_76">
+          <source>Failed to verify SSL certificate (SSL error: {p1}).</source>
+          <target>Failed to verify SSL certificate (SSL error: {p1}).</target>
+        </trans-unit>
+        <trans-unit id="80" resname="ERR_srvr_77">
+          <source>Failed to generate SSL certificate.</source>
+          <target>Failed to generate SSL certificate.</target>
+        </trans-unit>
+        <trans-unit id="81" resname="ERR_srvr_78">
+          <source>Failed to generate SSL private key.</source>
+          <target>Failed to generate SSL private key.</target>
+        </trans-unit>
+        <trans-unit id="82" resname="ERR_srvr_27">
+          <source>The connection to the server cannot be reestablished.</source>
+          <target>The connection to the server cannot be reestablished.</target>
+        </trans-unit>
+        <trans-unit id="83" resname="ERR_srvr_28">
+          <source>Your session has expired.</source>
+          <target>Your session has expired.</target>
+        </trans-unit>
+        <trans-unit id="84" resname="ERR_srvr_80">
+          <source>Failed to verify Server's Common Name (CN). Client received "{p1}" instead of "{p2}".</source>
+          <target>Failed to verify Server's Common Name (CN). Client received "{p1}" instead of "{p2}".</target>
+        </trans-unit>
+        <trans-unit id="85" resname="ERR_srvr_81">
+          <source>Failed to open KeyStore.</source>
+          <target>Failed to open KeyStore.</target>
+        </trans-unit>
+        <trans-unit id="86" resname="ERR_srvr_82">
+          <source>The certificate "{p1}" could not be found in the list of certificates.</source>
+          <target>The certificate "{p1}" could not be found in the list of certificates.</target>
+        </trans-unit>
+        <trans-unit id="87" resname="ERR_srvr_83">
+          <source>Certificate in KeyStore does not contain a private key.</source>
+          <target>Certificate in KeyStore does not contain a private key.</target>
+        </trans-unit>
+        <trans-unit id="FailedStartSQLServer" resname="SQL_ERROR_FAILED_TO_START_SERVER">
+          <source>Failed to launch SQL Server. Please make sure that the port assigned to the SQL Server is not used by another application.
+If SSL is enabled, make sure the certificate (key.pem and cert.pem) exists at the appropriate location.</source>
+          <target>Failed to launch SQL Server. Please make sure that the port assigned to the SQL Server is not used by another application.
+If SSL is enabled, make sure the certificate (key.pem and cert.pem) exists at the appropriate location.</target>
+        </trans-unit>
+        <trans-unit id="FailedLocateSSLCertificate" resname="SQL_ERROR_FAILED_TO_LOCATE_SSL_CERTIFICATE">
+          <source>Failed to launch SQL Server: the SSL certificate files (key.pem/cert.pem) cannot be found.</source>
+          <target>Failed to launch SQL Server: the SSL certificate files (key.pem/cert.pem) cannot be found.</target>
+        </trans-unit>
+        <trans-unit id="85" resname="ERR_srvr_33">
+          <source>DNS request failed</source>
+          <target>DNS request failed</target>
+        </trans-unit>
+        <trans-unit id="86" resname="ERR_srvr_34">
+          <source>Unknown domain name or DNS server unreachable</source>
+          <target>Unknown domain name or DNS server unreachable</target>
+        </trans-unit>
+        <trans-unit id="87" resname="ERR_srvr_35">
+          <source>Connection timeout</source>
+          <target>Connection timeout</target>
+        </trans-unit>
+        <trans-unit id="88" resname="ERR_srvr_36">
+          <source>DNS request timeout</source>
+          <target>DNS request timeout</target>
+        </trans-unit>
+        <trans-unit id="89" resname="ERR_srvr_73">
+          <source>SSL connection failed.</source>
+          <target>SSL connection failed.</target>
+        </trans-unit>
+      </group>
+      <group resname="MIME">
+        <trans-unit id="1" resname="ERR_MIME_1">
+          <source>Unknown Error.</source>
+          <target>Unknown Error.</target>
+        </trans-unit>
+        <trans-unit id="2" resname="ERR_MIME_2">
+          <source>Invalid type used for attribute : {p1}.</source>
+          <target>Invalid type used for attribute : {p1}.</target>
+        </trans-unit>
+        <trans-unit id="3" resname="ERR_MIME_3">
+          <source>"from" attribute is missing.</source>
+          <target>"from" attribute is missing.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="ERR_MIME_4">
+          <source>A recipient attribute is missing.</source>
+          <target>A recipient attribute is missing.</target>
+        </trans-unit>
+        <trans-unit id="5" resname="ERR_MIME_5">
+          <source>Invalid email address : {p1}.</source>
+          <target>Invalid email address : {p1}.</target>
+        </trans-unit>
+        <trans-unit id="6" resname="ERR_MIME_6">
+          <source>Invalid email address type for attribute : {p1}.</source>
+          <target>Invalid email address type for attribute : {p1}.</target>
+        </trans-unit>
+        <trans-unit id="7" resname="ERR_MIME_7">
+          <source>Invalid email body for attribute : {p1}.</source>
+          <target>Invalid email body for attribute : {p1}.</target>
+        </trans-unit>
+        <trans-unit id="8" resname="ERR_MIME_8">
+          <source>Invalid attachment : {p1}.</source>
+          <target>Invalid attachment : {p1}.</target>
+        </trans-unit>
+        <trans-unit id="9" resname="ERR_MIME_9">
+          <source>Invalid date format.</source>
+          <target>Invalid date format.</target>
+        </trans-unit>
+        <trans-unit id="10" resname="ERR_MIME_10">
+          <source>Message is empty.</source>
+          <target>Message is empty.</target>
+        </trans-unit>
+        <trans-unit id="11" resname="ERR_MIME_11">
+          <source>Invalid email header.</source>
+          <target>Invalid email header.</target>
+        </trans-unit>
+        <trans-unit id="12" resname="ERR_MIME_12">
+          <source>The following property is not writable : {p1}.</source>
+          <target>The following property is not writable : {p1}.</target>
+        </trans-unit>
+      </group>
+      <group resname="SMTP">
+        <trans-unit id="FailedToSendMessage" resname="SMTP_FAILED_TO_SEND_MESSAGE">
+          <source>Failed to send message.</source>
+          <target>Failed to send message.</target>
+        </trans-unit>
+        <trans-unit id="FailedToCheckConnection" resname="SMTP_FAILED_TO_CHECK_CONNECTION">
+          <source>Failed to check connection.</source>
+          <target>Failed to check connection.</target>
+        </trans-unit>
+        <trans-unit id="1" resname="ERR_SMTP_1">
+          <source>Unknown Error.</source>
+          <target>Unknown Error.</target>
+        </trans-unit>
+        <trans-unit id="2" resname="ERR_SMTP_2">
+          <source>Connection to SMTP server failed.</source>
+          <target>Connection to SMTP server failed.</target>
+        </trans-unit>
+        <trans-unit id="3" resname="ERR_SMTP_3">
+          <source>Already connected to SMTP server.</source>
+          <target>Already connected to SMTP server.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="ERR_SMTP_4">
+          <source>An error occurred during greeting with SMTP Server: {p1}.</source>
+          <target>An error occurred during greeting with SMTP Server: {p1}.</target>
+        </trans-unit>
+        <trans-unit id="5" resname="ERR_SMTP_5">
+          <source>Timeout error.</source>
+          <target>Timeout error.</target>
+        </trans-unit>
+        <trans-unit id="6" resname="ERR_SMTP_6">
+          <source>An error is returned by SMTP Server: "{p1}".</source>
+          <target>An error is returned by SMTP Server: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="7" resname="ERR_SMTP_7">
+          <source>No recipient defined.</source>
+          <target>No recipient defined.</target>
+        </trans-unit>
+        <trans-unit id="8" resname="ERR_SMTP_8">
+          <source>No expeditor defined.</source>
+          <target>No expeditor defined.</target>
+        </trans-unit>
+        <trans-unit id="9" resname="ERR_SMTP_9">
+          <source>Insufficient system storage: {p1}.</source>
+          <target>Insufficient system storage: {p1}.</target>
+        </trans-unit>
+        <trans-unit id="10" resname="ERR_SMTP_10">
+          <source>SMTP exceeded storage allocation: {p1}.</source>
+          <target>SMTP exceeded storage allocation: {p1}.</target>
+        </trans-unit>
+        <trans-unit id="11" resname="ERR_SMTP_11">
+          <source>Can not add command to pipeline: one or more commands have already been sent to the server.</source>
+          <target>Can not add command to pipeline: one or more commands have already been sent to the server.</target>
+        </trans-unit>
+        <trans-unit id="12" resname="ERR_SMTP_12">
+          <source>STARTTLS command failed.</source>
+          <target>STARTTLS command failed.</target>
+        </trans-unit>
+        <trans-unit id="13" resname="ERR_SMTP_13">
+          <source>Cannot establish a secured connection to SMTP Server.</source>
+          <target>Cannot establish a secured connection to SMTP Server.</target>
+        </trans-unit>
+        <trans-unit id="14" resname="ERR_SMTP_14">
+          <source>SMTP Authentication failed.</source>
+          <target>SMTP Authentication failed.</target>
+        </trans-unit>
+        <trans-unit id="15" resname="ERR_SMTP_15">
+          <source>Unsupported authentication mechanism.</source>
+          <target>Unsupported authentication mechanism.</target>
+        </trans-unit>
+      </group>
+      <group resname="POP3">
+        <trans-unit id="FailedToSendRequest" resname="POP3_FAILED_TO_SEND_REQUEST">
+          <source>Failed to send request.</source>
+          <target>Failed to send request.</target>
+        </trans-unit>
+        <trans-unit id="FailedToCheckConnection" resname="POP3_FAILED_TO_CHECK_CONNECTION">
+          <source>Failed to check connection.</source>
+          <target>Failed to check connection.</target>
+        </trans-unit>
+        <trans-unit id="1" resname="ERR_POP3_1">
+          <source>Unknown Error.</source>
+          <target>Unknown Error.</target>
+        </trans-unit>
+        <trans-unit id="2" resname="ERR_POP3_2">
+          <source>Connection to POP3 server failed.</source>
+          <target>Connection to POP3 server failed.</target>
+        </trans-unit>
+        <trans-unit id="3" resname="ERR_POP3_3">
+          <source>Already connected to POP3 server.</source>
+          <target>Already connected to POP3 server.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="ERR_POP3_4">
+          <source>An error occurred during greeting with POP3 Server: {p1}.</source>
+          <target>An error occurred during greeting with POP3 Server: {p1}.</target>
+        </trans-unit>
+        <trans-unit id="5" resname="ERR_POP3_5">
+          <source>Timeout error.</source>
+          <target>Timeout error.</target>
+        </trans-unit>
+        <trans-unit id="6" resname="ERR_POP3_6">
+          <source>An error is returned by POP3 Server: "{p1}".</source>
+          <target>An error is returned by POP3 Server: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="7" resname="ERR_POP3_7">
+          <source>POP3 STLS command failed.</source>
+          <target>POP3 STLS command failed.</target>
+        </trans-unit>
+        <trans-unit id="8" resname="ERR_POP3_8">
+          <source>Cannot establish a secured connection to POP3 Server.</source>
+          <target>Cannot establish a secured connection to POP3 Server.</target>
+        </trans-unit>
+        <trans-unit id="9" resname="ERR_POP3_9">
+          <source>POP3 Authentication failed.</source>
+          <target>POP3 Authentication failed.</target>
+        </trans-unit>
+        <trans-unit id="10" resname="ERR_POP3_10">
+          <source>POP3 Unsupported authentication mechanism.</source>
+          <target>POP3 Unsupported authentication mechanism.</target>
+        </trans-unit>
+      </group>
+      <group resname="IMAP">
+        <trans-unit id="FailedToSendRequest" resname="IMAP_FAILED_TO_SEND_REQUEST">
+          <source>Failed to send request.</source>
+          <target>Failed to send request.</target>
+        </trans-unit>
+        <trans-unit id="FailedToCheckConnection" resname="IMAP_FAILED_TO_CHECK_CONNECTION">
+          <source>Failed to check connection.</source>
+          <target>Failed to check connection.</target>
+        </trans-unit>
+        <trans-unit id="1" resname="ERR_IMAP_1">
+          <source>Unknown Error.</source>
+          <target>Unknown Error.</target>
+        </trans-unit>
+        <trans-unit id="2" resname="ERR_IMAP_2">
+          <source>Connection to IMAP server failed.</source>
+          <target>Connection to IMAP server failed.</target>
+        </trans-unit>
+        <trans-unit id="3" resname="ERR_IMAP_3">
+          <source>Already connected to IMAP server.</source>
+          <target>Already connected to IMAP server.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="ERR_IMAP_4">
+          <source>An error occurred during greeting with IMAP Server: {p1}.</source>
+          <target>An error occurred during greeting with IMAP Server: {p1}.</target>
+        </trans-unit>
+        <trans-unit id="5" resname="ERR_IMAP_5">
+          <source>Timeout error.</source>
+          <target>Timeout error.</target>
+        </trans-unit>
+        <trans-unit id="6" resname="ERR_IMAP_6">
+          <source>An error is returned by IMAP Server: "{p1}".</source>
+          <target>An error is returned by IMAP Server: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="7" resname="ERR_IMAP_7">
+          <source>IMAP STARTTLS command failed.</source>
+          <target>IMAP STARTTLS command failed.</target>
+        </trans-unit>
+        <trans-unit id="8" resname="ERR_IMAP_8">
+          <source>Cannot establish a secured connection to IMAP Server.</source>
+          <target>Cannot establish a secured connection to IMAP Server.</target>
+        </trans-unit>
+        <trans-unit id="9" resname="ERR_IMAP_9">
+          <source>IMAP Authentication failed.</source>
+          <target>IMAP Authentication failed.</target>
+        </trans-unit>
+        <trans-unit id="10" resname="ERR_IMAP_10">
+          <source>IMAP Unsupported authentication mechanism.</source>
+          <target>IMAP Unsupported authentication mechanism.</target>
+        </trans-unit>
+        <trans-unit id="11" resname="ERR_IMAP_11">
+          <source>IMAP SELECT command failed: "{p1}".</source>
+          <target>IMAP SELECT command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="12" resname="ERR_IMAP_12">
+          <source>IMAP STATUS command failed: "{p1}".</source>
+          <target>IMAP STATUS command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="13" resname="ERR_IMAP_13">
+          <source>IMAP LIST command failed.</source>
+          <target>IMAP LIST command failed.</target>
+        </trans-unit>
+        <trans-unit id="14" resname="ERR_IMAP_14">
+          <source>IMAP FETCH command failed: "{p1}".</source>
+          <target>IMAP FETCH command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="15" resname="ERR_IMAP_15">
+          <source>No mailbox selected.</source>
+          <target>No mailbox selected.</target>
+        </trans-unit>
+        <trans-unit id="16" resname="ERR_IMAP_16">
+          <source>IMAP SEARCH command failed: "{p1}".</source>
+          <target>IMAP SEARCH command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="17" resname="ERR_IMAP_17">
+          <source>IMAP STORE command failed: "{p1}".</source>
+          <target>IMAP STORE command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="18" resname="ERR_IMAP_18">
+          <source>IMAP COPY command failed: "{p1}".</source>
+          <target>IMAP COPY command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="19" resname="ERR_IMAP_19">
+          <source>IMAP MOVE command failed: "{p1}".</source>
+          <target>IMAP MOVE command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="20" resname="ERR_IMAP_20">
+          <source>IMAP MOVE command not supported by IMAP Server.</source>
+          <target>IMAP MOVE command not supported by IMAP Server.</target>
+        </trans-unit>
+        <trans-unit id="21" resname="ERR_IMAP_21">
+          <source>IMAP APPEND command failed: "{p1}".</source>
+          <target>IMAP APPEND command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="22" resname="ERR_IMAP_22">
+          <source>IMAP EXPUNGE command failed: "{p1}".</source>
+          <target>IMAP EXPUNGE command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="23" resname="ERR_IMAP_23">
+          <source>IMAP CREATE command failed: "{p1}".</source>
+          <target>IMAP CREATE command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="24" resname="ERR_IMAP_24">
+          <source>IMAP DELETE command failed: "{p1}".</source>
+          <target>IMAP DELETE command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="25" resname="ERR_IMAP_25">
+          <source>IMAP RENAME command failed: "{p1}".</source>
+          <target>IMAP RENAME command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="26" resname="ERR_IMAP_26">
+          <source>IMAP LSUB command failed.</source>
+          <target>IMAP LSUB command failed.</target>
+        </trans-unit>
+        <trans-unit id="27" resname="ERR_IMAP_27">
+          <source>IMAP SUBSCRIBE command failed: "{p1}".</source>
+          <target>IMAP SUBSCRIBE command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="28" resname="ERR_IMAP_28">
+          <source>IMAP UNSUBSCRIBE command failed: "{p1}".</source>
+          <target>IMAP UNSUBSCRIBE command failed: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="29" resname="ERR_IMAP_29">
+          <source>Bad IMAP command argument: "{p1}".</source>
+          <target>Bad IMAP command argument: "{p1}".</target>
+        </trans-unit>
+        <trans-unit id="30" resname="ERR_IMAP_30">
+          <source>IMAP operation was interrupted.</source>
+          <target>IMAP operation was interrupted.</target>
+        </trans-unit>
+      </group>
+      <group resname="HTTPClass">
+        <trans-unit id="1" resname="ERR_HTCL_1">
+          <source>Unknown Error.</source>
+          <target>Unknown Error.</target>
+        </trans-unit>
+        <trans-unit id="2" resname="ERR_HTCL_2">
+          <source>URL parameter is missing.</source>
+          <target>URL parameter is missing.</target>
+        </trans-unit>
+        <trans-unit id="3" resname="ERR_HTCL_3">
+          <source>Bad datatype value.</source>
+          <target>Bad datatype value.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="ERR_HTCL_4">
+          <source>Bad timeout value.</source>
+          <target>Bad timeout value.</target>
+        </trans-unit>
+        <trans-unit id="5" resname="ERR_HTCL_5">
+          <source>Bad protocol value.</source>
+          <target>Bad protocol value.</target>
+        </trans-unit>
+        <trans-unit id="6" resname="ERR_HTCL_6">
+          <source>Invalid URL parameter.</source>
+          <target>Invalid URL parameter.</target>
+        </trans-unit>
+        <trans-unit id="7" resname="ERR_HTCL_7">
+          <source>Unsupported charset in "encoding" attribute.</source>
+          <target>Unsupported charset in "encoding" attribute.</target>
+        </trans-unit>
+        <trans-unit id="8" resname="ERR_HTCL_8">
+          <source>'onData' callback is missing.</source>
+          <target>'onData' callback is missing.</target>
+        </trans-unit>
+        <trans-unit id="9" resname="ERR_HTCL_9">
+          <source>Unsupported type for "body" attribute.</source>
+          <target>Unsupported type for "body" attribute.</target>
+        </trans-unit>
+        <trans-unit id="10" resname="ERR_HTCL_10">
+          <source>HTTP Agent was unable to find an available connection before connection timeout expired.</source>
+          <target>HTTP Agent was unable to find an available connection before connection timeout expired.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

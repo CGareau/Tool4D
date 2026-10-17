@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Translation file for 4D products.
+    Copyright (C) 2025 4D SAS.
+    This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0" xmlns:d4="http://www.4d.com">
+    <file datatype="x-STR#" original="undefined" source-language="en-US" target-language="en-US" product-version="v20">
+        <header>
+            <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+            <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+            <note>\r, \t and \n are meta-characters.</note>
+        </header>
+        <body>
+         <group resname="WebStudioSetup">
+            <trans-unit id="1" resname="WSS_DialogTitle">
+                <source>Some settings must be set up to use Qodly Studio.</source>
+                <target>Some settings must be set up to use Qodly Studio.</target>
+            </trans-unit>
+            <trans-unit id="2" resname="WSS_WebAdminWillBeStarted">
+                <source>The Web admin server will be (re) started</source>
+                <target>The Web admin server will be (re) started</target>
+            </trans-unit>
+            <trans-unit id="4" resname="WSS_WebServerWillBeStarted">
+                <source>The Web server will be (re) started</source>
+                <target>The Web server will be (re) started</target>
+            </trans-unit>
+            <trans-unit id="6" resname="WSS_ProjectLevelTitle">
+                <source>At project level:</source>
+                <target>At project level:</target>
+            </trans-unit>
+            <trans-unit id="7" resname="WSS_WebAdminLevelTitle">
+                <source>For the Web admin server:</source>
+                <target>For the Web admin server:</target>
+            </trans-unit>
+            <trans-unit id="8" resname="WSS_WebServerWillAcceptConnection">
+                <source>The Web server must accept connections</source>
+                <target>The Web server must accept connections</target>
+            </trans-unit>
+            <trans-unit id="9" resname="WSS_ScalableSessionWillBeEnabled">
+                <source>Scalable sessions must be enabled</source>
+                <target>Scalable sessions must be enabled</target>
+            </trans-unit>
+            <trans-unit id="10" resname="WSS_RESTWillBeEnabled">
+                <source>The project must be exposed as a REST Server</source>
+                <target>The project must be exposed as a REST Server</target>
+            </trans-unit>
+            <trans-unit id="11" resname="WSS_WebStudioAccessWillBeEnabled">
+                <source>Qodly studio access must be enabled</source>
+                <target>Qodly studio access must be enabled</target>
+            </trans-unit>
+            <trans-unit id="12" resname="WSS_WebAdminWillAcceptConnection">
+                <source>The Web admin server must accept connections</source>
+                <target>The Web admin server must accept connections</target>
+            </trans-unit>
+            <trans-unit id="13" resname="WSS_AskUserConfirmation">
+                <source>Would you like to enable those settings?</source>
+                <target>Would you like to enable those settings?</target>
+            </trans-unit>
+            <trans-unit id="14" resname="WSS_ScalableSessionNote">
+                <source>the preemptive mode is always enabled with {ScalableSessionLink}. The 4D compiler will automatically evaluate the thread-safety property of each piece of {ThreadSafeWebCodeLink} and return errors in case of incompatibility.</source>
+                <target>the preemptive mode is always enabled with {ScalableSessionLink}. The 4D compiler will automatically evaluate the thread-safety property of each piece of {ThreadSafeWebCodeLink} and return errors in case of incompatibility.</target>
+            </trans-unit>
+            <trans-unit id="15" resname="WSS_ScalableSessionLink">
+                <source>https://developer.4d.com/docs/WebServer/sessions#session-implementation</source>
+                <target>https://developer.4d.com/docs/WebServer/sessions#session-implementation</target>
+            </trans-unit>
+            <trans-unit id="16" resname="WSS_ScalableSessionLinkTitle">
+                <source>scalable sessions</source>
+                <target>scalable sessions</target>
+            </trans-unit>
+            <trans-unit id="17" resname="WSS_ThreadSafeWebCodeLink">
+                <source>https://developer.4d.com/docs/WebServer/preemptiveWeb#thread-safety-of-4d-web-code</source>
+                <target>https://developer.4d.com/docs/WebServer/preemptiveWeb#thread-safety-of-4d-web-code</target>
+            </trans-unit>
+            <trans-unit id="18" resname="WSS_ThreadSafeWebCodeLinkTitle">
+                <source>web-related code</source>
+                <target>web-related code</target>
+            </trans-unit>
+            <trans-unit id="20" resname="WSS_OkButtonTitle">
+                <source>Enable settings</source>
+                <target>Enable settings</target>
+            </trans-unit>
+            <trans-unit id="21" resname="WSS_ScalableSessionNoteTitle">
+                <source>Note about scalable sessions</source>
+                <target>Note about scalable sessions</target>
+            </trans-unit>
+            <trans-unit id="22" resname="WSS_WebStudioWillNotWorkProperly">
+                <source>Note that Qodly Studio won't work properly if the settings above are not enabled.</source>
+                <target>Note that Qodly Studio won't work properly if the settings above are not enabled.</target>
+            </trans-unit>
+            <trans-unit id="23" resname="WSS_RESTAuthenticationWillBeEnabled">
+                <source>REST authentication through {beginItalic}ds.authentify(){endItalic} function must be enabled</source>
+                <target>REST authentication through {beginItalic}ds.authentify(){endItalic} function must be enabled</target>
+            </trans-unit>
+            <trans-unit id="24" resname="WSS_ForceLoginInRoleFileWillBeEnabled">
+                <source>{beginItalic}forceLogin{endItalic} attribute will be set to true in the roles.json file</source>
+                <target>{beginItalic}forceLogin{endItalic} attribute will be set to true in the roles.json file</target>
+            </trans-unit>
+            <trans-unit id="25" resname="WSS_OnRESTAuthenticationMethodWillBeRemoved">
+                <source>{beginItalic}On REST Authentication{endItalic} database method will be moved into the system bin</source>
+                <target>{beginItalic}On REST Authentication{endItalic} database method will be moved into the system bin</target>
+            </trans-unit>
+            <trans-unit id="26" resname="WSS_RESTAccessGroupWillBeUndefined">
+                <source>The read/write REST access group will be removed</source>
+                <target>The read/write REST access group will be removed</target>
+            </trans-unit>
+            <trans-unit id="27" resname="WSS_OnRESTAuthenticationNoteTitle">
+                <source>Note about REST authentication</source>
+                <target>Note about REST authentication</target>
+            </trans-unit>
+            <trans-unit id="28" resname="WSS_OnRESTAuthenticationNote">
+                <source>enabling {OnRESTAuthenticationLink} through {beginItalic}ds.authentify(){endItalic} function will make the following change(s):</source>
+                <target>enabling {OnRESTAuthenticationLink} through {beginItalic}ds.authentify(){endItalic} function will make the following change(s):</target>
+            </trans-unit>
+            <trans-unit id="29" resname="WSS_OnRESTAuthenticationLink">
+                <source>https://developer.4d.com/docs/settings/web#activate-rest-authentication-through-dsauthentify-function</source>
+                <target>https://developer.4d.com/docs/settings/web#activate-rest-authentication-through-dsauthentify-function</target>
+            </trans-unit>
+            <trans-unit id="30" resname="WSS_OnRESTAuthenticationLinkTitle">
+                <source>REST authentication</source>
+                <target>REST authentication</target>
+            </trans-unit>
+            <trans-unit id="31" resname="WSS_OnRESTAuthenticationNeedProjectRestart">
+                <source>REST authentication will work completely after restarting the project.</source>
+                <target>REST authentication will work completely after restarting the project.</target>
+            </trans-unit>
+            <trans-unit id="32" resname="WSS_OnRESTAuthenticationMethodInSystemBin">
+                <source>{beginItalic}On REST Authentication{endItalic} database method can be retrieved in the bin.</source>
+                <target>{beginItalic}On REST Authentication{endItalic} database method can be retrieved in the bin.</target>
+            </trans-unit>
+         </group>
+         <group resname="WebStudioMiscellaneous">
+            <trans-unit resname="WSM_WebServerWillBeStarted">
+                <source>The Web server will be started.</source>
+                <target>The Web server will be started.</target>
+            </trans-unit>
+            <trans-unit resname="WSM_WebAdminWillBeStarted">
+                <source>The Web admin server will be started.</source>
+                <target>The Web admin server will be started.</target>
+            </trans-unit>
+            <trans-unit resname="WSM_BothWebAndAdminServersWillBeStarted">
+                <source>Both project and admin Web servers will be started.</source>
+                <target>Both project and admin Web servers will be started.</target>
+            </trans-unit>
+            <trans-unit resname="WSM_AskToContinue">
+                <source>Would you like to continue?</source>
+                <target>Would you like to continue?</target>
+            </trans-unit>
+         </group>
+        </body>
+    </file>
+</xliff>

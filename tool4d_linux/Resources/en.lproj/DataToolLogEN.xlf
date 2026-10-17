@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <!--                  
+   Translation file for 4D products.
+   Copyright (C) 2014 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="en-US">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+            <prop prop-type="prefix">MSC6_</prop>
+         </prop-group>
+         <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+         <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+         <note>\r, \t and \n are meta-characters.</note>
+      </header>
+      <body>
+		<group id="8000" resname="Window titles">
+			<trans-unit id="6" resname="MSC0_Compact">
+               <source>Compact</source>
+               <target>Compact</target>
+            </trans-unit>
+			<trans-unit id="9" resname="MSC0_Repair">
+               <source>Repair</source>
+               <target>Repair</target>
+			</trans-unit>
+      <trans-unit id="10" resname="MSC0_Encrypt">
+        <source>Encrypt</source>
+        <target>Encrypt</target>
+      </trans-unit>
+      <trans-unit id="11" resname="MSC0_Decrypt">
+        <source>Decrypt</source>
+        <target>Decrypt</target>
+      </trans-unit>
+
+    </group>
+		
+		<group id="8007" resname="MSC_LogMessages">
+            <trans-unit id="1" resname="MSC_InvisibleCharInObjectName">
+               <source>The {Name} object name contains one or more invisible characters.</source>
+               <target>The {Name} object name contains one or more invisible characters.</target>
+            </trans-unit>
+            <trans-unit id="2" resname="MSC_verifyUnicity">
+               <source>The name of the {Name} object of the {Name2} form (page {Name3}) is not unique.</source>
+               <target>The name of the {Name} object of the {Name2} form (page {Name3}) is not unique.</target>
+            </trans-unit>
+         </group>
+         
+		<group id="8009" resname="Verify steps">
+            <trans-unit id="1">
+               <source>Additional errors</source>
+               <target>Additional errors</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Checking tables</source>
+               <target>Checking tables</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Checking indexes</source>
+               <target>Checking indexes</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Move original</source>
+               <target>Move original</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Move the new file to the original location</source>
+               <target>Move the new file to the original location</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Move original index</source>
+               <target>Move original index</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Move the new index file to the original location</source>
+               <target>Move the new index file to the original location</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Verify the internal database of the structure</source>
+               <target>Verify the internal database of the structure</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Check Bittables for segments</source>
+               <target>Check Bittables for segments</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Initialization of the resources for the verify operation</source>
+               <target>Initialization of the resources for the verify operation</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Move original log file</source>
+               <target>Move original log file</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Opening the database in maintenance mode</source>
+               <target>Opening the database in maintenance mode</target>
+            </trans-unit>
+			<trans-unit id="13">
+               <source>Additional warnings</source>
+               <target>Additional warning(s)</target>
+            </trans-unit>
+        </group>
+		<group id="8010" resname="Verify Application Progress">
+            <trans-unit id="1">
+               <source>Check Database Methods</source>
+               <target>Check Database Methods</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Check Project Methods</source>
+               <target>Check Project Methods</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Check Trigger Methods</source>
+               <target>Check Trigger Methods</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Check Project Forms</source>
+               <target>Check Project Forms</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Check Table Forms</source>
+               <target>Check Table Forms</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Check User and Group information</source>
+               <target>Check User and Group information</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Check Orphan Methods</source>
+               <target>Check Orphan Methods</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Check the folders of the Explorer</source>
+               <target>Check the folders of the Explorer</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Check help tips</source>
+               <target>Check help tips</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Check menu bars and menus</source>
+               <target>Check menu bars and menus</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Check lists</source>
+               <target>Check lists</target>
+            </trans-unit>
+			 <trans-unit id="12">
+               <source>Check Orphan Forms</source>
+               <target>Check Orphan Forms</target>
+            </trans-unit>
+			<trans-unit id="13">
+               <source>Check Picture Library</source>
+               <target>Check Picture Library</target>
+            </trans-unit>
+			<trans-unit id="14">
+               <source>Check Tables And Fields Names</source>
+               <target>Check Tables And Fields Names</target>
+            </trans-unit>
+			 
+        </group>
+		<group id="8011" resname="Verify Application Errors">
+            <trans-unit id="1">
+               <source>Referenced style sheet not found for this object: {Name}</source>
+               <target>Referenced style sheet not found for this object: {Name}</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>This form could not be properly loaded: {Name}</source>
+               <target>This form could not be properly loaded: {Name}</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>{Name} points on the same method as {Name2}</source>
+               <target>{Name} points on the same method as {Name2}</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>The method resource CC4D of id {Name} is not used anywhere</source>
+               <target>The method resource CC4D of id {Name} is not used anywhere</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>The object {Name} is referencing an unknown table</source>
+               <target>The object {Name} is referencing an unknown table</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The object {Name} is referencing an unknown field</source>
+               <target>The object {Name} is referencing an unknown field</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>The object {Name} is referencing an unknown list</source>
+               <target>The object {Name} is referencing an unknown list</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>The object {Name} is referencing an unknown help tip</source>
+               <target>The object {Name} is referencing an unknown help tip</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Could not load the method resources for {Name}</source>
+               <target>Could not load the method resources for {Name}</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>The form {Name} is referencing an unknown menu bar</source>
+               <target>The form {Name} is referencing an unknown menu bar</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Initialization error ({Name})</source>
+               <target>Initialization error ({Name})</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>The initialization of the resources failed. Please try repairing the application file</source>
+               <target>The initialization of the resources failed. Please try repairing the application file</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>No data information was found for the table {Name}</source>
+               <target>No data information was found for the table {Name}</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>An error occurred while checking the table {Name} (the error code is {Name2})</source>
+               <target>An error occurred while checking the table {Name} (the error code is {Name2})</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>The folder contains a reference to a table that does not exist ({Name})</source>
+               <target>The folder contains a reference to a table that does not exist ({Name})</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>The folder contains a reference to a project method that does not exist ({Name})</source>
+               <target>The folder contains a reference to a project method that does not exist ({Name})</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>The folder contains a reference to a form that does not exist ({Name})</source>
+               <target>The folder contains a reference to a form that does not exist ({Name})</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>The folder contains a reference to an object of unknown type ({Name})</source>
+               <target>The folder contains a reference to an object of unknown type ({Name})</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>An error occurred while checking the table {Name}: user canceled</source>
+               <target>An error occurred while checking the table {Name}: user canceled</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>The folder contains a reference to itself ({Name})</source>
+               <target>The folder contains a reference to itself ({Name})</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>{Name} points on the same form as {Name2}</source>
+               <target>{Name} points on the same form as {Name2}</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>The object {Name} is referencing an unknown display format</source>
+               <target>The object {Name} is referencing an unknown display format</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>{Name} points on the same form list as {Name2}</source>
+               <target>{Name} points on the same form list as {Name2}</target>
+            </trans-unit>
+			 <trans-unit id="24">
+               <source>The form resource FO4D of id {Name} is not used anywhere</source>
+               <target>The form resource FO4D of id {Name} is not used anywhere</target>
+            </trans-unit>
+			 <trans-unit id="25">
+               <source>The form name {Name} is not unique</source>
+               <target>The form name {Name} is not unique</target>
+            </trans-unit>
+			<trans-unit id="26">
+               <source>The form {Name} has been renamed {Name2}</source>
+               <target>The form {Name} has been renamed {Name2}</target>
+            </trans-unit>
+			<trans-unit id="27">
+               <source>The form {Name} cannot be renamed</source>
+               <target>The form {Name} cannot be renamed</target>
+            </trans-unit>
+			<trans-unit id="28">
+             <source>This form {Name} could not be properly loaded: The resource FO4D of id {Name2} is missing</source>
+             <target>This form {Name} could not be properly loaded: resource FO4D of id {Name2} is missing</target>
+            </trans-unit>
+			<trans-unit id="29">
+               <source>The resource {Name} of id {Name2} is not unique.</source>
+               <target>The resource {Name} of id {Name2} is not unique.</target>
+            </trans-unit>
+			<trans-unit id="30">
+               <source>Removed duplicate resource {Name} of id {Name2}.</source>
+               <target>Removed duplicate resource {Name} of id {Name2}.</target>
+            </trans-unit>
+			<trans-unit id="31">
+               <source>Assigned a new ID to duplicate resource {Name} of id {Name2}.</source>
+               <target>Assigned a new ID to duplicate resource {Name} of id {Name2}.</target>
+            </trans-unit>
+			<trans-unit id="32">
+               <source>{Name} refers to a resource {Name2} ID = {Name3}.</source>
+               <target>{Name} refers to a resource {Name2} ID = {Name3}.</target>
+            </trans-unit>
+			<trans-unit id="33">
+               <source>{Name} refers to a deprecated picture. Picture library ID = {Name2}, Name = {Name3}.</source>
+               <target>{Name} refers to a deprecated picture. Picture library ID = {Name2}, Name = {Name3}.</target>
+            </trans-unit>
+            <trans-unit id="34">
+               <source>Deprecated picture: ID = {Name}, Name = {Name2}.</source>
+               <target>Deprecated picture: ID = {Name}, Name = {Name2}.</target>
+            </trans-unit>
+			<trans-unit id="35">
+               <source>{Name} uses a deprecated picture format: PICT.</source>
+               <target>{Name} uses a deprecated picture format: PICT.</target>
+            </trans-unit>
+            <trans-unit id="36">
+               <source>{Name} uses a deprecated picture format for printing on platform {Name2}: PICT.</source>
+               <target>{Name} uses a deprecated picture format for printing on platform {Name2}: PICT.</target>
+            </trans-unit>
+        	<trans-unit id="37">
+               <source>Deprecated picture for printing on platform {Name3}: ID = {Name} Name = {Name2}.</source>
+               <target>Deprecated picture for printing on platform {Name3}: ID = {Name} Name = {Name2}.</target>
+            </trans-unit>
+			<trans-unit id="38">
+               <source>{Name} refers to a deprecated picture for printing on platform {Name4}. Picture library ID = {Name2}, Name = {Name3}.</source>
+               <target>{Name} refers to a deprecated picture for printing on platform {Name4}. Picture library ID = {Name2}, Name = {Name3}.</target>
+            </trans-unit>          
+		</group>
+        <group id="8012" resname="Verify Method Errors">
+            <trans-unit id="32700">
+               <source>CC4D invalid length</source>
+               <target>CC4D invalid length</target>
+            </trans-unit>
+            <trans-unit id="32701">
+               <source>unknown 4D command</source>
+               <target>unknown 4D command</target>
+            </trans-unit>
+            <trans-unit id="32702">
+               <source>unknown 4D token</source>
+               <target>unknown 4D token</target>
+            </trans-unit>
+            <trans-unit id="32703">
+               <source>unknown 4D operator</source>
+               <target>unknown 4D operator</target>
+            </trans-unit>
+            <trans-unit id="32704">
+               <source>invalid constant type</source>
+               <target>invalid constant type</target>
+            </trans-unit>
+            <trans-unit id="32705">
+               <source>invalid table number</source>
+               <target>invalid table number</target>
+            </trans-unit>
+            <trans-unit id="32706">
+               <source>invalid field number</source>
+               <target>invalid field number</target>
+            </trans-unit>
+            <trans-unit id="32707">
+               <source>CC4D loading failed</source>
+               <target>CC4D loading failed</target>
+            </trans-unit>
+            <trans-unit id="32708">
+               <source>Variable name containing dots or square brackets</source>
+               <target>Variable name containing dots or square brackets</target>
+            </trans-unit>
+            <trans-unit id="32709">
+               <source>The method name "{Name}" contains dots or square brackets</source>
+               <target>The method name "{Name}" contains dots or square brackets</target>
+                <note>For Object notation compatibility</note>
+            </trans-unit>
+            <trans-unit id="32710">
+               <source>The Table "{Name}" contains dots or square brackets</source>
+               <target>The Table "{Name}" contains dots or square brackets</target>
+                <note>For Object notation compatibility</note>
+            </trans-unit>
+            <trans-unit id="32711">
+               <source>The field "{Name2}" in table "{Name}" contains dots or square brackets</source>
+               <target>The field "{Name2}" in table "{Name}" contains dots or square brackets</target>
+               <note>For Object notation compatibility</note>
+            </trans-unit>
+            <trans-unit id="32712">
+               <source>The variable "{Name}" in form "{Name2}" contains dots or square brackets</source>
+               <target>The variable "{Name}" in form "{Name2}" contains dots or square brackets</target>
+               <note>For Object notation compatibility</note>
+            </trans-unit>
+        </group>
+        <group id="8013" resname="Verify menu bars and menus Errors">
+            <trans-unit id="1">
+               <source>Menu {Name}: the menu item {Name2} has an invalid automatic action</source>
+               <target>Menu {Name}: the menu item {Name2} has an invalid automatic action</target>
+            </trans-unit>
+			<trans-unit id="2">
+               <source>{Name}: the menu item {Name2} refers to a deprecated picture. Picture Library ID = {Name3}, Name = {Name4}.</source>
+               <target>{Name}: the menu item {Name2} refers to a deprecated picture. Picture Library ID = {Name3}, Name = {Name4}.</target>
+            </trans-unit>
+			<trans-unit id="3">
+               <source>{Name}: the menu item {Name2} refers to a resource {Name3} ID = {Name4}.</source>
+               <target>{Name}: the menu item {Name2} refers to a resource {Name3} ID = {Name4}.</target>
+            </trans-unit>
+			<trans-unit id="4">
+               <source>{Name}: the menu item {Name2} incorrect picture reference = {Name3}.</source>
+               <target>{Name}: the menu item {Name2} incorrect picture reference = {Name3}.</target>
+            </trans-unit>
+			<trans-unit id="5">
+               <source>{Name}: Background picture refers to a deprecated picture. Picture Library ID = {Name2}, Name = {Name3}.</source>
+               <target>{Name}: Background picture refers to a deprecated picture. Picture Library ID = {Name2}, Name = {Name3}.</target>
+            </trans-unit>
+			<trans-unit id="6">
+               <source>{Name}: Background picture refers to a resource {Name2}.</source>
+               <target>{Name}: Background picture refers to a resource {Name2}.</target>
+            </trans-unit>
+			<trans-unit id="7">
+               <source>{Name}: Background picture, incorrect picture reference = {Name3}.</source>
+               <target>{Name}: Background picture, incorrect picture reference = {Name3}.</target>
+            </trans-unit>
+         </group>
+        <group id="8014" resname="Verify Lists Errors">
+            <trans-unit id="1">
+               <source>List ID={Name} exists but is not referenced by the list manager.</source>
+               <target>List ID={Name} exists but is not referenced by the list manager.</target>
+            </trans-unit>
+         </group>
+        <group id="8020" resname="Verify SecurityManager">
+            <trans-unit id="1">
+               <source>UNRECOVERABLE: No {Name} component.</source>
+               <target>UNRECOVERABLE: No {Name} component.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The {Name} default user does not exist.</source>
+               <target>The {Name} default user does not exist.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Cannot continue because of previous errors.</source>
+               <target>Cannot continue because of previous errors.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Same name for users {Name} and {Name2}.</source>
+               <target>Same name for users {Name} and {Name2}.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Same name for groups {Name} and {Name2}.</source>
+               <target>Same name for groups {Name} and {Name2}.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The group {Name2} is referencing a nonexistent member {Name}.</source>
+               <target>The group {Name2} is referencing a nonexistent member {Name}.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Creation of the {Name} default user.</source>
+               <target>Creation of the {Name} default user.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Removal of the user {Name} that has the same name as {Name2}.</source>
+               <target>Removal of the user {Name} that has the same name as {Name2}.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Removal of the group {Name} which has the same name as {Name2}.</source>
+               <target>Removal of the group {Name} which has the same name as {Name2}.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Unavailable reference to {Name} removed from group {Name2}.</source>
+               <target>Unavailable reference to {Name} removed from group {Name2}.</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Unavailable admin user id={Name} name:{Name2} removed from user&apos;s list.</source>
+               <target>Unavailable admin user id={Name} name:{Name2} removed from user&apos;s list.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Unavailable admin group id={Name} name:{Name2} removed from group&apos;s list.</source>
+               <target>Unavailable admin group id={Name} name:{Name2} removed from group&apos;s list.</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>Unavailable designer user id={Name} name:{Name2} removed from user&apos;s list.</source>
+               <target>Unavailable designer user id={Name} name:{Name2} removed from user&apos;s list.</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Unavailable designer group id={Name} name:{Name2} removed from group&apos;s list.</source>
+               <target>Unavailable designer group id={Name} name:{Name2} removed from group&apos;s list.</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>
