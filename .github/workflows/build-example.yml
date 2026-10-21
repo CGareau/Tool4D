@@ -85,6 +85,25 @@ jobs:
           # older Build4D versions log a harmless ERROR line when no license file is configured
           if ((Test-Path build.log) -and (Select-String -Path build.log -Pattern '\*\*\*ERROR\*\*\*' | Where-Object { $_.Line -notmatch 'License file checking' })) { throw 'Build_Application reported errors' }
 
+      - name: Compile with 4DBuilder (4DZ)
+        shell: cmd
+        run: |
+          SET "MAKEFILE=%GITHUB_WORKSPACE%\example\make.json"
+          SET "OUTPUTDIR=%GITHUB_WORKSPACE%\Build"
+          MKDIR "%OUTPUTDIR%"
+          REM paths escaped for JSON (\\ instead of \)
+          SET "MAKEFILE_JSON=%MAKEFILE:\=\\%"
+          SET "OUTPUTDIR_JSON=%OUTPUTDIR:\=\\%"
+          SET "USERPARAM={\"output\":\"%OUTPUTDIR_JSON%\",\"makeFile\":\"%MAKEFILE_JSON%\",\"buildNumber\":\"1\",\"verbose\":true,\"config\":\"release\"}"
+          "%GITHUB_WORKSPACE%\tools\tool4d_win\tool4d.exe" --dataless -s "%GITHUB_WORKSPACE%\tools\4DBuilder\Project\builder.4DProject" --user-param "%USERPARAM%" > "%GITHUB_WORKSPACE%\compile.log" 2>&1
+          EXIT /B 0
+
+      - name: Check the compiled project
+        shell: pwsh
+        run: |
+          if (Test-Path compile.log) { Get-Content compile.log }
+          if (-not (Test-Path 'Build\release\example.4dbase\MyApp.4DZ')) { throw 'Compilation failed: MyApp.4DZ not built' }
+
       - uses: actions/upload-artifact@v7
         if: inputs.upload
         with:
@@ -144,6 +163,15 @@ jobs:
           [ "$BUILD_CS" != true ] || { [ -d Build/Client/MyAppClient.app ] && [ -d Build/Server/MyAppServer.app ]; }
           # older Build4D versions log a harmless ERROR line when no license file is configured
           ! { grep '\*\*\*ERROR\*\*\*' build.log | grep -vq 'License file checking'; }
+
+      - name: Compile with 4DBuilder (4DZ)
+        run: |
+          PARAM="$(jq -nc --arg m "$GITHUB_WORKSPACE/example/make.json" --arg o "$GITHUB_WORKSPACE/Build" \
+            '{output:$o, makeFile:$m, buildNumber:"1", verbose:true, config:"release"}')"
+          "$GITHUB_WORKSPACE/tools/tool4d_mac/tool4d.app/Contents/MacOS/tool4d" --dataless \
+            -s "$GITHUB_WORKSPACE/tools/4DBuilder/Project/builder.4DProject" \
+            --user-param "$PARAM" 2>&1 | tee compile.log
+          [ -f Build/release/example.4dbase/MyApp.4DZ ]
 
       - name: Archive (symbolic links must be kept)
         if: inputs.upload

@@ -4,8 +4,9 @@
 // Three sources, chosen with environment variables (no credential is stored in this project):
 //  1. TOOL4D_DOWNLOAD_REPO ("owner/repository"): the archive is an asset of the GitHub Release
 //       <tag> of that repository, tag = 21R4-100203 (R) or 21-100624 (LTS), asset = <os>_<zip>
-//     (e.g. win_4D_Server.zip). TOOL4D_GITHUB_TOKEN (optional, needed for a private repository)
-//     is sent as "Authorization: Bearer".
+//     (e.g. win_4D_Server.zip). Public repository: direct download, nothing else needed.
+//     TOOL4D_GITHUB_TOKEN (only for a private repository) is sent as "Authorization: Bearer"
+//     and the asset is looked up through the GitHub API.
 //  2. TOOL4D_DOWNLOAD_BASE (URL): same layout on any HTTP server: <base>/<tag>/<asset>.
 //  3. otherwise product-download.4d.com, which requires TOOL4D_TOKEN
 //     (an API key delivered by 4D, appended as ?token=...).
@@ -25,7 +26,12 @@ $asset:=$os+"_"+Replace string($zip; "%20"; "_")
 $ghToken:=getEnvVariable("TOOL4D_GITHUB_TOKEN")
 
 Case of 
+	: (($repo#"") && ($ghToken=""))
+		// Public repository: direct download of the Release asset. No API call, so no rate limit.
+		$cmd:="curl -fL -o \""+$path+"\" \"https://github.com/"+$repo+"/releases/download/"+$tag+"/"+$asset+"\""
+		
 	: ($repo#"")
+		// With a token (private repository): through the GitHub API
 		$apiUrl:="https://api.github.com/repos/"+$repo+"/releases"
 		$headers:=New object("Accept"; "application/vnd.github+json"; "User-Agent"; "Build_Application")
 		If ($ghToken#"")
@@ -50,7 +56,7 @@ Case of
 			End if 
 			$cmd:=$cmd+"-H \"Accept: application/octet-stream\" -o \""+$path+"\" \""+$apiUrl+"/assets/"+String($assetId)+"\""
 		Else 
-			LOG EVENT(Into system standard outputs; "***ERROR*** Asset "+$asset+" not found in release "+$tag+" of "+$repo+"\n")
+			LOG EVENT(Into system standard outputs; "***ERROR*** Asset "+$asset+" not found in release "+$tag+" of "+$repo+" (GitHub API answered "+(($request.response#Null) ? String($request.response.status) : "nothing")+")\n")
 			// 404 on purpose: the caller reports "Download failed"
 			$cmd:="curl -fsS -o \""+$path+"\" \""+$apiUrl+"/tags/"+$tag+"/missing/"+$asset+"\""
 		End if 

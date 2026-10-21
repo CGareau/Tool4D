@@ -25,12 +25,13 @@ if [ "$mode" = "builder" ]; then
   rm -rf "$out/Build_Application/ProjectDemo/.github" "$out/Build_Application/Resources/key"
   find "$out" -name '.DS_Store' -delete
   # personal home paths left in comments
-  grep -rIlE '^[[:space:]]*//.*/Users/[A-Za-z0-9._-]+/' "$out/4DBuilder" "$out/Build_Application/Project" 2>/dev/null | while IFS= read -r f; do
+  { grep -rIlE '^[[:space:]]*//.*/Users/[A-Za-z0-9._-]+/' "$out/4DBuilder" "$out/Build_Application/Project" 2>/dev/null || true; } | while IFS= read -r f; do
     sed -i.bak -E '/^[[:space:]]*\/\/.*\/Users\/[A-Za-z0-9._-]+\//d' "$f" && rm -f "$f.bak"
   done
   # Apple signing identity ("Developer ID Application: NAME (TEAMID)") in default settings / demo json
-  grep -rIlE 'Developer ?ID ?Application: ?[A-Za-z .]+ ?\([A-Z0-9]{10}\)' "$out" 2>/dev/null | while IFS= read -r f; do
+  { grep -rIlE 'Developer ?ID ?Application: ?[A-Za-z .]+ ?\([A-Z0-9]{10}\)' "$out" 2>/dev/null || true; } | while IFS= read -r f; do
     sed -i.bak -E 's/Developer ?ID ?Application: ?[A-Za-z .]+ ?\([A-Z0-9]{10}\)/Developer ID Application: YOUR NAME (TEAMID)/g' "$f" && rm -f "$f.bak"
   done
   python3 -I "$here/scripts/patch_methods.py" "$out/Build_Application" "$here/templates"
+  python3 -I "$here/scripts/patch_builder.py" "$out/4DBuilder"
 fi

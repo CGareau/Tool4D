@@ -62,7 +62,7 @@ In a workflow: `actions/checkout` with `repository: CGareau/Tool4D`, `ref: 21R4`
 | Environment variable | Value |
 |---|---|
 | `TOOL4D_DOWNLOAD_REPO` | `CGareau/Tool4D` — archives come from the Releases of this repository |
-| `TOOL4D_GITHUB_TOKEN` | optional GitHub token, avoids anonymous API rate limits (`${{ github.token }}` in Actions) |
+| `TOOL4D_GITHUB_TOKEN` | only for a **private** copy of this repository: a token with read access (the archives are then looked up through the GitHub API). Not needed here: the Releases are downloaded directly, without any API call or rate limit |
 | `TOOL4D_DOWNLOAD_BASE` | alternative: your own server, layout `<base>/<branch>-<build>/<os>_<archive>` (e.g. `21R4-100203/win_4D_Server.zip`) |
 
 ### 4. Run it
@@ -91,6 +91,19 @@ tools\tool4d_win\tool4d.exe --dataless -s tools\Build_Application\Project\Build_
 | `buildClient`, `buildServer` | client and server applications (the server embeds the client for automatic updates) |
 | `forceClientUpdate` | force clients to update (version in `x.y.z` form) |
 | `verbose` | print the build log |
+
+### Compile only (4DBuilder)
+
+`4DBuilder` compiles a project to a `.4dbase` containing the `.4DZ`, without building an application. It needs a `make.json` next to the `Project` folder (`{}` is enough: the project in the same folder is built) — see [`example/make.json`](example/make.json):
+
+```bash
+./tools/tool4d_mac/tool4d.app/Contents/MacOS/tool4d --dataless \
+  -s tools/4DBuilder/Project/builder.4DProject \
+  --user-param '{"output":"/abs/path/Build","makeFile":"/abs/path/MyRepo/make.json","buildNumber":"1","verbose":true,"config":"release"}'
+# -> Build/release/<folder of make.json>.4dbase/<project>.4DZ
+```
+
+On Windows, give native paths with `\\` in the JSON (`"output":"D:\\a\\MyRepo\\Build"`), as in the example workflow.
 
 ### 5. Result
 
