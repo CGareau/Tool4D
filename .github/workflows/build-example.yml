@@ -34,6 +34,7 @@ env:
   # Where Build_Application downloads 4D Server / 4D Volume Desktop from (Releases of this repository)
   TOOL4D_DOWNLOAD_REPO: ${{ github.repository }}
   TOOL4D_GITHUB_TOKEN: ${{ github.token }}
+  GITHUB_TOKEN: ${{ github.token }}   # used by the 4D Package Manager to download the project dependencies
 
 jobs:
   windows:

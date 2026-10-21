@@ -1,0 +1,340 @@
+name: Build continue (Windows)
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: Version applicative a injecter dans le manifeste
+        required: true
+        type: string
+  pull_request:
+  push:
+    paths:
+      - 'Project/**'
+      # Pour tester le workflow depuis une branche sans le fusionner dans main.
+      - '.github/workflows/**'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version applicative (facultative)
+        required: false
+        type: string
+
+run-name: >-
+  ${{ github.event_name == 'pull_request' && format('{0} ({1})', github.event.pull_request.title, vars.VERSION4D) || github.event_name == 'push' && format('{0} ({1})', github.event.head_commit.message, vars.VERSION4D) || format('Build Windows - {0} ({1})', github.ref_name, vars.VERSION4D) }}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-continue-${{ github.repository }}-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  Preflight-check:
+    # Les PR externes restent exclues
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verifier les variables requises
+        shell: bash
+        env:
+          APPNAME: ${{ vars.APPNAME }}
+          VERSION4D: ${{ vars.VERSION4D }}
+        run: |
+          missing=()
+  
+          if [[ -z "${APPNAME//[[:space:]]/}" ]]; then
+            missing+=("Variable APPNAME")
+          fi
+  
+          if [[ -z "${VERSION4D//[[:space:]]/}" || "$VERSION4D" == "__VERSION__" ]]; then
+            missing+=("Variable VERSION4D (valeur reelle requise)")
+          elif [[ ! "$VERSION4D" =~ ^[0-9]+(R[0-9]+)?$ ]]; then
+            missing+=("Variable VERSION4D (format attendu : 21, 21R4, etc.)")
+          fi
+  
+          echo "Branche : $GITHUB_REF_NAME"
+          echo "Application : $APPNAME"
+          echo "Version 4D : $VERSION4D"
+  
+          if (( ${#missing[@]} > 0 )); then
+            printf 'Configuration incomplete :\n'
+            printf '  - %s\n' "${missing[@]}"
+            exit 1
+          fi
+  
+          echo "Preflight valide."
+
+  Build-on-Windows:
+    needs: Preflight-check
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      APPNAME: ${{ vars.APPNAME }}
+      VERSION4D: ${{ vars.VERSION4D }}
+      TOOL4D_DOWNLOAD_REPO: CGareau/Tool4D
+      TOOL4D_GITHUB_TOKEN: ${{ github.token }}
+      GITHUB_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Recuperer le code de la branche
+        uses: actions/checkout@v6
+        with:
+          # Sur une PR, utiliser le commit de la branche source, pas le merge commit synthetique.
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+          clean: true
+          persist-credentials: false
+
+      - name: Memoriser les composants initialement presents
+        run: |
+          $components = Join-Path $env:GITHUB_WORKSPACE 'Components'
+          $names = @()
+          if (Test-Path -LiteralPath $components) {
+            $names = @(Get-ChildItem -LiteralPath $components -Directory -Filter '*.4dbase' -Recurse |
+              Select-Object -ExpandProperty Name -Unique)
+          }
+          $file = Join-Path $env:RUNNER_TEMP 'original-components.json'
+          [System.IO.File]::WriteAllText($file, (ConvertTo-Json -InputObject @($names) -Compress), [System.Text.UTF8Encoding]::new($false))
+          Write-Host "Composants initiaux ($($names.Count)) : $($names -join ', ')"
+
+      - name: Recuperer Tool4D depuis GitHub public
+        env:
+          GIT_TERMINAL_PROMPT: '0'
+        run: |
+          $url = 'https://github.com/CGareau/Tool4D.git'
+          $branch = $env:VERSION4D
+          $destination = Join-Path $env:GITHUB_WORKSPACE 'tools'
+
+          if ($branch -notmatch '^[0-9]+(R[0-9]+)?$') {
+            throw "VERSION4D invalide : $branch"
+          }
+
+          if (Test-Path -LiteralPath $destination) {
+            Remove-Item -LiteralPath $destination -Recurse -Force
+          }
+
+          Write-Host "Depot public : $url"
+          Write-Host "Branche : $branch"
+
+          & git -c credential.helper= clone --depth 1 --single-branch --branch $branch --filter=blob:none --no-checkout $url $destination
+          if ($LASTEXITCODE -ne 0) {
+            throw "Impossible de cloner Tool4D depuis github.com"
+          }
+
+          & git -C $destination sparse-checkout init --cone
+          if ($LASTEXITCODE -ne 0) { throw 'Echec sparse-checkout init' }
+
+          & git -C $destination sparse-checkout set tool4d_win Build_Application 4DBuilder
+          if ($LASTEXITCODE -ne 0) { throw 'Echec sparse-checkout set' }
+
+          & git -C $destination checkout --force
+          if ($LASTEXITCODE -ne 0) { throw 'Echec checkout Tool4D' }
+
+          Write-Host "Tool4D recupere avec succes"
+
+      - name: Verifier les chemins des outils
+        run: |
+          $paths = @(
+            'tools/tool4d_win/tool4d.exe',
+            'tools/Build_Application/Project/Build_Application.4DProject',
+            'tools/4DBuilder/Project/builder.4DProject'
+          )
+          foreach ($relativePath in $paths) {
+            $absolutePath = Join-Path $env:GITHUB_WORKSPACE $relativePath
+            if (-not (Test-Path -LiteralPath $absolutePath -PathType Leaf)) { throw "Outil introuvable : $absolutePath" }
+            Write-Host "OK : $absolutePath"
+          }
+          $versionFile = Join-Path $env:GITHUB_WORKSPACE 'tools/VERSION'
+          if (Test-Path -LiteralPath $versionFile) { Get-Content -LiteralPath $versionFile }
+
+      - name: Identifier le projet et preparer le make.json
+        run: |
+          $repoName = '${{ github.event.repository.name }}'
+          $projectDirectory = Join-Path $env:GITHUB_WORKSPACE 'Project'
+          $projects = @(Get-ChildItem -LiteralPath $projectDirectory -Recurse -File -Filter '*.4DProject')
+          if ($projects.Count -eq 0) { throw 'Aucun fichier .4DProject trouve dans Project/' }
+          $preferred = $projects | Where-Object { $_.BaseName -eq $env:APPNAME } | Select-Object -First 1
+          if ($preferred) { $project = $preferred }
+          elseif ($projects.Count -eq 1) { $project = $projects[0] }
+          else { throw "Plusieurs projets trouves ; impossible de choisir : $($projects.FullName -join ', ')" }
+
+          "REPO_NAME=$repoName" >> $env:GITHUB_ENV
+          "PROJECT_NAME=$($project.BaseName)" >> $env:GITHUB_ENV
+          "PROJECT_PATH=$($project.FullName)" >> $env:GITHUB_ENV
+          Write-Host "Projet retenu : $($project.FullName)"
+
+          $makeFile = Join-Path $env:GITHUB_WORKSPACE 'make.json'
+          if (-not (Test-Path -LiteralPath $makeFile)) {
+            $make = @{
+              output = 'build'
+              targets = @(@{ path = './' })
+              postBuild = @{ remove = @('Data', 'tools', 'installer_script.iss', 'package.json', 'package-lock.json', 'README.md') }
+              dependencies = @('4D NetKit', '4D Progress', '4D SVG', '4D WritePro Interface', '4D ViewPro', '4D Widgets', '4D AIKit')
+            }
+            [System.IO.File]::WriteAllText($makeFile, (ConvertTo-Json -InputObject $make -Depth 10), [System.Text.UTF8Encoding]::new($false))
+            Write-Host 'make.json absent : creation locale (aucun commit / push).'
+          } else {
+            Write-Host 'make.json existant : conserve sans modification.'
+          }
+          Get-Content -LiteralPath $makeFile
+
+      - name: Verifier les dependances 4D
+        id: dependencies
+        run: |
+          $path = Join-Path $env:GITHUB_WORKSPACE 'Project/Sources/dependencies.json'
+          $count = 0
+          if (Test-Path -LiteralPath $path) {
+            $json = Get-Content -LiteralPath $path -Raw | ConvertFrom-Json
+            if ($null -ne $json.dependencies) {
+              if ($json.dependencies -is [array]) { $count = $json.dependencies.Count }
+              elseif ($json.dependencies -is [pscustomobject]) { $count = @($json.dependencies.PSObject.Properties).Count }
+            }
+          }
+          "has_dependencies=$($count -gt 0)".ToLowerInvariant() >> $env:GITHUB_OUTPUT
+          Write-Host "Nombre de dependances declarees : $count"
+
+      - name: Telecharger PackageManager
+        if: ${{ steps.dependencies.outputs.has_dependencies == 'true' }}
+        run: |
+          $tool = Join-Path $env:GITHUB_WORKSPACE 'tools/tool4d_win/tool4d.exe'
+          $project = Join-Path $env:GITHUB_WORKSPACE 'tools/Build_Application/Project/Build_Application.4DProject'
+          $param = '{"methodToExecute":"downloadPackageManager"}'
+          $log = Join-Path $env:RUNNER_TEMP 'download-package-manager.log'
+          Write-Host "Commande : tool4d.exe --dataless -s <Build_Application> --user-param $param"
+          & $tool --dataless -s $project --user-param $param 2>&1 | Tee-Object -FilePath $log
+          $exitCode = $LASTEXITCODE
+          Write-Host "Code retour : $exitCode"
+          $packageManager = Join-Path $env:GITHUB_WORKSPACE 'tools/PackageManager/packageManager.4dbase/Contents/packageManager.4DZ'
+          if ($exitCode -ne 0 -or -not (Test-Path -LiteralPath $packageManager -PathType Leaf)) {
+            throw "Telechargement PackageManager invalide (log : $log)"
+          }
+          if (Select-String -LiteralPath $log -Pattern '\*\*\*ERROR\*\*\*' -Quiet) {
+            throw "PackageManager a signale une erreur (log : $log)"
+          }
+          Write-Host "PackageManager pret : $packageManager"
+
+      - name: Compiler avec 4DBuilder
+        run: |
+          $tool = Join-Path $env:GITHUB_WORKSPACE 'tools/tool4d_win/tool4d.exe'
+          $builder = Join-Path $env:GITHUB_WORKSPACE 'tools/4DBuilder/Project/builder.4DProject'
+          $output = Join-Path $env:GITHUB_WORKSPACE 'Build'
+          $params = @{
+            makeFile = (Join-Path $env:GITHUB_WORKSPACE 'make.json')
+            verbose = $true
+            config = 'release'
+            buildNumber = '1'
+            output = $output
+          } | ConvertTo-Json -Compress
+          $log = Join-Path $env:RUNNER_TEMP 'compilation.log'
+          Write-Host "Executable : $tool"
+          Write-Host "Projet 4DBuilder : $builder"
+          Write-Host "Parametres JSON : $params"
+          & $tool --dataless -s $builder --user-param $params 2>&1 | Tee-Object -FilePath $log
+          $exitCode = $LASTEXITCODE
+          $compiled = Join-Path $output "release/$env:REPO_NAME.4dbase/$env:PROJECT_NAME.4DZ"
+          Write-Host "Code retour : $exitCode ; fichier attendu : $compiled"
+          if ($exitCode -ne 0) { throw "4DBuilder a retourne le code $exitCode" }
+          if (Select-String -LiteralPath $log -Pattern '\*\*\*ERROR\*\*\*|build failed at step' -Quiet) {
+            throw "4DBuilder signale une erreur (voir $log)"
+          }
+          if (-not (Test-Path -LiteralPath $compiled -PathType Leaf)) { throw "Compilation echouee : $compiled absent" }
+          Write-Host "Compilation valide : $compiled"
+
+      - name: Ne garder que les composants initialement inclus
+        run: |
+          $dir = Join-Path $env:GITHUB_WORKSPACE "Build/release/$env:REPO_NAME.4dbase/Components"
+          if (-not (Test-Path -LiteralPath $dir)) { Write-Host 'Aucun dossier Components dans le build.'; exit 0 }
+          $original = Get-Content -LiteralPath (Join-Path $env:RUNNER_TEMP 'original-components.json') -Raw | ConvertFrom-Json
+          $names = @($original)
+          Get-ChildItem -LiteralPath $dir -Directory -Recurse -Filter '*.4dbase' |
+            Sort-Object { $_.FullName.Length } -Descending |
+            ForEach-Object {
+              if ($names -notcontains $_.Name) {
+                Write-Host "Suppression du composant ajoute pour la compilation : $($_.FullName)"
+                Remove-Item -LiteralPath $_.FullName -Recurse -Force
+              }
+            }
+
+      - name: Generer le manifeste Windows
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          $appVersion = $env:INPUT_VERSION
+          $packageName = $env:APPNAME
+          $packageFile = Join-Path $env:GITHUB_WORKSPACE 'package.json'
+          if (Test-Path -LiteralPath $packageFile) {
+            $package = Get-Content -LiteralPath $packageFile -Raw | ConvertFrom-Json
+            if (-not [string]::IsNullOrWhiteSpace($package.name)) { $packageName = $package.name }
+            if ([string]::IsNullOrWhiteSpace($appVersion)) { $appVersion = $package.version }
+          }
+          if ([string]::IsNullOrWhiteSpace($appVersion)) { $appVersion = '0.0.0' }
+
+          $version4d = $env:VERSION4D
+          if ($version4d -match '^(\d+)R(\d+)$') { $tag = "$($Matches[1]).$($Matches[2]).0" }
+          elseif ($version4d -match '^\d+$') { $tag = "$version4d.0.0" }
+          else { throw "VERSION4D non reconnue : $version4d" }
+
+          $resources = Join-Path $env:GITHUB_WORKSPACE "Build/release/$env:REPO_NAME.4dbase/Resources"
+          New-Item -ItemType Directory -Path $resources -Force | Out-Null
+          $manifest = [ordered]@{
+            name = $packageName
+            version = $appVersion
+            release_tag = "$appVersion IS for 4D $version4d ($(Get-Date -Format 'yyyy-MM-dd'))"
+            tag = $tag
+          }
+          $manifestFile = Join-Path $resources 'manifest.json'
+          [System.IO.File]::WriteAllText($manifestFile, (ConvertTo-Json -InputObject $manifest -Depth 5), [System.Text.UTF8Encoding]::new($false))
+          Get-Content -LiteralPath $manifestFile
+
+      - name: Creer l'archive ZIP
+        run: |
+          $source = Join-Path $env:GITHUB_WORKSPACE "Build/release/$env:REPO_NAME.4dbase"
+          $archive = Join-Path $env:GITHUB_WORKSPACE "Build/release/$env:APPNAME.zip"
+          if (-not (Test-Path -LiteralPath $source)) { throw "Dossier a archiver introuvable : $source" }
+          if (Test-Path -LiteralPath $archive) { Remove-Item -LiteralPath $archive -Force }
+          # Conserver l'arborescence historique : <REPO_NAME>.4dbase/... dans le ZIP.
+          Compress-Archive -LiteralPath $source -DestinationPath $archive -CompressionLevel Optimal
+          if (-not (Test-Path -LiteralPath $archive -PathType Leaf)) { throw 'Archive ZIP non creee.' }
+          Write-Host "ZIP : $archive ($((Get-Item $archive).Length) octets)"
+
+      #- name: Envoyer l'archive sur le FTP
+      #  if: ${{ github.event_name != 'pull_request' }}
+      #  env:
+      #    FTP_PRIVATE_PATH: ${{ secrets.FTP_PRIVATE_PATH }}
+      #    FTP_PRIVATE_LOGIN: ${{ secrets.FTP_PRIVATE_LOGIN }}
+      #    FTP_PRIVATE_PASSWORD: ${{ secrets.FTP_PRIVATE_PASSWORD }}
+      #  run: |
+      #    $archive = Join-Path $env:GITHUB_WORKSPACE "Build/release/$env:APPNAME.zip"
+      #    $userPassword = '{0}:{1}' -f $env:FTP_PRIVATE_LOGIN, $env:FTP_PRIVATE_PASSWORD
+      #    Write-Host "Envoi du fichier $env:APPNAME.zip sur le FTP configure."
+      #    & curl.exe --fail --show-error --silent --ftp-ssl-reqd --retry 3 --retry-all-errors --retry-delay 2 --connect-timeout 30 --max-time 600 --user $userPassword --upload-file $archive $env:FTP_PRIVATE_PATH
+      #    if ($LASTEXITCODE -ne 0) { throw "Echec de l'envoi FTP (curl exit=$LASTEXITCODE)" }
+      #    Write-Host 'Upload FTP termine.'
+
+      # Publication temporairement desactivee : le ZIP est conserve dans les artefacts du run.
+      - name: Publier le build en artefact GitHub Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ vars.APPNAME }}-build-${{ github.run_id }}-${{ github.run_attempt }}
+          path: Build/release/${{ vars.APPNAME }}.zip
+          if-no-files-found: error
+          retention-days: 7
+          # Le fichier est deja compresse en ZIP : eviter de le recompresser inutilement.
+          compression-level: 0
+
+      - name: Afficher le recapitulatif du build
+        run: |
+          @(
+            '## Build Windows - artefact disponible'
+            ''
+            "- Application : $env:APPNAME"
+            "- Branche : $env:GITHUB_REF_NAME"
+            "- Commit : $env:GITHUB_SHA"
+            "- Version 4D : $env:VERSION4D"
+            "- Fichier : $env:APPNAME.zip"
+            '- Publication FTP : desactivee pendant les tests'
+          ) | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+

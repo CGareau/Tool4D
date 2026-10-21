@@ -209,6 +209,19 @@ Windows code signing (for example with `signtool` and a code signing certificate
 
 [`.github/workflows/build-example.yml`](.github/workflows/build-example.yml) builds [`example/`](example) on Windows and macOS: standalone, client and server. Run it from the *Actions* tab (*Build example application* → *Run workflow*, choose the 4D version) and copy it to your own repository.
 
+### Build and package on every push (Windows)
+
+[`example/.github/workflows/build-continue-windows.yml`](example/.github/workflows/build-continue-windows.yml) is a ready-to-copy workflow for a repository that holds a 4D project: it compiles the project and publishes a ZIP of the compiled `.4dbase`. It is inactive here (workflows only run from `.github/workflows` at the root of a repository): copy it to `.github/workflows/` of your own repository.
+
+What it does, on `windows-latest`:
+
+1. checks the repository variables, then fetches `tool4d_win`, `Build_Application` and `4DBuilder` of the Tool4D branch given by `VERSION4D`;
+2. reads `Project/Sources/dependencies.json` and, if the project has dependencies, downloads the **PackageManager** (`downloadPackageManager`) so that 4DBuilder can resolve them;
+3. compiles with **4DBuilder** (`make.json` is created if the repository has none);
+4. writes a `manifest.json`, builds `Build/release/<APPNAME>.zip` and uploads it as a workflow artifact (the FTP upload is commented out in the file).
+
+Set two **repository variables** (Settings → Secrets and variables → Actions → *Variables*): `APPNAME` (name of the `.4DProject`, in `Project/`) and `VERSION4D` (Tool4D branch: `21`, `21R4`…). The project layout is the one of [`example/`](example), which also declares a dependency (`Project/Sources/dependencies.json`), so the sample build in this repository exercises the same PackageManager + 4DBuilder path.
+
 ### GitHub-hosted or self-hosted runners?
 
 The example runs on GitHub-hosted runners (`windows-latest`, `macos-latest`) so that it works out of the box. **For regular builds, your own self-hosted runners are usually the better choice:**
