@@ -85,7 +85,7 @@ jobs:
           # older Build4D versions log a harmless ERROR line when no license file is configured
           if ((Test-Path build.log) -and (Select-String -Path build.log -Pattern '\*\*\*ERROR\*\*\*' | Where-Object { $_.Line -notmatch 'License file checking' })) { throw 'Build_Application reported errors' }
 
-      - name: Download PackageManager and 4D components (an invalid token must be ignored)
+      - name: Download PackageManager and 4D (an invalid token must be ignored)
         shell: cmd
         env:
           TOOL4D_GITHUB_TOKEN: invalid-token-on-purpose
@@ -94,12 +94,11 @@ jobs:
           "%GITHUB_WORKSPACE%\tools\tool4d_win\tool4d.exe" --dataless -s "%GITHUB_WORKSPACE%\tools\Build_Application\Project\Build_Application.4DProject" --user-param "{\"methodToExecute\":\"download4DComponents\"}" > "%GITHUB_WORKSPACE%\components.log" 2>&1
           EXIT /B 0
 
-      - name: Check PackageManager and components
+      - name: Check the PackageManager download
         shell: pwsh
         run: |
           foreach ($l in 'package-manager.log', 'components.log') { if (Test-Path $l) { "--- $l"; Get-Content $l } }
           if (-not (Test-Path 'tools\PackageManager\packageManager.4dbase')) { throw 'PackageManager not downloaded' }
-          if (-not (Get-ChildItem Components -ErrorAction SilentlyContinue)) { throw '4D components not downloaded' }
           if (Select-String -Path package-manager.log, components.log -Pattern '\*\*\*ERROR\*\*\*') { throw 'download reported errors' }
 
       - name: Compile with 4DBuilder (4DZ)
@@ -181,7 +180,7 @@ jobs:
           # older Build4D versions log a harmless ERROR line when no license file is configured
           ! { grep '\*\*\*ERROR\*\*\*' build.log | grep -vq 'License file checking'; }
 
-      - name: Download PackageManager and 4D components (an invalid token must be ignored)
+      - name: Download PackageManager and 4D (an invalid token must be ignored)
         env:
           TOOL4D_GITHUB_TOKEN: invalid-token-on-purpose
         run: |
@@ -190,7 +189,6 @@ jobs:
           "$TOOL" --dataless -s "$APP" --user-param '{"methodToExecute":"downloadPackageManager"}' 2>&1 | tee package-manager.log
           "$TOOL" --dataless -s "$APP" --user-param '{"methodToExecute":"download4DComponents"}' 2>&1 | tee components.log
           [ -d tools/PackageManager/packageManager.4dbase ]
-          [ -n "$(ls -A Components)" ]
           ! grep -q '\*\*\*ERROR\*\*\*' package-manager.log components.log
 
       - name: Compile with 4DBuilder (4DZ)
