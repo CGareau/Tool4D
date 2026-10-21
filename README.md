@@ -62,7 +62,7 @@ In a workflow: `actions/checkout` with `repository: CGareau/Tool4D`, `ref: 21R4`
 | Environment variable | Value |
 |---|---|
 | `TOOL4D_DOWNLOAD_REPO` | `CGareau/Tool4D` — archives come from the Releases of this repository |
-| `TOOL4D_GITHUB_TOKEN` | only for a **private** copy of this repository: a token with read access (the archives are then looked up through the GitHub API). Not needed here: the Releases are downloaded directly, without any API call or rate limit |
+| `TOOL4D_GITHUB_TOKEN` | only for a **private** copy of this repository: a token with read access (the archives are then looked up through the GitHub API). **Leave it unset for this public repository**: the Releases are downloaded directly, without any API call, and a token is ignored |
 | `TOOL4D_DOWNLOAD_BASE` | alternative: your own server, layout `<base>/<branch>-<build>/<os>_<archive>` (e.g. `21R4-100203/win_4D_Server.zip`) |
 
 ### 4. Run it

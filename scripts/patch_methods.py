@@ -66,7 +66,7 @@ if "buildStandalone($config)" not in standalone:
     sys.exit("startup: could not derive the standalone block")
 startup.write_text(text[:block.end()] + "\t\t\t\n" + standalone + text[block.end():], encoding="utf-8")
 
-for helper in ("getEnvVariable", "getDownloadCommand", "buildStandalone"):
+for helper in ("getEnvVariable", "isPublicAsset", "getDownloadCommand", "buildStandalone"):
     shutil.copy(templates / "Methods" / f"{helper}.4dm", methods / f"{helper}.4dm")
 
 key = root / "Resources" / "key"
