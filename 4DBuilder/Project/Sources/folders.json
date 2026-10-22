@@ -1,0 +1,99 @@
+{
+	"cmd": {
+		"methods": [
+			"build",
+			"checkout",
+			"clean",
+			"install",
+			"update",
+			"upstream"
+		]
+	},
+	"lib": {
+		"methods": [
+			"checkFileWritable",
+			"ob_deepMerge"
+		],
+		"classes": [
+			"pList"
+		]
+	},
+	"main": {
+		"groups": [
+			"cmd"
+		],
+		"methods": [
+			"startup"
+		]
+	},
+	"make": {
+		"methods": [
+			"addDependency",
+			"DependencyStore",
+			"getMake",
+			"parseUserParam",
+			"subMake"
+		]
+	},
+	"old": {
+		"methods": [
+			"compileProject_old"
+		]
+	},
+	"project": {
+		"methods": [
+			"compileProject",
+			"deleteProjectSources",
+			"findStructureFile",
+			"zipProject"
+		]
+	},
+	"reporter": {
+		"methods": [
+			"alertReporter",
+			"defaultReporter",
+			"logMessage",
+			"onerr",
+			"storageReporter",
+			"teamcityReporter",
+			"vsReporter",
+			"xcodeReporter"
+		]
+	},
+	"target": {
+		"methods": [
+			"buildCompiledStructure",
+			"buildNeeded",
+			"buildTarget",
+			"cleanOutput",
+			"configureTarget",
+			"convertAndBuildTarget",
+			"convertTargetToProject",
+			"copyTarget",
+			"installTarget",
+			"markComponent",
+			"postBuild",
+			"targetDependenciesExist"
+		],
+		"classes": [
+			"git"
+		]
+	},
+	"test": {
+		"methods": [
+			"getTestConfig",
+			"test_build",
+			"test_build_cmd",
+			"test_build_one_project",
+			"test_build_with_dependency",
+			"test_checkout",
+			"test_clean",
+			"test_install",
+			"test_install_one_component",
+			"test_reporter",
+			"test_update",
+			"test_upstream"
+		]
+	},
+	"trash": {}
+}
