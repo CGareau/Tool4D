@@ -1,0 +1,4 @@
+branch=21R3
+version=21 R3
+build=100192
+source=4DBuilder: accept a Windows output path; use the first .4DZ of a component

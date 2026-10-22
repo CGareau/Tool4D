@@ -1,0 +1,3193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en" target-language="en">
+    <header>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="version">1.0</prop>
+      </prop-group>
+    </header>
+
+    <body>
+
+      <group id="670" resname="PL_Thems">
+        <trans-unit id="1" resname="PL_formProperties">
+          <source>Form Properties</source>
+          <target>Form Properties</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_formSize">
+          <source>Form Size</source>
+          <target>Form Size</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_objects">
+          <source>Objects</source>
+          <target>Objects</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_tempo">
+          <source>Tempo</source>
+          <target>Tempo</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_coordinatesSizing">
+          <source>Coordinates &amp; Sizing</source>
+          <target>Coordinates &amp; Sizing</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_display">
+          <source>Display</source>
+          <target>Display</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_events">
+          <source>Events</source>
+          <target>Events</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_appearance">
+          <source>Appearance</source>
+          <target>Appearance</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_text">
+          <source>Text</source>
+          <target>Text</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_textPictureAndWebArea">
+          <source>Text and Picture</source>
+          <target>Text and Picture</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_resizingOptions">
+          <source>Resizing Options</source>
+          <target>Resizing Options</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_backgroundAndBorder">
+          <source>Background and Border</source>
+          <target>Background and Border</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_action">
+          <source>Action</source>
+          <target>Action</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_help">
+          <source>Help</source>
+          <target>Help</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_entry">
+          <source>Entry</source>
+          <target>Entry</target>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_dataSource">
+          <source>Data Source</source>
+          <target>Data Source</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_picture">
+          <source>Picture</source>
+          <target>Picture</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_crop">
+          <source>Crop</source>
+          <target>Crop</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_print">
+          <source>Print</source>
+          <target>Print</target>
+        </trans-unit>
+        <trans-unit id="20" resname="PL_scale">
+          <source>Scale</source>
+          <target>Scale</target>
+        </trans-unit>
+        <trans-unit id="21" resname="PL_rangeOfValues">
+          <source>Range of Values</source>
+          <target>Range of Values</target>
+        </trans-unit>
+        <trans-unit id="22" resname="PL_grid">
+          <source>Grid</source>
+          <target>Grid</target>
+        </trans-unit>
+        <trans-unit id="23" resname="PL_animation">
+          <source>Animation</source>
+          <target>Animation</target>
+        </trans-unit>
+        <trans-unit id="24" resname="PL_TH_subform">
+          <source>Sub-Form</source>
+          <target>Sub-Form</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PL_plugin">
+          <source>Plug-in</source>
+          <target>Plug-in</target>
+        </trans-unit>
+        <trans-unit id="26" resname="PL_menu">
+          <source>Menu</source>
+          <target>Menu</target>
+        </trans-unit>
+        <trans-unit id="27" resname="PL_accessRights">
+          <source>Access Rights</source>
+          <target>Access Rights</target>
+        </trans-unit>
+        <trans-unit id="28" resname="PL_listBox">
+          <source>List Box</source>
+          <target>List Box</target>
+        </trans-unit>
+        <trans-unit id="29" resname="PL_gridlines">
+          <source>Gridlines</source>
+          <target>Gridlines</target>
+        </trans-unit>
+        <trans-unit id="30" resname="PL_webArea">
+          <source>Web Area</source>
+          <target>Web Area</target>
+        </trans-unit>
+        <trans-unit id="31" resname="PL_markers">
+          <source>Markers</source>
+          <target>Markers</target>
+        </trans-unit>
+        <trans-unit id="32" resname="PL_windowSize">
+          <source>Window Size</source>
+          <target>Window Size</target>
+        </trans-unit>
+        <trans-unit id="33" resname="PL_hierarchy">
+          <source>Hierarchy</source>
+          <target>Hierarchy</target>
+        </trans-unit>
+        <trans-unit id="34" resname="PL_headers">
+          <source>Headers</source>
+          <target>Headers</target>
+        </trans-unit>
+        <trans-unit id="35" resname="PL_footers">
+          <source>Footers</source>
+          <target>Footers</target>
+        </trans-unit>
+      </group>
+      <group id="671" resname="PL_OBJECTS">
+        <trans-unit id="1" resname="PL_form">
+          <source>Form</source>
+          <target>Form</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_rectangle">
+          <source>Rectangle</source>
+          <target>Rectangle</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_roundRectangle">
+          <source>Round Rectangle</source>
+          <target>Round Rectangle</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_oval">
+          <source>Oval</source>
+          <target>Oval</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_line">
+          <source>Line</source>
+          <target>Line</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_staticPicture">
+          <source>Static Picture</source>
+          <target>Static Picture</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_libraryPicture">
+          <source>Library Picture</source>
+          <target>Library Picture</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_text">
+          <source>Text</source>
+          <target>Text</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_groupBox">
+          <source>Group Box</source>
+          <target>Group Box</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_matrix">
+          <source>Matrix</source>
+          <target>Matrix</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_group">
+          <source>Group</source>
+          <target>Group</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_subform">
+          <source>Subform</source>
+          <target>Subform</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_field">
+          <source>Field</source>
+          <target>Field</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_variable">
+          <source>Variable</source>
+          <target>Variable</target>
+        </trans-unit>
+        <trans-unit id="14_2" resname="PL_input">
+          <source>Input</source>
+          <target>Input</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_button">
+          <source>Button</source>
+          <target>Button</target>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_3dButton">
+          <source>3D Button</source>
+          <target>3D Button</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_invisibleButton">
+          <source>Invisible Button</source>
+          <target>Invisible Button</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_highlightButton">
+          <source>Highlight Button</source>
+          <target>Highlight Button</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_pictureButton">
+          <source>Picture Button</source>
+          <target>Picture Button</target>
+        </trans-unit>
+        <trans-unit id="20" resname="PL_buttonGrid">
+          <source>Button Grid</source>
+          <target>Button Grid</target>
+        </trans-unit>
+        <trans-unit id="21" resname="PL_checkBox">
+          <source>Check Box</source>
+          <target>Check Box</target>
+        </trans-unit>
+        <trans-unit id="22" resname="PL_3dCheckBox">
+          <source>3D Check Box</source>
+          <target>3D Check Box</target>
+        </trans-unit>
+        <trans-unit id="23" resname="PL_radioButton">
+          <source>Radio Button</source>
+          <target>Radio Button</target>
+        </trans-unit>
+        <trans-unit id="24" resname="PL_3dRadioButton">
+          <source>3D Radio Button</source>
+          <target>3D Radio Button</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PL_pictureRadioButton">
+          <source>Picture Radio Button</source>
+          <target>Picture Radio Button</target>
+        </trans-unit>
+        <trans-unit id="26" resname="PL_scrollableArea">
+          <source>Scrollable Area</source>
+          <target>Scrollable Area</target>
+        </trans-unit>
+        <trans-unit id="27" resname="PL_hierarchicalList">
+          <source>Hierarchical List</source>
+          <target>Hierarchical List</target>
+        </trans-unit>
+        <trans-unit id="28" resname="PL_comboBox">
+          <source>Combo Box</source>
+          <target>Combo Box</target>
+        </trans-unit>
+        <trans-unit id="29" resname="PL_popupDropDownList">
+          <source>Popup Dropdown List</source>
+          <target>Popup Dropdown List</target>
+        </trans-unit>
+        <trans-unit id="30" resname="PL_picturePopupMenu">
+          <source>Picture Popup Menu</source>
+          <target>Picture Popup Menu</target>
+        </trans-unit>
+        <trans-unit id="31" resname="PL_hierarchicalPopupMenu">
+          <source>Hierarchical Popup Menu</source>
+          <target>Hierarchical Popup Menu</target>
+        </trans-unit>
+        <trans-unit id="32" resname="PL_tabControl">
+          <source>Tab Control</source>
+          <target>Tab Control</target>
+        </trans-unit>
+        <trans-unit id="33" resname="PL_dial">
+          <source>Dial</source>
+          <target>Dial</target>
+        </trans-unit>
+        <trans-unit id="34" resname="PL_thermometer">
+          <source>Thermometer</source>
+          <target>Thermometer</target>
+        </trans-unit>
+        <trans-unit id="35" resname="PL_ruler">
+          <source>Ruler</source>
+          <target>Ruler</target>
+        </trans-unit>
+        <trans-unit id="36" resname="PL_graph">
+          <source>Graph</source>
+          <target>Graph</target>
+        </trans-unit>
+        <trans-unit id="37" resname="PL_splitter">
+          <source>Splitter</source>
+          <target>Splitter</target>
+        </trans-unit>
+        <trans-unit id="38" resname="PL_listBox">
+          <source>List Box</source>
+          <target>List Box</target>
+        </trans-unit>
+        <trans-unit id="39" resname="PL_pluginArea">
+          <source>Plugin Area</source>
+          <target>Plugin Area</target>
+        </trans-unit>
+        <trans-unit id="40" resname="PL_column">
+          <source>Column</source>
+          <target>Column</target>
+        </trans-unit>
+        <trans-unit id="41" resname="PL_header">
+          <source>Header</source>
+          <target>Header</target>
+        </trans-unit>
+        <trans-unit id="42" resname="PL_formPopup">
+          <source>Form Popup</source>
+          <target>Form Popup</target>
+        </trans-unit>
+        <trans-unit id="43" resname="PL_compositeButton">
+          <source>Composite Button</source>
+          <target>Composite Button</target>
+        </trans-unit>
+        <trans-unit id="44" resname="PL_scroolBar">
+          <source>Scroll Bar</source>
+          <target>Scroll Bar</target>
+        </trans-unit>
+        <trans-unit id="45" resname="PL_webArea">
+          <source>Web Area</source>
+          <target>Web Area</target>
+        </trans-unit>
+        <trans-unit id="46" resname="PL_footer">
+          <source>Footer</source>
+          <target>Footer</target>
+        </trans-unit>
+        <trans-unit id="47" resname="PL_Write">
+          <source>WriteProArea</source>
+          <target>WriteProArea</target>
+        </trans-unit>
+        <trans-unit id="48" resname="PL_4DViewPro">
+          <source>ViewProArea</source>
+          <target>ViewProArea</target>
+        </trans-unit>
+        <trans-unit id="49" resname="PL_Stepper">
+          <source>Stepper</source>
+          <target>Stepper</target>
+        </trans-unit>
+        <trans-unit id="50" resname="PL_Spinner">
+          <source>Spinner</source>
+          <target>Spinner</target>
+        </trans-unit>
+        <trans-unit id="51" resname="PL_RadioGroup">
+          <source>Radio Group</source>
+          <target>Radio Group</target>
+        </trans-unit>
+      </group>
+      <group id="672" resname="PL_PROPERTIES">
+        <trans-unit id="1" resname="PL_undo">
+          <source>Undo</source>
+          <target>Undo</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_redo">
+          <source>Redo</source>
+          <target>Redo</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_cut">
+          <source>Cut</source>
+          <target>Cut</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_paste">
+          <source>Paste</source>
+          <target>Paste</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_selectAll">
+          <source>Select All</source>
+          <target>Select All</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_formName">
+          <source>Form Name</source>
+          <target>Form Name</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_windowTitle">
+          <source>Window Title</source>
+          <target>Window Title</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_platform">
+          <source>Platform</source>
+          <target>Platform</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_access">
+          <source>Access</source>
+          <target>Access</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_owner">
+          <source>Owner</source>
+          <target>Owner</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_method">
+          <source>Method</source>
+          <target>Method</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_formType">
+          <source>Form Type</source>
+          <target>Form Type</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_helpTopicNumber">
+          <source>Help Topic Number</source>
+          <target>Help Topic Number</target>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_associatedMenuBar">
+          <source>Associated Menu Bar</source>
+          <target>Associated Menu Bar</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_activeMenuBar">
+          <source>Active Menu Bar</source>
+          <target>Active Menu Bar</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_inheritedFormTable">
+          <source>Inherited Form Table</source>
+          <target>Inherited Form Table</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_inheritedFormName">
+          <source>Inherited Form Name</source>
+          <target>Inherited Form Name</target>
+        </trans-unit>
+        <trans-unit id="20" resname="PL_sizeBasedOn">
+          <source>Size based on</source>
+          <target>Size based on</target>
+        </trans-unit>
+        <trans-unit id="21" resname="PL_width">
+          <source>Width</source>
+          <target>Width</target>
+        </trans-unit>
+        <trans-unit id="22" resname="PL_height">
+          <source>Height</source>
+          <target>Height</target>
+        </trans-unit>
+        <trans-unit id="23" resname="PL_horMargin">
+          <source>Hor. Margin</source>
+          <target>Hor. Margin</target>
+        </trans-unit>
+        <trans-unit id="24" resname="PL_vertMargin">
+          <source>Vert. Margin</source>
+          <target>Vert. Margin</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PL_fixedWidth">
+          <source>Fixed Width</source>
+          <target>Fixed Width</target>
+        </trans-unit>
+        <trans-unit id="26" resname="PL_fixedHeight">
+          <source>Fixed Height</source>
+          <target>Fixed Height</target>
+        </trans-unit>
+        <trans-unit id="27" resname="PL_minimumWidth">
+          <source>Minimum Width</source>
+          <target>Minimum Width</target>
+        </trans-unit>
+        <trans-unit id="28" resname="PL_maximumWidth">
+          <source>Maximum Width</source>
+          <target>Maximum Width</target>
+        </trans-unit>
+        <trans-unit id="29" resname="PL_minimumHeight">
+          <source>Minimum Height</source>
+          <target>Minimum Height</target>
+        </trans-unit>
+        <trans-unit id="30" resname="PL_maximumHeight">
+          <source>Maximum Height</source>
+          <target>Maximum Height</target>
+        </trans-unit>
+        <trans-unit id="31" resname="PL_dynamicAdjustment">
+          <source>Dynamic Adjustment</source>
+          <target>Dynamic Adjustment</target>
+        </trans-unit>
+        <trans-unit id="32" resname="PL_alphaFormat">
+          <source>Alpha Format</source>
+          <target>Alpha Format</target>
+        </trans-unit>
+        <trans-unit id="33" resname="PL_textWhenTrue">
+          <source>Text when True</source>
+          <target>Text when True</target>
+        </trans-unit>
+        <trans-unit id="34" resname="PL_textWhenFalse">
+          <source>Text when False</source>
+          <target>Text when False</target>
+        </trans-unit>
+        <trans-unit id="35" resname="PL_pictureFormat">
+          <source>Picture Format</source>
+          <target>Picture Format</target>
+        </trans-unit>
+        <trans-unit id="36" resname="PL_invisible">
+          <source>Invisible</source>
+          <target>Invisible</target>
+        </trans-unit>
+        <trans-unit id="37" resname="PL_type">
+          <source>Type</source>
+          <target>Type</target>
+        </trans-unit>
+        <trans-unit id="38" resname="PL_objectName">
+          <source>Object Name</source>
+          <target>Object Name</target>
+        </trans-unit>
+        <trans-unit id="39" resname="PL_pluginKind">
+          <source>Plug-in Kind</source>
+          <target>Plug-in Kind</target>
+        </trans-unit>
+        <trans-unit id="40" resname="PL_advancedProperties">
+          <source>Advanced Properties</source>
+          <target>Advanced Properties</target>
+        </trans-unit>
+        <trans-unit id="41" resname="PL_variableType">
+          <source>Variable Type</source>
+          <target>Variable Type</target>
+        </trans-unit>
+        <trans-unit id="41_2" resname="PL_expressionType">
+          <source>Expression Type</source>
+          <target>Expression Type</target>
+        </trans-unit>
+        <trans-unit id="42" resname="PL_defaultButton">
+          <source>Default Button</source>
+          <target>Default Button</target>
+        </trans-unit>
+        <trans-unit id="43" resname="PL_left">
+          <source>Left</source>
+          <target>Left</target>
+        </trans-unit>
+        <trans-unit id="44" resname="PL_top">
+          <source>Top</source>
+          <target>Top</target>
+        </trans-unit>
+        <trans-unit id="45" resname="PL_right">
+          <source>Right</source>
+          <target>Right</target>
+        </trans-unit>
+        <trans-unit id="46" resname="PL_bottom">
+          <source>Bottom</source>
+          <target>Bottom</target>
+        </trans-unit>
+        <trans-unit id="47" resname="PL_width">
+          <source>Width</source>
+          <target>Width</target>
+        </trans-unit>
+        <trans-unit id="48" resname="PL_horizontalSizing">
+          <source>Horizontal Sizing</source>
+          <target>Horizontal Sizing</target>
+        </trans-unit>
+        <trans-unit id="49" resname="PL_verticalSizing">
+          <source>Vertical Sizing</source>
+          <target>Vertical Sizing</target>
+        </trans-unit>
+        <trans-unit id="50" resname="PL_roundRectRadius">
+          <source>Corner Radius</source>
+          <target>Corner Radius</target>
+        </trans-unit>
+        <trans-unit id="51" resname="PL_borderLineStyle">
+          <source>Border Line Style</source>
+          <target>Border Line Style</target>
+        </trans-unit>
+        <trans-unit id="52" resname="PL_fillColor">
+          <source>Fill Color</source>
+          <target>Fill Color</target>
+        </trans-unit>
+        <trans-unit id="53" resname="PL_fillPattern">
+          <source>Fill Pattern</source>
+          <target>Fill Pattern</target>
+        </trans-unit>
+        <trans-unit id="54" resname="PL_lineColor">
+          <source>Line Color</source>
+          <target>Line Color</target>
+        </trans-unit>
+        <trans-unit id="55" resname="PL_linePattern">
+          <source>Dotted Line Type</source>
+          <target>Dotted Line Type</target>
+        </trans-unit>
+        <trans-unit id="56" resname="PL_lineWidth">
+          <source>Line Width</source>
+          <target>Line Width</target>
+        </trans-unit>
+        <trans-unit id="57" resname="PL_transparent">
+          <source>Transparent</source>
+          <target>Transparent</target>
+        </trans-unit>
+        <trans-unit id="58" resname="PL_styleSheet">
+          <source>Style Sheet</source>
+          <target>Style Sheet</target>
+        </trans-unit>
+        <trans-unit id="59" resname="PL_font">
+          <source>Font</source>
+          <target>Font</target>
+        </trans-unit>
+        <trans-unit id="60" resname="PL_fontSize">
+          <source>Font Size</source>
+          <target>Font Size</target>
+        </trans-unit>
+        <trans-unit id="61" resname="PL_bold">
+          <source>Bold</source>
+          <target>Bold</target>
+        </trans-unit>
+        <trans-unit id="62" resname="PL_italic">
+          <source>Italic</source>
+          <target>Italic</target>
+        </trans-unit>
+        <trans-unit id="63" resname="PL_underline">
+          <source>Underline</source>
+          <target>Underline</target>
+        </trans-unit>
+        <trans-unit id="64" resname="PL_fontColor">
+          <source>Font Color</source>
+          <target>Font Color</target>
+        </trans-unit>
+        <trans-unit id="65" resname="PL_alignment">
+          <source>Horizontal Alignment</source>
+          <target>Horizontal Alignment</target>
+        </trans-unit>
+        <trans-unit id="66" resname="PL_verticalScrollBar">
+          <source>Vertical Scroll Bar</source>
+          <target>Vertical Scroll Bar</target>
+        </trans-unit>
+        <trans-unit id="67" resname="PL_">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="68" resname="PL_source">
+          <source>Source</source>
+          <target>Source</target>
+        </trans-unit>
+        <trans-unit id="69" resname="PL_variableName">
+          <source>Variable or Expression</source>
+          <target>Variable or Expression</target>
+        </trans-unit>
+        <trans-unit id="70" resname="PL_title">
+          <source>Title</source>
+          <target>Title</target>
+        </trans-unit>
+        <trans-unit id="71" resname="PL_standardAction">
+          <source>Standard Action Old</source>
+          <target>Standard Action Old</target>
+        </trans-unit>
+        <trans-unit id="72" resname="PL_method">
+          <source>Method</source>
+          <target>Method</target>
+        </trans-unit>
+        <trans-unit id="73" resname="PL_helpTip">
+          <source>Help Tip</source>
+          <target>Help Tip</target>
+        </trans-unit>
+        <trans-unit id="74" resname="PL_focusable">
+          <source>Focusable</source>
+          <target>Focusable</target>
+        </trans-unit>
+        <trans-unit id="75" resname="PL_tabable">
+          <source>Tabable</source>
+          <target>Tabable</target>
+        </trans-unit>
+        <trans-unit id="76" resname="PL_draggable">
+          <source>Draggable</source>
+          <target>Draggable</target>
+        </trans-unit>
+        <trans-unit id="77" resname="PL_droppable">
+          <source>Droppable</source>
+          <target>Droppable</target>
+        </trans-unit>
+        <trans-unit id="78" resname="PL_sourceField">
+          <source>Source Field</source>
+          <target>Source Field</target>
+        </trans-unit>
+        <trans-unit id="79" resname="PL_displayAs">
+          <source>Display as </source>
+          <target>Display as </target>
+        </trans-unit>
+        <trans-unit id="80" resname="PL_shortcut">
+          <source>Shortcut</source>
+          <target>Shortcut</target>
+        </trans-unit>
+        <trans-unit id="81" resname="PL_">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="82" resname="PL_printVariableFrame">
+          <source>Print Variable Frame</source>
+          <target>Print Variable Frame</target>
+        </trans-unit>
+        <trans-unit id="83" resname="PL_printFrame">
+          <source>Print Frame</source>
+          <target>Print Frame</target>
+        </trans-unit>
+        <trans-unit id="84" resname="PL_enterable">
+          <source>Enterable</source>
+          <target>Enterable</target>
+        </trans-unit>
+        <trans-unit id="85" resname="PL_mandatory">
+          <source>Mandatory</source>
+          <target>Mandatory</target>
+        </trans-unit>
+        <trans-unit id="86" resname="PL_autoSpellcheck">
+          <source>Auto Spellcheck</source>
+          <target>Auto Spellcheck</target>
+        </trans-unit>
+        <trans-unit id="87" resname="PL_entryFilter">
+          <source>Entry Filter</source>
+          <target>Entry Filter</target>
+        </trans-unit>
+        <trans-unit id="88" resname="PL_defaultValue">
+          <source>Default Value</source>
+          <target>Default Value</target>
+        </trans-unit>
+        <trans-unit id="89" resname="PL_minimumValue">
+          <source>Minimum Value</source>
+          <target>Minimum Value</target>
+        </trans-unit>
+        <trans-unit id="90" resname="PL_maximumValue">
+          <source>Maximum Value</source>
+          <target>Maximum Value</target>
+        </trans-unit>
+        <trans-unit id="91" resname="PL_choiceList">
+          <source>Choice List</source>
+          <target>Choice List</target>
+        </trans-unit>
+        <trans-unit id="92" resname="PL_requiredList">
+          <source>Required List</source>
+          <target>Required List</target>
+        </trans-unit>
+        <trans-unit id="93" resname="PL_excludedList">
+          <source>Excluded List</source>
+          <target>Excluded List</target>
+        </trans-unit>
+        <trans-unit id="94" resname="PL_defaultValues">
+          <source>Default Values</source>
+          <target>Default Values</target>
+        </trans-unit>
+        <trans-unit id="95" resname="PL_dataEntry">
+          <source>Data Entry</source>
+          <target>Data Entry</target>
+        </trans-unit>
+        <trans-unit id="96" resname="PL_doubleClickable">
+          <source>Double-Clickable</source>
+          <target>Double-Clickable</target>
+        </trans-unit>
+        <trans-unit id="97" resname="PL_keyboardLayout">
+          <source>Keyboard Layout</source>
+          <target>Keyboard Layout</target>
+        </trans-unit>
+        <trans-unit id="98" resname="PL_minimum">
+          <source>Minimum</source>
+          <target>Minimum</target>
+        </trans-unit>
+        <trans-unit id="99" resname="PL_maximum">
+          <source>Maximum</source>
+          <target>Maximum</target>
+        </trans-unit>
+        <trans-unit id="100" resname="PL_unit">
+          <source>Graduation step</source>
+          <target>Graduation step</target>
+        </trans-unit>
+        <trans-unit id="101" resname="PL_step">
+          <source>Step</source>
+          <target>Step</target>
+        </trans-unit>
+        <trans-unit id="102" resname="PL_labelLocation">
+          <source>Label Location</source>
+          <target>Label Location</target>
+        </trans-unit>
+        <trans-unit id="103" resname="PL_labels">
+          <source>Labels</source>
+          <target>Labels</target>
+        </trans-unit>
+        <trans-unit id="104" resname="PL_graduation">
+          <source>Display graduation</source>
+          <target>Display graduation</target>
+        </trans-unit>
+        <trans-unit id="105" resname="PL_executeObjectMethod">
+          <source>Execute object method</source>
+          <target>Execute object method</target>
+        </trans-unit>
+        <trans-unit id="106" resname="PL_rows">
+          <source>Rows</source>
+          <target>Rows</target>
+        </trans-unit>
+        <trans-unit id="107" resname="PL_columns">
+          <source>Columns</source>
+          <target>Columns</target>
+        </trans-unit>
+        <trans-unit id="108" resname="PL_switchContinuously">
+          <source>Switch continuously on clicks</source>
+          <target>Switch continuously on clicks</target>
+        </trans-unit>
+        <trans-unit id="109" resname="PL_loopBackToFirstFrame">
+          <source>Loop back to first frame</source>
+          <target>Loop back to first frame</target>
+        </trans-unit>
+        <trans-unit id="110" resname="PL_switchWhenRollOver">
+          <source>Switch when roll over</source>
+          <target>Switch when roll over</target>
+        </trans-unit>
+        <trans-unit id="111" resname="PL_switchBack">
+          <source>Switch back when released</source>
+          <target>Switch back when released</target>
+        </trans-unit>
+        <trans-unit id="112" resname="PL_useLastFrame">
+          <source>Use Last frame as disabled</source>
+          <target>Use Last frame as disabled</target>
+        </trans-unit>
+        <trans-unit id="113" resname="PL_switchEveryXTicks">
+          <source>Switch every x ticks</source>
+          <target>Switch every x ticks</target>
+        </trans-unit>
+        <trans-unit id="114" resname="PL_listForm">
+          <source>List Form</source>
+          <target>List Form</target>
+        </trans-unit>
+        <trans-unit id="115" resname="PL_detailFormName">
+          <source>Detail Form Name</source>
+          <target>Detail Form Name</target>
+        </trans-unit>
+        <trans-unit id="116" resname="PL_automaticWidth">
+          <source>Automatic Width</source>
+          <target>Automatic Width</target>
+        </trans-unit>
+        <trans-unit id="117" resname="PL_display">
+          <source>Display</source>
+          <target>Display</target>
+        </trans-unit>
+        <trans-unit id="118" resname="PL_source">
+          <source>Source</source>
+          <target>Source</target>
+        </trans-unit>
+        <trans-unit id="119" resname="PL_nameId">
+          <source>Pathname</source>
+          <target>Pathname</target>
+        </trans-unit>
+        <trans-unit id="120" resname="PL_rows">
+          <source>Rows</source>
+          <target>Rows</target>
+        </trans-unit>
+        <trans-unit id="121" resname="PL_@dehors??">
+          <source>@Dehors??</source>
+          <target>@Dehors??</target>
+        </trans-unit>
+        <trans-unit id="122" resname="PL_event_1">
+          <source>On Load</source>
+          <target>On Load</target>
+        </trans-unit>
+        <trans-unit id="123" resname="PL_event_2">
+          <source>On Mouse Up</source>
+          <target>On Mouse Up</target>
+        </trans-unit>
+        <trans-unit id="124" resname="PL_event_3">
+          <source>On Validate</source>
+          <target>On Validate</target>
+        </trans-unit>
+        <trans-unit id="125" resname="PL_event_4">
+          <source>On Clicked</source>
+          <target>On Clicked</target>
+        </trans-unit>
+        <trans-unit id="126" resname="PL_event_5">
+          <source>On Header</source>
+          <target>On Header</target>
+        </trans-unit>
+        <trans-unit id="127" resname="PL_event_6">
+          <source>On Printing Break</source>
+          <target>On Printing Break</target>
+        </trans-unit>
+        <trans-unit id="128" resname="PL_event_7">
+          <source>On Printing Footer</source>
+          <target>On Printing Footer</target>
+        </trans-unit>
+        <trans-unit id="129" resname="PL_event_8">
+          <source>On Display Detail</source>
+          <target>On Display Detail</target>
+        </trans-unit>
+        <trans-unit id="130" resname="PL_@onBeforeDuring">
+          <source>@On Before During</source>
+          <target>@On Before During</target>
+        </trans-unit>
+        <trans-unit id="131" resname="PL_event_10">
+          <source>On Outside Call</source>
+          <target>On Outside Call</target>
+        </trans-unit>
+        <trans-unit id="132" resname="PL_event_11">
+          <source>On Activate</source>
+          <target>On Activate</target>
+        </trans-unit>
+        <trans-unit id="133" resname="PL_event_12">
+          <source>On Deactivate</source>
+          <target>On Deactivate</target>
+        </trans-unit>
+        <trans-unit id="134" resname="PL_event_13">
+          <source>On Double Clicked</source>
+          <target>On Double Clicked</target>
+        </trans-unit>
+        <trans-unit id="135" resname="PL_event_14">
+          <source>On Losing Focus</source>
+          <target>On Losing Focus</target>
+        </trans-unit>
+        <trans-unit id="136" resname="PL_event_15">
+          <source>On Getting Focus</source>
+          <target>On Getting Focus</target>
+        </trans-unit>
+        <trans-unit id="137" resname="PL_event_16">
+          <source>On Drop</source>
+          <target>On Drop</target>
+        </trans-unit>
+        <trans-unit id="138" resname="PL_event_17">
+          <source>On Before Keystroke</source>
+          <target>On Before Keystroke</target>
+        </trans-unit>
+        <trans-unit id="139" resname="PL_event_18">
+          <source>On Menu Selected</source>
+          <target>On Menu Selected</target>
+        </trans-unit>
+        <trans-unit id="140" resname="PL_event_19">
+          <source>On Plug in Area</source>
+          <target>On Plug in Area</target>
+        </trans-unit>
+        <trans-unit id="141" resname="PL_event_20">
+          <source>On Data Change</source>
+          <target>On Data Change</target>
+        </trans-unit>
+        <trans-unit id="142" resname="PL_event_21">
+          <source>On Drag Over</source>
+          <target>On Drag Over</target>
+        </trans-unit>
+        <trans-unit id="143" resname="PL_event_22">
+          <source>On Close Box</source>
+          <target>On Close Box</target>
+        </trans-unit>
+        <trans-unit id="144" resname="PL_event_23">
+          <source>On Printing Detail</source>
+          <target>On Printing Detail</target>
+        </trans-unit>
+        <trans-unit id="145" resname="PL_event_24">
+          <source>On Unload</source>
+          <target>On Unload</target>
+        </trans-unit>
+        <trans-unit id="146" resname="PL_event_25">
+          <source>On Open Detail</source>
+          <target>On Open Detail</target>
+        </trans-unit>
+        <trans-unit id="147" resname="PL_event_26">
+          <source>On Close Detail</source>
+          <target>On Close Detail</target>
+        </trans-unit>
+        <trans-unit id="148" resname="PL_event_27">
+          <source>On Timer</source>
+          <target>On Timer</target>
+        </trans-unit>
+        <trans-unit id="149" resname="PL_event_28">
+          <source>On After Keystroke</source>
+          <target>On After Keystroke</target>
+        </trans-unit>
+        <trans-unit id="150" resname="PL_event_29">
+          <source>On Resize</source>
+          <target>On Resize</target>
+        </trans-unit>
+        <trans-unit id="151" resname="PL_event_30">
+          <source>On After Sort</source>
+          <target>On After Sort</target>
+        </trans-unit>
+        <trans-unit id="152" resname="PL_event_31">
+          <source>On Selection Change</source>
+          <target>On Selection Change</target>
+        </trans-unit>
+        <trans-unit id="153" resname="PL_event_32">
+          <source>On Column Moved</source>
+          <target>On Column Moved</target>
+        </trans-unit>
+        <trans-unit id="154" resname="PL_event_33">
+          <source>On Column Resize</source>
+          <target>On Column Resize</target>
+        </trans-unit>
+        <trans-unit id="155" resname="PL_event_34">
+          <source>On Row Moved</source>
+          <target>On Row Moved</target>
+        </trans-unit>
+        <trans-unit id="156" resname="PL_event_35">
+          <source>On Mouse Enter</source>
+          <target>On Mouse Enter</target>
+        </trans-unit>
+        <trans-unit id="157" resname="PL_">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="158" resname="PL_tabControlDirection">
+          <source>Tab Control Direction</source>
+          <target>Tab Control Direction</target>
+        </trans-unit>
+        <trans-unit id="159" resname="PL_numberOfStaticColumns">
+          <source>Number of Static Columns</source>
+          <target>Number of Static Columns</target>
+        </trans-unit>
+        <trans-unit id="160" resname="PL_sortable">
+          <source>Sortable</source>
+          <target>Sortable</target>
+        </trans-unit>
+        <trans-unit id="161" resname="PL_headerHeight">
+          <source>Header Height</source>
+          <target>Header Height</target>
+        </trans-unit>
+        <trans-unit id="162" resname="PL_rowHeight">
+          <source>Row Height</source>
+          <target>Row Height</target>
+        </trans-unit>
+        <trans-unit id="163" resname="PL_numberOfColumns">
+          <source>Number of Columns</source>
+          <target>Number of Columns</target>
+        </trans-unit>
+        <trans-unit id="164" resname="PL_horizontalScrollBar">
+          <source>Horizontal Scroll Bar</source>
+          <target>Horizontal Scroll Bar</target>
+        </trans-unit>
+        <trans-unit id="165" resname="PL_verticalLines">
+          <source>Vertical Lines</source>
+          <target>Vertical Lines</target>
+        </trans-unit>
+        <trans-unit id="166" resname="PL_verticalLineColor">
+          <source>Vertical Line Color</source>
+          <target>Vertical Line Color</target>
+        </trans-unit>
+        <trans-unit id="167" resname="PL_horizontalLines">
+          <source>Horizontal Lines</source>
+          <target>Horizontal Lines</target>
+        </trans-unit>
+        <trans-unit id="168" resname="PL_horizontalLineColor">
+          <source>Horizontal Line Color</source>
+          <target>Horizontal Line Color</target>
+        </trans-unit>
+        <trans-unit id="169" resname="PL_dataSource">
+          <source>Data Source</source>
+          <target>Data Source</target>
+        </trans-unit>
+        <trans-unit id="170" resname="PL_backgroundColor">
+          <source>Background Color</source>
+          <target>Background Color</target>
+        </trans-unit>
+        <trans-unit id="171" resname="PL_alternateBgndColor">
+          <source>Alternate Background Color</source>
+          <target>Alternate Background Color</target>
+        </trans-unit>
+        <trans-unit id="172" resname="PL_selectionMode">
+          <source>Selection Mode</source>
+          <target>Selection Mode</target>
+        </trans-unit>
+        <trans-unit id="173" resname="PL_highlightSet">
+          <source>Highlight Set</source>
+          <target>Highlight Set</target>
+        </trans-unit>
+        <trans-unit id="174" resname="PL_expression">
+          <source>Expression</source>
+          <target>Expression</target>
+        </trans-unit>
+        <trans-unit id="175" resname="PL_sourceHeaderLB">
+          <source>Source</source>
+          <target>Source</target>
+        </trans-unit>
+        <trans-unit id="176" resname="PL_iconLocation">
+          <source>Icon Location</source>
+          <target>Icon Location</target>
+        </trans-unit>
+        <trans-unit id="177" resname="PL_resizable">
+          <source>Resizable</source>
+          <target>Resizable</target>
+        </trans-unit>
+        <trans-unit id="178" resname="PL_event_36">
+          <source>On Mouse Leave</source>
+          <target>On Mouse Leave</target>
+        </trans-unit>
+        <trans-unit id="179" resname="PL_event_37">
+          <source>On Mouse Move</source>
+          <target>On Mouse Move</target>
+        </trans-unit>
+        <trans-unit id="180" resname="PL_multiSelectable">
+          <source>Multi-selectable</source>
+          <target>Multi-selectable</target>
+        </trans-unit>
+        <trans-unit id="181" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="182" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="183" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="184" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="185" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="186" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="187" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="188" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="189" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="190" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="191" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="192" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="193" resname="PL_visible">
+          <source>Visible</source>
+          <target>Visible</target>
+        </trans-unit>
+        <trans-unit id="194" resname="PL_systemHighlightColor">
+          <source>System Highlight Color</source>
+          <target>System Highlight Color</target>
+        </trans-unit>
+        <trans-unit id="195" resname="PL_editableByUser">
+          <source>Editable by user</source>
+          <target>Editable by user</target>
+        </trans-unit>				
+        <trans-unit id="196" resname="PL_titlePicturePosition">
+          <source>Title/Picture Position</source>
+          <target>Title/Picture Position</target>
+        </trans-unit>
+        <trans-unit id="197" resname="PL_buttonStyle">
+          <source>Button Style</source>
+          <target>Button Style</target>
+        </trans-unit>
+        <trans-unit id="198" resname="PL_pictureSource">
+          <source>Picture Source</source>
+          <target>Picture Source</target>
+        </trans-unit>
+        <trans-unit id="199" resname="PL_pictureNameId">
+          <source>Picture pathname</source>
+          <target>Picture pathname</target>
+        </trans-unit>
+        <trans-unit id="200" resname="PL_backgroundSource">
+          <source>Background Source</source>
+          <target>Background Source</target>
+        </trans-unit>
+        <trans-unit id="201" resname="PL_backgroundNameId">
+          <source>Background pathname</source>
+          <target>Background pathname</target>
+        </trans-unit>
+        <trans-unit id="202" resname="PL_visibleTitle">
+          <source>Visible Title</source>
+          <target>Visible Title</target>
+        </trans-unit>
+        <trans-unit id="203" resname="PL_visibleIcon">
+          <source>Visible Icon</source>
+          <target>Visible Icon</target>
+        </trans-unit>
+        <trans-unit id="204" resname="PL_iconOffset">
+          <source>Icon Offset</source>
+          <target>Icon Offset</target>
+        </trans-unit>
+        <trans-unit id="205" resname="PL_horizontalMargin">
+          <source>Horizontal Margin</source>
+          <target>Horizontal Margin</target>
+        </trans-unit>
+        <trans-unit id="206" resname="PL_verticalMargin">
+          <source>Vertical Margin</source>
+          <target>Vertical Margin</target>
+        </trans-unit>
+        <trans-unit id="207" resname="PL_threeStates">
+          <source>Three-States</source>
+          <target>Three-States</target>
+        </trans-unit>
+        <trans-unit id="208" resname="PL_booleanFormat">
+          <source>Display Type</source>
+          <target>Display Type</target>
+        </trans-unit>
+        <trans-unit id="209" resname="PL_invisibleByDefault">
+          <source>Invisible by Default</source>
+          <target>Invisible by Default</target>
+        </trans-unit>
+        <trans-unit id="210" resname="PL_numberFormat">
+          <source>Number Format</source>
+          <target>Number Format</target>
+        </trans-unit>
+        <trans-unit id="211" resname="PL_dateFormat">
+          <source>Date Format</source>
+          <target>Date Format</target>
+        </trans-unit>
+        <trans-unit id="212" resname="PL_timeFormat">
+          <source>Time Format</source>
+          <target>Time Format</target>
+        </trans-unit>
+        <trans-unit id="213" resname="PL_pusher">
+          <source>Pusher</source>
+          <target>Pusher</target>
+        </trans-unit>
+        <trans-unit id="214" resname="PL_variableType">
+          <source>Expression Type</source>
+          <target>Expression Type</target>
+        </trans-unit>
+        <trans-unit id="215" resname="PL_withPopupMenu">
+          <source>With pop-up menu</source>
+          <target>With pop-up menu</target>
+        </trans-unit>
+        <trans-unit id="216" resname="PL_selectionMode">
+          <source>Selection Mode</source>
+          <target>Selection Mode</target>
+        </trans-unit>
+        <trans-unit id="217" resname="PL_enterableInList">
+          <source>Enterable in list</source>
+          <target>Enterable in list</target>
+        </trans-unit>
+        <trans-unit id="218" resname="PL_doubleClickOnLine">
+          <source>Double-click on row</source>
+          <target>Double-click on row</target>
+        </trans-unit>
+        <trans-unit id="219" resname="PL_dblClickEmptyLine">
+          <source>Double-click on empty row</source>
+          <target>Double-click on empty row</target>
+        </trans-unit>
+        <trans-unit id="220" resname="PL_event_38">
+          <source>On Alternative Click</source>
+          <target>On Alternative Click</target>
+        </trans-unit>
+        <trans-unit id="221" resname="PL_platform">
+          <source>Platform</source>
+          <target>Platform</target>
+        </trans-unit>
+        <trans-unit id="222" resname="PL_platform">
+          <source>Platform</source>
+          <target>Platform</target>
+        </trans-unit>
+        <trans-unit id="223" resname="PL_event_39">
+          <source>On Long Click</source>
+          <target>On Long Click</target>
+        </trans-unit>
+        <trans-unit id="224" resname="PL_settings">
+          <source>Settings</source>
+          <target>Settings</target>
+        </trans-unit>
+        <trans-unit id="225" resname="PL_tipsButton">
+          <source>Tips Button</source>
+          <target>Tips Button</target>
+        </trans-unit>
+        <trans-unit id="226" resname="PL_event_40">
+          <source>On Load Record</source>
+          <target>On Load Record</target>
+        </trans-unit>
+        <trans-unit id="227" resname="PL_formDetail">
+          <source>Form Detail</source>
+          <target>Form Detail</target>
+        </trans-unit>
+        <trans-unit id="228" resname="PL_formHeader">
+          <source>Form Header</source>
+          <target>Form Header</target>
+        </trans-unit>
+        <trans-unit id="229" resname="PL_formHeader1">
+          <source>Form Header 1</source>
+          <target>Form Header 1</target>
+        </trans-unit>
+        <trans-unit id="230" resname="PL_formHeader2">
+          <source>Form Header 2</source>
+          <target>Form Header 2</target>
+        </trans-unit>
+        <trans-unit id="231" resname="PL_formHeader3">
+          <source>Form Header 3</source>
+          <target>Form Header 3</target>
+        </trans-unit>
+        <trans-unit id="232" resname="PL_formHeader4">
+          <source>Form Header 4</source>
+          <target>Form Header 4</target>
+        </trans-unit>
+        <trans-unit id="233" resname="PL_formHeader5">
+          <source>Form Header 5</source>
+          <target>Form Header 5</target>
+        </trans-unit>
+        <trans-unit id="234" resname="PL_formHeader6">
+          <source>Form Header 6</source>
+          <target>Form Header 6</target>
+        </trans-unit>
+        <trans-unit id="235" resname="PL_formHeader7">
+          <source>Form Header 7</source>
+          <target>Form Header 7</target>
+        </trans-unit>
+        <trans-unit id="236" resname="PL_formHeader8">
+          <source>Form Header 8</source>
+          <target>Form Header 8</target>
+        </trans-unit>
+        <trans-unit id="237" resname="PL_formHeader9">
+          <source>Form Header 9</source>
+          <target>Form Header 9</target>
+        </trans-unit>
+        <trans-unit id="238" resname="PL_formHeader10">
+          <source>Form Header 10</source>
+          <target>Form Header 10</target>
+        </trans-unit>
+        <trans-unit id="239" resname="PL_formFooter">
+          <source>Form Footer</source>
+          <target>Form Footer</target>
+        </trans-unit>
+        <trans-unit id="240" resname="PL_formBreak">
+          <source>Form Break</source>
+          <target>Form Break</target>
+        </trans-unit>
+        <trans-unit id="241" resname="PL_formBreak1">
+          <source>Form Break 1</source>
+          <target>Form Break 1</target>
+        </trans-unit>
+        <trans-unit id="242" resname="PL_formBreak2">
+          <source>Form Break 2</source>
+          <target>Form Break 2</target>
+        </trans-unit>
+        <trans-unit id="243" resname="PL_formBreak3">
+          <source>Form Break 3</source>
+          <target>Form Break 3</target>
+        </trans-unit>
+        <trans-unit id="244" resname="PL_formBreak4">
+          <source>Form Break 4</source>
+          <target>Form Break 4</target>
+        </trans-unit>
+        <trans-unit id="245" resname="PL_formBreak5">
+          <source>Form Break 5</source>
+          <target>Form Break 5</target>
+        </trans-unit>
+        <trans-unit id="246" resname="PL_formBreak6">
+          <source>Form Break 6</source>
+          <target>Form Break 6</target>
+        </trans-unit>
+        <trans-unit id="247" resname="PL_formBreak7">
+          <source>Form Break 7</source>
+          <target>Form Break 7</target>
+        </trans-unit>
+        <trans-unit id="248" resname="PL_formBreak8">
+          <source>Form Break 8</source>
+          <target>Form Break 8</target>
+        </trans-unit>
+        <trans-unit id="249" resname="PL_formBreak9">
+          <source>Form Break 9</source>
+          <target>Form Break 9</target>
+        </trans-unit>
+        <trans-unit id="250" resname="PL_formBreak10">
+          <source>Form Break 10</source>
+          <target>Form Break 10</target>
+        </trans-unit>
+        <trans-unit id="251" resname="PL_movableRows">
+          <source>Movable Rows</source>
+          <target>Movable Rows</target>
+        </trans-unit>
+        <trans-unit id="252" resname="PL_event_41">
+          <source>On Before Data Entry</source>
+          <target>On Before Data Entry</target>
+        </trans-unit>
+        <trans-unit id="253" resname="PL_event_42">
+          <source>On Header Click</source>
+          <target>On Header Click</target>
+        </trans-unit>
+        <trans-unit id="254" resname="PL_rowStyleArray">
+          <source>Row Style Array</source>
+          <target>Row Style Array</target>
+        </trans-unit>
+        <trans-unit id="255" resname="PL_rowFontColorArray">
+          <source>Row Font Color Array</source>
+          <target>Row Font Color Array</target>
+        </trans-unit>
+        <trans-unit id="256" resname="PL_styleFlat">
+          <source>Flat</source>
+          <target>Flat</target>
+        </trans-unit>
+        <trans-unit id="257" resname="PL_RadioGroup">
+          <source>Radio Group</source>
+          <target>Radio Group</target>
+        </trans-unit>
+        <trans-unit id="258" resname="PL_imageHugsTitle">
+          <source>Image hugs title</source>
+          <target>Image hugs title</target>
+        </trans-unit>
+        <trans-unit id="259" resname="PL_Class">
+          <source>CSS Class</source>
+          <target>CSS Class</target>
+        </trans-unit>
+        <trans-unit id="260" resname="PL_Pattern">
+          <source>Pattern</source>
+          <target>Pattern</target>
+        </trans-unit>
+        <trans-unit id="261" resname="PL_switchEveryXSeconds">
+          <source>Switch every x Seconds</source>
+          <target>Switch every x Seconds</target>
+        </trans-unit>
+      </group>
+      <group id="673" resname="PL_PROPERTIES">
+        <trans-unit id="1" resname="PL_rowBgndColorArray">
+          <source>Row Background Color Array</source>
+          <target>Row Background Color Array</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_event_43">
+          <source>On Expand</source>
+          <target>On Expand</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_event_44">
+          <source>On Collapse</source>
+          <target>On Collapse</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_title">
+          <source>Title</source>
+          <target>Title</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_urlDetectedAuto">
+          <source>URL detected automaticaly</source>
+          <target>URL detected automaticaly</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_useCtrlCommandToOpen">
+          <source>Use CTRL/Command to open</source>
+          <target>Use CTRL/Command to open</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_borderLineStyle">
+          <source>Border Line Style</source>
+          <target>Border Line Style</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_filterButton">
+          <source>Filter Button</source>
+          <target>Filter Button</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_menuBar">
+          <source>Menu Bar</source>
+          <target>Menu Bar</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_group">
+          <source>Group</source>
+          <target>Group</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_enum">
+          <source>List</source>
+          <target>List</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_modifiableByTheUser">
+          <source>Modifiable by the user</source>
+          <target>Modifiable by the user</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_event_45">
+          <source>On After Edit</source>
+          <target>On After Edit</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_withConstraints">
+          <source>With constraints</source>
+          <target>With constraints</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_displayType">
+          <source>Display Type</source>
+          <target>Display Type</target>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_multiStyle">
+          <source>Multi-style</source>
+          <target>Multi-style</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_contextMenu">
+          <source>Context Menu</source>
+          <target>Context Menu</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_allowDeletion">
+          <source>Allow Deletion</source>
+          <target>Allow Deletion</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_outputSubform">
+          <source>Output Subform</source>
+          <target>Output Subform</target>
+        </trans-unit>
+        <trans-unit id="20" resname="PL_pageStep">
+          <source>Page Step</source>
+          <target>Page Step</target>
+        </trans-unit>
+        <trans-unit id="21" resname="PL_pageSize">
+          <source>Page Size</source>
+          <target>Page Size</target>
+        </trans-unit>
+        <trans-unit id="22" resname="PL_textured">
+          <source>Textured (under Mac OS)</source>
+          <target>Textured (under Mac OS)</target>
+        </trans-unit>
+        <trans-unit id="23" resname="PL_masterTable">
+          <source>Master Table</source>
+          <target>Master Table</target>
+        </trans-unit>
+        <trans-unit id="24" resname="PL_namedSelection">
+          <source>Named Selection</source>
+          <target>Named Selection</target>
+        </trans-unit>
+
+        <trans-unit id="25" resname="PL_rowStyle">
+          <source>Style Expression</source>
+          <target>Style Expression</target>
+        </trans-unit>
+        <trans-unit id="26" resname="PL_rowFontColor">
+          <source>Font Color Expression</source>
+          <target>Font Color Expression</target>
+        </trans-unit>
+        <trans-unit id="27" resname="PL_rowBackgroundColor">
+          <source>Background Color Expression</source>
+          <target>Background Color Expression</target>
+        </trans-unit>
+
+        <trans-unit id="28" resname="PL_associatedVariable">
+          <source>Associated Variable</source>
+          <target>Associated Variable</target>
+        </trans-unit>
+        <trans-unit id="29" resname="PL_mirrorEffect">
+          <source>Mirror Effect (Windows)</source>
+          <target>Mirror Effect (Windows)</target>
+        </trans-unit>
+        <trans-unit id="30" resname="PL_event_46">
+          <source>On Begin Drag Over</source>
+          <target>On Begin Drag Over</target>
+        </trans-unit>
+        <trans-unit id="31" resname="PL_dataType">
+          <source>Data Type</source>
+          <target>Data Type</target>
+        </trans-unit>
+        <trans-unit id="32" resname="PL_doNotInvertObjects">
+          <source>Do not invert objects (Windows)</source>
+          <target>Do not invert objects (Windows)</target>
+        </trans-unit>
+        <trans-unit id="33" resname="PL_formulaEditorButton">
+          <source>Formula Editor Button</source>
+          <target>Formula Editor Button</target>
+        </trans-unit>
+        <trans-unit id="34" resname="PL_formulaButton">
+          <source>Formula Button</source>
+          <target>Formula Button</target>
+        </trans-unit>
+        <trans-unit id="35" resname="PL_formulaButton">
+          <source>Formula Button</source>
+          <target>Formula Button</target>
+        </trans-unit>
+        <trans-unit id="36" resname="PL_formulaButton">
+          <source>Formula Button</source>
+          <target>Formula Button</target>
+        </trans-unit>
+        <trans-unit id="37" resname="PL_automaticDrop">
+          <source>Automatic Drop</source>
+          <target>Automatic Drop</target>
+        </trans-unit>
+        <trans-unit id="38" resname="PL_acceptObjectDrop">
+          <source>Accept object drop</source>
+          <target>Accept object drop</target>
+        </trans-unit>
+        <trans-unit id="39" resname="PL_automaticDrag">
+          <source>Automatic Drag</source>
+          <target>Automatic Drag</target>
+        </trans-unit>
+        <trans-unit id="40" resname="PL_blankIfNull">
+          <source>Blank if null</source>
+          <target>Blank if null</target>
+        </trans-unit>
+        <trans-unit id="41" resname="PL_horizontalScrollBar">
+          <source>Horizontal Scroll Bar</source>
+          <target>Horizontal Scroll Bar</target>
+        </trans-unit>
+        <trans-unit id="42" resname="PL_verticalScrollBar">
+          <source>Vertical Scroll Bar</source>
+          <target>Vertical Scroll Bar</target>
+        </trans-unit>
+        <trans-unit id="43" resname="PL_indicatorType">
+          <source>Indicator Type</source>
+          <target>Indicator Type</target>
+        </trans-unit>
+        <trans-unit id="44" resname="PL_hideFocusRectangle">
+          <source>Hide focus rectangle</source>
+          <target>Hide focus rectangle</target>
+        </trans-unit>
+        <trans-unit id="45" resname="PL_hiddenRowsArray">
+          <source>Row Control Array</source>
+          <target>Row Control Array</target>
+        </trans-unit>
+        <trans-unit id="46" resname="PL_url">
+          <source>URL</source>
+          <target>URL</target>
+        </trans-unit>
+        <trans-unit id="47" resname="PL_progression">
+          <source>Progression</source>
+          <target>Progression</target>
+        </trans-unit>
+        <trans-unit id="48" resname="PL_event_47">
+          <source>On Begin URL Loading</source>
+          <target>On Begin URL Loading</target>
+        </trans-unit>
+        <trans-unit id="49" resname="PL_event_48">
+          <source>On URL Resource Loading</source>
+          <target>On URL Resource Loading</target>
+        </trans-unit>
+        <trans-unit id="50" resname="PL_event_49">
+          <source>On End URL Loading</source>
+          <target>On End URL Loading</target>
+        </trans-unit>
+        <trans-unit id="51" resname="PL_event_50">
+          <source>On URL Loading Error</source>
+          <target>On URL Loading Error</target>
+        </trans-unit>
+        <trans-unit id="52" resname="PL_event_51">
+          <source>On URL Filtering</source>
+          <target>On URL Filtering</target>
+        </trans-unit>
+        <trans-unit id="53" resname="PL_event_52">
+          <source>On Open External Link</source>
+          <target>On Open External Link</target>
+        </trans-unit>
+        <trans-unit id="54" resname="PL_event_53">
+          <source>On Window Opening Denied</source>
+          <target>On Window Opening Denied</target>
+        </trans-unit>
+        <trans-unit id="55" resname="PL_wordwrap">
+          <source>Wordwrap</source>
+          <target>Wordwrap</target>
+        </trans-unit>
+        <trans-unit id="56" resname="PL_multiline">
+          <source>Multiline</source>
+          <target>Multiline</target>
+        </trans-unit>
+        <trans-unit id="57" resname="PL_event_54">
+          <source>On Bound Variable Change</source>
+          <target>On Bound Variable Change</target>
+        </trans-unit>
+        <trans-unit id="58" resname="PL_hierarchicalListBox">
+          <source>Hierarchical List Box</source>
+          <target>Hierarchical List Box</target>
+        </trans-unit>
+        <trans-unit id="59" resname="PL_variable1">
+          <source>Variable 1</source>
+          <target>Variable 1</target>
+        </trans-unit>
+        <trans-unit id="60" resname="PL_variable2">
+          <source>Variable 2</source>
+          <target>Variable 2</target>
+        </trans-unit>
+        <trans-unit id="61" resname="PL_variable3">
+          <source>Variable 3</source>
+          <target>Variable 3</target>
+        </trans-unit>
+        <trans-unit id="62" resname="PL_variable4">
+          <source>Variable 4</source>
+          <target>Variable 4</target>
+        </trans-unit>
+        <trans-unit id="63" resname="PL_variable5">
+          <source>Variable 5</source>
+          <target>Variable 5</target>
+        </trans-unit>
+        <trans-unit id="64" resname="PL_variable6">
+          <source>Variable 6</source>
+          <target>Variable 6</target>
+        </trans-unit>
+        <trans-unit id="65" resname="PL_variable7">
+          <source>Variable 7</source>
+          <target>Variable 7</target>
+        </trans-unit>
+        <trans-unit id="66" resname="PL_variable8">
+          <source>Variable 8</source>
+          <target>Variable 8</target>
+        </trans-unit>
+        <trans-unit id="67" resname="PL_variable9">
+          <source>Variable 9</source>
+          <target>Variable 9</target>
+        </trans-unit>
+        <trans-unit id="68" resname="PL_variable10">
+          <source>Variable 10</source>
+          <target>Variable 10</target>
+        </trans-unit>
+        <trans-unit id="69" resname="PL_numberOfStates">
+          <source>Number of States</source>
+          <target>Number of States</target>
+        </trans-unit>
+        <trans-unit id="70" resname="PL_displayAs">
+          <source>Display as</source>
+          <target>Display as</target>
+        </trans-unit>
+        <trans-unit id="71" resname="PL_storeWithDefault">
+          <source>Store with default style tags</source>
+          <target>Store with default style tags</target>
+        </trans-unit>
+        <trans-unit id="72" resname="PL_event_55">
+          <source>On Mac Toolbar Button</source>
+          <target>On Mac Toolbar Button</target>
+        </trans-unit>
+        <trans-unit id="73" resname="PL_toolbarButton">
+          <source>Toolbar Button (Mac OS)</source>
+          <target>Toolbar Button (Mac OS)</target>
+        </trans-unit>
+        <trans-unit id="74" resname="PL_selectAlwaysVisible">
+          <source>Selection always visible</source>
+          <target>Selection always visible</target>
+        </trans-unit>
+        <trans-unit id="75" resname="PL_strikethrough">
+          <source>Strikethrough</source>
+          <target>Strikethrough</target>
+        </trans-unit>
+        <trans-unit id="76" resname="PL_publishedAsSubform">
+          <source>Published as subform</source>
+          <target>Published as subform</target>
+        </trans-unit>
+        <trans-unit id="77" resname="PL_multiStyleFormat">
+          <source>Multi-style Format</source>
+          <target>Multi-style Format</target>
+        </trans-unit>
+        <trans-unit id="78" resname="PL_hideGrowBox">
+          <source>Hide Grow Box</source>
+          <target>Hide Grow Box</target>
+        </trans-unit>
+        <trans-unit id="79" resname="PL_useIntegretedWebKit">
+          <source>Use integrated Web kit</source>
+          <target>Use embedded Web rendering engine</target>
+        </trans-unit>
+        <trans-unit id="80" resname="PL_variableCalculation">
+          <source>Variable Calculation</source>
+          <target>Variable Calculation</target>
+        </trans-unit>
+        <trans-unit id="81" resname="PL_numberOfLockedColumns">
+          <source>Number of Locked Columns</source>
+          <target>Number of Locked Columns</target>
+        </trans-unit>
+        <trans-unit id="82" resname="PL_displayHeaders">
+          <source>Display Headers</source>
+          <target>Display Headers</target>
+        </trans-unit>
+        <trans-unit id="83" resname="PL_displayFooters">
+          <source>Display Footers</source>
+          <target>Display Footers</target>
+        </trans-unit>
+        <trans-unit id="84" resname="PL_height">
+          <source>Height</source>
+          <target>Height</target>
+        </trans-unit>
+        <trans-unit id="85" resname="PL_edit">
+          <source>Edit</source>
+          <target>Edit</target>
+        </trans-unit>
+        <trans-unit id="86" resname="PL_event_57">
+          <source>On Footer Click</source>
+          <target>On Footer Click</target>
+        </trans-unit>
+        <trans-unit id="87" resname="PL_event_56">
+          <source>On Page Change</source>
+          <target>On Page Change</target>
+        </trans-unit>
+        <trans-unit id="88" resname="PL_unitPixels">
+          <source>pixels</source>
+          <target>pixels</target>
+        </trans-unit>
+        <trans-unit id="89" resname="PL_unitLines">
+          <source>lines</source>
+          <target>lines</target>
+        </trans-unit>
+        <trans-unit id="90" resname="PL_verticalAlignment">
+          <source>Vertical Alignment</source>
+          <target>Vertical Alignment</target>
+        </trans-unit>
+        <trans-unit id="91" resname="PL_event_58">
+          <source>On Delete Action</source>
+          <target>On Delete Action</target>
+        </trans-unit>
+        <trans-unit id="92" resname="PL_compatibility">
+          <source>Compatibility</source>
+          <target>Compatibility</target>
+        </trans-unit>
+        <trans-unit id="93" resname="PL_scrollAreaBehaviour">
+          <source>Scrollable Area</source>
+          <target>Scrollable Area</target>
+        </trans-unit>
+        <trans-unit id="94" resname="PL_LineStyle">
+          <source>Line Style</source>
+          <target>Line Style</target>
+        </trans-unit>
+        <trans-unit id="95" resname="PL_unitLine">
+          <source>Unit Row</source>
+          <target>Unit Row</target>
+        </trans-unit>
+        <trans-unit id="96" resname="PL_unitHeader">
+          <source>Unit Header</source>
+          <target>Unit Header</target>
+        </trans-unit>
+        <trans-unit id="97" resname="PL_unitFooter">
+          <source>Unit Footer</source>
+          <target>Unit Footer</target>
+        </trans-unit>
+        <trans-unit id="98" resname="PL_event_59">
+          <source>On Scroll</source>
+          <target>On Scroll</target>
+        </trans-unit>
+        <trans-unit id="146" resname="PL_event_60">
+          <source>On Row Resize</source>
+          <target>On Row Resize</target>
+        </trans-unit>
+        <trans-unit id="148" resname="PL_event_61">
+          <source>On VP Range Changed</source>
+          <target>On VP Range Changed</target>
+        </trans-unit>
+        <trans-unit id="99" resname="PL_SaveAs">
+          <source>Save as</source>
+          <target>Save as</target>
+        </trans-unit>
+        <trans-unit id="100" resname="PL_ParameterName">
+          <source>Parameter Name</source>
+          <target>Parameter Name</target>
+        </trans-unit>
+        <trans-unit id="101" resname="PL_AutoInsert">
+          <source>Automatic Insertion</source>
+          <target>Automatic Insertion</target>
+        </trans-unit>
+        <trans-unit id="103" resname="PL_Value">
+          <source>Value</source>
+          <target>Value</target>
+        </trans-unit>
+        <trans-unit id="104" resname="PL_Reference">
+          <source>Reference</source>
+          <target>Reference</target>
+        </trans-unit>
+        <trans-unit id="105" resname="PL_Parameter">
+          <source>Parameter</source>
+          <target>Parameter</target>
+        </trans-unit>
+        <trans-unit id="106" resname="PL_placeHolder">
+          <source>Placeholder</source>
+          <target>Placeholder</target>
+        </trans-unit>
+        <trans-unit id="107" resname="PL_memoGeometry">
+          <source>Save geometry</source>
+          <target>Save geometry</target>
+        </trans-unit>
+        <trans-unit id="108" resname="PL_memoValue">
+          <source>Save value</source>
+          <target>Save value</target>
+        </trans-unit>
+        <trans-unit id="109" resname="PL_allow4Daccess">
+          <source>Access 4D methods</source>
+          <target>Access 4D methods</target>
+        </trans-unit>
+        <trans-unit id="110" resname="PL_allowFontColorPicker">
+          <source>Allow font/color picker</source>
+          <target>Allow font/color picker</target>
+        </trans-unit>
+        <trans-unit id="111" resname="PL_singleClickEdit">
+          <source>Single-Click Edit</source>
+          <target>Single-Click Edit</target>
+        </trans-unit>
+        <trans-unit id="112" resname="PL_hideEmptyRows">
+          <source>Hide extra blank rows</source>
+          <target>Hide extra blank rows</target>
+        </trans-unit>
+        <trans-unit id="113" resname="PL_truncateWithEllipsis">
+          <source>Truncate with ellipsis</source>
+          <target>Truncate with ellipsis</target>
+        </trans-unit>
+        <trans-unit id="114" resname="PL_columnResize">
+          <source>Column Auto-Resizing</source>
+          <target>Column Auto-Resizing</target>
+        </trans-unit>
+        <trans-unit id="115" resname="PL_notEditableByUser">
+          <source>Not editable by user</source>
+          <target>Not editable by user</target>
+        </trans-unit>
+        <trans-unit id="116" resname="PL_rowHeightArray">
+          <source>Row Height Array</source>
+          <target>Row Height Array</target>
+        </trans-unit>
+        <trans-unit id="117" resname="PL_dpi">
+          <source>Resolution</source>
+          <target>Resolution</target>
+        </trans-unit>
+        <trans-unit id="118" resname="PL_zoom">
+          <source>Zoom</source>
+          <target>Zoom</target>
+        </trans-unit>
+        <trans-unit id="119" resname="PL_pageViewMode">
+          <source>View mode</source>
+          <target>View mode</target>
+        </trans-unit>
+        <trans-unit id="120" resname="PL_showHtmlWysiwyg">
+          <source>Show HTML WYSIWYG</source>
+          <target>Show HTML WYSIWYG</target>
+        </trans-unit>
+        <trans-unit id="121" resname="PL_showHiddenChar">
+          <source>Show hidden characters</source>
+          <target>Show hidden characters</target>
+        </trans-unit>
+        <trans-unit id="122" resname="PL_showPageFrame">
+          <source>Show page frame</source>
+          <target>Show page frame</target>
+        </trans-unit>
+        <trans-unit id="123" resname="PL_showHeaders">
+          <source>Show headers</source>
+          <target>Show headers</target>
+        </trans-unit>
+        <trans-unit id="124" resname="PL_showFooters">
+          <source>Show footers</source>
+          <target>Show footers</target>
+        </trans-unit>
+        <trans-unit id="125" resname="PL_showReference">
+          <source>Show references</source>
+          <target>Show references</target>
+        </trans-unit>
+        <trans-unit id="126" resname="PL_showBackground">
+          <source>Show background</source>
+          <target>Show background and anchored elements</target>
+        </trans-unit>
+        <trans-unit id="127" resname="PL_horizontalRuler">
+          <source>Show horizontal ruler</source>
+          <target>Show horizontal ruler</target>
+        </trans-unit>
+        <trans-unit id="128" resname="PL_hideSystemHighlight">
+          <source>Hide selection highlight</source>
+          <target>Hide selection highlight</target>
+        </trans-unit>
+        <trans-unit id="129" resname="PL_standardActionEx">
+          <source>Standard action</source>
+          <target>Standard action</target>
+        </trans-unit>
+        <trans-unit id="130" resname="PL_collection">
+          <source>Collection or entity selection</source>
+          <target>Collection or entity selection</target>
+        </trans-unit>
+        <trans-unit id="131" resname="PL_collectionName">
+          <source>Collection or entity selection</source>
+          <target>Collection or entity selection</target>
+        </trans-unit>
+        <trans-unit id="132" resname="PL_selectedPosition">
+          <source>Current item position</source>
+          <target>Current item position</target>
+        </trans-unit>
+        <trans-unit id="133" resname="PL_selectedItem">
+          <source>Current item</source>
+          <target>Current item</target>
+        </trans-unit>
+        <trans-unit id="134" resname="PL_multiSelection">
+          <source>Selected Items</source>
+          <target>Selected Items</target>
+        </trans-unit>
+        <trans-unit id="135" resname="PL_automaticRowHeight">
+          <source>Automatic Row Height</source>
+          <target>Automatic Row Height</target>
+        </trans-unit>
+        <trans-unit id="136" resname="PL_minRowHeight">
+          <source>Min Row Height</source>
+          <target>Min Row Height</target>
+        </trans-unit>
+        <trans-unit id="137" resname="PL_maxRowHeight">
+          <source>Max Row Height</source>
+          <target>Max Row Height</target>
+        </trans-unit>
+        <trans-unit id="138" resname="PL_unitRowHeightMin">
+          <source>Unit Min Row Height</source>
+          <target>Unit Min Row Height</target>
+        </trans-unit>
+        <trans-unit id="139" resname="PL_unitRowHeightMax">
+          <source>Unit Max Row Height</source>
+          <target>Unit Max Row Height</target>
+        </trans-unit>
+        <trans-unit id="140" resname="PL_event_9">
+          <source>On VP Ready</source>
+          <target>On VP Ready</target>
+        </trans-unit>	
+        <trans-unit id="141" resname="PL_metaInfo">
+          <source>Meta info expression</source>
+          <target>Meta info expression</target>
+        </trans-unit>	
+        <trans-unit id="142" resname="PL_showVerticalRuler">
+          <source>Show vertical ruler</source>
+          <target>Show vertical ruler</target>
+        </trans-unit>	
+        <trans-unit id="143" resname="PL_hidden">
+          <source>Hidden</source>
+          <target>Hidden</target>
+        </trans-unit>					
+        <trans-unit id="144" resname="PL_visibility">
+          <source>Visibility</source>
+          <target>Visibility</target>
+        </trans-unit>	
+        <trans-unit id="145" resname="PL_notRendered">
+          <source>Not rendered</source>
+          <target>Not rendered</target>
+        </trans-unit>	
+        <trans-unit id="146" resname="PL_DPI_Aware">
+          <source>Adjust for resolution</source>
+          <target>Adjust for resolution</target>
+        </trans-unit>
+        <trans-unit id="147" resname="PL_inherited">
+          <source>Inherited</source>
+          <target>Inherited</target>
+        </trans-unit>
+        <trans-unit id="148" resname="PL_colorScheme">
+          <source>Color Scheme</source>
+          <target>Color Scheme</target>
+        </trans-unit>
+        <trans-unit id="149" resname="PL_colorDark">
+          <source>Dark</source>
+          <target>Dark</target>
+        </trans-unit>
+        <trans-unit id="150" resname="PL_colorLight">
+          <source>Light</source>
+          <target>Light</target>
+        </trans-unit>
+        <trans-unit id="151" resname="PL_HorizontalPadding">
+          <source>Horizontal Padding</source>
+          <target>Horizontal Padding</target>
+        </trans-unit>
+        <trans-unit id="152" resname="PL_VerticalPadding">
+          <source>Vertical Padding</source>
+          <target>Vertical Padding</target>
+        </trans-unit>
+        <trans-unit id="153" resname="PL_showEmptyPicture">
+          <source>Show empty or unsupported images</source>
+          <target>Show empty or unsupported images</target>
+        </trans-unit>
+        <trans-unit id="154" resname="PL_displayFormulaAsSymbol">
+          <source>Display formula source as symbol</source>
+          <target>Display formula source as symbol</target>
+        </trans-unit>
+        <trans-unit id="155" resname="PL_widgetAppearance">
+          <source>Widget appearance</source>
+          <target>Widget appearance</target>
+        </trans-unit>
+        <trans-unit id="156" resname="PL_fluentUI">
+          <source>Fluent UI</source>
+          <target>Fluent UI</target>
+        </trans-unit>
+        <trans-unit id="157" resname="PL_classicUI">
+          <source>Classic</source>
+          <target>Classic</target>
+        </trans-unit>
+        <trans-unit id="158" resname="PL_showTableBorders">
+          <source>Show table borders</source>
+          <target>Show table borders</target>
+        </trans-unit>
+        <trans-unit id="159" resname="PL_formClass">
+          <source>Form Class</source>
+          <target>Form Class</target>
+        </trans-unit>
+				
+      </group>
+
+      <group id="72" resname="PL_variableType">
+        <trans-unit id="1" resname="PL_typeNumeric">
+          <source>Numeric</source>
+          <target>Numeric</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_typeDate">
+          <source>Date</source>
+          <target>Date</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_typePicture">
+          <source>Picture</source>
+          <target>Picture</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_typeTime">
+          <source>Time</source>
+          <target>Time</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_typeAlpha">
+          <source>String</source>
+          <target>String</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_typeBoolean">
+          <source>Boolean</source>
+          <target>Boolean</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_typeText">
+          <source>Text</source>
+          <target>Text</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_typeObject">
+          <source>Object</source>
+          <target>Object</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_typeCollection">
+          <source>Collection</source>
+          <target>Collection</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_typeInteger">
+          <source>Integer</source>
+          <target>Integer</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_typeArrayText">
+          <source>Array Text</source>
+          <target>Array Text</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_typeArrayNumber">
+          <source>Array Number</source>
+          <target>Array Number</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_typeArrayDate">
+          <source>Array Date</source>
+          <target>Array Date</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_typeArrayTime">
+          <source>Array Time</source>
+          <target>Array Time</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_typeUndefined">
+          <source>Undefined</source>
+          <target>Undefined</target>
+        </trans-unit>
+      </group>
+			
+      <group id="73" resname="PL_dateFormatsLocalized">
+        <trans-unit id="1" resname="PL_systemDateShort">
+          <source>System date short</source>
+          <target>System date short</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_systemDateAbbreviated">
+          <source>System date abbreviated</source>
+          <target>System date abbreviated</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_systemDateLong">
+          <source>System date long</source>
+          <target>System date long</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_internalDateShortSpecial">
+          <source>Internal date short special</source>
+          <target>Internal date short special</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_internalDateLong">
+          <source>Internal date long</source>
+          <target>Internal date long</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_internalDateAbbreviated">
+          <source>Internal date abbreviated</source>
+          <target>Internal date abbreviated</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_internalDateShort">
+          <source>Internal date short</source>
+          <target>Internal date short</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_ISOdateTime">
+          <source>ISO Date Time</source>
+          <target>ISO Date Time</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_rfc822">
+          <source>RFC 822</source>
+          <target>RFC 822</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_shortCentury">
+          <source>Short Century</source>
+          <target>Short Century</target>
+        </trans-unit>
+      </group>
+      <group id="74" resname="PL_numberFormatsLocalized">
+        <trans-unit id="1" resname="PL_numberFormat1" translate="no">
+          <source>###,###,##0</source>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_numberFormat2" translate="no">
+          <source>###,###,##0.00</source>
+        </trans-unit>				
+        <trans-unit id="3" resname="PL_numberFormat3" translate="no">
+          <source>###,###,##0 ;###,###,##0-</source>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_numberFormat4" translate="no">
+          <source>###,###,##0.00 ;###,###,##0.00-</source>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_numberFormat5" translate="no">
+          <source>###,###,##0.00;(###,###,##0.00)</source>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_numberFormat6">
+          <source>###,###,##0.00$</source>
+          <target>###,###,##0.00€</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_numberFormat7">
+          <source>### ##0.00%</source>
+          <target>### ##0.00%</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_numberFormat8">
+          <source>$^^0;-$^^0</source>
+          <target>$^^0;-$^^0</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_numberFormat9">
+          <source>$^^0.00;($^^0.00)</source>
+          <target>$^^0.00;($^^0.00)</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_numberFormat10">
+          <source>$***,***,**0;-$***,***,**0</source>
+          <target>$***,***,**0;-$***,***,**0</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_numberFormat11">
+          <source>$***,***,**0.00;($***,***,**0.00)</source>
+          <target>$***,***,**0.00;($***,***,**0.00)</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_numberFormat12">
+          <source>Positive;Negative;VOID</source>
+          <target>Positif;Négatif;Nul</target>
+        </trans-unit>
+      </group>
+      <group id="75" resname="PL_pictureFormatsLocalized">
+        <trans-unit id="1" resname="PL_truncatedCentered">
+          <source>Truncated (centered)</source>
+          <target>Truncated (centered)</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_scaledToFit">
+          <source>Scaled to fit</source>
+          <target>Scaled to fit</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_onBackground">
+          <source>On Background</source>
+          <target>On Background</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_truncatedNonCentered">
+          <source>Truncated (non-centered)</source>
+          <target>Truncated (non-centered)</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_scaledToFitProportional">
+          <source>Scaled to fit (proportional)</source>
+          <target>Scaled to fit (proportional)</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_scaledToFitCenteredProportional">
+          <source>Scaled to fit centered (prop.)</source>
+          <target>Scaled to fit centered (prop.)</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_replicated">
+          <source>Replicated</source>
+          <target>Replicated</target>
+        </trans-unit>
+      </group>
+      <group id="81" resname="PL_booleanFormatsLocalized">
+        <trans-unit id="1" resname="PL_popUp">
+          <source>Pop-up</source>
+          <target>Pop-up</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_checkBox">
+          <source>Check Box</source>
+          <target>Check Box</target>
+        </trans-unit>
+      </group>
+      <group id="130" resname="PL_radiobtnCheckbox">
+        <trans-unit id="4" resname="PL_radioButton">
+          <source>Radio Button</source>
+          <target>Radio Button</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_checkBox">
+          <source>Check Box</source>
+          <target>Check Box</target>
+        </trans-unit>
+      </group>
+      <group id="131" resname="PL_standardActions">
+        <trans-unit id="1" resname="PL_noAction">
+          <source>No action</source>
+          <target>No action</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_cancel">
+          <source>Cancel</source>
+          <target>Cancel</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_accept">
+          <source>Accept</source>
+          <target>Accept</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_nextRecord">
+          <source>Next Record</source>
+          <target>Next Record</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_previousRecord">
+          <source>Previous Record</source>
+          <target>Previous Record</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_firstRecord">
+          <source>First Record</source>
+          <target>First Record</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_lastRecord">
+          <source>Last Record</source>
+          <target>Last Record</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_deleteRecord">
+          <source>Delete record</source>
+          <target>Delete record</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_nextPage">
+          <source>Next Page</source>
+          <target>Next Page</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_previousPage">
+          <source>Previous Page</source>
+          <target>Previous Page</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_firstPage">
+          <source>First Page</source>
+          <target>First Page</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_lastPage">
+          <source>Last Page</source>
+          <target>Last Page</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_editSubrecord">
+          <source>Edit subrecord</source>
+          <target>Edit subrecord</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_deleteSubrecord">
+          <source>Delete subrecord</source>
+          <target>Delete subrecord</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_addSubrecord">
+          <source>Add subrecord</source>
+          <target>Add subrecord</target>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_gotoPage">
+          <source>Goto page</source>
+          <target>Goto page</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_automaticSplitter">
+          <source>Automatic Splitter</source>
+          <target>Automatic Splitter</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_undo">
+          <source>Undo</source>
+          <target>Undo</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_redo">
+          <source>Redo</source>
+          <target>Redo</target>
+        </trans-unit>
+        <trans-unit id="20" resname="PL_cut">
+          <source>Cut</source>
+          <target>Cut</target>
+        </trans-unit>
+        <trans-unit id="21" resname="PL_copy">
+          <source>Copy</source>
+          <target>Copy</target>
+        </trans-unit>
+        <trans-unit id="22" resname="PL_paste">
+          <source>Paste</source>
+          <target>Paste</target>
+        </trans-unit>
+        <trans-unit id="23" resname="PL_clear">
+          <source>Clear</source>
+          <target>Clear</target>
+        </trans-unit>
+        <trans-unit id="24" resname="PL_selectAll">
+          <source>Select all</source>
+          <target>Select all</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PL_showClipboard">
+          <source>Show Clipboard</source>
+          <target>Show Clipboard</target>
+        </trans-unit>
+        <trans-unit id="26" resname="PL_databaseSettings">
+          <source>Database Settings</source>
+          <target>Database Settings</target>
+        </trans-unit>
+        <trans-unit id="27" resname="PL_design">
+          <source>Design</source>
+          <target>Design</target>
+        </trans-unit>
+        <trans-unit id="28" resname="PL_user">
+          <source>User</source>
+          <target>User</target>
+        </trans-unit>
+        <trans-unit id="29" resname="PL_application">
+          <source>Application</source>
+          <target>Application</target>
+        </trans-unit>
+        <trans-unit id="30" resname="PL_quit">
+          <source>Quit</source>
+          <target>Quit</target>
+        </trans-unit>
+        <trans-unit id="31" resname="PL_duplicate">
+          <source>Duplicate</source>
+          <target>Duplicate</target>
+        </trans-unit>
+        <trans-unit id="32" resname="PL_returnToDesignMode">
+          <source>Return to Design mode</source>
+          <target>Return to Design mode</target>
+        </trans-unit>
+        <trans-unit id="33" resname="PL_MSC">
+          <source>MSC</source>
+          <target>MSC</target>
+        </trans-unit>
+        <trans-unit id="34" resname="PL_openBackURL">
+          <source>Open back URL</source>
+          <target>Open back URL</target>
+        </trans-unit>
+        <trans-unit id="35" resname="PL_openNextURL">
+          <source>Open next URL</source>
+          <target>Open next URL</target>
+        </trans-unit>
+        <trans-unit id="36" resname="PL_refreshCurrentURL">
+          <source>Refresh current URL</source>
+          <target>Refresh current URL</target>
+        </trans-unit>
+        <trans-unit id="37" resname="PL_stopLoadingURL">
+          <source>Stop loading URL</source>
+          <target>Stop loading URL</target>
+        </trans-unit>
+        <trans-unit id="38" resname="PL_administration">
+          <source>Administration</source>
+          <target>Administration</target>
+        </trans-unit>
+        <trans-unit id="39" resname="PL_displaySubrecord">
+          <source>Display Subrecord</source>
+          <target>Display Subrecord</target>
+        </trans-unit>
+      </group>
+
+      <group id="148" resname="PL_timeFormatLocalized">
+        <trans-unit id="1" resname="PL_HHMMSS">
+          <source>HH:MM:SS</source>
+          <target>HH:MM:SS</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_HHMM">
+          <source>HH:MM</source>
+          <target>HH:MM</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_hourMinSec">
+          <source>Hour Min Sec</source>
+          <target>Hour Min Sec</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_hourMin">
+          <source>Hour Min</source>
+          <target>Hour Min</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_HHMMAMPM">
+          <source>HH:MM AM/PM</source>
+          <target>HH:MM AM/PM</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_MMSS">
+          <source>MM:SS</source>
+          <target>MM:SS</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_minSec">
+          <source>Min Sec</source>
+          <target>Min Sec</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_ISOdateTime">
+          <source>ISO Date Time</source>
+          <target>ISO Date Time</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_systemTimeShort">
+          <source>System time short</source>
+          <target>System time short</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_systemTimeLongAbbreviated">
+          <source>System time long abbreviated</source>
+          <target>System time long abbreviated</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_systemTimeLong">
+          <source>System time long</source>
+          <target>System time long</target>
+        </trans-unit>
+      </group>
+
+      <group id="155" resname="PL_filterList">
+        <trans-unit id="1" resname="PL_filter1" translate="no">
+          <source>~A</source>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_filter2" translate="no">
+          <source>&amp;9</source>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_filter3" translate="no">
+          <source>&amp;A</source>
+        </trans-unit>			 
+        <trans-unit id="4" resname="PL_filter4" translate="no">
+          <source>&amp;a</source>
+        </trans-unit>	
+        <trans-unit id="5" resname="PL_filter5" translate="no">
+          <source>&amp;@</source>
+        </trans-unit>	
+        <trans-unit id="6" resname="PL_filter6" translate="no">
+          <source>~a##</source>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_filter7" translate="no">
+          <source>!0&amp;9##/##/##</source>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_filter8">
+          <source>!0&amp;9Month: ## Day: ## Year: ##</source>
+          <target>!0&amp;9Month: ## Day: ## Year: ##</target>
+        </trans-unit>			 
+        <trans-unit id="9" resname="PL_filter9" translate="no">
+          <source>!0&amp;9##:##</source>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_filter10">
+          <source>!0&amp;9## Hrs ## Mins ## Secs</source>
+          <target>!0&amp;9## Hrs ## Mins ## Secs</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_filter11">
+          <source>!0&amp;9Hrs: ## Mins: ## Secs: ##</source>
+          <target>!0&amp;9Hrs: ## Mins: ## Secs: ##</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_filter12">
+          <source>!0&amp;9###-####</source>
+          <target>!0&amp;9###-####</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_filter13" translate="no">
+          <source>!_&amp;9(###) !0###-####</source>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_filter14" translate="no">
+          <source>!0&amp;9###-###-####</source>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_filter15" translate="no">
+          <source>!0&amp;9###-##-####</source>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_filter16" translate="no">
+          <source>~"A-Z;0-9; ;,;.;-"</source>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_filter17" translate="no">
+          <source>&amp;"a-z;A-Z;0-9; ;,;.;-"</source>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_filter18" translate="no">
+          <source>&amp;"0-9;.;-"</source>
+        </trans-unit>
+      </group>
+
+      <group id="156" resname="PL_alphaFormatLocalized">
+        <trans-unit id="1" resname="PL_alphaFormat1" translate="no">
+          <source>###-####</source>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_alphaFormat2" translate="no">
+          <source>(###) ###-####</source>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_alphaFormat3" translate="no">
+          <source>###-###-####</source>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_alphaFormat4" translate="no">
+          <source>###-##-####</source>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_alphaFormat5" translate="no">
+          <source>00000</source>
+        </trans-unit>
+      </group>
+
+      <group id="675" resname="PL_propertyListTexts">
+        <trans-unit id="42" resname="PL_none">
+          <source>None</source>
+          <target>None</target>
+        </trans-unit>
+        <trans-unit id="43" resname="PL_grow">
+          <source>Grow</source>
+          <target>Grow</target>
+        </trans-unit>
+        <trans-unit id="44" resname="PL_move">
+          <source>Move</source>
+          <target>Move</target>
+        </trans-unit>
+        <trans-unit id="45" resname="PL_top">
+          <source>Top</source>
+          <target>Top</target>
+        </trans-unit>
+        <trans-unit id="46" resname="PL_bottom">
+          <source>Bottom</source>
+          <target>Bottom</target>
+        </trans-unit>
+        <trans-unit id="50" resname="PL_pictureLibrary">
+          <source>Picture Library</source>
+          <target>Picture Library</target>
+        </trans-unit>
+        <trans-unit id="51" resname="PL_resourceFile">
+          <source>Resource (deprecated)</source>
+          <target>Resource (deprecated)</target>
+        </trans-unit>
+        <trans-unit id="52" resname="PL_variable">
+          <source>Variable</source>
+          <target>Variable</target>
+        </trans-unit>
+        <trans-unit id="58" resname="PL_modifiableField">
+          <source>Modifiable Field</source>
+          <target>Modifiable Field</target>
+        </trans-unit>
+        <trans-unit id="62" resname="PL_fixedSize">
+          <source>Fixed Size</source>
+          <target>Fixed Size</target>
+        </trans-unit>
+        <trans-unit id="63" resname="PL_variableSize">
+          <source>Variable Size</source>
+          <target>Variable Size</target>
+        </trans-unit>
+        <trans-unit id="64" resname="PL_continuousAndLoop">
+          <source>Continuous and Loop</source>
+          <target>Continuous and Loop</target>
+        </trans-unit>
+        <trans-unit id="85" resname="PL_top">
+          <source>Top</source>
+          <target>Top</target>
+        </trans-unit>
+        <trans-unit id="86" resname="PL_right">
+          <source>Right</source>
+          <target>Right</target>
+        </trans-unit>
+        <trans-unit id="87" resname="PL_left">
+          <source>Left</source>
+          <target>Left</target>
+        </trans-unit>
+        <trans-unit id="88" resname="PL_bottom">
+          <source>Bottom</source>
+          <target>Bottom</target>
+        </trans-unit>
+        <trans-unit id="89" resname="PL_file">
+          <source>File</source>
+          <target>File</target>
+        </trans-unit>
+        <trans-unit id="90" resname="PL_userInterface">
+          <source>User Interface</source>
+          <target>User Interface</target>
+        </trans-unit>
+        <trans-unit id="91" resname="PL_withFormulaBar">
+          <source>Show Formula Bar</source>
+          <target>Show Formula Bar</target>
+        </trans-unit>
+        <trans-unit id="92" resname="PL_AutomaticAlternateColor">
+          <source>Automatic Alternate</source>
+          <target>Automatic Alternate</target>
+        </trans-unit>
+      </group>
+
+      <group id="684" resname="PL_3DbuttonsFormats">
+        <!-- XDRP 2034 and 2035 -->
+        <trans-unit id="1" resname="PL_left">
+          <source>Left</source>
+          <target>Left</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_top">
+          <source>Top</source>
+          <target>Top</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_right">
+          <source>Right</source>
+          <target>Right</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_bottom">
+          <source>Bottom</source>
+          <target>Bottom</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_middle">
+          <source>Middle</source>
+          <target>Middle</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_none">
+          <source>None</source>
+          <target>None</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_backgroundOffset">
+          <source>Background Offset</source>
+          <target>Background Offset</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_pushButton">
+          <source>Push Button</source>
+          <target>Push Button</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_toolbarButton">
+          <source>Toolbar Button</source>
+          <target>Toolbar Button</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_custom">
+          <source>Custom</source>
+          <target>Custom</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_circle">
+          <source>Circle</source>
+          <target>Circle</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_toolbarButtonWithPopup">
+          <source>Toolbar Button with pop-up</source>
+          <target>Toolbar Button with pop-up</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_smallSystemSquare">
+          <source>Small System Square</source>
+          <target>Disclosure Button</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_officeXP">
+          <source>Office XP</source>
+          <target>Office XP</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_bevel">
+          <source>Bevel</source>
+          <target>Bevel</target>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_roundedBevel">
+          <source>Rounded Bevel</source>
+          <target>Rounded Bevel</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_collapseExpand">
+          <source>Collapse/Expand</source>
+          <target>Collapse/Expand</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_help">
+          <source>Help</source>
+          <target>Help</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_osXtextured">
+          <source>OS X Textured</source>
+          <target>OS X Textured</target>
+        </trans-unit>
+        <trans-unit id="20" resname="PL_osXgradient">
+          <source>OS X Gradient</source>
+          <target>OS X Gradient</target>
+        </trans-unit>
+        <trans-unit id="21" resname="PL_styleRegular">
+          <source>Regular</source>
+          <target>Regular</target>
+        </trans-unit>
+      </group>
+
+      <group id="803" resname="PL_objectProperties">
+        <trans-unit id="16" resname="PL_scaled">
+          <source>Scaled</source>
+          <target>Scaled</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_truncated">
+          <source>Truncated</source>
+          <target>Truncated</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_replicated">
+          <source>Replicated</source>
+          <target>Replicated</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_inheritedFromForm">
+          <source>Inherited from form</source>
+          <target>Inherited from form</target>
+        </trans-unit>
+        <trans-unit id="20" resname="PL_automatic">
+          <source>Automatic</source>
+          <target>Automatic</target>
+        </trans-unit>
+        <trans-unit id="22" resname="PL_macOS7">
+          <source>Mac OS 7</source>
+          <target>Mac OS 7</target>
+        </trans-unit>
+        <trans-unit id="23" resname="PL_windows311NT351">
+          <source>Windows 3.11, NT 3.51</source>
+          <target>Windows 3.11, NT 3.51</target>
+        </trans-unit>
+        <trans-unit id="24" resname="PL_Windows95982000NT4">
+          <source>Windows 95/98/2000, NT 4</source>
+          <target>Windows 95/98/2000, NT 4</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PL_macOS9">
+          <source>Mac OS 9</source>
+          <target>Mac OS 9</target>
+        </trans-unit>
+        <trans-unit id="26" resname="PL_macTheme">
+          <source>Mac Theme</source>
+          <target>Mac Theme</target>
+        </trans-unit>
+        <trans-unit id="27" resname="PL_none">
+          <source>None</source>
+          <target>None</target>
+        </trans-unit>
+        <trans-unit id="28" resname="PL_plain">
+          <source>Plain</source>
+          <target>Plain</target>
+        </trans-unit>
+        <trans-unit id="29" resname="PL_dotted">
+          <source>Dotted</source>
+          <target>Dotted</target>
+        </trans-unit>
+        <trans-unit id="30" resname="PL_raised">
+          <source>Raised</source>
+          <target>Raised</target>
+        </trans-unit>
+        <trans-unit id="31" resname="PL_sunken">
+          <source>Sunken</source>
+          <target>Sunken</target>
+        </trans-unit>
+        <trans-unit id="32" resname="PL_double">
+          <source>Double</source>
+          <target>Double</target>
+        </trans-unit>
+        <trans-unit id="47" resname="PL_inheritedFromDatabase">
+          <source>Inherited from database</source>
+          <target>Inherited from database</target>
+        </trans-unit>
+        <trans-unit id="78" resname="PL_system">
+          <source>System</source>
+          <target>System</target>
+        </trans-unit>
+        <trans-unit id="79" resname="PL_printing">
+          <source>Printing</source>
+          <target>Printing</target>
+        </trans-unit>
+        <trans-unit id="80" resname="PL_numericFormat">
+          <source>Numeric Format</source>
+          <target>Numeric Format</target>
+        </trans-unit>
+        <trans-unit id="81" resname="PL_threeStatesCheckbox">
+          <source>Three-states Checkbox</source>
+          <target>Three-states Checkbox</target>
+        </trans-unit>
+        <trans-unit id="82" resname="PL_arrays">
+          <source>Arrays</source>
+          <target>Arrays</target>
+        </trans-unit>
+        <trans-unit id="83" resname="PL_currentSelection">
+          <source>Current Selection</source>
+          <target>Current Selection</target>
+        </trans-unit>
+        <trans-unit id="84" resname="PL_namedSelection">
+          <source>Named Selection</source>
+          <target>Named Selection</target>
+        </trans-unit>
+        <trans-unit id="87" resname="PL_custom">
+          <source>Custom</source>
+          <target>Custom</target>
+        </trans-unit>
+        <trans-unit id="88" resname="PL_minimum">
+          <source>Minimum</source>
+          <target>Minimum</target>
+        </trans-unit>
+        <trans-unit id="89" resname="PL_maximum">
+          <source>Maximum</source>
+          <target>Maximum</target>
+        </trans-unit>
+        <trans-unit id="90" resname="PL_sum">
+          <source>Sum</source>
+          <target>Sum</target>
+        </trans-unit>
+        <trans-unit id="91" resname="PL_count">
+          <source>Count</source>
+          <target>Count</target>
+        </trans-unit>
+        <trans-unit id="92" resname="PL_average">
+          <source>Average</source>
+          <target>Average</target>
+        </trans-unit>
+        <trans-unit id="93" resname="PL_standardDeviation">
+          <source>Standard Deviation</source>
+          <target>Standard Deviation</target>
+        </trans-unit>
+        <trans-unit id="94" resname="PL_variance">
+          <source>Variance</source>
+          <target>Variance</target>
+        </trans-unit>
+        <trans-unit id="95" resname="PL_sumSquare">
+          <source>Sum Square</source>
+          <target>Sum Square</target>
+        </trans-unit>
+        <trans-unit id="96" resname="PL_automatic_main">
+          <source>Automatic (Main)</source>
+          <target>Automatic (Main)</target>
+        </trans-unit>
+        <trans-unit id="97" resname="PL_html">
+          <source>HTML</source>
+          <target>HTML</target>
+        </trans-unit>
+        <trans-unit id="98" resname="PL_rtf">
+          <source>RTF</source>
+          <target>RTF</target>
+        </trans-unit>
+        <trans-unit id="99" resname="PL_automatic_additional">
+          <source>Automatic (Additional)</source>
+          <target>Automatic (Additional)</target>
+        </trans-unit>
+        <trans-unit id="100" resname="PL_array">
+          <source>Array</source>
+          <target>Array</target>
+        </trans-unit>
+        <trans-unit id="101" resname="PL_listRef">
+          <source>List reference</source>
+          <target>List reference</target>
+        </trans-unit>
+        <trans-unit id="102" resname="PL_list">
+          <source>List</source>
+          <target>List</target>
+        </trans-unit>
+        <trans-unit id="103" resname="PL_selectedItemValue">
+          <source>Selected item value</source>
+          <target>Selected item value</target>
+        </trans-unit>
+        <trans-unit id="104" resname="PL_selectedItemRef">
+          <source>Selected item reference</source>
+          <target>Selected item reference</target>
+        </trans-unit>
+      </group>
+      <group id="849" resname="PL_progressBarFormat">
+        <trans-unit id="1" resname="PL_progressBar">
+          <source>Progress bar</source>
+          <target>Progress bar</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_barberShop">
+          <source>Barber shop</source>
+          <target>Barber shop</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_asynchronousProgressBar">
+          <source>Asynchronous progress bar</source>
+          <target>Asynchronous progress bar</target>
+        </trans-unit>
+      </group>
+      <group id="850" resname="PL_rulerFormat">
+        <!-- XDRP 2052-->
+        <trans-unit id="1" resname="PL_ruler">
+          <source>Ruler</source>
+          <target>Ruler</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_numericStepperr">
+          <source>Numeric stepper</source>
+          <target>Numeric stepper</target>
+        </trans-unit>
+      </group>
+      <group id="1003" resname="PL_yesNo">
+        <trans-unit id="3" resname="PL_no">
+          <source>No</source>
+          <target>No</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_yes">
+          <source>Yes</source>
+          <target>Yes</target>
+        </trans-unit>
+      </group>
+      <group id="1043" resname="PL_plainTransparent">
+        <trans-unit id="17" resname="PL_plain">
+          <source>Plain</source>
+          <target>Plain</target>
+        </trans-unit>
+        <trans-unit id="27" resname="PL_transparent">
+          <source>Transparent</source>
+          <target>Transparent</target>
+        </trans-unit>
+      </group>
+      <group id="1045" resname="PL_2011_2021">
+        <!-- XDRP 2011 (unused?) and 2021 -->
+        <trans-unit id="17" resname="PL_notUsed" translate="no">
+          <source>Not used</source>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_multipleSelection">
+          <source>Multiple Selection</source>
+          <target>Multiple Selection</target>
+        </trans-unit>
+        <trans-unit id="23" resname="PL_variableFrame">
+          <source>Variable</source>
+          <target>Variable</target>
+        </trans-unit>
+        <trans-unit id="24" resname="PL_fixedTruncation">
+          <source>Fixed (Truncation)</source>
+          <target>Fixed (Truncation)</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PL_fixedMultipleRecords">
+          <source>Fixed (Multiple Records)</source>
+          <target>Fixed (Multiple Records)</target>
+        </trans-unit>
+      </group>
+      <group id="2060" resname="PL_rotations">
+        <!-- XDRP 2060 Rotation -->
+        <trans-unit id="1" resname="PL_rotation">
+          <source>Orientation</source>
+          <target>Orientation</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_rotation_0">
+          <source>0°</source>
+          <target>0°</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_rotation_90">
+          <source>90° right</source>
+          <target>90° right</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_rotation_180">
+          <source>180°</source>
+          <target>180°</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_rotation_270">
+          <source>90° left</source>
+          <target>90° left</target>
+        </trans-unit>
+      </group>
+      <group id="2062" resname="PL_dpis">
+        <!-- XDRP 2062 Resolution -->
+        <trans-unit id="1" resname="PL_dpi72">
+          <source>72 dpi (Mac OS)</source>
+          <target>72 dpi (Mac OS)</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_dpi96">
+          <source>96 dpi (Windows or Web)</source>
+          <target>96 dpi (Windows or Web)</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_dpiAuto">
+          <source>Automatic</source>
+          <target>Automatic</target>
+        </trans-unit>
+      </group>
+      <group id="2063" resname="PL_zooms">
+        <!-- XDRP 2063 Zoom -->
+        <trans-unit id="1" resname="PL_zoom25" translate="no">
+          <source>25 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom50" translate="no">
+          <source>50 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom75" translate="no">
+          <source>75 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom100" translate="no">
+          <source>100 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom125" translate="no">
+          <source>125 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom150" translate="no">
+          <source>150 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom175" translate="no">
+          <source>175 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom200" translate="no">
+          <source>200 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom300" translate="no">
+          <source>300 %</source>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_zoom400" translate="no">
+          <source>400 %</source>
+        </trans-unit>
+      </group>
+      <group id="2064" resname="PL_pageViewMode">
+        <!-- XDRP 2064 View Mode -->
+        <trans-unit id="1" resname="PL_pageViewDraft">
+          <source>Draft</source>
+          <target>Draft</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_pageViewPage">
+          <source>Page</source>
+          <target>Page</target>
+        </trans-unit>
+        <trans-unit id="1" resname="PL_pageViewWeb">
+          <source>Embedded</source>
+          <target>Embedded</target>
+        </trans-unit>
+      </group>
+      <group id="1104" resname="PL_textAlignments">
+        <trans-unit id="1" resname="PL_textAlignDefault">
+          <source>Default</source>
+          <target>Default</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_textAlignLeft">
+          <source>Left</source>
+          <target>Left</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_textAlignCenter">
+          <source>Center</source>
+          <target>Center</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_textAlignRight">
+          <source>Right</source>
+          <target>Right</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_textAlignTop">
+          <source>Top</source>
+          <target>Top</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_textAlignBottom">
+          <source>Bottom</source>
+          <target>Bottom</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_textAlignJustify">
+          <source>Justify</source>
+          <target>Justify</target>
+        </trans-unit>				
+      </group>
+      <group id="1112" resname="PL_layoutIconLocation">
+        <trans-unit id="1" resname="PL_onTheLeft">
+          <source>Left</source>
+          <target>Left</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_onTheRight">
+          <source>Right</source>
+          <target>Right</target>
+        </trans-unit>			
+        <trans-unit id="3" resname="PL_onTheTop">
+          <source>Top</source>
+          <target>Top</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_onTheBottom">
+          <source>Bottom</source>
+          <target>Bottom </target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_inTheMiddle">
+          <source>Middle</source>
+          <target>Middle</target>
+        </trans-unit>
+      </group>
+      <group id="1113" resname="PL_variousXDRPs">
+        <trans-unit id="1" resname="PL_alwaysVisible">
+          <source>Always visible</source>
+          <target>Always visible</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_ifRecordSelected">
+          <source>If record selected</source>
+          <target>If record selected</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_ifRecordNotSelected">
+          <source>If record not selected</source>
+          <target>If record not selected</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_none">
+          <source>None</source>
+          <target>None</target>
+        </trans-unit>
+        <trans-unit id="5" resname="PL_single">
+          <source>Single</source>
+          <target>Single</target>
+        </trans-unit>
+        <trans-unit id="6" resname="PL_multiple">
+          <source>Multiple</source>
+          <target>Multiple</target>
+        </trans-unit>
+        <trans-unit id="7" resname="PL_doNothing">
+          <source>Do nothing</source>
+          <target>Do nothing</target>
+        </trans-unit>
+        <trans-unit id="8" resname="PL_editRecord">
+          <source>Edit record</source>
+          <target>Edit record</target>
+        </trans-unit>
+        <trans-unit id="9" resname="PL_displayRecord">
+          <source>Display record</source>
+          <target>Display record</target>
+        </trans-unit>
+        <trans-unit id="10" resname="PL_doNothing">
+          <source>Do nothing</source>
+          <target>Do nothing</target>
+        </trans-unit>
+        <trans-unit id="11" resname="PL_addRecord">
+          <source>Add record</source>
+          <target>Add record</target>
+        </trans-unit>
+        <trans-unit id="12" resname="PL_addInDetail">
+          <source>Add in Detail</source>
+          <target>Add in Detail</target>
+        </trans-unit>
+        <trans-unit id="13" resname="PL_displayInDetail">
+          <source>Display in Detail</source>
+          <target>Display in Detail</target>
+        </trans-unit>
+        <trans-unit id="14" resname="PL_none">
+          <source>None</source>
+          <target>None</target>
+        </trans-unit>
+        <trans-unit id="15" resname="PL_linked">
+          <source>Linked</source>
+          <target>Linked</target>
+        </trans-unit>
+        <trans-unit id="16" resname="PL_separated">
+          <source>Separated</source>
+          <target>Separated</target>
+        </trans-unit>
+        <trans-unit id="17" resname="PL_noneF">
+          <source>None</source>
+          <target>None</target>
+        </trans-unit>
+        <trans-unit id="18" resname="PL_toolbar">
+          <source>Toolbar</source>
+          <target>Toolbar</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PL_ribbon">
+          <source>Ribbon</source>
+          <target>Ribbon</target>
+        </trans-unit>
+        
+      </group>
+      <group id="859" resname="PL_FormTypes">
+        <!-- ex STR# ID 859 -->
+        <trans-unit id="1" resname="PL_detailForm">
+          <source>Detail Form</source>
+          <target>Detail Form</target>
+        </trans-unit>
+        <trans-unit id="2" resname="PL_listForm">
+          <source>List Form</source>
+          <target>List Form</target>
+        </trans-unit>
+        <trans-unit id="3" resname="PL_detailFormforPrinting">
+          <source>Detail Form for Printing</source>
+          <target>Detail Form for Printing</target>
+        </trans-unit>
+        <trans-unit id="4" resname="PL_listFormforPrinting">
+          <source>List Form for Printing</source>
+          <target>List Form for Printing</target>
+        </trans-unit>
+      </group>
+
+    </body>
+  </file>
+</xliff>
