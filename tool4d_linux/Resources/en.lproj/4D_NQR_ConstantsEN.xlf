@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Translation file for 4D products.
+   Copyright (C) 2012-2016 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+
+<xliff version="1.0" xmlns:d4="http://www.4d.com">
+   <file datatype="x-4DK#" original="undefined" source-language="en-US" target-language="en-US"
+      product-version="v16">
+      <header>
+         <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that
+            will be replaced (often by a numeric value) before the string is displayed</note>
+         <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s
+            name and must not be localised</note>
+         <note>\r, \t and \n are meta-characters.</note>
+      </header>
+      <body>
+
+<!--   Localized constant themes for NQR -->
+		  
+		 <group resname="ConstantThemes">
+	 		<trans-unit id="14900" resname="ConstNQRTheme_0">
+           		<source>QR Commands</source>
+        		<target>QR Commands</target>
+			</trans-unit>
+			<trans-unit id="14901" resname="ConstNQRTheme_1">
+          		<source>QR Operators</source>
+          		<target>QR Operators</target>
+			</trans-unit>
+			<trans-unit id="14902" resname="ConstNQRTheme_2">
+               <source>QR Report Types</source>
+               <target>QR Report Types</target>
+			</trans-unit>
+			<trans-unit id="14903" resname="ConstNQRTheme_3">
+               <source>QR Output Destination</source>
+               <target>QR Output Destination</target>
+			</trans-unit>
+			<trans-unit id="14904" resname="ConstNQRTheme_4">
+               <source>QR Text Properties</source>
+               <target>QR Text Properties</target>
+			</trans-unit>
+			<trans-unit id="14905" resname="ConstNQRTheme_5">
+               <source>QR Area Properties</source>
+               <target>QR Area Properties</target>
+			</trans-unit>
+			<trans-unit id="14906" resname="ConstNQRTheme_6">
+               <source>QR Rows for Properties</source>
+               <target>QR Rows for Properties</target>
+			</trans-unit>
+			<trans-unit id="14907" resname="ConstNQRTheme_7">
+               <source>QR Document Properties</source>
+               <target>QR Document Properties</target>
+			</trans-unit>
+			<trans-unit id="14908" resname="ConstNQRTheme_8">
+               <source>QR Borders</source>
+               <target>QR Borders</target>
+			</trans-unit>
+		</group>
+
+<!--   Localized constant names for NQR -->
+
+         <group restype="x-4DK#" d4:groupID="14900" d4:groupName="ConstNQRTheme_0">
+            <trans-unit id="14900_1" d4:value="500">
+               <source>qr cmd bold</source>
+               <target>qr cmd bold</target>
+            </trans-unit>
+            <trans-unit id="14900_2" d4:value="501">
+               <source>qr cmd italic</source>
+               <target>qr cmd italic</target>
+            </trans-unit>
+            <trans-unit id="14900_3" d4:value="502">
+               <source>qr cmd underline</source>
+               <target>qr cmd underline</target>
+            </trans-unit>
+            <trans-unit id="14900_4" d4:value="503">
+               <source>qr cmd left justified</source>
+               <target>qr cmd left justified</target>
+            </trans-unit>
+            <trans-unit id="14900_5" d4:value="504">
+               <source>qr cmd center justified</source>
+               <target>qr cmd center justified</target>
+            </trans-unit>
+            <trans-unit id="14900_6" d4:value="505">
+               <source>qr cmd right justified</source>
+               <target>qr cmd right justified</target>
+            </trans-unit>
+            <trans-unit id="14900_7" d4:value="506">
+               <source>qr cmd sum</source>
+               <target>qr cmd sum</target>
+            </trans-unit>
+            <trans-unit id="14900_8" d4:value="507">
+               <source>qr cmd average</source>
+               <target>qr cmd average</target>
+            </trans-unit>
+            <trans-unit id="14900_9" d4:value="508">
+               <source>qr cmd min</source>
+               <target>qr cmd min</target>
+            </trans-unit>
+            <trans-unit id="14900_10" d4:value="509">
+               <source>qr cmd max</source>
+               <target>qr cmd max</target>
+            </trans-unit>
+            <trans-unit id="14900_11" d4:value="510">
+               <source>qr cmd count</source>
+               <target>qr cmd count</target>
+            </trans-unit>
+            <trans-unit id="14900_12" d4:value="511">
+               <source>qr cmd plain</source>
+               <target>qr cmd plain</target>
+            </trans-unit>
+            <trans-unit id="14900_13" d4:value="512">
+               <source>qr cmd default justified</source>
+               <target>qr cmd default justified</target>
+            </trans-unit>
+            <trans-unit id="14900_14" d4:value="1000">
+               <source>qr cmd font dropdown</source>
+               <target>qr cmd font dropdown</target>
+            </trans-unit>
+            <trans-unit id="14900_15" d4:value="1002">
+               <source>qr cmd font color palette</source>
+               <target>qr cmd font color palette</target>
+            </trans-unit>
+            <trans-unit id="14900_16" d4:value="1003">
+               <source>qr cmd back color palette</source>
+               <target>qr cmd back color palette</target>
+            </trans-unit>
+            <trans-unit id="14900_17" d4:value="1004">
+               <source>qr cmd alt back color palette</source>
+               <target>qr cmd alt back color palette</target>
+            </trans-unit>
+            <trans-unit id="14900_18" d4:value="2000">
+               <source>qr cmd new</source>
+               <target>qr cmd new</target>
+            </trans-unit>
+            <trans-unit id="14900_19" d4:value="2001">
+               <source>qr cmd open</source>
+               <target>qr cmd open</target>
+            </trans-unit>
+            <trans-unit id="14900_20" d4:value="2002">
+               <source>qr cmd save</source>
+               <target>qr cmd save</target>
+            </trans-unit>
+            <trans-unit id="14900_21" d4:value="2003">
+               <source>qr cmd save as</source>
+               <target>qr cmd save as</target>
+            </trans-unit>
+            <trans-unit id="14900_22" d4:value="2004">
+               <source>qr cmd revert to save</source>
+               <target>qr cmd revert to save</target>
+            </trans-unit>
+            <trans-unit id="14900_23" d4:value="2005">
+               <source>qr cmd header and footer</source>
+               <target>qr cmd header and footer</target>
+            </trans-unit>
+            <trans-unit id="14900_24" d4:value="2006">
+               <source>qr cmd page setup</source>
+               <target>qr cmd page setup</target>
+            </trans-unit>
+            <trans-unit id="14900_25" d4:value="2007">
+               <source>qr cmd print preview</source>
+               <target>qr cmd print preview</target>
+            </trans-unit>
+            <trans-unit id="14900_26" d4:value="2008">
+               <source>qr cmd generate</source>
+               <target>qr cmd generate</target>
+            </trans-unit>
+            <trans-unit id="14900_27" d4:value="2050">
+               <source>qr cmd style toolbar</source>
+               <target>qr cmd style toolbar</target>
+            </trans-unit>
+            <trans-unit id="14900_28" d4:value="2051">
+               <source>qr cmd operators toolbar</source>
+               <target>qr cmd operators toolbar</target>
+            </trans-unit>
+            <trans-unit id="14900_29" d4:value="2052">
+               <source>qr cmd back colors toolbar</source>
+               <target>qr cmd back colors toolbar</target>
+            </trans-unit>
+            <trans-unit id="14900_30" d4:value="2053">
+               <source>qr cmd standard toolbar</source>
+               <target>qr cmd standard toolbar</target>
+            </trans-unit>
+            <trans-unit id="14900_31" d4:value="2054">
+               <source>qr cmd columns toolbar</source>
+               <target>qr cmd columns toolbar</target>
+            </trans-unit>
+            <trans-unit id="14900_32" d4:value="2500">
+               <source>qr cmd printer destination</source>
+               <target>qr cmd printer destination</target>
+            </trans-unit>
+            <trans-unit id="14900_33" d4:value="2501">
+               <source>qr cmd disk file destination</source>
+               <target>qr cmd disk file destination</target>
+            </trans-unit>
+            <trans-unit id="14900_34" d4:value="2502">
+               <source>qr cmd graph destination</source>
+               <target>qr cmd graph destination</target>
+            </trans-unit>
+            <trans-unit id="14900_35" d4:value="2503">
+               <source>qr cmd 4D View destination</source>
+               <target>qr cmd 4D View destination</target>
+            </trans-unit>
+            <trans-unit id="14900_36" d4:value="2504">
+               <source>qr cmd HTML file destination</source>
+               <target>qr cmd HTML file destination</target>
+            </trans-unit>
+            <trans-unit id="14900_37" d4:value="2600">
+               <source>qr cmd insert column</source>
+               <target>qr cmd insert column</target>
+            </trans-unit>
+            <trans-unit id="14900_38" d4:value="2601">
+               <source>qr cmd delete column</source>
+               <target>qr cmd delete column</target>
+            </trans-unit>
+            <trans-unit id="14900_39" d4:value="2602">
+               <source>qr cmd hide column</source>
+               <target>qr cmd hide column</target>
+            </trans-unit>
+            <trans-unit id="14900_40" d4:value="2603">
+               <source>qr cmd edit column</source>
+               <target>qr cmd edit column</target>
+            </trans-unit>
+            <trans-unit id="14900_41" d4:value="2604">
+               <source>qr cmd repeated values</source>
+               <target>qr cmd repeated values</target>
+            </trans-unit>
+            <trans-unit id="14900_42" d4:value="2605">
+               <source>qr cmd automatic width</source>
+               <target>qr cmd automatic width</target>
+            </trans-unit>
+            <trans-unit id="14900_43" d4:value="2606">
+               <source>qr cmd format</source>
+               <target>qr cmd format</target>
+            </trans-unit>
+            <trans-unit id="14900_44" d4:value="2607">
+               <source>qr cmd hide line</source>
+               <target>qr cmd hide line</target>
+            </trans-unit>
+            <trans-unit id="14900_45" d4:value="2608">
+               <source>qr cmd add column</source>
+               <target>qr cmd add column</target>
+            </trans-unit>
+            <trans-unit id="14900_46" d4:value="2609">
+               <source>qr cmd borders</source>
+               <target>qr cmd borders</target>
+            </trans-unit>
+            <trans-unit id="14900_47" d4:value="2610">
+               <source>qr cmd totals spacing</source>
+               <target>qr cmd totals spacing</target>
+            </trans-unit>
+            <trans-unit id="14900_48" d4:value="2611">
+               <source>qr cmd presentation</source>
+               <target>qr cmd presentation</target>
+            </trans-unit>
+            <trans-unit id="14900_49" d4:value="3002">
+               <source>qr cmd move left</source>
+               <target>qr cmd move left</target>
+            </trans-unit>
+            <trans-unit id="14900_50" d4:value="3003">
+               <source>qr cmd move right</source>
+               <target>qr cmd move right</target>
+            </trans-unit>
+            <trans-unit id="14900_51" d4:value="513">
+               <source>qr cmd standard deviation</source>
+               <target>qr cmd standard deviation</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14901" d4:groupName="ConstNQRTheme_1">
+            <trans-unit id="14901_1" d4:value="1">
+               <source>qr sum</source>
+               <target>qr sum</target>
+            </trans-unit>
+            <trans-unit id="14901_2" d4:value="2">
+               <source>qr average</source>
+               <target>qr average</target>
+            </trans-unit>
+            <trans-unit id="14901_3" d4:value="4">
+               <source>qr min</source>
+               <target>qr min</target>
+            </trans-unit>
+            <trans-unit id="14901_4" d4:value="8">
+               <source>qr max</source>
+               <target>qr max</target>
+            </trans-unit>
+            <trans-unit id="14901_5" d4:value="16">
+               <source>qr count</source>
+               <target>qr count</target>
+            </trans-unit>
+            <trans-unit id="14901_6" d4:value="32">
+               <source>qr standard deviation</source>
+               <target>qr standard deviation</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14902" d4:groupName="ConstNQRTheme_2">
+            <trans-unit id="14902_1" d4:value="1">
+               <source>qr list report</source>
+               <target>qr list report</target>
+            </trans-unit>
+            <trans-unit id="14902_2" d4:value="2">
+               <source>qr cross report</source>
+               <target>qr cross report</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14903" d4:groupName="ConstNQRTheme_3">
+            <trans-unit id="14903_1" d4:value="1">
+               <source>qr printer</source>
+               <target>qr printer</target>
+            </trans-unit>
+            <trans-unit id="14903_2" d4:value="2">
+               <source>qr text file</source>
+               <target>qr text file</target>
+            </trans-unit>
+            <trans-unit id="14903_3" d4:value="3" d4:deprecated="true">
+               <source>_o_qr 4D View area</source>
+               <target>_o_qr 4D View area</target>
+            </trans-unit>
+            <trans-unit id="14903_4" d4:value="4" d4:deprecated="true">
+               <source>_O_qr 4D Chart area</source>
+               <target>_O_qr 4D Chart area</target>
+            </trans-unit>
+            <trans-unit id="14903_5" d4:value="5">
+               <source>qr HTML file</source>
+               <target>qr HTML file</target>
+            </trans-unit>
+            <trans-unit id="14903_6" d4:value="*">
+               <source>qr no dialog</source>
+               <target>qr no dialog</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14904" d4:groupName="ConstNQRTheme_4">
+            <trans-unit id="14904_1" d4:value="1" d4:deprecated="true">
+               <source>_O_qr font</source>
+               <target>_O_qr font</target>
+            </trans-unit>
+            <trans-unit id="14904_2" d4:value="2">
+               <source>qr font size</source>
+               <target>qr font size</target>
+            </trans-unit>
+            <trans-unit id="14904_3" d4:value="3">
+               <source>qr bold</source>
+               <target>qr bold</target>
+            </trans-unit>
+            <trans-unit id="14904_4" d4:value="4">
+               <source>qr italic</source>
+               <target>qr italic</target>
+            </trans-unit>
+            <trans-unit id="14904_5" d4:value="5">
+               <source>qr underline</source>
+               <target>qr underline</target>
+            </trans-unit>
+            <trans-unit id="14904_6" d4:value="6">
+               <source>qr text color</source>
+               <target>qr text color</target>
+            </trans-unit>
+            <trans-unit id="14904_7" d4:value="7">
+               <source>qr justification</source>
+               <target>qr justification</target>
+            </trans-unit>
+            <trans-unit id="14904_8" d4:value="8">
+               <source>qr background color</source>
+               <target>qr background color</target>
+            </trans-unit>
+            <trans-unit id="14904_9" d4:value="9">
+               <source>qr alternate background color</source>
+               <target>qr alternate background color</target>
+            </trans-unit>
+            <trans-unit id="14904_10" d4:value="10">
+               <source>qr font name</source>
+               <target>qr font name</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14905" d4:groupName="ConstNQRTheme_5">
+            <trans-unit id="14905_1" d4:value="1" d4:deprecated="true">
+               <source>_o_qr view menubar</source>
+               <target>_o_qr view menubar</target>
+            </trans-unit>
+            <trans-unit id="14905_2" d4:value="2" d4:deprecated="true">
+               <source>_o_qr view standard toolbar</source>
+               <target>_o_qr view standard toolbar</target>
+            </trans-unit>
+            <trans-unit id="14905_3" d4:value="3" d4:deprecated="true">
+               <source>_o_qr view style toolbar</source>
+               <target>_o_qr view style toolbar</target>
+            </trans-unit>
+            <trans-unit id="14905_4" d4:value="4" d4:deprecated="true">
+               <source>_o_qr view operators toolbar</source>
+               <target>_o_qr view operators toolbar</target>
+            </trans-unit>
+            <trans-unit id="14905_5" d4:value="5" d4:deprecated="true">
+               <source>_o_qr view color toolbar</source>
+               <target>_o_qr view color toolbar</target>
+            </trans-unit>
+            <trans-unit id="14905_6" d4:value="6" d4:deprecated="true">
+               <source>_o_qr view column toolbar</source>
+               <target>_o_qr view column toolbar</target>
+            </trans-unit>
+            <trans-unit id="14905_7" d4:value="7">
+               <source>qr view contextual menus</source>
+               <target>qr view contextual menus</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14906" d4:groupName="ConstNQRTheme_6">
+            <trans-unit id="14906_1" d4:value="-1">
+               <source>qr title</source>
+               <target>qr title</target>
+            </trans-unit>
+            <trans-unit id="14906_2" d4:value="-2">
+               <source>qr detail</source>
+               <target>qr detail</target>
+            </trans-unit>
+            <trans-unit id="14906_3" d4:value="-3">
+               <source>qr grand total</source>
+               <target>qr grand total</target>
+            </trans-unit>
+            <trans-unit id="14906_4" d4:value="-4">
+               <source>qr header</source>
+               <target>qr header</target>
+            </trans-unit>
+            <trans-unit id="14906_5" d4:value="-5">
+               <source>qr footer</source>
+               <target>qr footer</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14907" d4:groupName="ConstNQRTheme_7">
+            <trans-unit id="14907_1" d4:value="1">
+               <source>qr printing dialog</source>
+               <target>qr printing dialog</target>
+            </trans-unit>
+            <trans-unit id="14907_2" d4:value="2">
+               <source>qr unit</source>
+               <target>qr unit</target>
+            </trans-unit>
+            <trans-unit id="14907_3" d4:value="3">
+               <source>qr field separator</source>
+               <target>qr field separator</target>
+            </trans-unit>
+            <trans-unit id="14907_4" d4:value="4">
+               <source>qr record separator</source>
+               <target>qr record separator</target>
+            </trans-unit>
+         </group>
+         <group restype="x-4DK#" d4:groupID="14908" d4:groupName="ConstNQRTheme_8">
+            <trans-unit id="14908_1" d4:value="1">
+               <source>qr left border</source>
+               <target>qr left border</target>
+            </trans-unit>
+            <trans-unit id="14908_2" d4:value="2">
+               <source>qr top border</source>
+               <target>qr top border</target>
+            </trans-unit>
+            <trans-unit id="14908_3" d4:value="4">
+               <source>qr right border</source>
+               <target>qr right border</target>
+            </trans-unit>
+            <trans-unit id="14908_4" d4:value="8">
+               <source>qr bottom border</source>
+               <target>qr bottom border</target>
+            </trans-unit>
+            <trans-unit id="14908_5" d4:value="16">
+               <source>qr inside vertical border</source>
+               <target>qr inside vertical border</target>
+            </trans-unit>
+            <trans-unit id="14908_6" d4:value="32">
+               <source>qr inside horizontal border</source>
+               <target>qr inside horizontal border</target>
+            </trans-unit>
+         </group>
+
+<!--   Localized Quick Report messages -->
+
+         <group resname="QRMessages">
+            <trans-unit resname="QR_MSG_Progress_generation">
+           		<source>Generating report...</source>
+        		<target>Generating report...</target>
+            </trans-unit>
+         </group>
+
+      </body>
+   </file>
+</xliff>
