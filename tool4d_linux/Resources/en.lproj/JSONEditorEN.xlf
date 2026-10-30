@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0" xmlns:d4="http://www.4d.com">
+  <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="en-US">
+    <header>
+      <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+      <group resname="ParsingErrors">
+        <trans-unit id="1" resname="parsingError1">
+          <source>'}' without '{'</source>
+          <target>'}' without '{'</target>
+        </trans-unit>
+        <trans-unit id="2" resname="parsingError2">
+          <source>']' without '['</source>
+          <target>']' without '['</target>
+        </trans-unit>
+        <trans-unit id="3" resname="parsingError3">
+          <source>Expecting ':' after key</source>
+          <target>Expecting ':' after key</target>
+        </trans-unit>
+        <trans-unit id="4" resname="parsingError4">
+          <source>Expecting key</source>
+          <target>Expecting key</target>
+        </trans-unit>
+        <trans-unit id="5" resname="parsingError5">
+          <source>Expecting value</source>
+          <target>Expecting value</target>
+        </trans-unit>
+        <trans-unit id="6" resname="parsingError6">
+          <source>',' out of object or array</source>
+          <target>',' out of object or array</target>
+        </trans-unit>
+        <trans-unit id="7" resname="parsingError7">
+          <source>Expecting ',' or ']' after value</source>
+          <target>Expecting ',' or ']' after value</target>
+        </trans-unit>
+        <trans-unit id="8" resname="parsingError8">
+          <source>Expecting ',' or '}' after value</source>
+          <target>Expecting ',' or '}' after value</target>
+        </trans-unit>
+        <trans-unit id="9" resname="parsingError9">
+          <source>Unexpected character after value</source>
+          <target>Unexpected character after value</target>
+        </trans-unit>
+        <trans-unit id="10" resname="parsingError10">
+          <source>Unexpected character in Escape Sequence</source>
+          <target>Unexpected character in Escape Sequence</target>
+        </trans-unit>
+        <trans-unit id="11" resname="parsingError11">
+          <source>Unexpected character in hexadecimal value</source>
+          <target>Unexpected character in hexadecimal value</target>
+        </trans-unit>
+        <trans-unit id="12" resname="parsingError12">
+          <source>Uncomplete hexadecimal value</source>
+          <target>Uncomplete hexadecimal value</target>
+        </trans-unit>
+        <trans-unit id="13" resname="parsingError13">
+          <source>Unexpected character after '-'</source>
+          <target>Unexpected character after '-'</target>
+        </trans-unit>
+        <trans-unit id="14" resname="parsingError14">
+          <source>Missing number after '-'</source>
+          <target>Missing number after '-'</target>
+        </trans-unit>
+        <trans-unit id="15" resname="parsingError15">
+          <source>Unexpected character in number</source>
+          <target>Unexpected character in number</target>
+        </trans-unit>
+        <trans-unit id="16" resname="parsingError16">
+          <source>Missing number after decimal separator</source>
+          <target>Missing number after decimal separator</target>
+        </trans-unit>
+        <trans-unit id="17" resname="parsingError17">
+          <source>Unexpected character after decimal separator</source>
+          <target>Unexpected character after decimal separator</target>
+        </trans-unit>
+        <trans-unit id="18" resname="parsingError18">
+          <source>Missing number after exponent</source>
+          <target>Missing number after exponent</target>
+        </trans-unit>
+        <trans-unit id="19" resname="parsingError19">
+          <source>Unexpected character after exponent</source>
+          <target>Unexpected character after exponent</target>
+        </trans-unit>
+        <trans-unit id="20" resname="parsingError20">
+          <source>Missing character in escape sequence</source>
+          <target>Missing character in escape sequence</target>
+        </trans-unit>
+        <trans-unit id="21" resname="parsingError21">
+          <source>Unexpected ':' after value</source>
+          <target>Unexpected ':' after value</target>
+        </trans-unit>
+        <trans-unit id="22" resname="parsingError22">
+          <source>Unexpected ':' while waiting value</source>
+          <target>Unexpected ':' while waiting value</target>
+        </trans-unit>
+      </group>      
+    </body>
+  </file>
+</xliff>
