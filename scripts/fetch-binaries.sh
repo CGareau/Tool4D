@@ -31,7 +31,8 @@ elif [[ "$branch" =~ ^([0-9]+)$ ]]; then
     code="$(curl -s -o /dev/null -w '%{http_code}' -I -m 30 "$PUB/$version/${BASH_REMATCH[1]}.$k/$build/win/tool4d_win.tar.xz")"
     [ "$code" = 302 ] && folder="${BASH_REMATCH[1]}.$k" && break
   done
-  [ -n "$folder" ] || { echo "::error::cannot find LTS minor for $branch build $build"; exit 1; }
+  # the Windows build is often published some days after the one in VERSION: retry on the next run
+  [ -n "$folder" ] || { echo "::warning::$branch build $build is not published yet on resources-download (win tool4d), skipped"; exit 0; }
 else
   echo "::error::unsupported branch name $branch"; exit 1
 fi
