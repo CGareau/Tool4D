@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Translation file for 4D products.
+   Copyright (C) 2007-2018 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" source-language="en-US" target-language="en-US" product-version="v17">
+    <header>
+      <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+      <group resname="CZIP errors">
+        <trans-unit id="1" resname="ERR_CZip_107">
+          <source>Cannot open zip archive {fileName} ({error}).</source>
+          <target>Zip-Archiv kann nicht geöffnet werden {fileName} ({error}).</target>
+        </trans-unit>
+		       <trans-unit id="2" resname="ERR_CZip_108">
+          <source>Cannot create zip archive {fileName} ({error}).</source>
+          <target>Zip-Archiv kann nicht erstellt werden {fileName} ({error}).</target>
+        </trans-unit>
+                <trans-unit id="3" resname="ERR_CZip_109">
+          <source>Encryption with no password.</source>
+          <target>Für die Verschlüsselung ist ein Kennwort erforderlich.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="ERR_CZip_106">
+          <source>Compression method not supported ({error}).</source>
+          <target>Nicht unterstützte Komprimierungsmethode.</target>
+        </trans-unit>
+        <trans-unit id="5" resname="ERR_CZip_110">
+          <source>Cannot open file ({error}).</source>
+          <target>Datei kann nicht geöffnet werden.</target>
+        </trans-unit>
+        <trans-unit id="6" resname="ERR_CZip_111">
+          <source>File is not a Zip archive.</source>
+          <target>Diese Datei ist kein Zip Archive.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Translation file for 4D products.
+   Copyright (C) 2010-2023 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0" xmlns:d4="http://www.4d.com">
+   <file datatype="x-STR#" original="undefined" source-language="en-US" target-language="en-US"
+      product-version="v18">
+      <header>
+         <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that
+            will be replaced (often by a numeric value) before the string is displayed</note>
+         <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s
+            name and must not be localised</note>
+         <note>\r, \t and \n are meta-characters.</note>
+      </header>
+      <body>
+         <group resname="NewDatabaseNewBar">
+            <trans-unit id="27" resname="MenuEditorNewBar">
+               <source>Menu Bar #</source>
+               <target>Menu Bar #</target>
+            </trans-unit>
+         </group>
+         <group resname="Messages">
+            <trans-unit id="mess_01" resname="WarningReplaceFileOrFolder">
+               <source>An item named "{ItemName}" already exists in this location. Do you want to
+                  replace it with the one you're moving?</source>
+               <target>An item named "{ItemName}" already exists in this location. Do you want to
+                  replace it with the one you're moving?</target>
+            </trans-unit>
+            <trans-unit id="mess_02" resname="WarningDeleteFileOrFolder">
+               <source>Do you really want to delete "{ItemName}" element?</source>
+               <target>Do you really want to delete "{ItemName}" element?</target>
+            </trans-unit>
+            <trans-unit id="mess_03" resname="WarningDeleteSelectedItems">
+               <source>Do you really want to delete the selected elements?</source>
+               <target>Do you really want to delete the selected elements?</target>
+            </trans-unit>
+         </group>
+         <group resname="HelpAppleMenu_1">
+            <note>IMPORTANT: DO NOT TRANSLATE! Please Use: "4D Help" for other languages.</note>
+            <trans-unit id="1" resname="HelpAppleTitle" translate="no">
+               <source>4D Help</source>
+            </trans-unit>
+         </group>
+         <group resname="CommonStyles">
+            <trans-unit id="1" resname="CommonSize">
+               <source>Size</source>
+               <target>Size</target>
+            </trans-unit>
+            <trans-unit id="2" resname="CommonStyle">
+               <source>Style</source>
+               <target>Style</target>
+            </trans-unit>
+            <trans-unit id="3" resname="CommonUnderline">
+               <source>Underline</source>
+               <target>Underline</target>
+            </trans-unit>
+            <trans-unit id="4" resname="CommonItalic">
+               <source>Italic</source>
+               <target>Italic</target>
+            </trans-unit>
+            <trans-unit id="5" resname="CommonBold">
+               <source>Bold</source>
+               <target>Bold</target>
+            </trans-unit>
+            <trans-unit id="6" resname="AppCommonStrikethrough">
+               <source>Strikethrough</source>
+               <target>Strikethrough</target>
+            </trans-unit>
+            <trans-unit id="7" resname="AppCommonFont">
+               <source>Font</source>
+               <target>Font</target>
+            </trans-unit>
+            <trans-unit id="8" resname="AppCommonTextColor">
+               <source>Text color</source>
+               <target>Text color</target>
+            </trans-unit>
+            <trans-unit id="9" resname="AppCommonBackgroundColor">
+               <source>Background color</source>
+               <target>Background color</target>
+            </trans-unit>
+            <trans-unit id="10" resname="CommonLastUsedFonts">
+               <source>Recent fonts</source>
+               <target>Recent fonts</target>
+            </trans-unit>
+            <trans-unit id="11" resname="CommonShowFontDialog">
+               <source>Fonts...</source>
+               <target>Fonts...</target>
+            </trans-unit>
+            <trans-unit id="12" resname="ShowMoreFonts">
+               <source>Show more fonts</source>
+               <target>Show more fonts</target>
+            </trans-unit>
+         </group>
+         <group resname="Labels">
+            <trans-unit id="43" resname="FileInVolume">
+               <source>"{file}" in volume "{volume}"</source>
+               <target>"{file}" in volume "{volume}"</target>
+            </trans-unit>
+            <trans-unit id="44" resname="ShowOnDisk">
+               <source>Show on disk</source>
+               <target>Show on disk</target>
+            </trans-unit>
+            <trans-unit id="47" resname="CopyPath">
+               <source>Copy the path</source>
+               <target>Copy the path</target>
+            </trans-unit>
+            <trans-unit id="48" resname="MessageLabel">
+               <source>Message:</source>
+               <target>Message:</target>
+            </trans-unit>
+         </group>
+         <group resname="Characters">
+            <trans-unit id="49" resname="CommonEllipse">
+               <source>…</source>
+               <target>…</target>
+            </trans-unit>
+            <trans-unit id="50" resname="CommonQuote">
+               <source>"</source>
+               <target>"</target>
+            </trans-unit>
+            <trans-unit id="51" resname="CommonApostrophe">
+               <source>'</source>
+               <target>'</target>
+            </trans-unit>
+         </group>
+         <group resname="DefaultFileName">
+            <trans-unit id="52" resname="MyFormula">
+               <source>My Formula</source>
+               <target>My Formula</target>
+            </trans-unit>
+            <trans-unit id="53" resname="MyQuery">
+               <source>My Query</source>
+               <target>My Query</target>
+            </trans-unit>
+         </group>
+         <group id="01" resname="BYTE_Unity_Display">
+            <trans-unit id="1" resname="Byte_Unity_Abbreviation">
+               <source>B</source>
+               <target>B</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Byte_Unity_Singular">
+               <source>Byte</source>
+               <target>Byte</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Byte_Unity_Plural">
+               <source>Bytes</source>
+               <target>Bytes</target>
+            </trans-unit>
+         </group>
+         <group resname="PrefsAndSettings">
+            <trans-unit id="101" resname="GeneralDocUrl">
+               <source>https://doc.4d.com/4dv21/help/command/en/</source>
+               <target>https://doc.4d.com/4dv21/help/command/en/</target>
+            </trans-unit>
+            <trans-unit id="102" resname="AppCommonLocalDoc">
+               <source>./Documentation/4dv21/Help/Command/en/</source>
+               <target>./Documentation/4dv21/Help/Command/en/</target>
+            </trans-unit>
+            <trans-unit id="103" resname="GeneralDocUrl2">
+               <source>https://developer.4d.com/docs/</source>
+               <target>https://developer.4d.com/docs/</target>
+            </trans-unit>
+            <trans-unit id="104" resname="QodlyDocUrl">
+               <source>https://developer.qodly.com/docs/</source>
+               <target>https://developer.qodly.com/docs/</target>
+            </trans-unit>
+         </group>
+         <group resname="AppCommonProgressMessage">
+            <trans-unit id="1" resname="AppCommonDownloadingFiles">
+               <source>Downloading files...</source>
+               <target>Downloading files...</target>
+            </trans-unit>
+            <trans-unit id="2" resname="AppCommonUpdatingClient">
+               <source>Updating client...</source>
+               <target>Updating client...</target>
+            </trans-unit>
+            <trans-unit id="3" resname="AppCommonRelaunchingApplication">
+               <source>Relaunching the application...</source>
+               <target>Relaunching the application...</target>
+            </trans-unit>
+            <trans-unit id="4" resname="AppCommonExpandingArchiveFile">
+               <source>Expanding archive file...</source>
+               <target>Expanding archive file...</target>
+            </trans-unit>
+            <trans-unit id="5" resname="AppCommonCopying">
+               <source>Copying...</source>
+               <target>Copying...</target>
+            </trans-unit>
+            <trans-unit id="6" resname="AppCommonCheckingFolders">
+               <source>Checking folders...</source>
+               <target>Checking folders...</target>
+            </trans-unit>
+            <trans-unit id="7" resname="AppCommonCheckingFiles">
+               <source>Checking files...</source>
+               <target>Checking files...</target>
+            </trans-unit>
+            <trans-unit id="8" resname="AppCommonDownloadingBytes">
+               <source>Downloading in progress...</source>
+               <target>Downloading in progress...</target>
+            </trans-unit>
+            <trans-unit id="9" resname="AppCommonDecompressingFiles">
+               <source>Decompressing files...</source>
+               <target>Decompressing files...</target>
+            </trans-unit>
+            <trans-unit id="10" resname="AppCommonUploading">
+               <source>Uploading:</source>
+               <target>Uploading:</target>
+            </trans-unit>
+            <trans-unit id="11" resname="AppCommonSyncFiles">
+               <source>Synchronizing files</source>
+               <target>Synchronizing files</target>
+            </trans-unit>
+            <trans-unit id="12" resname="AppCommonWaitBuildCacheFiles">
+               <source>Waiting to build the cache files</source>
+               <target>Waiting to build the cache files</target>
+            </trans-unit>
+            <trans-unit id="13" resname="AppCommonBuildresCache">
+               <source>Building the resource cache, please wait...</source>
+               <target>Building the resource cache, please wait...</target>
+            </trans-unit>
+            <trans-unit id="14" resname="AppCommonWaitPDFDriver">
+               <source>Waiting for the PDF driver...</source>
+               <target>Waiting for the PDF driver...</target>
+            </trans-unit>
+            <trans-unit id="15" resname="AppCommonPrintInProgress">
+               <source>Printing in progress...</source>
+               <target>Printing in progress...</target>
+            </trans-unit>
+            <trans-unit id="16" resname="AppCommonPrintProcessingPage">
+               <source>Processing page</source>
+               <target>Processing page</target>
+            </trans-unit>
+            <trans-unit id="17" resname="AppCommonPrintingPage">
+               <source>Printing page</source>
+               <target>Printing page</target>
+            </trans-unit>
+            <trans-unit id="18" resname="AppCommonPrintingDialName">
+               <source>Printing</source>
+               <target>Printing</target>
+            </trans-unit>
+            <trans-unit id="19" resname="AppCommonPrintingXPSOptimization">
+               <source>Optimizing XPS generation</source>
+               <target>Optimizing XPS generation</target>
+            </trans-unit>
+            <trans-unit id="20" resname="AppCommonFetchingDependencies">
+               <source>Fetching dependencies...</source>
+               <target>Fetching dependencies...</target>
+            </trans-unit>
+            <trans-unit id="21" resname="AppCommonLoadingProject">
+               <source>Loading project...</source>
+               <target>Loading project...</target>
+            </trans-unit>
+            <trans-unit id="22" resname="AppCommonDiscoveringMethods">
+               <source>Discovering methods ({count})...</source>
+               <target>Discovering methods ({count})...</target>
+            </trans-unit>
+            <trans-unit id="23" resname="AppCommonPackingProject">
+               <source>Packing project folder for clients...</source>
+               <target>Packing project folder for clients...</target>
+            </trans-unit>
+            <trans-unit id="24" resname="AppCommonLoadingProjectTitle">
+               <source>Opening project</source>
+               <target>Opening project</target>
+            </trans-unit>
+         </group>
+         <group resname="PrintingInfos">
+            <trans-unit resname="XPSViewerNotInstalled">
+               <source>XPS viewer not installed</source>
+               <target>XPS viewer not installed</target>
+            </trans-unit>
+			<trans-unit resname="XPSPrinterNotInstalled">
+               <source>XPS Printer not installed</source>
+               <target>XPS Printer not installed</target>
+            </trans-unit>
+			<trans-unit resname="PDFViewerNotInstalled">
+               <source>PDF viewer not installed</source>
+               <target>PDF viewer not installed</target>
+            </trans-unit>
+			<trans-unit resname="PDFPrinterNotInstalled">
+               <source>PDF Printer not installed</source>
+               <target>PDF Printer not installed</target>
+            </trans-unit>
+			<trans-unit resname="UnableToPerformePrintPreview">
+               <source>Unable to perform preview in XPS or PDF format</source>
+               <target>Unable to perform preview in XPS or PDF format</target>
+            </trans-unit>
+			<trans-unit resname="PrintPreview">
+               <source>Print Preview</source>
+               <target>Print Preview</target>
+            </trans-unit>
+         </group>
+         <group resname="Colors">
+            <trans-unit id="81" resname="Color_0">
+               <source>Automatic</source>
+               <target>Automatic</target>
+            </trans-unit>
+            <trans-unit id="82" resname="Color_1">
+               <source>Sable</source>
+               <target>Sable</target>
+            </trans-unit>
+            <trans-unit id="83" resname="Color_2">
+               <source>Melon</source>
+               <target>Melon</target>
+            </trans-unit>
+            <trans-unit id="84" resname="Color_3">
+               <source>Orange</source>
+               <target>Orange</target>
+            </trans-unit>
+            <trans-unit id="85" resname="Color_4">
+               <source>Salmon</source>
+               <target>Salmon</target>
+            </trans-unit>
+            <trans-unit id="86" resname="Color_5">
+               <source>Lilac</source>
+               <target>Lilac</target>
+            </trans-unit>
+            <trans-unit id="87" resname="Color_6">
+               <source>Light Violet</source>
+               <target>Light Violet</target>
+            </trans-unit>
+            <trans-unit id="88" resname="Color_7">
+               <source>Pigeon Blue</source>
+               <target>Pigeon Blue</target>
+            </trans-unit>
+            <trans-unit id="89" resname="Color_8">
+               <source>Turkish Blue</source>
+               <target>Turkish Blue</target>
+            </trans-unit>
+            <trans-unit id="90" resname="Color_9">
+               <source>Pale Green</source>
+               <target>Pale Green</target>
+            </trans-unit>
+            <trans-unit id="91" resname="Color_10">
+               <source>Yellow Green</source>
+               <target>Yellow Green</target>
+            </trans-unit>
+            <trans-unit id="92" resname="Color_11">
+               <source>Golden Maize</source>
+               <target>Golden Maize</target>
+            </trans-unit>
+            <trans-unit id="93" resname="Color_12">
+               <source>Grayish Brown</source>
+               <target>Grayish Brown</target>
+            </trans-unit>
+            <trans-unit id="94" resname="Color_13">
+               <source>Dark Sable</source>
+               <target>Dark Sable</target>
+            </trans-unit>
+            <trans-unit id="95" resname="Color_14">
+               <source>Antelope</source>
+               <target>Antelope</target>
+            </trans-unit>
+            <trans-unit id="96" resname="Color_15">
+               <source>Pale Blue</source>
+               <target>Pale Blue</target>
+            </trans-unit>
+            <trans-unit id="97" resname="Color_16">
+               <source>Cold Gray</source>
+               <target>Cold Gray</target>
+            </trans-unit>
+            <trans-unit id="98" resname="Color_17">
+               <source>Personalized...</source>
+               <target>Personalized...</target>
+            </trans-unit>
+         </group>
+         <group resname="FrontColors">
+            <trans-unit id="200" resname="FrontColor_0">
+               <source>Automatic</source>
+               <target>Automatic</target>
+            </trans-unit>
+            <trans-unit id="201" resname="FrontColor_1">
+               <source>Beige</source>
+               <target>Beige</target>
+            </trans-unit>
+            <trans-unit id="202" resname="FrontColor_2">
+               <source>Brown</source>
+               <target>Brown</target>
+            </trans-unit>
+            <trans-unit id="203" resname="FrontColor_3">
+               <source>Orange</source>
+               <target>Orange </target>
+            </trans-unit>
+            <trans-unit id="204" resname="FrontColor_4">
+               <source>Red</source>
+               <target>Red</target>
+            </trans-unit>
+            <trans-unit id="205" resname="FrontColor_5">
+               <source>Purple</source>
+               <target>Purple</target>
+            </trans-unit>
+            <trans-unit id="206" resname="FrontColor_6">
+               <source>Violet</source>
+               <target>Violet</target>
+            </trans-unit>
+            <trans-unit id="207" resname="FrontColor_7">
+               <source>Signal Blue</source>
+               <target>Signal Blue</target>
+            </trans-unit>
+            <trans-unit id="208" resname="FrontColor_8">
+               <source>Water Blue</source>
+               <target>Water Blue</target>
+            </trans-unit>
+            <trans-unit id="209" resname="FrontColor_9">
+               <source>Leaf Green</source>
+               <target>Leaf Green</target>
+            </trans-unit>
+            <trans-unit id="210" resname="FrontColor_10">
+               <source>Signal Green</source>
+               <target>Signal Green</target>
+            </trans-unit>
+            <trans-unit id="211" resname="FrontColor_11">
+               <source>Brillant Yellow Green</source>
+               <target>Brillant Yellow Green</target>
+            </trans-unit>
+            <trans-unit id="212" resname="FrontColor_12">
+               <source>Olive</source>
+               <target>Olive</target>
+            </trans-unit>
+            <trans-unit id="213" resname="FrontColor_13">
+               <source>Saddle Brown</source>
+               <target>Saddle Brown</target>
+            </trans-unit>
+            <trans-unit id="214" resname="FrontColor_14">
+               <source>Beaver Brown</source>
+               <target>Beaver Brown</target>
+            </trans-unit>
+            <trans-unit id="215" resname="FrontColor_15">
+               <source>Moderate blue</source>
+               <target>Moderate blue</target>
+            </trans-unit>
+            <trans-unit id="216" resname="FrontColor_16">
+               <source>Dark Cold Gray</source>
+               <target>Dark Cold Gray</target>
+            </trans-unit>
+            <trans-unit id="217" resname="FrontColor_17">
+               <source>Personalized...</source>
+               <target>Personalized...</target>
+            </trans-unit>
+         </group>
+         <group resname="DatabaseMethodNames" id="STR405except1">
+            <trans-unit id="1" resname="DatabaseMethodName_OnStartup">
+               <source>On Startup</source>
+               <target>On Startup</target>
+            </trans-unit>
+            <trans-unit id="2" resname="DatabaseMethodName_OnServerStartup">
+               <source>On Server Startup</source>
+               <target>On Server Startup</target>
+            </trans-unit>
+            <trans-unit id="3" resname="DatabaseMethodName_OnExit">
+               <source>On Exit</source>
+               <target>On Exit</target>
+            </trans-unit>
+            <trans-unit id="4" resname="DatabaseMethodName_OnServerShutdown">
+               <source>On Server Shutdown</source>
+               <target>On Server Shutdown</target>
+            </trans-unit>
+            <trans-unit id="5" resname="DatabaseMethodName_OnServerOpenConnection">
+               <source>On Server Open Connection</source>
+               <target>On Server Open Connection</target>
+            </trans-unit>
+            <trans-unit id="6" resname="DatabaseMethodName_OnWebConnection">
+               <source>On Web Connection</source>
+               <target>On Web Connection</target>
+            </trans-unit>
+            <trans-unit id="7" resname="DatabaseMethodName_OnServerCloseConnection">
+               <source>On Server Close Connection</source>
+               <target>On Server Close Connection</target>
+            </trans-unit>
+            <trans-unit id="8" resname="DatabaseMethodName_OnWebAuthentication">
+               <source>On Web Authentication</source>
+               <target>On Web Authentication</target>
+            </trans-unit>
+            <trans-unit id="9" resname="DatabaseMethodName_OnBackupStartup">
+               <source>On Backup Startup</source>
+               <target>On Backup Startup</target>
+            </trans-unit>
+            <trans-unit id="10" resname="DatabaseMethodName_OnBackupShutdown">
+               <source>On Backup Shutdown</source>
+               <target>On Backup Shutdown</target>
+            </trans-unit>
+            <trans-unit id="11" resname="DatabaseMethodName_OnDrop">
+               <source>On Drop</source>
+               <target>On Drop</target>
+            </trans-unit>
+            <trans-unit id="12" resname="DatabaseMethodName_OnSQLAuthentication">
+               <source>On SQL Authentication</source>
+               <target>On SQL Authentication</target>
+            </trans-unit>
+            <trans-unit id="13" resname="DatabaseMethodName_OnWebSessionClose">
+               <source>On Web Legacy Close Session</source>
+               <target>On Web Legacy Close Session</target>
+            </trans-unit>
+            <trans-unit id="14" resname="DatabaseMethodName_OnSystemEvents">
+               <source>On System Event</source>
+               <target>On System Event</target>
+            </trans-unit>
+            <trans-unit id="15" resname="DatabaseMethodName_OnHostDatabaseEvent">
+               <source>On Host Database Event</source>
+               <target>On Host Database Event</target>
+            </trans-unit>
+            <trans-unit id="16" resname="DatabaseMethodName_OnRESTAuthentication">
+               <source>On REST Authentication</source>
+               <target>On REST Authentication</target>
+            </trans-unit>
+			<trans-unit id="17" resname="DatabaseMethodName_OnMobileAppAuthentication">
+               <source>On Mobile App Authentication</source>
+               <target>On Mobile App Authentication</target>
+            </trans-unit>
+			<trans-unit id="18" resname="DatabaseMethodName_OnMobileAppAction">
+               <source>On Mobile App Action</source>
+               <target>On Mobile App Action</target>
+            </trans-unit>
+         </group>
+         <group resname="Window_titles">
+            <trans-unit id="81" resname="window_Clipboard">
+               <source>Clipboard</source>
+               <target>Clipboard</target>
+            </trans-unit>
+			<trans-unit id="82" resname="window_ReadOnly">
+               <source>Read only</source>
+               <target>Read only</target>
+            </trans-unit>
+			<trans-unit id="83" resname="window_Alert">
+               <source>Alert</source>
+               <target>Alert</target>
+            </trans-unit>
+			<trans-unit id="84" resname="window_Information">
+               <source>Information</source>
+               <target>Information</target>
+            </trans-unit>
+			<trans-unit id="85" resname="window_Error">
+               <source>Error</source>
+               <target>Error</target>
+            </trans-unit>
+         </group>
+         <group resname="Date Formats">
+            <note>Date formats used by String 4D command (used to be in resource itl1 2000)</note>
+            <note>Patterns must comply with Unicode Technical Report 35</note>
+            <note>http://unicode.org/reports/tr35/#Date_Format_Patterns</note>
+            <trans-unit id="103" resname="DateFormatLong">
+               <source>MMMM d, y</source>
+               <target>MMMM d, y</target>
+               <note>Date format 5</note>
+            </trans-unit>
+            <trans-unit id="104" resname="DateFormatAbbreviated">
+               <source>MMM d, y</source>
+               <target>MMM d, y</target>
+               <note>Date format 6</note>
+            </trans-unit>
+            <trans-unit id="105" resname="WeekDay1">
+               <source>Sunday</source>
+               <target>Sunday</target>
+            </trans-unit>
+            <trans-unit id="106" resname="WeekDay2">
+               <source>Monday</source>
+               <target>Monday</target>
+            </trans-unit>
+            <trans-unit id="107" resname="WeekDay3">
+               <source>Tuesday</source>
+               <target>Tuesday</target>
+            </trans-unit>
+            <trans-unit id="108" resname="WeekDay4">
+               <source>Wednesday</source>
+               <target>Wednesday</target>
+            </trans-unit>
+            <trans-unit id="109" resname="WeekDay5">
+               <source>Thursday</source>
+               <target>Thursday</target>
+            </trans-unit>
+            <trans-unit id="110" resname="WeekDay6">
+               <source>Friday</source>
+               <target>Friday</target>
+            </trans-unit>
+            <trans-unit id="111" resname="WeekDay7">
+               <source>Saturday</source>
+               <target>Saturday</target>
+            </trans-unit>
+            <trans-unit id="112" resname="Month1">
+               <source>January</source>
+               <target>January</target>
+            </trans-unit>
+            <trans-unit id="113" resname="Month2">
+               <source>February</source>
+               <target>February</target>
+            </trans-unit>
+            <trans-unit id="114" resname="Month3">
+               <source>March</source>
+               <target>March</target>
+            </trans-unit>
+            <trans-unit id="115" resname="Month4">
+               <source>April</source>
+               <target>April</target>
+            </trans-unit>
+            <trans-unit id="116" resname="Month5">
+               <source>May</source>
+               <target>May</target>
+            </trans-unit>
+            <trans-unit id="117" resname="Month6">
+               <source>June</source>
+               <target>June</target>
+            </trans-unit>
+            <trans-unit id="118" resname="Month7">
+               <source>July</source>
+               <target>July</target>
+            </trans-unit>
+            <trans-unit id="119" resname="Month8">
+               <source>August</source>
+               <target>August</target>
+            </trans-unit>
+            <trans-unit id="120" resname="Month9">
+               <source>September</source>
+               <target>September</target>
+            </trans-unit>
+            <trans-unit id="121" resname="Month10">
+               <source>October</source>
+               <target>October</target>
+            </trans-unit>
+            <trans-unit id="122" resname="Month11">
+               <source>November</source>
+               <target>November</target>
+            </trans-unit>
+            <trans-unit id="123" resname="Month12">
+               <source>December</source>
+               <target>December</target>
+            </trans-unit>
+            <trans-unit id="124" resname="MonthAbbreviated1">
+               <source>Jan</source>
+               <target>Jan</target>
+            </trans-unit>
+            <trans-unit id="125" resname="MonthAbbreviated2">
+               <source>Feb</source>
+               <target>Feb</target>
+            </trans-unit>
+            <trans-unit id="126" resname="MonthAbbreviated3">
+               <source>Mar</source>
+               <target>Mar</target>
+            </trans-unit>
+            <trans-unit id="127" resname="MonthAbbreviated4">
+               <source>Apr</source>
+               <target>Apr</target>
+            </trans-unit>
+            <trans-unit id="128" resname="MonthAbbreviated5">
+               <source>May</source>
+               <target>May</target>
+            </trans-unit>
+            <trans-unit id="129" resname="MonthAbbreviated6">
+               <source>Jun</source>
+               <target>Jun</target>
+            </trans-unit>
+            <trans-unit id="130" resname="MonthAbbreviated7">
+               <source>Jul</source>
+               <target>Jul</target>
+            </trans-unit>
+            <trans-unit id="131" resname="MonthAbbreviated8">
+               <source>Aug</source>
+               <target>Aug</target>
+            </trans-unit>
+            <trans-unit id="132" resname="MonthAbbreviated9">
+               <source>Sep</source>
+               <target>Sep</target>
+            </trans-unit>
+            <trans-unit id="133" resname="MonthAbbreviated10">
+               <source>Oct</source>
+               <target>Oct</target>
+            </trans-unit>
+            <trans-unit id="134" resname="MonthAbbreviated11">
+               <source>Nov</source>
+               <target>Nov</target>
+            </trans-unit>
+            <trans-unit id="135" resname="MonthAbbreviated12">
+               <source>Dec</source>
+               <target>Dec</target>
+            </trans-unit>
+                        
+        </group>
+         
+        <group resname="STR# ID 149" id="149">
+            <trans-unit id="1">
+               <source> hour </source>
+               <target> hour </target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source> minute </source>
+               <target> minute </target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source> second </source>
+               <target> second </target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source> hours </source>
+               <target> hours </target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source> minutes </source>
+               <target> minutes </target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source> seconds </source>
+               <target> seconds </target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source> AM</source>
+               <target> AM</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source> PM</source>
+               <target> PM</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source> P</source>
+               <target> P</target>
+            </trans-unit>
+          </group>
+
+         <group resname="STR# ID 50" id="50"> 
+            <trans-unit id="1">
+               <source>Help about:</source>
+               <target>Help about:</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>OK</source>
+               <target>OK</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Save</source>
+               <target>Save</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Step</source>
+               <target>Step</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>No Trace</source>
+               <target>No Trace</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Abort</source>
+               <target>Abort</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>True</source>
+               <target>True</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>False</source>
+               <target>False</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Undefined</source>
+               <target>Undefined</target>
+            </trans-unit>
+         </group>
+         <group resname="STR# ID 143" id="143"> 
+			<note>This list of trans-units is used for syntax error reporting, and must be synchronized with the typarg4d enum in c++ code.</note>
+            <trans-unit id="1">
+               <source>a numeric expression</source>
+               <target>a numeric expression</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>a numeric expression</source>
+               <target>a numeric expression</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>a text expression</source>
+               <target>a text expression</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>a text expression</source>
+               <target>a text expression</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>a date expression</source>
+               <target>a date expression</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>a boolean expression</source>
+               <target>a boolean expression</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>a time expression or a document reference</source>
+               <target>a time expression or a document reference</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>an object</source>
+               <target>an object</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>a pointer</source>
+               <target>a pointer</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <note>any expression that is not undefined</note>
+               <source>an expression</source>
+               <target>an expression</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <note>any expression, including undefined values</note>
+               <source>an expression</source>
+               <target>an expression</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>a collection</source>
+               <target>a collection</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>a picture</source>
+               <target>a picture</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>a blob</source>
+               <target>a blob</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>a variable</source>
+               <target>a variable</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>a field</source>
+               <target>a field</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>a field or a variable</source>
+               <target>a field or a variable</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>a table</source>
+               <target>a table</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>a table</source>
+               <target>a table</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>a parameter</source>
+               <target>a parameter</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>a field or a table</source>
+               <target>a field or a table</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>a field or a variable or a parameter</source>
+               <target>a field or a variable or a parameter</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>a variable or a parameter</source>
+               <target>a variable or a parameter</target>
+            </trans-unit>
+            <trans-unit id="24">
+               <source>a '*'</source>
+               <target>a '*'</target>
+            </trans-unit>
+            <trans-unit id="25">
+               <source>a '&gt;'</source>
+               <target>a '&gt;'</target>
+            </trans-unit>
+            <trans-unit id="26">
+               <source>a '&lt;'</source>
+               <target>a '&lt;'</target>
+            </trans-unit>
+            <trans-unit id="27">
+               <source>a '&gt;='</source>
+               <target>a '&gt;='</target>
+            </trans-unit>
+            <trans-unit id="28">
+               <source>a '&lt;='</source>
+               <target>a '&lt;='</target>
+            </trans-unit>
+            <trans-unit id="29">
+               <source>a '#'</source>
+               <target>a '#'</target>
+            </trans-unit>
+            <trans-unit id="30">
+               <source>an '&amp;'</source>
+               <target>an '&amp;'</target>
+            </trans-unit>
+            <trans-unit id="31">
+               <source>an '|'</source>
+               <target>an '|'</target>
+            </trans-unit>
+            <trans-unit id="32">
+               <source>an '='</source>
+               <target>an '='</target>
+            </trans-unit>
+            <trans-unit id="33">
+               <source>a '±'</source>
+               <target>a '±'</target>
+            </trans-unit>
+            <trans-unit id="34">
+               <source>a '&lt;' or a '&gt;'</source>
+               <target>a '&lt;' or a '&gt;'</target>
+            </trans-unit>
+            <trans-unit id="35">
+               <source>a formula</source>
+               <target>a formula</target>
+            </trans-unit>
+         </group>
+         <group resname="MenuEditorLabels">
+            <trans-unit id="27" resname="MenuEditorNewBar">
+               <source>Menu Bar #</source>
+               <target>Menu Bar #</target>
+            </trans-unit>
+         </group>
+
+         <group resname="ObjectNames" id="437">
+            <!--> others trans-unit  in ExplorerEN<-->
+           <trans-unit id="32" resname="RootObjType">
+             <source>Default Folder</source>
+             <target>Default Folder</target>
+           </trans-unit>
+           <trans-unit id="34" resname="DefaultTableGroup">
+             <source>Default Tables</source>
+             <target>Default Tables</target>
+           </trans-unit>
+           <trans-unit id="35" resname="DefaultFormObjGroup">
+             <source>Default Forms</source>
+             <target>Default Forms</target>
+           </trans-unit>
+           <trans-unit id="36" resname="DefaultMethodGroup">
+             <source>Default Project Methods</source>
+             <target>Default Project Methods</target>
+           </trans-unit>
+           <trans-unit id="37" resname="DefaultClassGroup">
+             <source>Default Classes</source>
+             <target>Default Classes</target>
+           </trans-unit>
+         </group>
+         <group id="9000" resname="ShortcutsToolbox ex STR#9000">
+            <trans-unit id="1" resname="Item1Empty" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="2" d4:includeIf="mac">
+               <source>Cmd</source>
+               <target>Cmd</target>
+            </trans-unit>
+            <trans-unit id="2" d4:includeIf="win">
+               <source>Ctrl</source>
+               <target>Ctrl</target>
+            </trans-unit>
+            <trans-unit id="3" d4:includeIf="mac">
+               <source>Option</source>
+               <target>Option</target>
+            </trans-unit>
+            <trans-unit id="3" d4:includeIf="win">
+               <source>Alt</source>
+               <target>Alt</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Shift</source>
+               <target>Shift</target>
+            </trans-unit>
+            <trans-unit id="5" translate="no">
+               <source>F1</source>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>F2</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>F3</source>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source>F4</source>
+            </trans-unit>
+            <trans-unit id="9" translate="no">
+               <source>F5</source>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>F6</source>
+            </trans-unit>
+            <trans-unit id="11" translate="no">
+               <source>F7</source>
+            </trans-unit>
+            <trans-unit id="12" translate="no">
+               <source>F8</source>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>F9</source>
+            </trans-unit>
+            <trans-unit id="14" translate="no">
+               <source>F10</source>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>F11</source>
+            </trans-unit>
+            <trans-unit id="16" translate="no">
+               <source>F12</source>
+            </trans-unit>
+            <trans-unit id="17" translate="no">
+               <source>F13</source>
+            </trans-unit>
+            <trans-unit id="18" translate="no">
+               <source>F14</source>
+            </trans-unit>
+            <trans-unit id="19" translate="no">
+               <source>F15</source>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>Insert</source>
+               <target>Insert</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>Delete</source>
+               <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>Home</source>
+               <target>Home</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>End</source>
+               <target>End</target>
+            </trans-unit>
+            <trans-unit id="24">
+               <source>Page Up</source>
+               <target>Page Up</target>
+            </trans-unit>
+            <trans-unit id="25">
+               <source>Page Down</source>
+               <target>Page Down</target>
+            </trans-unit>
+            <trans-unit id="26">
+               <source>Left Arrow</source>
+               <target>Left Arrow</target>
+            </trans-unit>
+            <trans-unit id="27">
+               <source>Right Arrow</source>
+               <target>Right Arrow</target>
+            </trans-unit>
+            <trans-unit id="28">
+               <source>Up Arrow</source>
+               <target>Up Arrow</target>
+            </trans-unit>
+            <trans-unit id="29">
+               <source>Down Arrow</source>
+               <target>Down Arrow</target>
+            </trans-unit>
+            <trans-unit id="30">
+               <source>Tab</source>
+               <target>Tab</target>
+            </trans-unit>
+            <trans-unit id="31">
+               <source>Space</source>
+               <target>Space</target>
+            </trans-unit>
+            <trans-unit id="32" resname="Item32Empty" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="33">
+               <source>Back</source>
+               <target>Back</target>
+            </trans-unit>
+            <trans-unit id="34">
+               <source>Enter</source>
+               <target>Enter</target>
+            </trans-unit>
+            <trans-unit id="35">
+               <source>Esc</source>
+               <target>Esc</target>
+            </trans-unit>
+            <trans-unit id="36" d4:includeIf="mac">
+               <source>Cmd</source>
+               <target>Cmd</target>
+            </trans-unit>
+            <trans-unit id="36" d4:includeIf="win">
+               <source>Ctrl</source>
+               <target>Ctrl</target>
+            </trans-unit>
+            <trans-unit id="37">
+               <source>Return</source>
+               <target>Return</target>
+            </trans-unit>
+         </group>  
+      </body>
+   </file>
+</xliff>
