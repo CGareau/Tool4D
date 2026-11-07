@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0" xmlns:d4="http://www.4d.com">
+  <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="en-US">
+    <header>
+      <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+      <group id="1300" resname="CMFormObjectPicture" restype="menu">
+        <note>Was resource MENU 1300</note>
+        <trans-unit d4:command="cut" d4:excludeIf="pictNull" d4:includeIf="canEdit" id="30">
+          <source>Cut</source>
+          <target>Cut</target>
+        </trans-unit>
+        <trans-unit d4:command="copy" d4:excludeIf="pictNull" id="31">
+          <source>Copy</source>
+          <target>Copy</target>
+        </trans-unit>
+        <trans-unit d4:command="paste" d4:excludeIf="noPictInScrap" d4:includeIf="canEdit" id="32">
+          <source>Paste</source>
+          <target>Paste</target>
+        </trans-unit>
+        <trans-unit d4:command="clear" d4:excludeIf="pictNull" d4:includeIf="canEdit" id="33">
+          <source>Clear</source>
+          <target>Clear</target>
+        </trans-unit>
+        <trans-unit id="34" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:command="import" d4:includeIf="canEdit" id="35">
+          <source>Import...</source>
+          <target>Import...</target>
+        </trans-unit>
+        <trans-unit d4:command="export" id="36">
+          <source>Save as...</source>
+          <target>Save as...</target>
+        </trans-unit>
+        <trans-unit id="37" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="38" menu-name="subCMFormObjectPictureDisplayFormat">
+          <source>Display format</source>
+          <target>Display format</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="debug" id="39" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:includeIf="debug" id="41" menu-name="subCMFormObjectPictureDebugData" translate="no">
+          <source>Picture data...</source>
+          <target>Picture data...</target>
+        </trans-unit>
+        <trans-unit d4:command="dump" d4:includeIf="debug" id="43" translate="no">
+          <source>Dump</source>
+          <target>Dump</target>
+        </trans-unit>
+      </group>
+
+      <group id="1301" resname="subCMFormObjectPictureDisplayFormat" restype="menu">
+        <note>Was resource MENU 1301</note>
+        <trans-unit d4:command="dfTopLeft" id="70">
+          <source>Truncated non-centered</source>
+          <target>Truncated non-centered</target>
+        </trans-unit>
+        <trans-unit d4:command="dfScaleToFit" id="71">
+          <source>Scaled to fit</source>
+          <target>Scaled to fit</target>
+        </trans-unit>
+        <trans-unit d4:command="dfScaleCenter" id="72">
+          <source>Scaled to fit centered prop</source>
+          <target>Scaled to fit centered prop</target>
+        </trans-unit>
+        <trans-unit d4:command="dfCenter" d4:includeIf="debug" id="73">
+          <source>Truncated (centered)</source>
+          <target>Truncated (centered)</target>
+        </trans-unit>
+        <trans-unit d4:command="dfOnBackground" d4:includeIf="debug" id="74">
+          <source>On Background</source>
+          <target>On Background</target>
+        </trans-unit>
+        <trans-unit d4:command="dfScaleEven" d4:includeIf="debug" id="75">
+          <source>Scaled to fit (proportional)</source>
+          <target>Scaled to fit (proportional)</target>
+        </trans-unit>
+        <trans-unit d4:command="dfTile" d4:includeIf="debug" id="76">
+          <source>Replicated</source>
+          <target>Replicated</target>
+        </trans-unit>
+      </group>
+
+      
+    </body>
+  </file>
+</xliff>
