@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v20 R2" source-language="en" target-language="en">
+    <header>
+      <note>file generated using 4D Doc Center. Please do not modify.</note>
+    </header>
+    <body>
+      <group resname="4D syntax">
+        <trans-unit id="1317" resname="cmd1317">
+          <source/>
+          <target>WP New {( source {; option} )} -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1317" resname="desc1317">
+          <source/>
+          <target>creates and returns a 4D Write Pro object</target>
+        </trans-unit>
+        <trans-unit id="1318" resname="cmd1318">
+          <source/>
+          <target>WP Import document ( filePath {; option} ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1318" resname="desc1318">
+          <source/>
+          <target>converts an existing 4D Write Pro / 4D Write document (.4wp, .4w7 or .4wt) or MS Word document (.docx) to a new 4D Write Pro object</target>
+        </trans-unit>
+        <trans-unit id="1319" resname="cmd1319">
+          <source/>
+          <target>WP EXPORT VARIABLE ( wpDoc ; destination ; format {; option} ) </target>
+        </trans-unit>
+        <trans-unit id="1319" resname="desc1319">
+          <source/>
+          <target>exports the wpDoc 4D Write Pro object to the 4D destination variable in the specified format</target>
+        </trans-unit>
+        <trans-unit id="1337" resname="cmd1337">
+          <source/>
+          <target>WP EXPORT DOCUMENT ( wpDoc ; filePath {; format {; option}} ) </target>
+        </trans-unit>
+        <trans-unit id="1337" resname="desc1337">
+          <source/>
+          <target>exports the wpDoc 4D Write Pro object to a document on disk according to the filePath parameter as well as any optional parameters</target>
+        </trans-unit>
+        <trans-unit id="1340" resname="cmd1340">
+          <source/>
+          <target>WP Selection range ( {* ;} wpArea ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1340" resname="desc1340">
+          <source/>
+          <target>returns a new range object or a picture object based upon the currently selected content in the wpArea 4D Write Pro area</target>
+        </trans-unit>
+        <trans-unit id="1341" resname="cmd1341">
+          <source/>
+          <target>WP Text range ( targetObj ; startRange ; endRange ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1341" resname="desc1341">
+          <source/>
+          <target>returns a new range object containing the selection between startRange and endRange in the targetObj</target>
+        </trans-unit>
+        <trans-unit id="1342" resname="cmd1342">
+          <source/>
+          <target>WP SET ATTRIBUTES ( targetObj ; attribName ; attribValue {; attribName2 ; attribValue2 ; ... ; attribNameN ; attribValueN} )</target>
+        </trans-unit>
+        <trans-unit id="1342" resname="desc1342">
+          <source/>
+          <target>allows you to set the value of any attribute in a range, element or document</target>
+        </trans-unit>
+        <trans-unit id="1343" resname="cmd1343">
+          <source/>
+          <target>WP PRINT ( wpDoc {; printOptions} )</target>
+        </trans-unit>
+        <trans-unit id="1343" resname="desc1343">
+          <source/>
+          <target>launches a print job for the 4D Write Pro document specified in wpDoc, or adds the document to the current print job if it is called between OPEN PRINTING JOB and CLOSE PRINTING JOB</target>
+        </trans-unit>
+        <trans-unit id="1344" resname="cmd1344">
+          <source/>
+          <target>WP RESET ATTRIBUTES ( targetObj ; attribName {; attribName2 ; ... ; attribNameN} ) </target>
+        </trans-unit>
+        <trans-unit id="1344" resname="desc1344">
+          <source/>
+          <target>allows you to reset the value of one or more attributes in the range, element, or document passed as parameter</target>
+        </trans-unit>
+        <trans-unit id="1345" resname="cmd1345">
+          <source/>
+          <target>WP GET ATTRIBUTES ( targetObj ; attribName ; attribValue {; attribName2 ; attribValue2 ; ... ; attribNameN ; attribValueN} )</target>
+        </trans-unit>
+        <trans-unit id="1345" resname="desc1345">
+          <source/>
+          <target>returns the value of any attribute in a 4D Write Pro range, header, body, footer, table, or document</target>
+        </trans-unit>
+        <trans-unit id="1346" resname="cmd1346">
+          <source/>
+          <target>WP Paragraph range ( targetObj ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1346" resname="desc1346">
+          <source/>
+          <target>returns a specific range object that addresses only the paragraphs that intersect with the targetObj you passed as parameter</target>
+        </trans-unit>
+        <trans-unit id="1347" resname="cmd1347">
+          <source/>
+          <target>WP Picture range ( targetObj ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1347" resname="desc1347">
+          <source/>
+          <target>returns a specific range object that addresses only the pictures contained in the targetObj you passed as parameter</target>
+        </trans-unit>
+        <trans-unit id="1348" resname="cmd1348">
+          <source/>
+          <target>WP SELECT ( {{* ;} wpArea;} {targetObj} {; startRange ; endRange} )</target>
+        </trans-unit>
+        <trans-unit id="1348" resname="desc1348">
+          <source/>
+          <target>creates a new selection in the 4D Write Pro wpArea area, based upon the targetObj or a new range defined by startRange and endRange</target>
+        </trans-unit>
+        <trans-unit id="1358" resname="cmd1358">
+          <source/>
+          <target>WP USE PAGE SETUP ( wpDoc )</target>
+        </trans-unit>
+        <trans-unit id="1358" resname="desc1358">
+          <source/>
+          <target>modifies the current printer page settings based on  the 4D Write Pro document attributes for page size and orientation</target>
+        </trans-unit>
+        <trans-unit id="1363" resname="cmd1363">
+          <source/>
+          <target>WP Is font style supported ( targetObj ; wpFontStyle ) -&gt; Boolean</target>
+        </trans-unit>
+        <trans-unit id="1363" resname="desc1363">
+          <source/>
+          <target>returns True if the wpFontStyle style is supported by any part of the text in rangeObj</target>
+        </trans-unit>
+        <trans-unit id="1411" resname="cmd1411">
+          <source/>
+          <target>WP INSERT DOCUMENT ( targetObj ; wpDoc ; mode {; rangeUpdate} ) </target>
+        </trans-unit>
+        <trans-unit id="1411" resname="desc1411">
+          <source/>
+          <target>inserts the wpDoc document in the targetObj according to the specified insertion mode and rangeUpdate parameters</target>
+        </trans-unit>
+        <trans-unit id="1412" resname="cmd1412">
+          <source/>
+          <target>WP Get page count ( targetObj ) -&gt; Longint</target>
+        </trans-unit>
+        <trans-unit id="1412" resname="desc1412">
+          <source/>
+          <target>returns the total number of pages defined in the targetObj you passed in parameter</target>
+        </trans-unit>
+        <trans-unit id="1413" resname="cmd1413">
+          <source/>
+          <target>WP INSERT BREAK ( targetObj ; breakType ; mode {; rangeUpdate} ) </target>
+        </trans-unit>
+        <trans-unit id="1413" resname="desc1413">
+          <source/>
+          <target>inserts a new break of the breakType type in the targetObj according to the specified insertion mode and rangeUpdate parameters</target>
+        </trans-unit>
+        <trans-unit id="1415" resname="cmd1415">
+          <source/>
+          <target>WP NEW BOOKMARK ( targetObj ; bkName )</target>
+        </trans-unit>
+        <trans-unit id="1415" resname="desc1415">
+          <source/>
+          <target>creates a new bookmark named bkName based upon the 4D Write Pro targetObj in the parent document</target>
+        </trans-unit>
+        <trans-unit id="1416" resname="cmd1416">
+          <source/>
+          <target>WP Bookmark range ( wpDoc ; bkName ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1416" resname="desc1416">
+          <source/>
+          <target>returns a text range object (rangeObj) containing the range for the bookmark with the specified bkName in wpDoc</target>
+        </trans-unit>
+        <trans-unit id="1417" resname="cmd1417">
+          <source/>
+          <target>WP GET BOOKMARKS ( wpDoc ; arrBKNames )</target>
+        </trans-unit>
+        <trans-unit id="1417" resname="desc1417">
+          <source/>
+          <target>returns an array containing the names of all bookmarks defined in wpDoc</target>
+        </trans-unit>
+        <trans-unit id="1419" resname="cmd1419">
+          <source/>
+          <target>WP DELETE BOOKMARK ( wpDoc ; bkName )</target>
+        </trans-unit>
+        <trans-unit id="1419" resname="desc1419">
+          <source/>
+          <target>removes the bookmark named bkName from wpDoc</target>
+        </trans-unit>
+        <trans-unit id="1437" resname="cmd1437">
+          <source/>
+          <target>WP INSERT PICTURE ( targetObj ; picture ; mode {; rangeUpdate} ) </target>
+        </trans-unit>
+        <trans-unit id="1437" resname="desc1437">
+          <source/>
+          <target>inserts the picture in the targetObj according to the specified insertion mode and rangeUpdate parameter</target>
+        </trans-unit>
+        <trans-unit id="1473" resname="cmd1473">
+          <source/>
+          <target>WP Insert table ( targetObj ; mode {; rangeUpdate {; nbCols {; nbRows}}} ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1473" resname="desc1473">
+          <source/>
+          <target>inserts a new table in the targetObj according to the specified insertion mode and returns the corresponding new table object</target>
+        </trans-unit>
+        <trans-unit id="1474" resname="cmd1474">
+          <source/>
+          <target>WP Table append row ( tableRef ; value {; value2 ; ... ; valueN} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1474" resname="desc1474">
+          <source/>
+          <target>appends one row to the tableRef table, fills it with value(s) and returns the corresponding row range object</target>
+        </trans-unit>
+        <trans-unit id="1475" resname="cmd1475">
+          <source/>
+          <target>WP Table get rows ( targetObj ) | ( tableRef ; startRow | wk header rows {; numRows} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1475" resname="desc1475">
+          <source/>
+          <target>returns a new cell range object containing a selection of rows from targetObj or tableRef</target>
+        </trans-unit>
+        <trans-unit id="1476" resname="cmd1476">
+          <source/>
+          <target>WP Table get columns ( targetObj ) | ( tableRef ; startCol {; numCols} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1476" resname="desc1476">
+          <source/>
+          <target>returns a new cell range object containing the selection of columns from targetObj or tableRef (defined by startCol and numCols)</target>
+        </trans-unit>
+        <trans-unit id="1477" resname="cmd1477">
+          <source/>
+          <target>WP Table get cells ( targetObj ) | ( tableRef ; startCol ; startRow {; numCols{; numRows}} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1477" resname="desc1477">
+          <source/>
+          <target>returns a new cell range object containing the selection of cells in the targetObj or tableRef (defined by startCol, startRow, numCols, and numRows)</target>
+        </trans-unit>
+        <trans-unit id="1503" resname="cmd1503">
+          <source/>
+          <target>WP Get header ( targetObj ) | (wpDoc ; sectionIndex {; subSectionType} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1503" resname="desc1503">
+          <source/>
+          <target>returns the header associated to the targetObj or to the specified sectionIndex of the wpDoc document</target>
+        </trans-unit>
+        <trans-unit id="1504" resname="cmd1504">
+          <source/>
+          <target>WP Get footer ( targetObj ) | (wpDoc ; sectionIndex {; sectionSubType} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1504" resname="desc1504">
+          <source/>
+          <target>returns the footer associated to the targetObj range or to the specified sectionIndex of the wpDoc document</target>
+        </trans-unit>
+        <trans-unit id="1516" resname="cmd1516">
+          <source/>
+          <target>WP Get body ( wpDoc ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1516" resname="desc1516">
+          <source/>
+          <target>returns the body element of the wpDoc 4D Write Pro document</target>
+        </trans-unit>
+        <trans-unit id="1518" resname="cmd1518">
+          <source/>
+          <target>WP SET FRAME ( {* ;} wpArea ; frameSelector {; textBoxID} ) </target>
+        </trans-unit>
+        <trans-unit id="1518" resname="desc1518">
+          <source/>
+          <target>sets the cursor into the frame designated by frameSelector and optionally, textBoxID, in the 4D Write Pro wpArea area</target>
+        </trans-unit>
+        <trans-unit id="1519" resname="cmd1519">
+          <source/>
+          <target>WP Get frame ( {* ;} wpArea {; textBoxID} ) -&gt; Longint</target>
+        </trans-unit>
+        <trans-unit id="1519" resname="desc1519">
+          <source/>
+          <target>returns the frame where the cursor is currently set within the 4D Write Pro wpArea area</target>
+        </trans-unit>
+        <trans-unit id="1536" resname="cmd1536">
+          <source/>
+          <target>WP Add picture ( wpDoc {; picture} ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1536" resname="desc1536">
+          <source/>
+          <target>anchors picture at a fixed location within the wpDoc and returns its reference</target>
+        </trans-unit>
+        <trans-unit id="1549" resname="cmd1549">
+          <source/>
+          <target>WP Get element by ID ( wpDoc ; ID ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1549" resname="desc1549">
+          <source/>
+          <target>returns an object containing the element of wpDoc passed in the ID parameter</target>
+        </trans-unit>
+        <trans-unit id="1550" resname="cmd1550">
+          <source/>
+          <target>WP Get elements ( targetObj {; elementType} ) -&gt; Collection</target>
+        </trans-unit>
+        <trans-unit id="1550" resname="desc1550">
+          <source/>
+          <target>returns a collection of objects containing paragraphs, images, tables and/or rows</target>
+        </trans-unit>
+        <trans-unit id="1553" resname="cmd1553">
+          <source/>
+          <target>WP Table range ( targetObj ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1553" resname="desc1553">
+          <source/>
+          <target>returns a range object that addresses only the tables that intersect with the targetObj you passed as parameter</target>
+        </trans-unit>
+        <trans-unit id="1574" resname="cmd1574">
+          <source/>
+          <target>WP SET TEXT ( targetObj ; newText ; textPosition {; rangeUpdate} ) </target>
+        </trans-unit>
+        <trans-unit id="1574" resname="desc1574">
+          <source/>
+          <target>inserts the text passed in the newText parameter as plain text in the targetObj at the position designated by the textPosition parameter</target>
+        </trans-unit>
+        <trans-unit id="1575" resname="cmd1575">
+          <source/>
+          <target>WP Get text ( targetObj {; expressions} ) -&gt; Text</target>
+        </trans-unit>
+        <trans-unit id="1575" resname="desc1575">
+          <source/>
+          <target>retrieves text contents from a 4D Write Pro document within the specified targetObj</target>
+        </trans-unit>
+        <trans-unit id="1577" resname="cmd1577">
+          <source/>
+          <target>WP Get position ( targetObj {; layout} ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1577" resname="desc1577">
+          <source/>
+          <target>returns an object describing the current position of targetObj</target>
+        </trans-unit>
+        <trans-unit id="1580" resname="cmd1580">
+          <source/>
+          <target>WP Get sections ( targetObj ) -&gt; Collection</target>
+        </trans-unit>
+        <trans-unit id="1580" resname="desc1580">
+          <source/>
+          <target>returns a collection of all sections defined in the targetObj parameter</target>
+        </trans-unit>
+        <trans-unit id="1581" resname="cmd1581">
+          <source/>
+          <target>WP Get section ( targetObj ) | (wpDoc ; sectionIndex ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1581" resname="desc1581">
+          <source/>
+          <target>returns the first section intersected by the targetObj range or element, or to the specified sectionIndex of the wpDoc document</target>
+        </trans-unit>
+        <trans-unit id="1582" resname="cmd1582">
+          <source/>
+          <target>WP Get subsection ( targetObj ) | (wpSection ; subSectionType ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1582" resname="desc1582">
+          <source/>
+          <target>returns first subsection intersected by the targetObj range or element, or to the specified subSectionType subsection of the wpSection section</target>
+        </trans-unit>
+        <trans-unit id="1583" resname="cmd1583">
+          <source/>
+          <target>WP New subsection ( wpSection ; subSectionType ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1583" resname="desc1583">
+          <source/>
+          <target>creates and returns a new subsection of the subSectionType type in the wpSection 4D Write Pro section</target>
+        </trans-unit>
+        <trans-unit id="1584" resname="cmd1584">
+          <source/>
+          <target>WP DELETE SUBSECTION ( wpSection ; subSectionType )</target>
+        </trans-unit>
+        <trans-unit id="1584" resname="desc1584">
+          <source/>
+          <target>deletes the subsection of the subSectionType type from the wpSection 4D Write Pro section</target>
+        </trans-unit>
+        <trans-unit id="1586" resname="cmd1586">
+          <source/>
+          <target>WP New header ( wpSection ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1586" resname="desc1586">
+          <source/>
+          <target>creates and returns the header associated to the section or subsection defined by the wpSection parameter</target>
+        </trans-unit>
+        <trans-unit id="1587" resname="cmd1587">
+          <source/>
+          <target>WP New footer ( wpSection ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1587" resname="desc1587">
+          <source/>
+          <target>creates and returns the footer associated to the section or subsection defined by the wpSection parameter</target>
+        </trans-unit>
+        <trans-unit id="1588" resname="cmd1588">
+          <source/>
+          <target>WP DELETE HEADER ( wpSection )</target>
+        </trans-unit>
+        <trans-unit id="1588" resname="desc1588">
+          <source/>
+          <target>deletes the header element associated to the section or subsection defined by the wpSection parameter</target>
+        </trans-unit>
+        <trans-unit id="1589" resname="cmd1589">
+          <source/>
+          <target>WP DELETE FOOTER ( wpSection )</target>
+        </trans-unit>
+        <trans-unit id="1589" resname="desc1589">
+          <source/>
+          <target>deletes the footer element associated to the section or subsection defined by the wpSection parameter</target>
+        </trans-unit>
+        <trans-unit id="1642" resname="cmd1642">
+          <source/>
+          <target>WP SET LINK ( targetObj ; linkObj )</target>
+        </trans-unit>
+        <trans-unit id="1642" resname="desc1642">
+          <source/>
+          <target>applies a hyperlink reference to the targetObj</target>
+        </trans-unit>
+        <trans-unit id="1643" resname="cmd1643">
+          <source/>
+          <target>WP Get links ( targetObj ) -&gt; Collection</target>
+        </trans-unit>
+        <trans-unit id="1643" resname="desc1643">
+          <source/>
+          <target>returns the collection of all links defined in targetObj</target>
+        </trans-unit>
+        <trans-unit id="1648" resname="cmd1648">
+          <source/>
+          <target>WP SET VIEW PROPERTIES ( {* ;} wpArea ; wpViewProps )</target>
+        </trans-unit>
+        <trans-unit id="1648" resname="desc1648">
+          <source/>
+          <target>allows you to dynamically set one or more view properties of the 4D Write Pro wpArea area</target>
+        </trans-unit>
+        <trans-unit id="1649" resname="cmd1649">
+          <source/>
+          <target>WP Get view properties ( * ; wpArea ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1649" resname="desc1649">
+          <source/>
+          <target>returns the current view properties for the 4D Write Pro area designated by wpArea</target>
+        </trans-unit>
+        <trans-unit id="1650" resname="cmd1650">
+          <source/>
+          <target>WP New style sheet ( wpDoc ; styleSheetType ; styleSheetName ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1650" resname="desc1650">
+          <source/>
+          <target>creates a new (empty) style sheet object for the designated wpDoc</target>
+        </trans-unit>
+        <trans-unit id="1652" resname="cmd1652">
+          <source/>
+          <target>WP DELETE STYLE SHEET ( styleSheetObj ) | (wpDoc ; styleSheetName )</target>
+        </trans-unit>
+        <trans-unit id="1652" resname="desc1652">
+          <source/>
+          <target>removes the designated paragraph or character style sheet from the current document</target>
+        </trans-unit>
+        <trans-unit id="1655" resname="cmd1655">
+          <source/>
+          <target>WP Get style sheets ( wpDoc ; type ) -&gt; Collection</target>
+        </trans-unit>
+        <trans-unit id="1655" resname="desc1655">
+          <source/>
+          <target>returns a collection of all the style sheet objects of the defined type in wpDoc</target>
+        </trans-unit>
+        <trans-unit id="1656" resname="cmd1656">
+          <source/>
+          <target>WP Get style sheet ( wpDoc ; styleSheetName ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1656" resname="desc1656">
+          <source/>
+          <target>returns the style sheet object designated by the styleSheetName</target>
+        </trans-unit>
+        <trans-unit id="1673" resname="cmd1673">
+          <source/>
+          <target>WP IMPORT STYLE SHEETS ( targetDoc ; sourceDoc )</target>
+        </trans-unit>
+        <trans-unit id="1673" resname="desc1673">
+          <source/>
+          <target>imports all of the style sheets from the sourceDoc into the targetDoc</target>
+        </trans-unit>
+        <trans-unit id="1691" resname="cmd1691">
+          <source/>
+          <target>WP Table insert rows ( targetObj | {tableRef ; rowNumber} {; numRows} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1691" resname="desc1691">
+          <source/>
+          <target>inserts one or several row(s) into a 4D Write Pro table</target>
+        </trans-unit>
+        <trans-unit id="1692" resname="cmd1692">
+          <source/>
+          <target>WP Table insert columns ( targetObj | {tableRef ; colNumber} {; numColumns} )  -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1692" resname="desc1692">
+          <source/>
+          <target>inserts one or several column(s) into a 4D Write Pro table</target>
+        </trans-unit>
+        <trans-unit id="1693" resname="cmd1693">
+          <source/>
+          <target>WP TABLE DELETE ROWS ( targetObj ) | ( tableRef ; rowNumber {; numRows} ) </target>
+        </trans-unit>
+        <trans-unit id="1693" resname="desc1693">
+          <source/>
+          <target>removes one or several row(s) from a 4D Write Pro table</target>
+        </trans-unit>
+        <trans-unit id="1694" resname="cmd1694">
+          <source/>
+          <target>WP TABLE DELETE COLUMNS ( targetObj ) | ( tableRef ; colNumber {; numColumns} ) </target>
+        </trans-unit>
+        <trans-unit id="1694" resname="desc1694">
+          <source/>
+          <target>removes one or several column(s) from a 4D Write table</target>
+        </trans-unit>
+        <trans-unit id="1701" resname="cmd1701">
+          <source/>
+          <target>WP DELETE PICTURE ( imgObj )</target>
+        </trans-unit>
+        <trans-unit id="1701" resname="desc1701">
+          <source/>
+          <target>deletes the image defined by the imgObj parameter</target>
+        </trans-unit>
+        <trans-unit id="1702" resname="cmd1702">
+          <source/>
+          <target>WP Get formulas ( targetObj ) -&gt; Collection</target>
+        </trans-unit>
+        <trans-unit id="1702" resname="desc1702">
+          <source/>
+          <target>returns a collection of all formulas defined in targetObj</target>
+        </trans-unit>
+        <trans-unit id="1703" resname="cmd1703">
+          <source/>
+          <target>WP INSERT FORMULA ( targetObj ; formula ; mode {; rangeUpdate} ) </target>
+        </trans-unit>
+        <trans-unit id="1703" resname="desc1703">
+          <source/>
+          <target>inserts a formula in targetObj according to the specified insertion mode</target>
+        </trans-unit>
+        <trans-unit id="1707" resname="cmd1707">
+          <source/>
+          <target>WP COMPUTE FORMULAS ( targetObj )</target>
+        </trans-unit>
+        <trans-unit id="1707" resname="desc1707">
+          <source/>
+          <target>evaluates the formulas in targetObj</target>
+        </trans-unit>
+        <trans-unit id="1708" resname="cmd1708">
+          <source/>
+          <target>WP FREEZE FORMULAS ( targetObj {; recompute} )</target>
+        </trans-unit>
+        <trans-unit id="1708" resname="desc1708">
+          <source/>
+          <target>"freezes" the contents of the formulas in targetObj</target>
+        </trans-unit>
+        <trans-unit id="1755" resname="cmd1755">
+          <source/>
+          <target>WP Find all ( targetObj ; searchValue ; searchCondition {; replaceValue} )  -&gt; Collection</target>
+        </trans-unit>
+        <trans-unit id="1755" resname="desc1755">
+          <source/>
+          <target>searches the targetObj for the searchValue based on the searchCondition</target>
+        </trans-unit>
+        <trans-unit id="1764" resname="cmd1764">
+          <source/>
+          <target>WP Find next ( targetObj ; searchAfter ; searchValue ; searchCondition {; replaceValue} ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1764" resname="desc1764">
+          <source/>
+          <target>searches the targetObj, after the searchAfter range, for the searchValue based on the searchCondition</target>
+        </trans-unit>
+        <trans-unit id="1765" resname="cmd1765">
+          <source/>
+          <target>WP Find previous ( targetObj ; searchBefore ; searchValue ; searchCondition {; replaceValue} ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1765" resname="desc1765">
+          <source/>
+          <target>searches the targetObj, prior to the searchBefore range, for the searchValue based on the searchCondition</target>
+        </trans-unit>
+        <trans-unit id="1768" resname="cmd1768">
+          <source/>
+          <target>WP Get breaks ( targetObj {; breakType} ) -&gt; Collection</target>
+        </trans-unit>
+        <trans-unit id="1768" resname="desc1768">
+          <source/>
+          <target>returns the collection of all breaks inserted in targetObj</target>
+        </trans-unit>
+        <trans-unit id="1786" resname="cmd1786">
+          <source/>
+          <target>WP SET DATA CONTEXT ( wpDoc ; contextData )</target>
+        </trans-unit>
+        <trans-unit id="1786" resname="desc1786">
+          <source/>
+          <target> sets the contextD&lt;span class="rte4d_prm"&gt;ata&lt;/span&gt; object as data context of the wpDoc 4D Write Pro document</target>
+        </trans-unit>
+        <trans-unit id="1787" resname="cmd1787">
+          <source/>
+          <target>WP Get data context ( wpDoc ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1787" resname="desc1787">
+          <source/>
+          <target> returns the data context of the wpDoc document</target>
+        </trans-unit>
+        <trans-unit id="1797" resname="cmd1797">
+          <source/>
+          <target>WP New text box ( wpDoc ; pageNum ) -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1797" resname="desc1797">
+          <source/>
+          <target>creates and returns a new text box object in the page pageNum of wpDoc</target>
+        </trans-unit>
+        <trans-unit id="1798" resname="cmd1798">
+          <source/>
+          <target>WP DELETE TEXT BOX ( textBox )</target>
+        </trans-unit>
+        <trans-unit id="1798" resname="desc1798">
+          <source/>
+          <target>deletes the text box defined by the &lt;/span&gt;&lt;em&gt;textBox&lt;/em&gt; p&lt;span style="color: #333333;"&gt;arameter</target>
+        </trans-unit>
+        <trans-unit id="1815" resname="cmd1815">
+          <source/>
+          <target>WP TABLE MERGE CELLS ( targetObj ) | ( tableRef ; startColumn ; startRow {; columnCount{; rowCount}} ) </target>
+        </trans-unit>
+        <trans-unit id="1815" resname="desc1815">
+          <source/>
+          <target>merges the selection of cells in the targetObj or tableRef (defined by startColumn, startRow, columnCount, and rowCount)</target>
+        </trans-unit>
+        <trans-unit id="1816" resname="cmd1816">
+          <source/>
+          <target>WP TABLE SPLIT CELLS ( targetObj ) | ( tableRef ; startColumn ; startRow {; columnCount{; rowCount}} ) </target>
+        </trans-unit>
+        <trans-unit id="1816" resname="desc1816">
+          <source/>
+          <target>splits the intersecting selection of cells in the targetObj or tableRef (defined by startColumn, startRow, columnCount, and rowCount). A cell will be split only if it has already been merged horizontally, vertically, or both; otherwise, the cell will not be modified</target>
+        </trans-unit>
+        <trans-unit id="1705" resname="cmd1705">
+          <source/>
+          <target>Super {( param {; param2 ; ... ; paramN} )} -&gt; Object</target>
+        </trans-unit>
+        <trans-unit id="1705" resname="desc1705">
+          <source/>
+          <target>makes calls to the superclass</target>
+        </trans-unit>
+            
+      </group>
+    </body>
+  </file>
+</xliff>

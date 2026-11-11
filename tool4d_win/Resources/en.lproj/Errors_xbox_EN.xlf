@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Translation file for 4D products.
+	Copyright (C) 2007-2013 4D SAS.
+	This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+	<file datatype="x-STR#" original="undefined" source-language="en-US" target-language="en-US" product-version="v14">
+		<header>
+			<note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+			<note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+			<note>\r, \t and \n are meta-characters.</note>
+		</header>
+		<body>
+		<group resname="xbox kernel errors">
+      <trans-unit id="65" resname="ERR_xbox_1">
+        <source>Unknown error</source>
+        <target>Unknown error</target>
+      </trans-unit>
+      <trans-unit id="66" resname="ERR_xbox_2">
+        <source>Unimplemented</source>
+        <target>Unimplemented</target>
+      </trans-unit>
+      <trans-unit id="67" resname="ERR_xbox_3">
+        <source>Invalid parameter</source>
+        <target>Invalid parameter</target>
+      </trans-unit>
+      <trans-unit id="68" resname="ERR_xbox_4">
+        <source>Cannot initialize application</source>
+        <target>Cannot initialize application</target>
+      </trans-unit>
+      <trans-unit id="69" resname="ERR_xbox_5">
+        <source>Access denied {path}</source>
+        <target>Access denied {path}</target>
+      </trans-unit>
+      <trans-unit id="70" resname="ERR_xbox_6">
+        <source>Aborted by user</source>
+        <target>Aborted by user</target>
+      </trans-unit>
+      <trans-unit id="71" resname="ERR_xbox_7">
+        <source>Bad protocol version</source>
+        <target>Bad protocol version</target>
+      </trans-unit>
+      <trans-unit id="72" resname="ERR_xbox_8">
+        <source>Timeout expired</source>
+        <target>Timeout expired</target>
+      </trans-unit>
+      <trans-unit id="28" resname="ERR_xbox_100">
+				<source>Memory allocation failed</source>
+				<target>Memory allocation failed</target>
+			</trans-unit>
+			<trans-unit id="63" resname="ERR_xbox_108">
+				<source>Stack overflow</source>
+				<target>Stack overflow</target>
+			</trans-unit>
+			<trans-unit id="33" resname="ERR_xbox_107">
+				<source>String allocation failed</source>
+				<target>String allocation failed</target>
+			</trans-unit>
+			<trans-unit id="32" resname="ERR_xbox_200">
+				<source>Attempt to read beyond end of stream</source>
+				<target>Attempt to read beyond end of stream</target>
+			</trans-unit>
+			<trans-unit id="83" resname="ERR_xbox_201">
+				<source>Attempt to use a closed stream</source>
+				<target>Attempt to use a closed stream</target>
+			</trans-unit>
+			<trans-unit id="84" resname="ERR_xbox_202">
+				<source>Attempt to open an already opened stream</source>
+				<target>Attempt to open an already opened stream</target>
+			</trans-unit>
+			<trans-unit id="85" resname="ERR_xbox_203">
+				<source>Cannot read data from stream</source>
+				<target>Cannot read data from stream</target>
+			</trans-unit>
+			<trans-unit id="86" resname="ERR_xbox_204">
+				<source>Cannot write data from stream</source>
+				<target>Cannot write data from stream</target>
+			</trans-unit>
+			<trans-unit id="87" resname="ERR_xbox_205">
+				<source>Cannot locate source of stream</source>
+				<target>Cannot locate source of stream</target>
+			</trans-unit>
+			<trans-unit id="88" resname="ERR_xbox_206">
+				<source>User aborted operation on stream</source>
+				<target>User aborted operation on stream</target>
+			</trans-unit>
+			<trans-unit id="89" resname="ERR_xbox_207">
+				<source>Invalid stream signature</source>
+				<target>Invalid stream signature</target>
+			</trans-unit>
+			<trans-unit id="39" resname="ERR_xbox_208">
+				<source>No text converter to read the stream</source>
+				<target>No text converter to read the stream</target>
+			</trans-unit>
+			<trans-unit id="64" resname="ERR_xbox_210">
+				<source>Cannot convert text from stream using the source encoding</source>
+				<target>Cannot convert text from stream using the source encoding</target>
+			</trans-unit>
+			<trans-unit id="76" resname="ERR_xbox_213">
+				<source>Cannot read position in stream</source>
+				<target>Cannot read position in stream</target>
+			</trans-unit>
+			<trans-unit id="77" resname="ERR_xbox_214">
+				<source>Cannot set position in stream</source>
+				<target>Cannot set position in stream</target>
+			</trans-unit>
+			<trans-unit id="78" resname="ERR_xbox_215">
+				<source>Cannot get data from stream</source>
+				<target>Cannot get data from stream</target>
+			</trans-unit>
+			<trans-unit id="79" resname="ERR_xbox_216">
+				<source>Cannot put data in stream</source>
+				<target>Cannot put data in stream</target>
+			</trans-unit>
+			<trans-unit id="80" resname="ERR_xbox_217">
+				<source>Cannot flush stream</source>
+				<target>Cannot flush stream</target>
+			</trans-unit>
+			<trans-unit id="81" resname="ERR_xbox_218">
+				<source>Cannot get stream size</source>
+				<target>Cannot get stream size</target>
+			</trans-unit>
+			<trans-unit id="82" resname="ERR_xbox_219">
+				<source>Cannot set stream size</source>
+				<target>Cannot set stream size</target>
+			</trans-unit>
+			<trans-unit id="29" resname="ERR_xbox_300">
+				<source>Text conversion failed</source>
+				<target>Text conversion failed</target>
+			</trans-unit>
+			<trans-unit id="30" resname="ERR_xbox_303">
+				<source>Failed to initialize ICU library</source>
+				<target>Failed to initialize ICU library</target>
+			</trans-unit>
+			<trans-unit id="31" resname="ERR_xbox_304">
+				<source>Regex error {message} while parsing pattern "{pattern}"</source>
+				<target>Regex error {message} while parsing pattern "{pattern}"</target>
+				<note>regex pattern matching error. Error message is provided by ICU</note>
+			</trans-unit>
+      <trans-unit id="73" resname="ERR_xbox_305">
+        <source>Failed to initialize intl manager. Please check regional settings.</source>
+        <target>Failed to initialize intl manager. Please check regional settings.</target>
+        <note>Language defined in the database is not recognized.</note>
+      </trans-unit>
+      <trans-unit id="306" resname="ERR_xbox_306">
+        <source>No date-time formatter defined, can't use custom pattern.</source>
+        <target>No date-time formatter defined, can't use custom pattern.</target>
+        <note>Can't instantiate icu SimpleDateFormatter for current regional settings</note>
+      </trans-unit>
+      <trans-unit id="307" resname="ERR_xbox_307">
+        <source>Error using date-time custom pattern.</source>
+        <target>Error using date-time custom pattern.</target>
+        <note>ICU returned an error when trying to use a date-time custom pattern.</note>
+      </trans-unit>
+      <trans-unit id="308" resname="ERR_xbox_308">
+        <source>Error using calendar.</source>
+        <target>Error using calendar.</target>
+        <note>ICU returned an error when trying to create a Calendar object.</note>
+      </trans-unit>
+      <trans-unit id="309" resname="ERR_xbox_309">
+        <source>Error on date-time from calendar.</source>
+        <target>Error on date-time from calendar.</target>
+        <note>ICU returned an error when trying to get UDate from Calendar.</note>
+      </trans-unit>
+		<trans-unit id="310" resname="ERR_xbox_400">
+			<source>Invalid file map.</source>
+			<target>Invalid file map.</target>
+		</trans-unit>
+      <trans-unit id="56" resname="ERR_xbox_550">
+				<source>JSON malformed in {source}line {line}, position {position}.</source>
+				<target>JSON malformed in {source}line {line}, position {position}.</target>
+				<note>{source} can be empty or a file path or url.</note>
+			</trans-unit>
+			<trans-unit id="57" resname="ERR_xbox_551">
+				<source>JSON malformed. Found '{found}', was expecting: {expected}.</source>
+				<target>JSON malformed. Found '{found}', was expecting: {expected}.</target>
+			</trans-unit>
+			<trans-unit id="58" resname="ERR_xbox_552">
+				<source>JSON malformed. Unterminated {token}.</source>
+				<target>JSON malformed. Unterminated {token}.</target>
+			</trans-unit>
+			<trans-unit id="59" resname="ERR_xbox_553">
+				<source>JSON malformed. Extra comma before {token}.</source>
+				<target>JSON malformed. Extra comma before {token}.</target>
+			</trans-unit>
+			<trans-unit id="60" resname="ERR_xbox_554">
+				<source>JSON malformed. Was expecting: {expected}.</source>
+				<target>JSON malformed. Was expecting: {expected}.</target>
+			</trans-unit>
+			<trans-unit id="1" resname="ERR_xbox_600">
+				<source>File &quot;{name}&quot; not found ({path})</source>
+				<target>File &quot;{name}&quot; not found ({path})</target>
+			</trans-unit>
+			<trans-unit id="2" resname="ERR_xbox_601">
+				<source>Cannot rename file &quot;{name}&quot; to &quot;{newname}&quot; ({path})</source>
+				<target>Cannot rename file &quot;{name}&quot; to &quot;{newname}&quot; ({path})</target>
+			</trans-unit>
+			<trans-unit id="3" resname="ERR_xbox_602">
+				<source>Cannot open file &quot;{name}&quot; ({path})</source>
+				<target>Cannot open file &quot;{name}&quot; ({path})</target>
+			</trans-unit>
+			<trans-unit id="4" resname="ERR_xbox_603">
+				<source>Cannot close file &quot;{name}&quot; ({path})</source>
+				<target>Cannot close file &quot;{name}&quot; ({path})</target>
+			</trans-unit>
+			<trans-unit id="5" resname="ERR_xbox_604">
+				<source>Cannot delete &quot;{name}&quot; ({path})</source>
+				<target>Cannot delete &quot;{name}&quot; ({path})</target>
+			</trans-unit>
+			<trans-unit id="6" resname="ERR_xbox_605">
+				<source>Cannot copy file {path} to {destination}.</source>
+				<target>Cannot copy file {path} to {destination}.</target>
+			</trans-unit>
+			<trans-unit id="7" resname="ERR_xbox_606">
+				<source>Cannot move file {path} to {destination}.</source>
+				<target>Cannot move file {path} to {destination}.</target>
+			</trans-unit>
+			<trans-unit id="8" resname="ERR_xbox_607">
+				<source>Cannot create file {path}.</source>
+				<target>Cannot create file {path}.</target>
+			</trans-unit>
+			<trans-unit id="9" resname="ERR_xbox_608">
+				<source>Cannot get attributes on file {path}.</source>
+				<target>Cannot get attributes on file {path}.</target>
+			</trans-unit>
+			<trans-unit id="10" resname="ERR_xbox_609">
+				<source>Cannot set attributes on file {path}.</source>
+				<target>Cannot set attributes on file {path}.</target>
+			</trans-unit>
+			<trans-unit id="11" resname="ERR_xbox_610">
+				<source>Cannot create alias on file {path}.</source>
+				<target>Cannot create alias on file {path}.</target>
+			</trans-unit>
+			<trans-unit id="12" resname="ERR_xbox_611">
+				<source>Cannot resolve alias file {path}.</source>
+				<target>Cannot resolve alias file {path}.</target>
+			</trans-unit>
+			<trans-unit id="13" resname="ERR_xbox_612">
+				<source>Cannot reveal file {path}.</source>
+				<target>Cannot reveal file {path}.</target>
+			</trans-unit>
+			<trans-unit id="14" resname="ERR_xbox_613">
+				<source>Invalid file kind for file {path}.</source>
+				<target>Invalid file kind for file {path}.</target>
+			</trans-unit>
+			<trans-unit id="15" resname="ERR_xbox_614">
+				<source>&quot;{newname}&quot; is an invalid name for file {path}.</source>
+				<target>&quot;{newname}&quot; is an invalid name for file {path}.</target>
+			</trans-unit>
+			<trans-unit id="41" resname="ERR_xbox_616">
+				<source>File {path} already exists.</source>
+				<target>File {path} already exists</target>
+			</trans-unit>
+			<trans-unit id="34" resname="ERR_xbox_617">
+				<source>Cannot resolve alias file &quot;{path}&quot; to a file.</source>
+				<target>Cannot resolve alias file &quot;{path}&quot; to a file.</target>
+			</trans-unit>
+			<trans-unit id="35" resname="ERR_xbox_618">
+				<source>Cannot resolve alias file &quot;{path}&quot; to a folder.</source>
+				<target>Cannot resolve alias file &quot;{path}&quot; to a folder.</target>
+			</trans-unit>
+            <trans-unit id="74" resname="ERR_xbox_619">
+                <source>Cannot write file {path}.</source>
+                <target>Cannot write file {path}.</target>
+            </trans-unit>
+			<trans-unit id="16" resname="ERR_xbox_650">
+			   	<source>Folder &quot;{name}&quot; not found ({path}).</source>
+				<target>Folder &quot;{name}&quot; not found ({path}).</target>
+			</trans-unit>
+			<trans-unit id="17" resname="ERR_xbox_651">
+				<source>Folder {path} not empty.</source>
+				<target>Folder {path} not empty.</target>
+			</trans-unit>
+			<trans-unit id="18" resname="ERR_xbox_652">
+				<source>Cannot create folder {path}.</source>
+				<target>Cannot create folder {path}.</target>
+			</trans-unit>
+			<trans-unit id="19" resname="ERR_xbox_653">
+				<source>Cannot delete folder {path}.</source>
+				<target>Cannot delete folder {path}.</target>
+			</trans-unit>
+			<trans-unit id="20" resname="ERR_xbox_654">
+				<source>Cannot get attributes on folder {path}.</source>
+				<target>Cannot get attributes on folder {path}.</target>
+			</trans-unit>
+			<trans-unit id="21" resname="ERR_xbox_655">
+				<source>Cannot set attributes on folder {path}.</source>
+				<target>Cannot set attributes on folder {path}.</target>
+			</trans-unit>
+			<trans-unit id="22" resname="ERR_xbox_656">
+				<source>Cannot reveal folder {path}.</source>
+				<target>Cannot reveal folder {path}.</target>
+			</trans-unit>
+			<trans-unit id="23" resname="ERR_xbox_657">
+				<source>Cannot rename folder &quot;{name}&quot; to &quot;{newname}&quot; ({path})</source>
+				<target>Cannot rename folder &quot;{name}&quot; to &quot;{newname}&quot; ({path})</target>
+			</trans-unit>
+			<trans-unit id="24" resname="ERR_xbox_658">
+				<source>Disk full ({path})</source>
+				<target>Disk full ({path})</target>
+			</trans-unit>
+			<trans-unit id="36" resname="ERR_xbox_659">
+				<source>Folder {path} already exists.</source>
+				<target>Folder {path} already exists.</target>
+			</trans-unit>
+			<trans-unit id="37" resname="ERR_xbox_660">
+				<source>Can't copy {path} into child folder {destination}.</source>
+				<target>Can't copy {path} into child folder {destination}.</target>
+			</trans-unit>
+			<trans-unit id="40" resname="ERR_xbox_661">
+				<source>Can't move {path} into trash.</source>
+				<target>Can't move {path} into trash.</target>
+			</trans-unit>
+			<trans-unit id="50" resname="ERR_xbox_680">
+				<source>Path to file system is not correctly encoded.</source>
+				<target>Path to file system is not correctly encoded.</target>
+			</trans-unit>
+			<trans-unit id="51" resname="ERR_xbox_681">
+				<source>Operation is not authorized on this file system.</source>
+				<target>Operation is not authorized on this file system.</target>
+			</trans-unit>
+			<trans-unit id="52" resname="ERR_xbox_682">
+				<source>File or folder not found.</source>
+				<target>File or folder not found.</target>
+			</trans-unit>
+			<trans-unit id="53" resname="ERR_xbox_683">
+				<source>File system is not in valid state.</source>
+				<target>File system is not in valid state.</target>
+			</trans-unit>
+			<trans-unit id="54" resname="ERR_xbox_684">
+				<source>Attempting to write or modify a non-writable file system.</source>
+				<target>Attempting to write or modify a non-writable file system.</target>
+			</trans-unit>
+			<trans-unit id="55" resname="ERR_xbox_685">
+				<source>File system is full.</source>
+				<target>File system is full.</target>
+			</trans-unit>
+			<trans-unit id="3100" resname="ERR_xbox_3100">
+				<source>Could not open printer.</source>
+				<target>Could not open printer.</target>
+			</trans-unit>
+			<trans-unit id="3101" resname="ERR_xbox_3101">
+				<source>Could not read print settings.</source>
+				<target>Could not read print settings.</target>
+			</trans-unit>
+			<trans-unit id="3102" resname="ERR_xbox_3102">
+				<source>Could not restore print settings.</source>
+				<target>Could not restore print settings.</target>
+			</trans-unit>
+			<trans-unit id="3103" resname="ERR_xbox_3103">
+				<source>Print job already opened.</source>
+				<target>Print job already opened.</target>
+			</trans-unit>
+			<trans-unit id="3104" resname="ERR_xbox_3104">
+				<source>Print Job not started.</source>
+				<target>Print Job not started.</target>
+			</trans-unit>
+			<trans-unit id="3105" resname="ERR_xbox_3105">
+				<source>Print page already opened.</source>
+				<target>Print page already opened.</target>
+			</trans-unit>
+			<trans-unit id="3106" resname="ERR_xbox_3106">
+				<source>Print page not opened.</source>
+				<target>Print page not opened.</target>
+			</trans-unit>
+			<trans-unit id="80" resname="ERR_xbox_3107">
+				<source>Output document path is empty.</source>
+				<target>Output document path is empty.</target>
+			</trans-unit>
+			<trans-unit id="3108" resname="ERR_xbox_3108">
+				<source>XPS viewer is not installed.</source>
+				<target>XPS viewer is not installed.</target>
+			</trans-unit>
+			<trans-unit id="3109" resname="ERR_xbox_3109">
+				<source>XPS Printer is not installed.</source>
+				<target>XPS Printer is not installed.</target>
+			</trans-unit>
+			<trans-unit id="3110" resname="ERR_xbox_3110">
+				<source>PDF viewer is not installed.</source>
+				<target>PDF viewer is not installed.</target>
+			</trans-unit>
+			<trans-unit id="3111" resname="ERR_xbox_3111">
+				<source>PDF Printer is not installed.</source>
+				<target>PDF Printer is not installed.</target>
+			</trans-unit>
+			<trans-unit id="3112" resname="ERR_xbox_3112">
+				<source>Unable to perform preview in XPS or PDF format.</source>
+				<target>Unable to perform preview in XPS or PDF format.</target>
+			</trans-unit>
+			<trans-unit id="3113" resname="ERR_xbox_3113">
+				<source>No printer is defined for the current print operation.</source>
+				<target>No printer is defined for the current print operation.</target>
+			</trans-unit>
+			<trans-unit id="3114" resname="ERR_xbox_3114">
+				<source>Failed to create printing graphics context.</source>
+				<target>Failed to create printing graphics context.</target>
+			</trans-unit>
+			<trans-unit id="3115" resname="ERR_xbox_3115">
+				<source>No D2D print device attached to the printing graphics context.</source>
+				<target>No D2D print device attached to the printing graphics context.</target>
+			</trans-unit>
+			<trans-unit id="3116" resname="ERR_xbox_3116">
+				<source>Failed to finalize the print document.</source>
+				<target>Failed to finalize the print document.</target>
+			</trans-unit>
+			<trans-unit id="3117" resname="ERR_xbox_3117">
+				<source>D2D page commande list is null.</source>
+				<target>D2D page commande list is null.</target>
+			</trans-unit>
+			<trans-unit id="3118" resname="ERR_xbox_3118">
+				<source>D2D page commande list should be null.</source>
+				<target>D2D page commande list should be null.</target>
+			</trans-unit>
+			<trans-unit id="3119" resname="ERR_xbox_3119">
+				<source>PMPrintSession is null.</source>
+				<target>PMPrintSession est nul.</target>
+			</trans-unit>
+			<trans-unit id="3120" resname="ERR_xbox_3120">
+				<source>PMPageFormat is null.</source>
+				<target>PMPageFormat est nul.</target>
+			</trans-unit>
+			<trans-unit id="3121" resname="ERR_xbox_3121">
+				<source>PMPrintSettings is null.</source>
+				<target>PMPrintSettings est nul.</target>
+			</trans-unit>
+			<trans-unit id="3122" resname="ERR_xbox_3122">
+				<source>Windows printing failed (API: {api} , code: {code}) on the printer {printer}.</source>
+				<target>Windows printing failed (API: {api} , code: {code}) on the printer {printer}.</target>
+			</trans-unit>
+			<trans-unit id="61" resname="ERR_xbox_686">
+				<source>Invalid name '{name}' for a file system.</source>
+				<target>Invalid name '{name}' for a file system.</target>
+			</trans-unit>
+			<trans-unit id="62" resname="ERR_xbox_687">
+				<source>Can't load file system definition file {path}.</source>
+				<target>Can't load file system definition file {path}.</target>
+			</trans-unit>
+			<trans-unit id="38" resname="ERR_xbox_900">
+				<source>JSON cannot stringify cyclic structures.</source>
+				<target>JSON cannot stringify cyclic structures.</target>
+			</trans-unit>
+			<trans-unit id="901" resname="ERR_xbox_901">
+				<source>JSON Path is missing a ']'.</source>
+				<target>JSON Path is missing a ']'.</target>
+			</trans-unit>
+			<trans-unit id="902" resname="ERR_xbox_902">
+				<source>JSON Path contains an empty subpath.</source>
+				<target>JSON Path contains an empty subpath.</target>
+			</trans-unit>
+			<trans-unit id="903" resname="ERR_xbox_903">
+				<source>Subproperty "{p1}" already exists and is not an array.</source>
+				<target>Subproperty "{p1}" already exists and is not an array.</target>
+			</trans-unit>
+			<trans-unit id="904" resname="ERR_xbox_904">
+				<source>Subproperty "{p1}" already exists and is not an object.</source>
+				<target>Subproperty "{p1}" already exists and is not an object.</target>
+			</trans-unit>
+			<trans-unit id="906" resname="ERR_xbox_906">
+				<source>JSON pointer "{p1}" references a nonexistent value.</source>
+				<target>JSON pointer "{p1}" references a nonexistent value.</target>
+			</trans-unit>
+			<trans-unit id="907" resname="ERR_xbox_907">
+				<source>JSON pointer "{p1}" is malformed.</source>
+				<target>JSON pointer "{p1}" is malformed.</target>
+			</trans-unit>
+			<trans-unit id="908" resname="ERR_xbox_908">
+				<source>JSON pointer "{p1}" refers to itself.</source>
+				<target>JSON pointer "{p1}" refers to itself.</target>
+			</trans-unit>
+			<trans-unit id="909" resname="ERR_xbox_909">
+				<source>JSON pointer "{p1}" uses an unsupported syntax.</source>
+				<target>JSON pointer "{p1}" uses an unsupported syntax.</target>
+			</trans-unit>
+			<trans-unit id="910" resname="ERR_xbox_910">
+				<source>JSON pointer "{p1}" refers a scalar part.</source>
+				<target>JSON pointer "{p1}" refers a scalar part.</target>
+			</trans-unit>
+			<trans-unit id="911" resname="ERR_xbox_911">
+				<source>Can't JSON stringify native object.</source>
+				<target>Can't JSON stringify native object.</target>
+			</trans-unit>
+			<trans-unit id="912" resname="ERR_xbox_912">
+				<source>JSON pointer "{p1}" refers malformed JSON document "{p2}".</source>
+				<target>JSON pointer "{p1}" refers malformed JSON document "{p2}".</target>
+			</trans-unit>
+			<trans-unit id="913" resname="ERR_xbox_913">
+				<source>JSON pointer "{p1}" refers nonexistent JSON document "{p2}".</source>
+				<target>JSON pointer "{p1}" refers nonexistent JSON document "{p2}".</target>
+			</trans-unit>
+			<trans-unit id="915" resname="ERR_xbox_915">
+				<source>This object, or one of its sub-object, can't be streamed.</source>
+				<target>This object, or one of its sub-object, can't be streamed.</target>
+			</trans-unit>
+			<trans-unit id="917" resname="ERR_xbox_917">
+				<source>The collection couldn't be sorted because the provided compare function doesn't provide consistent results.</source>
+				<target>The collection couldn't be sorted because the provided compare function doesn't provide consistent results.</target>
+			</trans-unit>
+			<trans-unit id="990" resname="ERR_xbox_990">
+				<source>Cannot initialize a 4D.Vector instance (all elements must be numbers).</source>
+				<target>Cannot initialize a 4D.Vector instance (all elements must be numbers).</target>
+			</trans-unit>
+			<trans-unit id="991" resname="ERR_xbox_991">
+				<source>The two vectors are not comparable (length mismatch).</source>
+				<target>The two vectors are not comparable (length mismatch).</target>
+			</trans-unit>
+			<trans-unit id="992" resname="ERR_xbox_992">
+				<source>Invalid vector precision (allowed values are 32 and 64).</source>
+				<target>Invalid vector precision (allowed values are 32 and 64).</target>
+			</trans-unit>
+			<trans-unit id="1010" resname="ERR_xbox_1010">
+				<source>Failed to load library {path}. {reason}</source>
+				<target>Failed to load library {path}. {reason}</target>
+			</trans-unit>
+			<trans-unit id="1172" resname="ERR_xbox_1172">
+				<source>Invalid formula</source>
+				<target>Invalid formula</target>
+			</trans-unit>
+			<trans-unit id="25" resname="ERR_xmlc_1">
+				<source>{systemID}, line:{line}, column:{column}</source>
+				<target>{systemID}, line:{line}, column:{column}</target>
+				<note>Location of error during xerces parsing.</note>
+			</trans-unit>
+			<trans-unit id="26" resname="ERR_xmlc_2">
+        		<source>XML parsing error in {systemID}({line}:{column}): {message}</source>
+        		<target>XML parsing error in {systemID}({line}:{column}): {message}</target>
+				<note>xerces parsing error.</note>
+      		</trans-unit>
+			<trans-unit id="27" resname="ERR_xmlc_3">
+        		<source>XML parsing error in {systemID}({line}:{column}): {message}</source>
+        		<target>XML parsing error in {systemID}({line}:{column}): {message}</target>
+				<note>xerces parsing fatal error.</note>
+			</trans-unit>
+			<trans-unit id="75" resname="ERR_xbox_555">
+				<source>Error while interpreting XPath expression: {p1}</source>
+				<target>Error while interpreting XPath expressions: {p1}</target>
+			</trans-unit>
+		</group>
+		<group resname="MsgDeleteFile" id="90">
+			<trans-unit id="12" resname="ERR_ResnameNotUse">
+				<source>The file is already open, or the folder is not empty</source>
+				<target>The file is already open, or the folder is not empty</target>
+			</trans-unit>
+		</group>
+				
+		<group resname="SHFileOperation">
+			<trans-unit id="100" resname="ERR_PW32_113">
+				<source>The source and destination files are the same file.</source>
+				<target>The source and destination files are the same file.</target>
+			</trans-unit>
+			<trans-unit id="101" resname="ERR_PW32_114">
+				<source>Multiple file paths were specified in the source buffer, but only one destination file path.</source>
+				<target>Multiple file paths were specified in the source buffer, but only one destination file path.</target>
+			</trans-unit>
+			<trans-unit id="102" resname="ERR_PW32_115">
+				<source>Rename operation was specified but the destination path is a different directory. Use the move operation instead.</source>
+				<target>Rename operation was specified but the destination path is a different directory. Use the move operation instead.</target>
+			</trans-unit>
+			<trans-unit id="103" resname="ERR_PW32_116">
+				<source>The source is a root directory, which cannot be moved or renamed.</source>
+				<target>The source is a root directory, which cannot be moved or renamed.</target>
+			</trans-unit>
+			<trans-unit id="104" resname="ERR_PW32_117">
+				<source>The operation was canceled by the user, or silently canceled if the appropriate flags were supplied to SHFileOperation.</source>
+				<target>The operation was canceled by the user, or silently canceled if the appropriate flags were supplied to SHFileOperation.</target>
+			</trans-unit>
+			<trans-unit id="105" resname="ERR_PW32_118">
+				<source>The destination is a subtree of the source.</source>
+				<target>The destination is a subtree of the source.</target>
+			</trans-unit>
+			<trans-unit id="106" resname="ERR_PW32_120">
+				<source>Security settings denied access to the source.</source>
+				<target>Security settings denied access to the source.</target>
+			</trans-unit>
+			<trans-unit id="107" resname="ERR_PW32_121">
+				<source>The source or destination path exceeded or would exceed MAX_PATH.</source>
+				<target>The source or destination path exceeded or would exceed MAX_PATH.</target>
+			</trans-unit>
+			<trans-unit id="108" resname="ERR_PW32_122">
+				<source>The operation involved multiple destination paths, which can fail in the case of a move operation.</source>
+				<target>The operation involved multiple destination paths, which can fail in the case of a move operation.</target>
+			</trans-unit>
+			<trans-unit id="109" resname="ERR_PW32_124">
+				<source>The path in the source or destination or both was invalid.</source>
+				<target>The path in the source or destination or both was invalid.</target>
+			</trans-unit>
+			<trans-unit id="110" resname="ERR_PW32_125">
+				<source> The source and destination have the same parent folder.</source>
+				<target> The source and destination have the same parent folder.</target>
+			</trans-unit>
+			<trans-unit id="111" resname="ERR_PW32_126">
+				<source> The destination path is an existing file.</source>
+				<target> The destination path is an existing file.</target>
+			</trans-unit>
+			<trans-unit id="112" resname="ERR_PW32_128">
+				<source> The destination path is an existing folder.</source>
+				<target> The destination path is an existing folder.</target>
+			</trans-unit>
+			<trans-unit id="113" resname="ERR_PW32_129">
+				<source> The name of the file exceeds MAX_PATH.</source>
+				<target> The name of the file exceeds MAX_PATH.</target>
+			</trans-unit>
+			<trans-unit id="114" resname="ERR_PW32_130">
+				<source> The destination is a read-only CD-ROM, possibly unformatted.</source>
+				<target> The destination is a read-only CD-ROM, possibly unformatted.</target>
+			</trans-unit>
+			<trans-unit id="115" resname="ERR_PW32_131">
+				<source> The destination is a read-only DVD, possibly unformatted.</source>
+				<target> The destination is a read-only DVD, possibly unformatted.</target>
+			</trans-unit>
+			<trans-unit id="116" resname="ERR_PW32_132">
+				<source> The destination is a writable CD-ROM, possibly unformatted.</source>
+				<target> The destination is a writable CD-ROM, possibly unformatted.</target>
+			</trans-unit>
+			<trans-unit id="117" resname="ERR_PW32_133">
+				<source> The file involved in the operation is too large for the destination media or file system.</source>
+				<target> The file involved in the operation is too large for the destination media or file system.</target>
+			</trans-unit>
+			<trans-unit id="118" resname="ERR_PW32_134">
+				<source> The source is a read-only CD-ROM, possibly unformatted.</source>
+				<target> The source is a read-only CD-ROM, possibly unformatted.</target>
+			</trans-unit>
+			<trans-unit id="119" resname="ERR_PW32_135">
+				<source> The source is a read-only DVD, possibly unformatted.</source>
+				<target> The source is a read-only DVD, possibly unformatted.</target>
+			</trans-unit>
+			<trans-unit id="120" resname="ERR_PW32_136">
+				<source> The source is a writable CD-ROM, possibly unformatted.</source>
+				<target> The source is a writable CD-ROM, possibly unformatted.</target>
+			</trans-unit>
+			<trans-unit id="121" resname="ERR_PW32_183">
+				<source> MAX_PATH was exceeded during the operation.</source>
+				<target> MAX_PATH was exceeded during the operation.</target>
+			</trans-unit>
+			<trans-unit id="122" resname="ERR_PW32_1026">
+				<source> An unknown error occurred. This is typically due to an invalid path in the source or destination. This error does not occur on Windows Vista and later.</source>
+				<target> An unknown error occurred. This is typically due to an invalid path in the source or destination. This error does not occur on Windows Vista and later.</target>
+			</trans-unit>
+			<trans-unit id="123" resname="ERR_PW32_65536">
+				<source> An unspecified error occurred on the destination.</source>
+				<target> An unspecified error occurred on the destination.</target>
+			</trans-unit>
+			<trans-unit id="124" resname="ERR_PW32_65652">
+				<source> Destination is a root directory and cannot be renamed.</source>
+				<target> Destination is a root directory and cannot be renamed.</target>
+			</trans-unit>
+		</group>
+		
+		<group resname="VSS">
+			<trans-unit id="125" resname="ERR_SERVICE_MANAGER_OPEN_FAILED">
+				<source>Can't open service manager. OpenSCManagerW Failed</source>
+				<target>Can't open service manager. OpenSCManagerW Failed</target>
+			</trans-unit>
+			<trans-unit id="126" resname="ERR_SERVICE_OPEN_FAILED">
+				<source>Can't open service. OpenServiceW Failed</source>
+				<target>Can't open service. OpenServiceW Failed</target>
+			</trans-unit>
+			<trans-unit id="127" resname="ERR_SERVICE_START_FAILED">
+				<source>Can't Start service. StartServiceW Failed</source>
+				<target>Can't Start service. StartServiceW Failed</target>
+			</trans-unit>
+			<trans-unit id="128" resname="ERR_SERVICE_STOP_FAILED">
+				<source>Can't Stop service. ControlService Failed</source>
+				<target>Can't Stop service. ControlService Failed</target>
+			</trans-unit>
+			<trans-unit id="129" resname="ERR_SERVICE_CREATE_FAILED">
+				<source>Can't create service. CreateServiceW Failed</source>
+				<target>Can't create service. CreateServiceW Failed</target>
+			</trans-unit>
+		</group>
+
+      <group resname="PASSWORD_HASH">
+        <trans-unit id="850" resname="ERR_xbox_850">
+          <source>Password-hash: Unsuported algorithm.</source>
+          <target>Password-hash: Unsuported algorithm.</target>
+        </trans-unit>
+        <trans-unit id="851" resname="ERR_xbox_851">
+          <source>Password-hash: Consistency check failure.</source>
+          <target>Password-hash: Consistency check failure.</target>
+        </trans-unit>
+        <trans-unit id="852" resname="ERR_xbox_852">
+          <source>Password-hash: Unavailable bcrypt cost parameter, please provide a value between 4 and 31.</source>
+          <target>Password-hash: Unavailable bcrypt cost parameter, please provide a value between 4 and 31.</target>
+        </trans-unit>
+      </group>
+      <group resname="errorsDecodingBase64">
+	  	<trans-unit id="853" resname="ERR_xbox_853">
+			<note>Tried to decode some base64 string that appeared not to be valid base64.</note>
+			<source>Invalid Base64 sequence.</source>
+			<target>Invalid Base64 sequence.</target>
+	  	</trans-unit>
+      </group>
+
+    </body>
+	</file>
+</xliff>
