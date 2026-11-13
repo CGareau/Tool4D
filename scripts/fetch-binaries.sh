@@ -94,16 +94,17 @@ echo "$branch: using build $release_build (win+mac)"
 
 tag="$branch-$release_build"
 if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-  # Pre-tar.xz Releases only had .zip assets (often incomplete after the 2 GiB failure).
-  # Recreate when no .tar.xz is present so consumers can move forward.
-  if gh release view "$tag" --repo "$GITHUB_REPOSITORY" --json assets \
-      --jq '[.assets[].name | select(endswith(".tar.xz"))] | length' | grep -qx '0'; then
-    echo "$tag: exists but has no .tar.xz assets — deleting to republish from FTP"
-    gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
-  else
+  # Complete = at least one win_*.tar.xz and one mac_*.tar.xz (old zip-only or
+  # mac-only tags from a mismatched factory are rebuilt).
+  assets_json="$(gh release view "$tag" --repo "$GITHUB_REPOSITORY" --json assets)"
+  has_win=$(printf '%s' "$assets_json" | jq '[.assets[].name | select(startswith("win_") and endswith(".tar.xz"))] | length')
+  has_mac=$(printf '%s' "$assets_json" | jq '[.assets[].name | select(startswith("mac_") and endswith(".tar.xz"))] | length')
+  if [ "$has_win" -gt 0 ] && [ "$has_mac" -gt 0 ]; then
     echo "$tag: release already exists — skip download"
     exit 0
   fi
+  echo "$tag: incomplete (win_tarxz=$has_win mac_tarxz=$has_mac) — deleting to republish from FTP"
+  gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
 fi
 
 files=()
