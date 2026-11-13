@@ -9,6 +9,7 @@
 #
 # Release tag: <branch>-<build>  assets: <os>_4D_Server.tar.xz etc.
 # Idempotent: skips when the release already exists (checked BEFORE download).
+# Publishes only when win AND mac share the same build (VERSION build preferred).
 #
 # usage: fetch-binaries.sh <branch>
 # env:
@@ -48,69 +49,48 @@ ftp_try() {
   return 1
 }
 
-resolve_build_for_os() {
-  # Sets global: resolved_build. Prefers VERSION build, else latest-build.txt.
+# Echo build id for one OS, or empty. Prefers VERSION build, else latest-build.txt.
+# Quiet on miss (caller decides whether that is skip vs error).
+peek_build_for_os() {
   local os="$1"
   local exact="${ftp_base}/${os}/${want_build}/manifest.json"
   local latest_txt="${ftp_base}/${os}/latest-build.txt"
   local latest_manifest="${ftp_base}/${os}/latest/manifest.json"
   if ftp_try "$exact" "$dir/manifest-${os}.json"; then
-    resolved_build="$want_build"
+    printf '%s' "$want_build"
     return 0
   fi
-  echo "::warning::$branch/$os build $want_build not on FTP — trying latest/"
   if ftp_try "$latest_txt" "$dir/latest-build-${os}.txt"; then
-    resolved_build="$(tr -d '[:space:]' < "$dir/latest-build-${os}.txt")"
-  elif ftp_try "$latest_manifest" "$dir/manifest-${os}.json"; then
-    resolved_build="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["build"])' "$dir/manifest-${os}.json")"
-  else
-    echo "::warning::$branch/$os: no FTP runtime (exact nor latest) — skipped for this OS"
-    resolved_build=""
-    return 1
+    tr -d '[:space:]' < "$dir/latest-build-${os}.txt"
+    return 0
   fi
-  [ -n "$resolved_build" ] || return 1
-  if [ "$resolved_build" != "$want_build" ]; then
-    echo "::warning::$branch/$os: VERSION wants $want_build but FTP latest is $resolved_build"
+  if ftp_try "$latest_manifest" "$dir/manifest-${os}.json"; then
+    python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["build"])' "$dir/manifest-${os}.json"
+    return 0
   fi
-  return 0
+  return 1
 }
 
-build_win=""
-build_mac=""
-resolved_build=""
-resolve_build_for_os win && build_win="$resolved_build"
-resolved_build=""
-resolve_build_for_os mac && build_mac="$resolved_build"
+build_win="$(peek_build_for_os win || true)"
+build_mac="$(peek_build_for_os mac || true)"
 
 if [ -z "$build_win" ] && [ -z "$build_mac" ]; then
-  echo "::warning::$branch: nothing on FTP for win/mac — skipped"
+  echo "$branch: nothing on FTP for win/mac — skipped"
   exit 0
 fi
 
-# Prefer a build present on BOTH OSes (avoid mixed win/mac in one release tag).
+# Only publish a tag when both OSes share the same build (prefer VERSION).
 release_build=""
-if [ -n "$build_win" ] && [ -n "$build_mac" ]; then
-  if [ "$build_win" = "$build_mac" ]; then
-    release_build="$build_win"
-  elif [ "$build_win" = "$want_build" ]; then
-    echo "::warning::$branch: mac FTP is $build_mac, win has VERSION build $want_build — publishing win-only tag $want_build"
-    release_build="$want_build"
-    build_mac=""
-  elif [ "$build_mac" = "$want_build" ]; then
-    echo "::warning::$branch: win FTP is $build_win, mac has VERSION build $want_build — publishing mac-only tag $want_build"
-    release_build="$want_build"
-    build_win=""
-  else
-    # Neither matches VERSION and they differ: pick win latest, drop mac (or vice versa).
-    echo "::warning::$branch: win=$build_win mac=$build_mac differ — publishing win build only"
-    release_build="$build_win"
-    build_mac=""
-  fi
-elif [ -n "$build_win" ]; then
+if [ -n "$build_win" ] && [ -n "$build_mac" ] && [ "$build_win" = "$build_mac" ]; then
   release_build="$build_win"
+elif [ "$build_win" = "$want_build" ] && [ "$build_mac" = "$want_build" ]; then
+  release_build="$want_build"
 else
-  release_build="$build_mac"
+  echo "$branch: FTP not aligned yet (VERSION=$want_build win=${build_win:-none} mac=${build_mac:-none}) — skipped (re-run factories, then Fetch)"
+  exit 0
 fi
+
+echo "$branch: using build $release_build (win+mac)"
 
 tag="$branch-$release_build"
 if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
@@ -128,14 +108,7 @@ fi
 
 files=()
 for os in win mac; do
-  case "$os" in
-    win) os_build="$build_win" ;;
-    mac) os_build="$build_mac" ;;
-  esac
-  [ -n "$os_build" ] || continue
-  [ "$os_build" = "$release_build" ] || continue
-
-  build_dir="${ftp_base}/${os}/${os_build}"
+  build_dir="${ftp_base}/${os}/${release_build}"
   declare -A map=(
     [4D_Server.tar.xz]="${os}_4D_Server.tar.xz"
     [4D_Volume_Desktop.tar.xz]="${os}_4D_Volume_Desktop.tar.xz"
@@ -143,10 +116,10 @@ for os in win mac; do
   )
   for artifact in 4D_Server.tar.xz 4D_Volume_Desktop.tar.xz 4D_Mono.tar.xz; do
     asset="${map[$artifact]}"
-    echo "downloading FTP runtimes/${branch}/${os}/${os_build}/$artifact → $asset"
+    echo "downloading FTP runtimes/${branch}/${os}/${release_build}/$artifact → $asset"
     if ! ftp_try "${build_dir}/${artifact}" "$dir/$asset"; then
       if [ "$artifact" = "4D_Mono.tar.xz" ]; then
-        echo "::warning::$artifact missing on FTP (factory often skips mono without packageManager) — no $asset"
+        echo "$artifact missing on FTP (factory often skips mono without packageManager) — no $asset"
         continue
       fi
       echo "::error::required $artifact missing under $build_dir"
@@ -161,7 +134,7 @@ for os in win mac; do
   done
 done
 
-[ "${#files[@]}" -gt 0 ] || { echo "::warning::$branch: no assets produced — skipped"; exit 0; }
+[ "${#files[@]}" -gt 0 ] || { echo "$branch: no assets produced — skipped"; exit 0; }
 
 gh release create "$tag" "${files[@]}" --repo "$GITHUB_REPOSITORY" --latest=false \
   --title "4D $branch build $release_build" \

@@ -28,7 +28,7 @@ concurrency:
 
 jobs:
   resolve:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       branches: ${{ steps.r.outputs.branches }}
     steps:
@@ -50,7 +50,7 @@ jobs:
 
   sync:
     needs: resolve
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       max-parallel: 2
@@ -71,7 +71,7 @@ jobs:
     # GitHub disables scheduled workflows after 60 days without repository activity
     needs: [sync]
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
       - run: |
@@ -86,7 +86,7 @@ jobs:
   notify:
     needs: [resolve, sync]
     if: always() && (needs.resolve.result == 'failure' || needs.sync.result == 'failure')
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - env:
           GH_TOKEN: ${{ github.token }}

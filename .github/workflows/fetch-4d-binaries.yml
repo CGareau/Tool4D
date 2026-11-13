@@ -2,7 +2,7 @@ name: Fetch 4D binaries
 run-name: "Fetch 4D binaries${{ inputs.branches != '' && format(' · {0}', inputs.branches) || '' }}"
 
 # Pulls 4D Server / Volume Desktop / Mono from the PS FTP runtimes/ factory (tar.xz),
-# repacks ZIP assets, and stores them as GitHub Releases so Build_Application can fetch
+# publishes factory tar.xz assets to as GitHub Releases so Build_Application can fetch
 # via TOOL4D_DOWNLOAD_REPO without product-download.4d.com or a 4D API key.
 on:
   schedule:
@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
   resolve:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       branches: ${{ steps.r.outputs.branches }}
     steps:
@@ -44,7 +44,7 @@ jobs:
 
   fetch:
     needs: resolve
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       max-parallel: 1
