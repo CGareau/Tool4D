@@ -1,0 +1,4 @@
+branch=21R2
+version=21 R2
+build=100220
+source=Fix Win version check via marketing major; harden PackageManager mono lookup.
