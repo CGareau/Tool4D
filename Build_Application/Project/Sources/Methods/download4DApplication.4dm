@@ -74,8 +74,10 @@ If ($config.buildServer)
 	End if 
 	
 	If ($file.exists)
-		$archive:=ZIP Read archive:C1637($file)
-		$folder:=$archive.root.copyTo($file.parent; fk overwrite:K87:5)
+		If (Not:C34(extractRuntimeArchive($file)))
+			LOG EVENT:C667(Into system standard outputs:K38:9; "***ERROR*** Invalid runtime archive\n"; Error message:K38:3)
+			return
+		End if
 		If (Is macOS:C1572)
 			$file.delete()
 		End if 
@@ -148,8 +150,10 @@ If ($config.buildClient || $config.buildStandalone)
 	End if 
 	
 	If ($file.exists)
-		$archive:=ZIP Read archive:C1637($file)
-		$folder:=$archive.root.copyTo($file.parent; fk overwrite:K87:5)
+		If (Not:C34(extractRuntimeArchive($file)))
+			LOG EVENT:C667(Into system standard outputs:K38:9; "***ERROR*** Invalid runtime archive\n"; Error message:K38:3)
+			return
+		End if
 	End if 
 	
 	If ($file.parent.folder("4dvolumedesktop").exists)
