@@ -1,0 +1,2927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Translation file for 4D products.
+   Copyright (C) 2007-2013 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en-US" target-language="en-US" product-version="v14">
+      <header>
+         <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+         <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+         <note>\r, \t and \n are meta-characters.</note>
+      </header>
+      <body>
+		<trans-unit id="100" resname="ErrorCompilerUnsafeWebMethod">
+			<source>Method execution mode is incompatible with Web Server settings requiring preemptive processes.</source>
+			<target>Method execution mode is incompatible with Web Server settings requiring preemptive processes.</target>
+		</trans-unit>
+         <group id="34" resname="STR# ID 34">
+            <trans-unit id="1">
+               <source>If</source>
+               <target>If</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Else</source>
+               <target>Else</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>End if</source>
+               <target>End if</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>While</source>
+               <target>While</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>End while</source>
+               <target>End while</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Case of</source>
+               <target>Case of</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>:</source>
+               <target>:</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>End case</source>
+               <target>End case</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>For</source>
+               <target>For</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>End for</source>
+               <target>End for</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Repeat</source>
+               <target>Repeat</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Until</source>
+               <target>Until</target>
+            </trans-unit>
+         </group>
+         
+         <group id="104" resname="STR# ID 104">
+            <trans-unit id="1">
+               <source>;</source>
+               <target>;</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>[</source>
+               <target>[</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>]</source>
+               <target>]</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>!</source>
+               <target>!</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>"</source>
+               <target>"</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>'</source>
+               <target>'</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>(</source>
+               <target>(</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>)</source>
+               <target>)</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>{</source>
+               <target>{</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>}</source>
+               <target>}</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>`</source>
+               <target>`</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>$</source>
+               <target>$</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>•</source>
+               <target>•</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>§</source>
+               <target>§</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>:=</source>
+               <target>:=</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>+</source>
+               <target>+</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>-</source>
+               <target>-</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>*</source>
+               <target>*</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>/</source>
+               <target>/</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>^</source>
+               <target>^</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>&lt;</source>
+               <target>&lt;</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>&gt;</source>
+               <target>&gt;</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>=</source>
+               <target>=</target>
+            </trans-unit>
+            <trans-unit id="24">
+               <source>±</source>
+               <target>±</target>
+            </trans-unit>
+            <trans-unit id="25">
+               <source>#</source>
+               <target>#</target>
+            </trans-unit>
+            <trans-unit id="26">
+               <source>&amp;</source>
+               <target>&amp;</target>
+            </trans-unit>
+            <trans-unit id="27">
+               <source>|</source>
+               <target>|</target>
+            </trans-unit>
+            <trans-unit id="28">
+               <source>&lt;=</source>
+               <target>&lt;=</target>
+            </trans-unit>
+            <trans-unit id="29">
+               <source>&gt;=</source>
+               <target>&gt;=</target>
+            </trans-unit>
+            <trans-unit id="30">
+               <source>*+</source>
+               <target>*+</target>
+            </trans-unit>
+            <trans-unit id="31">
+               <source>*/</source>
+               <target>*/</target>
+            </trans-unit>
+            <trans-unit id="32">
+               <source>-&gt;</source>
+               <target>-&gt;</target>
+            </trans-unit>
+            <trans-unit id="33">
+               <source>≤</source>
+               <target>≤</target>
+            </trans-unit>
+            <trans-unit id="34">
+               <source>≥</source>
+               <target>≥</target>
+            </trans-unit>
+            <trans-unit id="35">
+               <source>\</source>
+               <target>\</target>
+            </trans-unit>
+            <trans-unit id="36">
+               <source>%</source>
+               <target>%</target>
+            </trans-unit>
+            <trans-unit id="37">
+               <source>†</source>
+               <target>†</target>
+            </trans-unit>
+            <trans-unit id="38">
+               <source>‘</source>
+               <target>‘</target>
+            </trans-unit>
+            <trans-unit id="39">
+               <source>◊</source>
+               <target>◊</target>
+            </trans-unit>
+            <trans-unit id="40">
+               <source>^|</source>
+               <target>^|</target>
+            </trans-unit>
+            <trans-unit id="41">
+               <source>~</source>
+               <target>~</target>
+            </trans-unit>
+            <trans-unit id="42">
+               <source>&gt;&gt;</source>
+               <target>&gt;&gt;</target>
+            </trans-unit>
+            <trans-unit id="43">
+               <source>&lt;&lt;</source>
+               <target>&lt;&lt;</target>
+            </trans-unit>
+            <trans-unit id="44">
+               <source>?+</source>
+               <target>?+</target>
+            </trans-unit>
+            <trans-unit id="45">
+               <source>?-</source>
+               <target>?-</target>
+            </trans-unit>
+            <trans-unit id="46">
+               <source>??</source>
+               <target>??</target>
+            </trans-unit>
+            <trans-unit id="47">
+               <source>-&gt;</source>
+               <target>-&gt;</target>
+            </trans-unit>
+         </group>
+         
+         <group id="105" resname="STR# ID 105">
+            <trans-unit id="1" translate="no">
+               <source>;</source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>[</source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>]</source>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source>!</source>
+            </trans-unit>
+            <trans-unit id="5" translate="no">
+               <source>"</source>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>'</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>(</source>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source>)</source>
+            </trans-unit>
+            <trans-unit id="9" translate="no">
+               <source>{</source>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>}</source>
+            </trans-unit>
+            <trans-unit id="11" translate="no">
+               <source>`</source>
+            </trans-unit>
+            <trans-unit id="12" translate="no">
+               <source>$</source>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>•</source>
+            </trans-unit>
+            <trans-unit id="14" translate="no">
+               <source>§</source>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>:=</source>
+            </trans-unit>
+            <trans-unit id="16" translate="no">
+               <source>+</source>
+            </trans-unit>
+            <trans-unit id="17" translate="no">
+               <source>-</source>
+            </trans-unit>
+            <trans-unit id="18" translate="no">
+               <source>*</source>
+            </trans-unit>
+            <trans-unit id="19" translate="no">
+               <source>/</source>
+            </trans-unit>
+            <trans-unit id="20" translate="no">
+               <source>^</source>
+            </trans-unit>
+            <trans-unit id="21" translate="no">
+               <source>&lt;</source>
+            </trans-unit>
+            <trans-unit id="22" translate="no">
+               <source>&gt;</source>
+            </trans-unit>
+            <trans-unit id="23" translate="no">
+               <source>=</source>
+            </trans-unit>
+            <trans-unit id="24" translate="no">
+               <source>±</source>
+            </trans-unit>
+            <trans-unit id="25" translate="no">
+               <source>#</source>
+            </trans-unit>
+            <trans-unit id="26" translate="no">
+               <source>&amp;</source>
+            </trans-unit>
+            <trans-unit id="27" translate="no">
+               <source>|</source>
+            </trans-unit>
+            <trans-unit id="28" translate="no">
+               <source>&lt;=</source>
+            </trans-unit>
+            <trans-unit id="29" translate="no">
+               <source>&gt;=</source>
+            </trans-unit>
+            <trans-unit id="30" translate="no">
+               <source>*+</source>
+            </trans-unit>
+            <trans-unit id="31" translate="no">
+               <source>*/</source>
+            </trans-unit>
+            <trans-unit id="32" translate="no">
+               <source>-&gt;</source>
+            </trans-unit>
+            <trans-unit id="33" translate="no">
+               <source>[[</source>
+            </trans-unit>
+            <trans-unit id="34" translate="no">
+               <source>]]</source>
+            </trans-unit>
+            <trans-unit id="35" translate="no">
+               <source>\</source>
+            </trans-unit>
+            <trans-unit id="36" translate="no">
+               <source>%</source>
+            </trans-unit>
+            <trans-unit id="37" translate="no">
+               <source>?</source>
+            </trans-unit>
+            <trans-unit id="38" translate="no">
+               <source>‘</source>
+            </trans-unit>
+            <trans-unit id="39" translate="no">
+               <source>&lt;&gt;</source>
+            </trans-unit>
+            <trans-unit id="40" translate="no">
+               <source>^|</source>
+            </trans-unit>
+            <trans-unit id="41" translate="no">
+               <source>~</source>
+            </trans-unit>
+            <trans-unit id="42" translate="no">
+               <source>&gt;&gt;</source>
+            </trans-unit>
+            <trans-unit id="43" translate="no">
+               <source>&lt;&lt;</source>
+            </trans-unit>
+            <trans-unit id="44" translate="no">
+               <source>?+</source>
+            </trans-unit>
+            <trans-unit id="45" translate="no">
+               <source>?-</source>
+            </trans-unit>
+            <trans-unit id="46" translate="no">
+               <source>??</source>
+            </trans-unit>
+            <trans-unit id="47" translate="no">
+               <source>-&gt;</source>
+            </trans-unit>
+         </group>
+        
+         <group id="129" resname="STR# ID 129">
+            <trans-unit id="1" translate="no">
+               <source>OKGS:L</source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>CNUM:R</source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>CLIB:T</source>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source>CAND:R</source>
+            </trans-unit>
+            <trans-unit id="5" translate="no">
+               <source>CANC:R</source>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>CAUX:R</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>CEXED:R</source>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source>CEXEC:R</source>
+            </trans-unit>
+            <trans-unit id="9" translate="no">
+               <source>CPERD:R</source>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>CPERC:R</source>
+            </trans-unit>
+            <trans-unit id="11" translate="no">
+               <source>ACPT:R</source>
+            </trans-unit>
+            <trans-unit id="12" translate="no">
+               <source>ANUM:R</source>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>ALIB:T</source>
+            </trans-unit>
+            <trans-unit id="14" translate="no">
+               <source>AADR1:T</source>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>AADR2:T</source>
+            </trans-unit>
+            <trans-unit id="16" translate="no">
+               <source>AADR3:T</source>
+            </trans-unit>
+            <trans-unit id="17" translate="no">
+               <source>AADR4:T</source>
+            </trans-unit>
+            <trans-unit id="18" translate="no">
+               <source>ACOM:T</source>
+            </trans-unit>
+            <trans-unit id="19" translate="no">
+               <source>AAND:R</source>
+            </trans-unit>
+            <trans-unit id="20" translate="no">
+               <source>AANC:R</source>
+            </trans-unit>
+            <trans-unit id="21" translate="no">
+               <source>AEXED:R</source>
+            </trans-unit>
+            <trans-unit id="22" translate="no">
+               <source>AEXEC:R</source>
+            </trans-unit>
+            <trans-unit id="23" translate="no">
+               <source>APERD:R</source>
+            </trans-unit>
+            <trans-unit id="24" translate="no">
+               <source>APERC:R</source>
+            </trans-unit>
+            <trans-unit id="25" translate="no">
+               <source>ECPT:R</source>
+            </trans-unit>
+            <trans-unit id="26" translate="no">
+               <source>EAUX:R</source>
+            </trans-unit>
+            <trans-unit id="27" translate="no">
+               <source>EJOUR:R</source>
+            </trans-unit>
+            <trans-unit id="28" translate="no">
+               <source>EDAT:D</source>
+            </trans-unit>
+            <trans-unit id="29" translate="no">
+               <source>EPIEC:T</source>
+            </trans-unit>
+            <trans-unit id="30" translate="no">
+               <source>ELIB:T</source>
+            </trans-unit>
+            <trans-unit id="31" translate="no">
+               <source>ELET:T</source>
+            </trans-unit>
+            <trans-unit id="32" translate="no">
+               <source>EVAL:R</source>
+            </trans-unit>
+            <trans-unit id="33" translate="no">
+               <source>EANA:T</source>
+            </trans-unit>
+         </group>
+         
+         <group id="404" resname="STR# ID 404">
+            <trans-unit id="1" translate="no">
+               <source>^|</source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>~</source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>&gt;&gt;</source>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source>&lt;&lt;</source>
+            </trans-unit>
+            <trans-unit id="5" translate="no">
+               <source>?+</source>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>?-</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>??</source>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source>-&gt;</source>
+            </trans-unit>
+         </group>
+         
+         <group id="512" resname="STR# ID 512">
+            <trans-unit id="1">
+               <source>Symbol table name:</source>
+               <target>Symbol table name:</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Error file name:</source>
+               <target>Error file name:</target>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>.comp</source>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Compiled database name:</source>
+               <target>Compiled database name:</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Name of the database to compile ...</source>
+               <target>Name of the database to compile ...</target>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>.err</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>.symb</source>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Please select the plug-in file</source>
+               <target>Please select the plug-in file</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>4D Volume Desktop to merge with</source>
+               <target>4D Volume Desktop to merge with</target>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>.proj</source>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Name of the project file to open</source>
+               <target>Name of the project file to open</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Typing file name:</source>
+               <target>Typing file name:</target>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>.type</source>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>4D Compiler</source>
+               <target>4D Compiler</target>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>.prf</source>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>4D Compiler65</source>
+               <target>4D Compiler65</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>LicenseLog</source>
+               <target>LicenseLog</target>
+            </trans-unit>
+         </group>
+         
+         <group id="513" resname="STR# ID 513">
+            <trans-unit id="1">
+               <source>Name</source>
+               <target>Name</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Type</source>
+               <target>Type</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>1 dimension</source>
+               <target>1 dimension</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>2 dimensions</source>
+               <target>2 dimensions</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Real</source>
+               <target>Real</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Text</source>
+               <target>Text</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Fixed string</source>
+               <target>Fixed string</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Long integer</source>
+               <target>Long integer</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Time</source>
+               <target>Time</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Date</source>
+               <target>Date</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Picture</source>
+               <target>Picture</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Boolean</source>
+               <target>Boolean</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>Integer</source>
+               <target>Integer</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Procedure</source>
+               <target>Procedure</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>Function</source>
+               <target>Function</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>Pointer</source>
+               <target>Pointer</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>Graph</source>
+               <target>Graph</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>Picture</source>
+               <target>Picture</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>Table</source>
+               <target>Table</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>Real</source>
+               <target>Real</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>Alphanumeric</source>
+               <target>Alphanumeric</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>Array selection</source>
+               <target>Array selection</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>Subtable</source>
+               <target>Subtable</target>
+            </trans-unit>
+            <trans-unit id="24">
+               <source>BLOB</source>
+               <target>BLOB</target>
+            </trans-unit>
+            <trans-unit id="27">
+               <source>Object</source>
+               <target>Object</target>
+            </trans-unit>
+            <trans-unit id="28">
+               <source>Collection</source>
+               <target>Collection</target>
+            </trans-unit>
+			<trans-unit id="29">
+				<source>Variant</source>
+				<target>Variant</target>
+			</trans-unit>
+		 </group>
+         
+         <group id="516" resname="STR# ID 516">
+            <trans-unit id="1">
+               <source>Cannot open a temporary file.</source>
+               <target>Cannot open a temporary file.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The resources of 4D Compiler are damaged.</source>
+               <target>The resources of 4D Compiler are damaged.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Memory overflow</source>
+               <target>Memory overflow</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Cannot write into the destination file.</source>
+               <target>Cannot write into the destination file.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Cannot open the destination file.</source>
+               <target>Cannot open the destination file.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Cannot open the original database.</source>
+               <target>Cannot open the original database.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Cannot open the 4D Volume Desktop application.</source>
+               <target>Cannot open the 4D Volume Desktop application.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>The original database is damaged.</source>
+               <target>The original database is damaged.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>The list of the System Variables is damaged.</source>
+               <target>The list of the System Variables is damaged.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Cannot find the original database.</source>
+               <target>Cannot find the original database.</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>The project is not valid.</source>
+               <target>The project is not valid.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>One of the forms is too large to be processed.</source>
+               <target>One of the forms is too large to be processed.</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>The destination database is already open from another application.</source>
+               <target>The destination database is already open from another application.</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>The error file must not be open.</source>
+               <target>The error file must not be open.</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>The symbol table must not be open.</source>
+               <target>The symbol table must not be open.</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>The typing file must not be open.</source>
+               <target>The typing file must not be open.</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>The name of one of the files is too long. 4D Compiler will truncate it.</source>
+               <target>The name of one of the files is too long. 4D Compiler will truncate it.</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>4D Compiler version 6 cannot compile 4th Dimension version 3 databases.</source>
+               <target>4D Compiler version 6 cannot compile 4th Dimension version 3 databases.</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>4D Compiler cannot compile a 4D First database.</source>
+               <target>4D Compiler cannot compile a 4D First database.</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>4D Compiler version 6.8 cannot compile 4th Dimension version 6.7 or older databases.</source>
+               <target>4D Compiler version 6.8 cannot compile 4th Dimension version 6.7 or older databases.</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>One or several file(s) are missing or damaged.</source>
+               <target>One or several file(s) are missing or damaged.</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>Your database structure is invalid. A component must be damaged.</source>
+               <target>Your database structure is invalid. A component must be damaged.</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>A component installed in your database is too old.</source>
+               <target>A component installed in your database is too old.</target>
+            </trans-unit>
+            <trans-unit id="24">
+               <source>The version of 4D Compiler is too old to open a database component.</source>
+               <target>The version of 4D Compiler is too old to open a database component.</target>
+            </trans-unit>
+           <trans-unit id="25">
+             <source>Cannot compile a non unicode database for 64-bit processors.</source>
+             <target>Cannot compile a non unicode database for 64-bit processors.</target>
+           </trans-unit>
+         </group>
+         
+         <group id="518" resname="STR# ID 518">
+            <trans-unit id="1">
+               <source>Pointer in COPY ARRAY</source>
+               <target>Pointer in COPY ARRAY</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Pointer in SELECTION TO ARRAY</source>
+               <target>Pointer in SELECTION TO ARRAY</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Pointer in LIST TO ARRAY</source>
+               <target>Pointer in LIST TO ARRAY</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Pointer in ARRAY TO LIST</source>
+               <target>Pointer in ARRAY TO LIST</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Pointer in an array declaration</source>
+               <target>Pointer in an array declaration</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Pointer in ARRAY TO SELECTION</source>
+               <target>Pointer in ARRAY TO SELECTION</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Using the function Undefined is not advised.</source>
+               <target>Using the function Undefined is not advised.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>This method is protected by a password.</source>
+               <target>This method is protected by a password.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>An automatic action button does not have a name in form ^0.</source>
+               <target>An automatic action button does not have a name in form ^0.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Pointer in DISTINCT VALUES</source>
+               <target>Pointer in DISTINCT VALUES</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Constant ^0 redefined</source>
+               <target>Constant ^0 redefined</target>
+            </trans-unit>
+         </group>
+         
+         <group id="514" resname="STR# ID 514">
+            <trans-unit id="1">
+               <source>The type of the variable is not compatible with the operator</source>
+               <target>The type of the variable is not compatible with the operator</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Cannot negate this type of variable</source>
+               <target>Cannot negate this type of variable</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Cannot compare two variables of those types</source>
+               <target>Cannot compare two variables of those types</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Cannot make an assignment with those types</source>
+               <target>Cannot make an assignment with those types</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>The argument of an IF statement must be a boolean </source>
+               <target>The argument of an IF statement must be a boolean </target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>The argument of a WHILE statement must be a boolean </source>
+                <target>The argument of a WHILE statement must be a boolean </target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>The argument of a CASE statement must be a boolean </source>
+                <target>The argument of a CASE statement must be a boolean </target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>The argument of an UNTIL statement must be a boolean </source>
+                <target>The argument of an UNTIL statement must be a boolean </target>
+            </trans-unit>
+			<trans-unit id="9">
+				<source>The argument of a FOR statement must be a numerical </source>
+				<target>The argument of a FOR statement must be a numerical </target>
+			</trans-unit>
+         </group>
+         
+         <group id="517" resname="STR# ID 517">
+            <trans-unit id="1">
+               <source>A file is already in use or a volume is write-protected.</source>
+               <target>A file is already in use or a volume is write-protected.</target>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Increase virtual memory or quit an open application.</source>
+               <target>Increase virtual memory or quit an open application.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Disk is full.</source>
+               <target>Disk is full.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Disk is full.</source>
+               <target>Disk is full.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The original database is in use or damaged.</source>
+               <target>The original database is in use or damaged.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>4D Volume Desktop is in use or damaged.</source>
+               <target>4D Volume Desktop is in use or damaged.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Use a backup of your database.</source>
+               <target>Use a backup of your database.</target>
+            </trans-unit>
+            <trans-unit id="9" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Creating a new project.</source>
+               <target>Creating a new project.</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>The invalid options have been reinitialized to their default values.</source>
+               <target>The invalid options have been reinitialized to their default values.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Increase virtual memory or quit an open application.</source>
+               <target>Increase virtual memory or quit an open application.</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>Close the database and recompile.</source>
+               <target>Close the database and recompile.</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Close the error file and recompile.</source>
+               <target>Close the error file and recompile.</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>Close the symbol table and recompile.</source>
+               <target>Close the symbol table and recompile.</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>Close the typing file and recompile.</source>
+               <target>Close the typing file and recompile.</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>Shorten the default suffix.</source>
+               <target>Shorten the default suffix.</target>
+            </trans-unit>
+            <trans-unit id="18" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="19" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="20" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>You should reinstall 4D Volume Desktop.</source>
+               <target>You should reinstall 4D Volume Desktop.</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>You should reinstall your database components.</source>
+               <target>You should reinstall your database components.</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>You should ensure your components are up to dates.</source>
+               <target>You should ensure your components are up to dates.</target>
+            </trans-unit>
+            <trans-unit id="24">
+               <source>You should use a newer version of 4D Compiler.</source>
+               <target>You should use a newer version of 4D Compiler.</target>
+            </trans-unit>
+         </group>
+
+         <group id="519" resname="STR# ID 519">
+            <trans-unit id="1">
+               <source>Syntax error</source>
+               <target>Syntax error</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Changing the type of the variable ^0 from type ^1 to type ^2</source>
+               <target>Changing the type of the variable ^0 from type ^1 to type ^2</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Error in line: </source>
+               <target>Error in line: </target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Warning in line: </source>
+               <target>Warning in line: </target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Incompatible type</source>
+               <target>Incompatible type</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Changing the type of the parameter ^0 from type ^1 to type ^2</source>
+               <target>Changing the type of the parameter ^0 from type ^1 to type ^2</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>This method exceeds 32 K.</source>
+               <target>This method exceeds 32 K.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>A method and a variable have the same name : ^0</source>
+               <target>A method and a variable have the same name : ^0</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>A plug-in command and a variable have the same name : ^0</source>
+               <target>A plug-in command and a variable have the same name : ^0</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Two methods have the same name : ^0</source>
+               <target>Two methods have the same name : ^0</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>The name of the function ^0 is also the name of a variable in the form ^1.</source>
+               <target>The name of the function ^0 is also the name of a variable in the form ^1.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Retyping the variable ^0 in the form ^1</source>
+               <target>Retyping the variable ^0 in the form ^1</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>The plug-in command ^0 does not seem to be correctly defined.</source>
+               <target>The plug-in command ^0 does not seem to be correctly defined.</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Backward Compatibility Syntax Error. This method was tokenized with a newer version of 4D. Please open method and retokenize (CTRL-Enter) if you believe line to be correct.</source>
+               <target>Backward Compatibility Syntax Error. This method was tokenized with a newer version of 4D. Please open method and retokenize (CTRL-Enter) if you believe line to be correct.</target>
+            </trans-unit>
+			<trans-unit id="15">
+				<source>Object syntax is not valid.</source>
+				<target>Object syntax is not valid.</target>
+			</trans-unit>
+			<trans-unit id="16">
+				<source>Invalid call. Not a function, command, member function, or method.</source>
+				<target>Invalid call. Not a function, command, member function, or method.</target>
+			</trans-unit>
+			<trans-unit id="17">
+				<source>Trying to call the variable/field/parameter {0} like a function or method.</source>
+				<target>Trying to call the variable/field/parameter {0} like a function or method.</target>
+			</trans-unit>
+			<trans-unit id="18">
+				<source>A class statement may only be used inside a class method.</source>
+				<target>A class statement may only be used inside a class method.</target>
+			</trans-unit>
+			<trans-unit id="19">
+				<source>A class constructor have no result.</source>
+				<target>A class constructor have no result.</target>
+			</trans-unit>
+			<trans-unit id="21">
+				<source>'break' and 'continue' statements are allowed only within loops.</source>
+				<target>'break' and 'continue' statements are allwoed only within loops.</target>
+			</trans-unit>
+         </group>
+         
+         <group id="520" resname="STR# ID 520">
+            <trans-unit id="1">
+               <source>Variable expected</source>
+               <target>Variable expected</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Closing curly bracket } expected</source>
+               <target>Closing curly bracket } expected</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Semicolon ; expected </source>
+               <target>Semicolon ; expected </target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Retyping the array ^0 from array of type ^1 to array of type ^2</source>
+               <target>Retyping the array ^0 from array of type ^1 to array of type ^2</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Changing the maximum length of a string</source>
+               <target>Changing the maximum length of a string</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Changing the number of dimensions of an array</source>
+               <target>Changing the number of dimensions of an array</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Field expected</source>
+               <target>Field expected</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Variable expected</source>
+               <target>Variable expected</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Opening curly bracket expected</source>
+               <target>Opening curly bracket expected</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Constant number expected</source>
+               <target>Constant number expected</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>The type of ^0 is unknown</source>
+               <target>The type of ^0 is unknown</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>This variable is used in the method ^0</source>
+               <target>This variable is used in the method ^0</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>The type of ^0 is not valid</source>
+               <target>The type of ^0 is not valid</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Retyping of the variable ^0 from type ^1 to type ^2</source>
+               <target>Retyping of the variable ^0 from type ^1 to type ^2</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>Declaring an array without dimensions</source>
+               <target>Declaring an array without dimensions</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>Retyping the array ^0 from array of type ^1 to variable of type ^2</source>
+               <target>Retyping the array ^0 from array of type ^1 to variable of type ^2</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>Retyping the variable ^0 from type ^1 to an array of type ^2</source>
+               <target>Retyping the variable ^0 from type ^1 to an array of type ^2</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>Retyping the result of the function ^0 from type ^1 to type ^2</source>
+               <target>Retyping the result of the function ^0 from type ^1 to type ^2</target>
+            </trans-unit>
+            <trans-unit id="19">
+				 <source>Redefinition of variable ^0.</source>
+				 <target>Redefinition of variable ^0.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="522" resname="STR# ID 522">
+            <trans-unit id="1">
+               <source>Pause</source>
+               <target>Pause</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Continue</source>
+               <target>Continue</target>
+            </trans-unit>
+         </group>
+         
+         <group id="524" resname="STR# ID 524">
+            <trans-unit id="1">
+               <source>This 4D command requires at least one parameter.</source>
+               <target>This 4D command requires at least one parameter.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>This 4D command does not require any parameters.</source>
+               <target>This 4D command does not require any parameters.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>An array can not be a parameter.</source>
+               <target>An array can not be a parameter.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>An array must be a global variable.</source>
+               <target>An array must be a global variable.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>The variable ^0 is not a method.</source>
+               <target>The variable ^0 is not a method.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The method ^0 is not a variable.</source>
+               <target>The method ^0 is not a variable.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>The expected parameter was an array and not an element of an array.</source>
+               <target>The expected parameter was an array and not an element of an array.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>This function has been called as a procedure.</source>
+               <target>This function has been called as a procedure.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="526" resname="STR# ID 526">
+            <trans-unit id="1">
+               <source>Opening parenthesis ( expected.</source>
+               <target>Opening parenthesis ( expected.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Closing parenthesis ) expected.</source>
+               <target>Closing parenthesis ) expected.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Too many closing character reference symbols.</source>
+               <target>Too many closing character reference symbols.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Too many opening character reference symbols.</source>
+               <target>Too many opening character reference symbols.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Too many closing curly brackets (}).</source>
+               <target>Too many closing curly brackets (}).</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Too many opening curly brackets ({).</source>
+               <target>Too many opening curly brackets ({).</target>
+            </trans-unit>
+         </group>
+         
+         <group id="528" resname="STR# ID 528">
+            <trans-unit id="1">
+               <source>Total size of local variables exceeds 32 Kb, it is currently : ^0 bytes.</source>
+               <target>Total size of local variables exceeds 32 Kb, it is currently : ^0 bytes.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Total size of process variables exceeds 32 Kb, it is currently : ^0 bytes.</source>
+               <target>Total size of process variables exceeds 32 Kb, it is currently : ^0 bytes.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Method size exceeds 32 Kb.</source>
+               <target>Method size exceeds 32 Kb.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Internal error # </source>
+               <target>Internal error # </target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>The method could not be compiled because it contains an error.</source>
+               <target>The method could not be compiled because it contains an error.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Total size of interprocess variables exceeds 32 Kb, it is currently : ^0 bytes.</source>
+               <target>Total size of interprocess variables exceeds 32 Kb, it is currently : ^0 bytes.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>^0:&lt;Private Method #^1&gt;</source>
+               <target>^0:&lt;Private Method #^1&gt;</target>
+            </trans-unit>
+         </group>
+         
+         <group id="530" resname="STR# ID 530">
+            <trans-unit id="1">
+               <source>The result of the function is not compatible with the expression.</source>
+               <target>The result of the function is not compatible with the expression.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The plug-in command ^0 does not seem to be correctly defined.</source>
+               <target>The plug-in command ^0 does not seem to be correctly defined.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>The original method is damaged.</source>
+               <target>The original method is damaged.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Unknown 4D command.</source>
+               <target>Unknown 4D command.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Method is too complex.</source>
+               <target>Method is too complex.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Parameter type conflict.</source>
+               <target>Parameter type conflict.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Function result type conflict.</source>
+               <target>Function result type conflict.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>This value cannot be passed as a parameter to this method or command.</source>
+               <target>This value cannot be passed as a parameter to this method or command.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>The result of this function cannot be passed as a parameter to this method or command.</source>
+               <target>The result of this function cannot be passed as a parameter to this method or command.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Not enough parameters were passed to this plug-in command.</source>
+               <target>Not enough parameters were passed to this plug-in command.</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Too many parameters were passed to this plug-in command.</source>
+               <target>Too many parameters were passed to this plug-in command.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Did not expect a subtable</source>
+               <target>Did not expect a subtable</target>
+            </trans-unit>
+         </group>
+         
+         <group id="521" resname="STR# ID 521">
+            <trans-unit id="1">
+               <source>Typing directives</source>
+               <target>Typing directives</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Typing global variables</source>
+               <target>Typing global variables</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Typing directives for local variables</source>
+               <target>Typing directives for local variables</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Typing local variables</source>
+               <target>Typing local variables</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Compilation</source>
+               <target>Generating opcodes</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Optimizing intermediary code</source>
+               <target>Optimizing intermediary code</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Generating assembly code</source>
+               <target>Generating assembly code</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Copying database </source>
+               <target>Copying database </target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Linking</source>
+               <target>Linking opcodes</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Writing error file</source>
+               <target>Writing error file</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>End of compilation</source>
+               <target>End of compilation</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Writing symbol table</source>
+               <target>Writing symbol table</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>Copying 4D Volume Desktop (may take up few minutes)</source>
+               <target>Copying 4D Volume Desktop (may take up few minutes)</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Updating forms</source>
+               <target>Updating forms</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>Creating the local symbol table</source>
+               <target>Creating the local symbol table</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>Writing typing file</source>
+               <target>Writing typing file</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>Writing symbol table and typing file</source>
+               <target>Writing symbol table and typing file</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>Copying 4D Volume Desktop (may take up few minutes)</source>
+               <target>Copying 4D Volume Desktop (may take up few minutes)</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>Verifying 4D Volume Desktop files</source>
+               <target>Verifying 4D Volume Desktop files</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>Grabbing license information</source>
+               <target>Grabbing license information</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Compiling WebService prototypes</source>
+                <target>Compiling WebService prototypes</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>Checking syntax</source>
+                <target>Checking syntax</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>Typing directives in forms</source>
+               <target>Typing directives in forms</target>
+            </trans-unit>
+         </group>
+         
+         <group id="527" resname="STR# ID 527">
+            <trans-unit id="1">
+               <source>The length of a string cannot be greater than 255 characters.</source>
+               <target>The length of a string cannot be greater than 255 characters.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Number expected</source>
+               <target>Number expected</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Invalid constant type : ^0</source>
+               <target>Invalid constant type : ^0</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>The types of the variables used in this expression are not compatible.</source>
+               <target>The types of the variables used in this expression are not compatible.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>The type of the parameter ^0 is different in the calling and in the called method.</source>
+               <target>The type of the parameter ^0 is different in the calling and in the called method.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Function result type conflict</source>
+               <target>Function result type conflict</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Generic parameter type conflict. It may already have been  declared in a Compiler_ method with a different type.</source>
+               <target>Generic parameter type conflict. It might already be declared in Compiler_ method.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Trying to dereference a variable which is not of type Pointer.</source>
+               <target>Trying to dereference a variable which is not of type Pointer.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Did not expect the operator ^0.</source>
+               <target>Did not expect the operator ^0.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Did not expect a field.</source>
+               <target>Did not expect a field.</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Did not expect a table.</source>
+               <target>Did not expect a table.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Did not expect a subtable.</source>
+               <target>Did not expect a subtable.</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>One of the parameters in COPY ARRAY is a variable.</source>
+               <target>One of the parameters in COPY ARRAY is a variable.</target>
+            </trans-unit>
+            <trans-unit id="14">
+				   <source>Type cannot be inferred</source>
+				   <target>Type cannot be inferred</target>
+			   </trans-unit>
+            <trans-unit id="15">
+               <source>Conflict type of parameter ^0. It might already be declared in Compiler_ method.</source>
+               <target>Conflict type of parameter ^0. It might already be declared in Compiler_ method.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="523" resname="STR# ID 523">
+            <trans-unit id="1">
+               <source>Errors: </source>
+               <target>Errors: </target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Warnings: </source>
+               <target>Warnings: </target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Error in line: ^0</source>
+               <target>Error in line: ^0</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Warning in line: ^0</source>
+               <target>Warning in line: ^0</target>
+            </trans-unit>
+         </group>
+         
+         <group id="525" resname="STR# ID 525">
+            <trans-unit id="1">
+               <source>Cannot find the plug-in command ^0.</source>
+               <target>Cannot find the plug-in command ^0.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The original file cannot be replaced.</source>
+               <target>The original file cannot be replaced.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Designer password:</source>
+               <target>Designer password:</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Cannot find the plug-in ^0.</source>
+               <target>Cannot find the plug-in ^0.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Cannot find the plug-in whose number is ^0.</source>
+               <target>Cannot find the plug-in whose number is ^0.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The plug-in command ^0 is not in the MAC4DX folder.</source>
+               <target>The plug-in command ^0 is not in the MAC4DX folder.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>The plug-in command ^0 is not in the WIN4DX folder.</source>
+               <target>The plug-in command ^0 is not in the WIN4DX folder.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Cannot find the plug-in command ^0. Do you want to localize another plug-in?</source>
+               <target>Cannot find the plug-in command ^0. Do you want to localize another plug-in?</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Cannot find the plug-in ^0. Do you want to localize the plug-in?</source>
+               <target>Cannot find the plug-in ^0. Do you want to localize the plug-in?</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Cannot find the plug-in whose number is ^0. Do you want to localize the plug-in?</source>
+               <target>Cannot find the plug-in whose number is ^0. Do you want to localize the plug-in?</target>
+            </trans-unit>
+         </group>
+         
+         <group id="529" resname="STR# ID 529">
+            <trans-unit id="1">
+               <source>The variable ^0 is not an array.</source>
+               <target>The variable ^0 is not an array.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Unknown table</source>
+               <target>Unknown table</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Unknown field</source>
+               <target>Unknown field</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>The method ^0 is unknown.</source>
+               <target>The method ^0 is unknown.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>The array index is not a number.</source>
+               <target>The array index is not a number.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The index of the generic parameter ${} is not a number.</source>
+               <target>The index of the generic parameter ${} is not a number.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Expression is too complex.</source>
+               <target>Expression is too complex.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Pointer to an incorrect expression</source>
+               <target>Pointer to an incorrect expression</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Incorrect usage of string index</source>
+               <target>Incorrect usage of string index</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>This command does not expect a parameter.</source>
+               <target>This command does not expect a parameter.</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>^0 cannot be passed as a parameter to that method.</source>
+               <target>^0 cannot be passed as a parameter to that method.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>The result of the function is not a pointer.</source>
+               <target>The result of the function is not a pointer.</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>Incorrect usage of a field</source>
+               <target>Incorrect usage of a field</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Did not expect a subtable</source>
+               <target>Did not expect a subtable</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>The component '^1' must be compiled (method '^0')</source>
+               <target>The component '^1' must be compiled (method '^0')</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>The component '^1' and the host database must be in the same unicode mode (method '^0')</source>
+               <target>The component '^1' and the host database must be in the same unicode mode (method '^0')</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>The method ‘^0’ overrides a method with the same name in component ‘^1’.</source>
+               <target>The method ‘^0’ overrides a method with the same name in component ‘^1’.</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>The method ‘^0’ from component ‘^1’ is also defined in component ‘^2’.</source>
+               <target>The method ‘^0’ from component ‘^1’ is also defined in component ‘^2’.</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>Cannot use interprocess variable '^0' from a method declared as thread-safe.</source>
+               <target>Cannot use interprocess variable '^0' from a method declared as thread-safe.</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>Cannot call this plugin's method from a method declared as thread-safe.</source>
+               <target>Cannot call this plugin's method from a method declared as thread-safe.</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>Cannot use SQL from a method declared as thread-safe.</source>
+               <target>Cannot use SQL from a method declared as thread-safe.</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>Cannot call command '^0' from a method declared as thread-safe.</source>
+               <target>Cannot call command '^0' from a method declared as thread-safe.</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>Cannot call non-thread-safe method '^0' from a method declared as thread-safe.</source>
+               <target>Cannot call non-thread-safe method '^0' from a method declared as thread-safe.</target>
+            </trans-unit>
+           <trans-unit id="24">
+             <source>Cannot call non-thread-safe trigger on ^0 from a method declared as thread-safe.</source>
+             <target>Cannot call non-thread-safe trigger on ^0 from a method declared as thread-safe.</target>
+           </trans-unit>
+           <trans-unit id="25">
+             <source>Cannot use interprocess variable '^0' from SQL code inside method declared thread-safe.</source>
+             <target>Cannot use interprocess variable '^0' from SQL code inside method declared thread-safe.</target>
+           </trans-unit>
+           <trans-unit id="26">
+             <source>Cannot call non-thread-safe method '^0' from SQL code inside method declared thread-safe.</source>
+             <target>Cannot call non-thread-safe method '^0' from SQL code inside method declared thread-safe.</target>
+           </trans-unit>
+           <trans-unit id="27">
+             <source>Method '^0' must be thread-safe for this usage.</source>
+             <target>Method '^0' must be thread-safe for this usage.</target>
+           </trans-unit>
+         </group>
+         
+         <group id="531" resname="STR# ID 531">
+            <trans-unit id="1">
+               <source>Form</source>
+               <target>Form</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>(OM)  </source>
+               <target>(OM)  </target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>(TM) </source>
+               <target>(TM) </target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>(FM) </source>
+               <target>(FM) </target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>(M)  </source>
+               <target>(M)  </target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>(F)  </source>
+               <target>(F)  </target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Plug-in</source>
+               <target>Plug-in</target>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source>${$}</source>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Process variables size : ^0</source>
+               <target>Process variables size : ^0</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Local variables size : ^0</source>
+               <target>Local variables size : ^0</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Interprocess variables size : ^0</source>
+               <target>Interprocess variables size : ^0</target>
+            </trans-unit>
+            <trans-unit id="12" translate="no">
+               <source>${^0}</source>
+            </trans-unit>
+            <trans-unit id="13">
+               <source> unlimited</source>
+               <target> unlimited</target>
+            </trans-unit>
+         </group>
+         
+         <group id="532" resname="STR# ID 532">
+            <trans-unit id="1">
+               <source>Errors: </source>
+               <target>Errors: </target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Warnings: </source>
+               <target>Warnings: </target>
+            </trans-unit>
+         </group>
+         
+         <group id="533" resname="STR# ID 533">
+            <trans-unit id="1">
+               <source>Assumes that the value is an alphanumeric expression.</source>
+               <target>Assumes that the value is an alphanumeric expression.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Assumes that the string index is numeric.</source>
+               <target>Assumes that the string index is numeric.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Assumes that the array index is of type real.</source>
+               <target>Assumes that the array index is of type real.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Missing parameter in the plug-in procedure call.</source>
+               <target>Missing parameter in the plug-in procedure call.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="534" resname="STR# ID 534">
+            <trans-unit id="1">
+               <source>Did not expect a subtable.</source>
+               <target>Did not expect a subtable.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The form ^0 is damaged.</source>
+               <target>The form ^0 is damaged.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Too many parameters have been passed to this method.</source>
+               <target>Too many parameters have been passed to this method.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>The parameter $^0 could not be typed.</source>
+               <target>The parameter $^0 could not be typed.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Missing parameters.</source>
+               <target>Missing parameters.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The number of dimensions of the array used in this expression is incorrect.</source>
+               <target>The number of dimensions of the array used in this expression is incorrect.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>The variable ^0 could not be typed.</source>
+               <target>The variable ^0 could not be typed.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Cannot use a Blob in this command, the type array of Blob does not exist.</source>
+               <target>Cannot use a Blob in this command, the type array of Blob does not exist.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Bit number in bitwise operator must be between 0 and 31.</source>
+               <target>Bit number in bitwise operator must be between 0 and 31.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>This real value doesn't fit as an integer.</source>
+               <target>This real value doesn't fit as an integer</target>
+            </trans-unit>
+         </group>
+         
+         <group id="535" resname="STR# ID 535">
+            <trans-unit id="1">
+               <source>Debut</source>
+               <target>Debut</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>StartUp</source>
+               <target>StartUp</target>
+            </trans-unit>
+         </group>
+         
+         <group id="536" resname="STR# ID 536">
+            <trans-unit id="1">
+               <source>The variable ^0 has not been explicitly declared in the typing methods (Compiler...).</source>
+               <target>The variable ^0 has not been explicitly declared in the typing methods (Compiler...).</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The parameter ^0 has not been explicitly declared in the typing methods (Compiler...).</source>
+               <target>The parameter ^0 has not been explicitly declared in the typing methods (Compiler...).</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>DISTINCT VALUES can only be used on indexed Alphanumeric fields.</source>
+               <target>DISTINCT VALUES can only be used on indexed Alphanumeric fields.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>The destination array of DISTINCT VALUES must be of type String or Text.</source>
+               <target>The destination array of DISTINCT VALUES must be of type String or Text.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>A protected or private variable has not been explicitly declared in the typing methods (Compiler...).</source>
+               <target>A protected or private variable has not been explicitly declared in the typing methods (Compiler...).</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The variable ^0 has not been explicitly declared.</source>
+               <target>The variable ^0 has not been explicitly declared.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>The parameter ^0 has not been explicitly declared.</source>
+               <target>The parameter ^0 has not been explicitly declared.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="537" resname="STR# ID 537">
+            <trans-unit id="1" translate="no">
+               <source>^0(^1)</source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>^0(^1;0)</source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>^0(^1;0;0)</source>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source>^0(^2;^1)</source>
+            </trans-unit>
+            <trans-unit id="5" translate="no">
+               <source>^0(^2;^1;0)</source>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>^0(^2;^1;0;0)</source>
+            </trans-unit>
+         </group>
+         
+         <group id="538" resname="STR# ID 538">
+            <trans-unit id="1">
+               <source>The database contains more than 32 Kb of process variables : ^0 bytes.</source>
+               <target>The database contains more than 32 Kb of process variables : ^0 bytes.</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The database contains more than 32 Kb of interprocess variables : ^0 bytes.</source>
+               <target>The database contains more than 32 Kb of interprocess variables : ^0 bytes.</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>One or more optional parameters are missing in the call to this command.</source>
+               <target>One or more optional parameters are missing in the call to this command.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>A plug-in command defined in the ^0 file is used, but not defined for one of the target processors.</source>
+               <target>A plug-in command defined in the ^0 file is used, but not defined for one of the target processors.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>A plug-in command defined in the Proc.ext file or in the structure is used for a compilation aimed at Windows.</source>
+               <target>A plug-in command defined in the Proc.ext file or in the structure is used for a compilation aimed at Windows.</target>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>No 4D Volume Desktop license number has been found.</source>
+               <target>No 4D Volume Desktop license number has been found.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="539" resname="STR# ID 539">
+            <trans-unit id="1">
+               <source>4D Volume Desktop to merge with</source>
+               <target>4D Volume Desktop to merge with</target>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>DISTRIB</source>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>The Database Executable Application must be in a folder. The ^0 folder will be used.</source>
+               <target>The Database Executable Application must be in a folder. The ^0 folder will be used.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>The folder for the merged database is not usable.</source>
+               <target>The folder for the merged database is not usable.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="540" resname="STR# ID 540">
+            <trans-unit id="1">
+               <source>4D Volume Desktop is damaged.</source>
+               <target>4D Volume Desktop is damaged.</target>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>The error file and the source database have the same name.</source>
+               <target>The error file and the source database have the same name.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>The symbol file and the source database have the same name.</source>
+               <target>The symbol file and the source database have the same name.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>The typing file and the source database have the same name.</source>
+               <target>The typing file and the source database have the same name.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="541" resname="STR# ID 541">
+            <trans-unit id="1">
+               <source>Use another copy of 4D Volume Desktop</source>
+               <target>Use another copy of 4D Volume Desktop</target>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Rename the error file in the project.</source>
+               <target>Rename the error file in the project.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Rename the symbol file in the project.</source>
+               <target>Rename the symbol file in the project.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Rename the typing file in the project.</source>
+               <target>Rename the typing file in the project.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="542" resname="STR# ID 542">
+            <trans-unit id="1">
+               <source>Project file name</source>
+               <target>Project file name</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>New</source>
+               <target>New</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Stop</source>
+               <target>Stop</target>
+            </trans-unit>
+         </group>
+         
+         <group id="543" resname="STR# ID 543">
+            <trans-unit id="1" translate="no">
+               <source>ASINTPPC.DLL</source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>ASIPORT.RSR</source>
+            </trans-unit>
+         </group>
+         
+         <group id="544" resname="STR# ID 544">
+            <trans-unit id="1" translate="no">
+               <source>ASIFONT.FON</source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>ASIFONT.MAP</source>
+            </trans-unit>
+         </group>
+         
+         <group id="545" resname="STR# ID 545">
+            <trans-unit id="1">
+               <source>* On Startup</source>
+               <target>* On Startup</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>* On Server Startup</source>
+               <target>* On Server Startup</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>* On Exit</source>
+               <target>* On Exit</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>* On Server Shutdown</source>
+               <target>* On Server Shutdown</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>* On Server Open Connection</source>
+               <target>* On Server Open Connection</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>* On Web Connection</source>
+               <target>* On Web Connection</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>* On Server Close Connection</source>
+               <target>* On Server Close Connection</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>* On Web Authentication</source>
+               <target>* On Web Authentication</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>* On Backup Startup</source>
+               <target>* On Backup Startup</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>* On Backup Shutdown</source>
+               <target>* On Backup Shutdown</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>* On Drop</source>
+               <target>* On Drop</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>* On SQL Authentication</source>
+               <target>* On SQL Authentication</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>* On Web Session Suspend</source>
+               <target>* On Web Session Suspend</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>* On System Event</source>
+               <target>* On System Event</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>* On Host Database Event</source>
+               <target>* On Host Database Event</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>* On REST Authentication</source>
+               <target>* On REST Authentication</target>
+            </trans-unit>
+			<trans-unit id="17">
+               <source>* On Mobile App Authentication</source>
+               <target>* On Mobile App Authentication</target>
+            </trans-unit>
+			<trans-unit id="18">
+               <source>* On Mobile App Action</source>
+               <target>* On Mobile App Action</target>
+            </trans-unit>
+         </group>
+         
+         <group id="546" resname="STR# ID 546">
+            <trans-unit id="1" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="5" translate="no">
+               <source>(&amp;L;&amp;L;&amp;L):L</source>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>(&amp;T;&amp;T;&amp;T;&amp;T;&amp;T;&amp;T)</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>(&amp;L;&amp;L;&amp;L)</source>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source>(&amp;T;&amp;T;&amp;T;&amp;T;&amp;T;&amp;T):B</source>
+            </trans-unit>
+            <trans-unit id="9" translate="no">
+               <source>:L</source>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>(&amp;L)</source>
+            </trans-unit>
+            <trans-unit id="11" translate="no">
+               <source/>
+            </trans-unit>
+            <trans-unit id="12" translate="no">
+               <source>(&amp;T;&amp;T;&amp;T):B</source>
+            </trans-unit>
+           <trans-unit id="13" translate="no">
+             <source/>
+           </trans-unit>
+           <trans-unit id="14" translate="no">
+             <source>(&amp;L):L</source>
+           </trans-unit>
+           <trans-unit id="15" translate="no">
+             <source>(&amp;L)</source>
+           </trans-unit>
+           <trans-unit id="16" translate="no">
+             <source>(&amp;T;&amp;T;&amp;B;&amp;T):B</source>
+           </trans-unit>
+		   <trans-unit id="17" translate="no">
+             <source>(&amp;J):J</source>
+            </trans-unit>
+			<trans-unit id="18" translate="no">
+             <source>(&amp;J):J</source>
+            </trans-unit>
+         </group>
+
+         <group id="602" resname="STR# ID 602">
+            <trans-unit id="1" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Impossible to find 4D Volume Desktop</source>
+               <target>Impossible to find 4D Volume Desktop</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>A problem occured while copying 4D Volume Desktop.</source>
+               <target>A problem occured while copying 4D Volume Desktop.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>You cannot merge a database for Windows on MacOS.</source>
+               <target>You cannot merge a database for Windows on MacOS.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>You cannot merge a database for MacOS on Windows.</source>
+               <target>You cannot merge a database for MacOS on Windows.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>A problem occured while copying one of the files of 4D Volume Desktop.</source>
+               <target>A problem occured while copying one of the files of 4D Volume Desktop.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Your version of 4D Volume Desktop is too old.</source>
+               <target>Your version of 4D Volume Desktop is too old.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="603" resname="STR# ID 603">
+            <trans-unit id="1" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Select a 4D Volume Desktop application again.</source>
+               <target>Select a 4D Volume Desktop application again.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Make sure that you have enough room on your hard disk. Also, make sure that your 4D Volume Desktop application is not damaged.</source>
+               <target>Make sure that you have enough room on your hard disk. Also, make sure that your 4D Volume Desktop application is not damaged.</target>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Please reinstall 4D Volume Desktop.</source>
+               <target>Please reinstall 4D Volume Desktop.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Please use a newer 4D Volume Desktop.</source>
+               <target>Please use a newer 4D Volume Desktop.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="990" resname="STR# ID 990">
+            <trans-unit id="1" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Internal error #</source>
+               <target>Internal error #</target>
+            </trans-unit>
+         </group>
+
+         <group id="1024" resname="STR# ID 1024">
+            <trans-unit id="1">
+               <source>No error file</source>
+               <target>No error file</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>No symbol table</source>
+               <target>No symbol table</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>No 4D Interpreted Desktop</source>
+               <target>No 4D Interpreted Desktop</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>68000</source>
+               <target>68000</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>68020/30 and 68LC040</source>
+               <target>68020/30 and 68LC040</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>No range checking</source>
+               <target>No range checking</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Range checking</source>
+               <target>Range checking</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Don't stop on error</source>
+               <target>Don't stop on error</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>Stop on error</source>
+               <target>Stop on error</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Roman script</source>
+               <target>Roman script</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Script manager</source>
+               <target>Script manager</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>None</source>
+               <target>None</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>On</source>
+               <target>On</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Off</source>
+               <target>Off</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>Advanced</source>
+               <target>Advanced</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>Basic</source>
+               <target>Basic</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>Compatible</source>
+               <target>Compatible</target>
+            </trans-unit>
+            <trans-unit id="18">
+               <source>Incompatible</source>
+               <target>Incompatible</target>
+            </trans-unit>
+            <trans-unit id="19">
+               <source>680xx+6888x / 68040</source>
+               <target>680xx+6888x / 68040</target>
+            </trans-unit>
+            <trans-unit id="20">
+               <source>Off</source>
+               <target>Off</target>
+            </trans-unit>
+            <trans-unit id="21">
+               <source>Off</source>
+               <target>Off</target>
+            </trans-unit>
+            <trans-unit id="22">
+               <source>Off</source>
+               <target>Off</target>
+            </trans-unit>
+            <trans-unit id="23">
+               <source>On</source>
+               <target>On</target>
+            </trans-unit>
+            <trans-unit id="24">
+               <source>Off</source>
+               <target>Off</target>
+            </trans-unit>
+            <trans-unit id="25">
+               <source>386/486</source>
+               <target>386/486</target>
+            </trans-unit>
+            <trans-unit id="26">
+               <source>Pentium optimized</source>
+               <target>Pentium optimized</target>
+            </trans-unit>
+            <trans-unit id="27">
+               <source>Not available</source>
+               <target>Not available</target>
+            </trans-unit>
+            <trans-unit id="28">
+               <source>No 4D Volume Desktop</source>
+               <target>No 4D Volume Desktop</target>
+            </trans-unit>
+         </group>
+
+         <group id="1026" resname="STR# ID 1026">
+            <trans-unit id="1">
+               <source>Optimized</source>
+               <target>Optimized</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Normal</source>
+               <target>Normal</target>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Real</source>
+               <target>Real</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Long integer</source>
+               <target>Long integer</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Text</source>
+               <target>Text</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Fixed string</source>
+               <target>Fixed string</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>to "zero"</source>
+               <target>to "zero"</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>No</source>
+               <target>No</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>to a random value</source>
+               <target>to a random value</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Type the variables</source>
+               <target>Type the variables</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>All variables are typed</source>
+               <target>All variables are typed</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>No typing file</source>
+               <target>No typing file</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>Process and interprocess are typed</source>
+               <target>Process and interprocess are typed</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Off</source>
+               <target>Off</target>
+            </trans-unit>
+         </group>
+
+         <group id="5512" resname="STR# ID 5512">
+            <trans-unit id="1">
+               <source>Symbol table name:</source>
+               <target>Symbol table name:</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Error file name:</source>
+               <target>Error file name:</target>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>.comp</source>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Compiled database name:</source>
+               <target>Compiled database name:</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Name of the database to compile</source>
+               <target>Name of the database to compile</target>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>.err</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>.symb</source>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Please select the plug-in file</source>
+               <target>Please select the plug-in file</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>4D Volume Desktop to merge with</source>
+               <target>4D Volume Desktop to merge with</target>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>.proj</source>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Name of the project file to open</source>
+               <target>Name of the project file to open</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Typing file name:</source>
+               <target>Typing file name:</target>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>.type</source>
+            </trans-unit>
+            <trans-unit id="14" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>.prf</source>
+            </trans-unit>
+         </group>
+         
+         <group id="5516" resname="STR# ID 5516">
+            <trans-unit id="1">
+               <source>Cannot open a temporary file.</source>
+               <target>Cannot open a temporary file.</target>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Memory overflow</source>
+               <target>Memory overflow</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Cannot write into the destination file.</source>
+               <target>Cannot write into the destination file.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Cannot open the destination file.</source>
+               <target>Cannot open the destination file.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>Cannot open the original database.</source>
+               <target>Cannot open the original database.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>Cannot open the 4D Volume Desktop document.</source>
+               <target>Cannot open the 4D Volume Desktop document.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>The original database is damaged.</source>
+               <target>The original database is damaged.</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>The list of the System Variables is damaged.</source>
+               <target>The list of the System Variables is damaged.</target>
+            </trans-unit>
+            <trans-unit id="10">
+               <source>Cannot find the original database.</source>
+               <target>Cannot find the original database.</target>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>The project is not valid.</source>
+               <target>The project is not valid.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>One of the forms is too large to be processed.</source>
+               <target>One of the forms is too large to be processed.</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>The destination database is already open from another application.</source>
+               <target>The destination database is already open from another application.</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>The error file must not be open.</source>
+               <target>The error file must not be open.</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>The symbol table must not be open.</source>
+               <target>The symbol table must not be open.</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>The typing file must not be open.</source>
+               <target>The typing file must not be open.</target>
+            </trans-unit>
+         </group>
+         
+         <group id="5517" resname="STR# ID 5517">
+            <trans-unit id="1">
+               <source>A file is already in use or a volume is write-protected.</source>
+               <target>A file is already in use or a volume is write-protected.</target>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="3">
+               <source>Increase virtual memory or quit an open application.</source>
+               <target>Increase virtual memory or quit an open application.</target>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Disk is full.</source>
+               <target>Disk is full.</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Disk is full.</source>
+               <target>Disk is full.</target>
+            </trans-unit>
+            <trans-unit id="6">
+               <source>The original database is in use or damaged.</source>
+               <target>The original database is in use or damaged.</target>
+            </trans-unit>
+            <trans-unit id="7">
+               <source>4D Volume Desktop is in use or damaged.</source>
+               <target>4D Volume Desktop is in use or damaged.</target>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Use a backup of your database.</source>
+               <target>Use a backup of your database.</target>
+            </trans-unit>
+            <trans-unit id="9" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source></source>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>The invalid options have been reinitialized to their default values.</source>
+               <target>The invalid options have been reinitialized to their default values.</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Increase virtual memory or quit an open application.</source>
+               <target>Increase virtual memory or quit an open application.</target>
+            </trans-unit>
+            <trans-unit id="13">
+               <source>Close the database and recompile.</source>
+               <target>Close the database and recompile.</target>
+            </trans-unit>
+            <trans-unit id="14">
+               <source>Close the error file and recompile.</source>
+               <target>Close the error file and recompile.</target>
+            </trans-unit>
+            <trans-unit id="15">
+               <source>Close the symbol table and recompile.</source>
+               <target>Close the symbol table and recompile.</target>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>Close the typing file and recompile.</source>
+               <target>Close the typing file and recompile.</target>
+            </trans-unit>
+            <trans-unit id="17">
+               <source>Shorten the default suffix.</source>
+               <target>Shorten the default suffix.</target>
+            </trans-unit>
+         </group>
+
+         <group id="10132" resname="STR# ID 10132">
+            <trans-unit id="1" translate="no">
+               <source>Rien</source>
+            </trans-unit>
+            <trans-unit id="2" translate="no">
+               <source>CHAR</source>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>WORD</source>
+            </trans-unit>
+            <trans-unit id="4" translate="no">
+               <source>LONG</source>
+            </trans-unit>
+            <trans-unit id="5" translate="no">
+               <source>STRVAR</source>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>STRFIX</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>TABVAR</source>
+            </trans-unit>
+            <trans-unit id="8" translate="no">
+               <source>TABFIX</source>
+            </trans-unit>
+            <trans-unit id="9" translate="no">
+               <source>.</source>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>Title</source>
+            </trans-unit>
+            <trans-unit id="11" translate="no">
+               <source>End of File</source>
+            </trans-unit>
+            <trans-unit id="12" translate="no">
+               <source>REAL</source>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>SWITCH</source>
+            </trans-unit>
+            <trans-unit id="14" translate="no">
+               <source>CASE</source>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>ENDSWITCH</source>
+            </trans-unit>
+            <trans-unit id="16" translate="no">
+               <source>ENDCASE</source>
+            </trans-unit>
+            <trans-unit id="17" translate="no">
+               <source>PADWORD</source>
+            </trans-unit>
+            <trans-unit id="18" translate="no">
+               <source>PADLONG</source>
+            </trans-unit>
+         </group>
+         
+         <group id="10512" resname="STR# ID 10512">
+            <trans-unit id="1">
+               <source>Symbol table name:</source>
+               <target>Symbol table name:</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Error file name:</source>
+               <target>Error file name:</target>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>.4DC</source>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Compiled database name:</source>
+               <target>Compiled database name:</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Name of the database to compile</source>
+               <target>Name of the database to compile</target>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>.ERR</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>.SYM</source>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Please select the plug-in file</source>
+               <target>Please select the plug-in file</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>4D Volume Desktop to merge with</source>
+               <target>4D Volume Desktop to merge with</target>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>.PRJ</source>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Name of the project file to open</source>
+               <target>Name of the project file to open</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Typing file name:</source>
+               <target>Typing file name:</target>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>.TYP</source>
+            </trans-unit>
+            <trans-unit id="14" translate="no">
+               <source>4DComp</source>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>.PRF</source>
+            </trans-unit>
+            <trans-unit id="16">
+               <source>4DComp67</source>
+               <target>4DComp67</target>
+            </trans-unit>
+         </group>
+         
+         <group id="15512" resname="STR# ID 15512">
+            <trans-unit id="1">
+               <source>Symbol table name:</source>
+               <target>Symbol table name:</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>Error file name:</source>
+               <target>Error file name:</target>
+            </trans-unit>
+            <trans-unit id="3" translate="no">
+               <source>.4DC</source>
+            </trans-unit>
+            <trans-unit id="4">
+               <source>Compiled database name:</source>
+               <target>Compiled database name:</target>
+            </trans-unit>
+            <trans-unit id="5">
+               <source>Name of the database to compile</source>
+               <target>Name of the database to compile</target>
+            </trans-unit>
+            <trans-unit id="6" translate="no">
+               <source>.ERR</source>
+            </trans-unit>
+            <trans-unit id="7" translate="no">
+               <source>.SYM</source>
+            </trans-unit>
+            <trans-unit id="8">
+               <source>Please select the plug-in file</source>
+               <target>Please select the plug-in file</target>
+            </trans-unit>
+            <trans-unit id="9">
+               <source>4D Volume Desktop to merge with</source>
+               <target>4D Volume Desktop to merge with</target>
+            </trans-unit>
+            <trans-unit id="10" translate="no">
+               <source>.PRJ</source>
+            </trans-unit>
+            <trans-unit id="11">
+               <source>Name of the project file to open</source>
+               <target>Name of the project file to open</target>
+            </trans-unit>
+            <trans-unit id="12">
+               <source>Typing file name:</source>
+               <target>Typing file name:</target>
+            </trans-unit>
+            <trans-unit id="13" translate="no">
+               <source>.TYP</source>
+            </trans-unit>
+            <trans-unit id="14" translate="no">
+               <source>4DCompp</source>
+            </trans-unit>
+            <trans-unit id="15" translate="no">
+               <source>.PRF</source>
+            </trans-unit>
+         </group>
+         
+         <group id="300" resname="STR# ID 300">
+            <trans-unit id="1">
+               <source>*** General errors and warnings ***</source>
+               <target>*** General errors and warnings ***</target>
+            </trans-unit>
+            <trans-unit id="2">
+               <source>The namespace {name} is not unique.</source>
+               <target>The namespace {name} is not unique.</target>
+            </trans-unit>
+         </group>
+
+      <group id="550" resname="ObjectSyntaxChecker">
+		   <trans-unit id="1" resname="ObjectSyntaxChecker_1">
+		   	<source>The local variable {name1} is not declared.</source>
+		   	<target>The local variable {name1} is not declared.</target>
+		   </trans-unit>
+         <trans-unit id="2" resname="ObjectSyntaxChecker_2">
+		   	<source>The function or property {name1} does not exist on type {name2}.</source>
+		   	<target>The function or property {name1} does not exist on type {name2}.</target>
+		   </trans-unit>
+         <trans-unit id="3" resname="ObjectSyntaxChecker_3">
+		   	<source>A function or property {name1} is unexpected.</source>
+		   	<target>A function or property {name1} is unexpected.</target>
+		   </trans-unit>
+         <trans-unit id="4" resname="ObjectSyntaxChecker_4">
+		   	<source>The class {name1} is unknown.</source>
+		   	<target>The class {name1} is unknown.</target>
+		   </trans-unit>
+         <trans-unit id="5" resname="ObjectSyntaxChecker_5">
+		   	<source>The table {name1} is unknown.</source>
+		   	<target>The table {name1} is unknown.</target>
+		   </trans-unit>
+		  <trans-unit id="6" resname="ObjectSyntaxChecker_6">
+			  <source>Redefinition of variable {name1} from {type1} to {type2}.</source>
+			  <target>Redefinition of variable {name1} from {type1} to {type2}.</target>
+		  </trans-unit>
+         <trans-unit id="7" resname="ObjectSyntaxChecker_7">
+            <source>Syntax error in the parameters declaration.</source>
+            <target>Syntax error in the parameters declaration.</target>
+         </trans-unit>
+         <trans-unit id="8" resname="ObjectSyntaxChecker_8">
+            <source>Variable declaration must be in the first level.</source>
+            <target>Variable declaration must be in the first level.</target>
+         </trans-unit>
+         <trans-unit id="9" resname="ObjectSyntaxChecker_9">
+            <source>Redefinition of the parameter {name1}.</source>
+            <target>Redefinition of the parameter {name1}.</target>
+         </trans-unit>
+         <trans-unit id="10" resname="ObjectSyntaxChecker_10">
+				<source>Redefinition of variable {name1}.</source>
+				<target>Redefinition of variable {name1}.</target>
+         </trans-unit>
+         <trans-unit id="11" resname="ObjectSyntaxChecker_11">
+				<source>Type cannot be inferred, {name1} will be typed as a Variant.</source>
+				<target>Type cannot be inferred, {name1} will be typed as a Variant.</target>
+			</trans-unit>
+         <trans-unit id="14" resname="ObjectSyntaxChecker_14">
+				<source>Impossible to cast {type1} to {type2}.</source>
+				<target>Impossible to cast {type1} to {type2}.</target>
+			</trans-unit>
+         <trans-unit id="15" resname="ObjectSyntaxChecker_15">
+				<source>At least one parameter type does not match the prototype(s) of the function "{name1}".</source>
+				<target>At least one parameter type does not match the prototype(s) of the function "{name1}".</target>
+			</trans-unit>
+
+         <trans-unit id="12" resname="ObjectSyntaxChecker_12">
+				<source>The function {name1} received too many parameters.</source>
+				<target>The function {name1} received too many parameters.</target>
+			</trans-unit>
+
+         <trans-unit id="13" resname="ObjectSyntaxChecker_13">
+				<source>The function {name1} has missing parameters.</source>
+				<target>The function {name1} has missing parameters.</target>
+			</trans-unit>
+
+         <trans-unit id="16" resname="ObjectSyntaxChecker_16">
+				<source>The parameter {name1} should be declared in the prototype.</source>
+				<target>The parameter {name1} should be declared in the prototype.</target>
+			</trans-unit>
+
+         <trans-unit id="17" resname="ObjectSyntaxChecker_17">
+				<source>The property {name1} is unexpected.</source>
+				<target>The property {name1} is unexpected.</target>
+			</trans-unit>
+
+         <trans-unit id="18" resname="ObjectSyntaxChecker_18">
+				<source>{name1} received too many parameters.</source>
+				<target>{name1} received too many parameters.</target>
+			</trans-unit>
+
+         <trans-unit id="19" resname="ObjectSyntaxChecker_19">
+				<source>{name1} has missing parameters.</source>
+				<target>{name1} has missing parameters.</target>
+			</trans-unit>
+         <trans-unit id="20" resname="ObjectSyntaxChecker_20">
+               <source>The type of the variable is not compatible with the operator.</source>
+               <target>The type of the variable is not compatible with the operator.</target>
+         </trans-unit>
+
+         <trans-unit id="21" resname="ObjectSyntaxChecker_21">
+            <source>{name1} is not allowed.</source>
+            <target>{name1} is not allowed.</target>
+         </trans-unit>
+
+         <trans-unit id="22" resname="ObjectSyntaxChecker_22">
+				<source>Duplicate identifier '{name1}'.</source>
+				<target>Duplicate identifier '{name1}'.</target>
+        </trans-unit>
+
+        <trans-unit id="23" resname="ObjectSyntaxChecker_23">
+            <source>'{name1}' statement used outside a loop.</source>
+            <target>'{name1}' statement used outside a loop.</target>
+        </trans-unit>
+
+        <trans-unit id="25" resname="ObjectSyntaxChecker_25">
+            <source>Duplicate property '{name1}' in object literal.</source>
+            <target>Duplicate property '{name1}' in object literal.</target>
+        </trans-unit>
+
+         <trans-unit id="26" resname="ObjectSyntaxChecker_26">
+            <source>Undeclared property '{name1}' used.</source>
+            <target>Undeclared property '{name1}' used.</target>
+        </trans-unit>
+
+        <trans-unit id="27" resname="ObjectSyntaxChecker_27">
+            <source>Keyword '{name1}()' expects a single expression.</source>
+            <target>Keyword '{name1}()' expects a single expression.</target>
+        </trans-unit>
+
+      <trans-unit id="28" resname="ObjectSyntaxChecker_28">
+            <source>Keyword '{name1}' can only be used within a method.</source>
+            <target>Keyword '{name1}' can only be used within a method.</target>
+      </trans-unit>
+      <trans-unit id="29" resname="ObjectSyntaxChecker_29">
+               <source>Multiple assignments not allowed in variable declaration.</source>
+               <target>Multiple assignments not allowed in variable declaration.</target>
+      </trans-unit>
+      <trans-unit id="30" resname="ObjectSyntaxChecker_30">
+               <source>Multiple expressions not allowed in variable declaration.</source>
+               <target>Multiple expressions not allowed in variable declaration.</target>
+      </trans-unit>
+      <trans-unit id="31" resname="ObjectSyntaxChecker_31">
+               <source>The member '{name1}' is not ecma compliant.</source>
+               <target>The member '{name1}' is not ecma compliant.</target>
+      </trans-unit>
+	   </group>
+
+      <group id="551" resname="ObjectSyntaxChecker_deprecated">
+      <trans-unit id="1" resname="ObjectSyntaxChecker_deprecated_1">
+               <source>The command '{name1}' is deprecated.</source>
+               <target>The command '{name1}' is deprecated.</target>
+      </trans-unit>
+            <trans-unit id="2" resname="ObjectSyntaxChecker_deprecated_2">
+               <source>The typing directive '{name1}' is deprecated. Better use the 'var' keyword with corresponding type.</source>
+               <target>The typing directive '{name1}' is deprecated. Better use the 'var' keyword with corresponding type.</target>
+      </trans-unit>
+            <trans-unit id="3" resname="ObjectSyntaxChecker_deprecated_3">
+               <source>The parameter typing directive '{name1}' is deprecated. Better use the '#DECLARE' keyword.</source>
+               <target>The parameter typing directive '{name1}' is deprecated. Better use the '#DECLARE' keyword.</target>
+      </trans-unit>
+      <trans-unit id="4" resname="ObjectSyntaxChecker_deprecated_4">
+               <source>The constant '{name1}' is deprecated.</source>
+               <target>The constant '{name1}' is deprecated.</target>
+      </trans-unit>
+      </group>
+
+
+      <group id="560" resname="STR# ID 560">
+         <trans-unit id="1">
+            <source>Syntax error</source>
+            <target>Syntax error</target>
+         </trans-unit>
+         <trans-unit id="2">
+            <source>Missing trailer</source>
+            <target>Missing trailer</target>
+         </trans-unit>
+         <trans-unit id="3">
+            <source>if without end if</source>
+            <target>if without end if</target>
+         </trans-unit>
+         <trans-unit id="4">
+            <source>Malformed loop</source>
+            <target>Malformed loop</target>
+         </trans-unit>
+         <trans-unit id="5">
+            <source>Missing expression</source>
+            <target>Missing expression</target>
+         </trans-unit>
+         <trans-unit id="6">
+            <source>case of without end case</source>
+            <target>case of without end case</target>
+         </trans-unit>
+         <trans-unit id="7">
+            <source>Missing parenthesis</source>
+            <target>Missing parenthesis</target>
+         </trans-unit>
+         <trans-unit id="8">
+            <source>Try without End try</source>
+            <target>Try without End try</target>
+         </trans-unit>
+         <trans-unit id="9">
+				<source>{0} must be the first executable line of the method.</source>
+				<target>{0} must be the first executable line of the method.</target>
+			</trans-unit>
+      </group>
+      </body>
+   </file>
+</xliff>

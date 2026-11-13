@@ -1,0 +1,185 @@
+head { display: block; content: "4D Log"; }
+title { display: block; font-size: 100%; font-weight: bold; content: " NEW!"; }
+
+
+verifylog[operation] {
+      background: #fff; 
+      text-align: left;
+      font-family: Verdana, Helvetica, sans-serif; 
+      margin: 0px; 
+      padding: 0px; 
+	  white-space: pre;
+	  display: block;
+	  padding: 1em;
+	  color: #036;
+      margin: 5px auto;
+}
+
+verifylog.hidden { font-size: 0; }
+
+verifylog:before
+{
+	content: "Name: " attr(name) "\A" "Operation: " attr(operation) "\A" "Structure: " attr(structure) "\A" "Data: " attr(data) "\A" "OS: " attr(os);
+}
+
+
+
+start_timer {
+      background: #fff; 
+      text-align: left;
+      font-family: Verdana, Helvetica, sans-serif; 
+      margin: 0px; 
+      padding: 0px; 
+	  white-space: pre;
+	  display: block;
+	  padding: 1em;
+	  color: #036;
+      margin: 5px auto;
+}
+
+start_timer:after
+{
+	content: "Started on: " attr(time)
+}
+
+
+
+stop_timer {
+      background: #fff; 
+      text-align: left;
+      font-family: Verdana, Helvetica, sans-serif; 
+      margin: 0px; 
+      padding: 0px; 
+	  white-space: pre;
+	  display: block;
+	  padding: 1em;
+	  color: #036;
+      margin: 5px auto;
+}
+
+stop_timer:after
+{
+	content: "Ended on: " attr(time)
+}
+
+stop_timer[user_canceled="true"]:after
+{
+	content: "Ended on: canceled by user"
+}
+
+step {
+	text-align: left;
+    border: 1px solid #036;
+    width: 95%;
+	padding: 0.7em;
+	background-color: #eee;
+    color: #036;
+    clear: left;
+	white-space: normal;
+	list-style: decimal;
+	display: list-item;
+	padding-left:20px;
+	margin-left:40px;
+	font-size: 16px;
+}
+
+step:before
+{
+	content: attr(title)
+}
+
+step > step  {
+	border: 0px solid #036;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding-left: 2em;
+	width: 90%;
+	font-size: 14px;
+    font-weight: normal;
+	color: #000;
+	display: list-item;
+    list-style: square;
+	clear: left;
+}
+
+step > step > step {
+	font-style: italic;
+	border: 0px solid #036;
+	list-style: circle;
+	font-size: 12px;
+}
+
+info {
+	border: 0px solid #036;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding-left: 2em;
+	width: 90%;
+	color: #000;
+	font-size: 12px;
+	border: 0px solid #036;
+	display: list-item;
+	list-style: none;
+}
+
+warning {
+	border: 0px solid #036;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding-left: 2em;
+	width: 90%;
+	color: #000;
+	font-size: 12px;
+	border: 0px solid #036;
+	display: list-item;
+	list-style: none;
+}
+
+error {
+	border: 0px solid #036;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding-left: 2em;
+	width: 90%;
+	color: #000;
+	font-size: 12px;
+	border: 0px solid #036;
+	display: list-item;
+	list-style: none;
+}
+
+
+info:before {
+	color: #036;
+	white-space: normal;
+	content: "\A Info:"
+}
+
+warning:before {
+	color: #f4ae36;
+	white-space: normal;
+	content: "\A Warning:"
+}
+
+error:before {
+	color: #f00;
+	white-space: normal;
+	content: "\A Error:"
+}
+
+info:after {
+	color: #036;
+	white-space: normal;
+}
+
+warning:after {
+	color: #f4ae36;
+	white-space: pre;
+	content: "(" attr(warning_type) ";" attr(warning_num) ")"
+}
+
+error:after {
+	color: #f00;
+	white-space: pre;
+	content: "(" attr(error_type) ";" attr(error_num) ")"
+}
