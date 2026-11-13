@@ -18,6 +18,9 @@ TARGETS = ["download4DApplication", "download4DComponents", "downloadPackageMana
 for helper in ("getDownloadCommand", "extractRuntimeArchive"):
     shutil.copy(templates / "Methods" / f"{helper}.4dm", methods / f"{helper}.4dm")
 
+# 4D source often has a trailing space before newline ("End if ").
+SP = r"[ \t]*"
+
 REPL = (
     "{indent}If (Not:C34(extractRuntimeArchive($file)))\n"
     "{indent}\tLOG EVENT:C667(Into system standard outputs:K38:9; \"***ERROR*** Invalid runtime archive\\n\"; Error message:K38:3)\n"
@@ -25,53 +28,52 @@ REPL = (
     "{indent}End if\n"
 )
 
-# (name, pattern) — patterns must not overlap after earlier replacements.
 PATTERNS = [
     # download4DApplication Server (nested, verbose)
     re.compile(
-        r"(?P<indent>\t\t)\$archive:=ZIP Read archive:C1637\(\$file\)\n"
-        r"\t\tIf \(\$archive#Null:C1517\)\n"
-        r"\t\t\tIf \(\$archive\.root#Null:C1517\)\n"
-        r"\t\t\t\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\)\n"
-        r"\t\t\t\tIf \(Is macOS:C1572\)\n"
-        r"\t\t\t\t\t\$file\.delete\(\)\n"
-        r"\t\t\t\tEnd if\n"
-        r"\t\t\tElse\n"
-        r"\t\t\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* Invalid [^\"]+\"; Error message:K38:3\)\n"
-        r"\t\t\t\treturn\n"
-        r"\t\t\tEnd if\n"
-        r"\t\tElse\n"
-        r"\t\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* Invalid [^\"]+\"; Error message:K38:3\)\n"
-        r"\t\t\treturn\n"
-        r"\t\tEnd if\n",
+        rf"(?P<indent>\t\t)\$archive:=ZIP Read archive:C1637\(\$file\){SP}\n"
+        rf"\t\tIf \(\$archive#Null:C1517\){SP}\n"
+        rf"\t\t\tIf \(\$archive\.root#Null:C1517\){SP}\n"
+        rf"\t\t\t\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\){SP}\n"
+        rf"\t\t\t\tIf \(Is macOS:C1572\){SP}\n"
+        rf"\t\t\t\t\t\$file\.delete\(\){SP}\n"
+        rf"\t\t\t\tEnd if{SP}\n"
+        rf"\t\t\tElse{SP}\n"
+        rf"\t\t\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* Invalid [^\"]+\"; Error message:K38:3\){SP}\n"
+        rf"\t\t\t\treturn{SP}\n"
+        rf"\t\t\tEnd if{SP}\n"
+        rf"\t\tElse{SP}\n"
+        rf"\t\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* Invalid [^\"]+\"; Error message:K38:3\){SP}\n"
+        rf"\t\t\treturn{SP}\n"
+        rf"\t\tEnd if{SP}\n",
         re.M,
     ),
     # download4DApplication Volume Desktop (short, nested)
     re.compile(
-        r"(?P<indent>\t\t)\$archive:=ZIP Read archive:C1637\(\$file\)\n"
-        r"\t\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\)\n",
+        rf"(?P<indent>\t\t)\$archive:=ZIP Read archive:C1637\(\$file\){SP}\n"
+        rf"\t\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\){SP}\n",
         re.M,
     ),
     # downloadPackageManager (Try/Catch)
     re.compile(
-        r"(?P<indent>\t)Try\n"
-        r"\t\t\$archive:=ZIP Read archive:C1637\(\$file\)\n"
-        r"\tCatch\n"
-        r"\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* \[[^\"]+\"; Error message:K38:3\)\n"
-        r"\tEnd try\n"
-        r"\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\)\n"
-        r"\tIf \(Is macOS:C1572\)\n"
-        r"\t\t\$file\.delete\(\)\n"
-        r"\tEnd if\n",
+        rf"(?P<indent>\t)Try{SP}\n"
+        rf"\t\t\$archive:=ZIP Read archive:C1637\(\$file\){SP}\n"
+        rf"\tCatch{SP}\n"
+        rf"\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* \[[^\"]+\"; Error message:K38:3\){SP}\n"
+        rf"\tEnd try{SP}\n"
+        rf"\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\){SP}\n"
+        rf"\tIf \(Is macOS:C1572\){SP}\n"
+        rf"\t\t\$file\.delete\(\){SP}\n"
+        rf"\tEnd if{SP}\n",
         re.M,
     ),
     # download4DComponents (flat)
     re.compile(
-        r"(?P<indent>\t)\$archive:=ZIP Read archive:C1637\(\$file\)\n"
-        r"\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\)\n"
-        r"\tIf \(Is macOS:C1572\)\n"
-        r"\t\t\$file\.delete\(\)\n"
-        r"\tEnd if\n",
+        rf"(?P<indent>\t)\$archive:=ZIP Read archive:C1637\(\$file\){SP}\n"
+        rf"\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\){SP}\n"
+        rf"\tIf \(Is macOS:C1572\){SP}\n"
+        rf"\t\t\$file\.delete\(\){SP}\n"
+        rf"\tEnd if{SP}\n",
         re.M,
     ),
 ]
