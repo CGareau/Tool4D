@@ -3,37 +3,40 @@
 //
 // Sources, chosen with environment variables (no credential is stored in this project):
 //  1. TOOL4D_DOWNLOAD_REPO ("owner/repository"): the archive is an asset of the GitHub Release
-//       <tag> of that repository, tag = 21R4-100203 (R) or 21-100624 (LTS), asset = <os>_<zip>
-//     (e.g. win_4D_Server.zip). Public repository: direct download, nothing else needed (a
-//     TOOL4D_GITHUB_TOKEN is ignored). Private repository: TOOL4D_GITHUB_TOKEN is sent as
-//     "Authorization: Bearer" and the asset is looked up through the GitHub API.
+//       <tag> of that repository, tag = 21R4-100203 (R) or 21-100624 (LTS), asset = <os>_<name>.tar.xz
+//     (e.g. win_4D_Server.tar.xz). Older Releases may still ship .zip — both are tried.
+//     Public repository: direct download, nothing else needed (a TOOL4D_GITHUB_TOKEN is ignored).
+//     Private repository: TOOL4D_GITHUB_TOKEN is sent as "Authorization: Bearer" and the asset
+//     is looked up through the GitHub API.
 //  2. TOOL4D_DOWNLOAD_BASE (URL): same layout on any HTTP server: <base>/<tag>/<asset>.
 // There is no product-download.4d.com fallback: Tool4D Releases are filled from the PS FTP
-// runtimes/ factory (tar.xz → zip). Set TOOL4D_DOWNLOAD_REPO=CGareau/Tool4D (or your fork).
+// runtimes/ factory (tar.xz published as-is). Set TOOL4D_DOWNLOAD_REPO=CGareau/Tool4D (or your fork).
 // The returned command always fails (non zero exit code) when the archive cannot be found.
 #DECLARE($path : Text; $version : Text; $branch : Text; $build : Integer; $os : Text; $zip : Text; $major : Text; $release : Text)->$cmd : Text
 
-var $repo; $base; $token; $ghToken; $tag; $asset; $url; $apiUrl; $directUrl : Text
-var $headers; $options; $item : Object
+var $repo; $base; $ghToken; $tag; $asset; $assetZip; $apiUrl : Text
+var $headers; $options : Object
 var $request : 4D.HTTPRequest
 var $found : Collection
 var $assetId : Real
-var $isPublic : Boolean
 
 $repo:=getEnvVariable("TOOL4D_DOWNLOAD_REPO")
 $base:=getEnvVariable("TOOL4D_DOWNLOAD_BASE")
 $tag:=$major+(($release="0") ? "" : ("R"+$release))+"-"+String($build)
-$asset:=$os+"_"+Replace string($zip; "%20"; "_")
+// Callers still pass historical ZIP names ("4D Server.zip"); current Releases ship tar.xz.
+$assetZip:=$os+"_"+Replace string($zip; "%20"; "_")
+$asset:=Replace string($assetZip; ".zip"; ".tar.xz")
 $ghToken:=getEnvVariable("TOOL4D_GITHUB_TOKEN")
 
 Case of 
 	: (($repo#"") && (isPublicAsset($repo; $tag; $asset)))
-		// Public repository: direct download of the Release asset, without credential and without API call
-		// (no rate limit). A token that is expired or wrong is therefore never sent.
 		$cmd:="curl -fL -o \""+$path+"\" \"https://github.com/"+$repo+"/releases/download/"+$tag+"/"+$asset+"\""
 		
+	: (($repo#"") && (isPublicAsset($repo; $tag; $assetZip)))
+		// Transition: Releases published before the tar.xz switch.
+		$cmd:="curl -fL -o \""+$path+"\" \"https://github.com/"+$repo+"/releases/download/"+$tag+"/"+$assetZip+"\""
+		
 	: ($repo#"")
-		// With a token (private repository): through the GitHub API
 		$apiUrl:="https://api.github.com/repos/"+$repo+"/releases"
 		$headers:=New object("Accept"; "application/vnd.github+json"; "User-Agent"; "Build_Application")
 		If ($ghToken#"")
@@ -46,6 +49,9 @@ Case of
 		$assetId:=0
 		If (($request.errors.length=0) && ($request.response.status=200) && (Value type($request.response.body)=Is object))
 			$found:=$request.response.body.assets.query("name = :1"; $asset)
+			If ($found.length=0)
+				$found:=$request.response.body.assets.query("name = :1"; $assetZip)
+			End if 
 			If ($found.length>0)
 				$assetId:=$found[0].id
 			End if 
@@ -58,8 +64,7 @@ Case of
 			End if 
 			$cmd:=$cmd+"-H \"Accept: application/octet-stream\" -o \""+$path+"\" \""+$apiUrl+"/assets/"+String($assetId)+"\""
 		Else 
-			LOG EVENT(Into system standard outputs; "***ERROR*** Asset "+$asset+" not found in release "+$tag+" of "+$repo+" (GitHub API answered "+(($request.response#Null) ? String($request.response.status) : "nothing")+"; 401 or 403 means that TOOL4D_GITHUB_TOKEN is invalid or has no access: unset it for a public repository)\n")
-			// 404 on purpose: the caller reports "Download failed"
+			LOG EVENT(Into system standard outputs; "***ERROR*** Asset "+$asset+" (or "+$assetZip+") not found in release "+$tag+" of "+$repo+" (GitHub API answered "+(($request.response#Null) ? String($request.response.status) : "nothing")+"; 401 or 403 means that TOOL4D_GITHUB_TOKEN is invalid or has no access: unset it for a public repository)\n")
 			$cmd:="curl -fsS -o \""+$path+"\" \""+$apiUrl+"/tags/"+$tag+"/missing/"+$asset+"\""
 		End if 
 		
@@ -75,6 +80,5 @@ Case of
 		
 	Else 
 		LOG EVENT(Into system standard outputs; "***ERROR*** No download source: set TOOL4D_DOWNLOAD_REPO (e.g. CGareau/Tool4D) or TOOL4D_DOWNLOAD_BASE. product-download.4d.com is no longer used.\n")
-		// 404 on purpose: the caller reports "Download failed"
 		$cmd:="curl -fsS -o \""+$path+"\" \"https://example.invalid/tool4d-missing/"+String($build)+"/"+$os+"/"+$zip+"\""
 End case 

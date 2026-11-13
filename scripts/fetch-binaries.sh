@@ -1,9 +1,14 @@
 #!/bin/bash
 # Downloads 4D Server, 4D Volume Desktop and 4D (mono) for one version from the
-# PS FTP runtimes/ contract (factory output), repacks them as ZIP assets, and
-# publishes a GitHub Release named <branch>-<build>, assets <os>_<name>.zip
-# (e.g. win_4D_Server.zip). Older releases of the same branch are deleted.
-# Idempotent: nothing happens if the release already exists.
+# PS FTP runtimes/ contract (factory output) and publishes them as GitHub Release
+# assets — the factory tar.xz files themselves (NOT re-zipped).
+#
+# Re-zipping a Mac .app on Linux blows past GitHub's 2 GiB release-asset limit
+# (xz ≈ 230 MB → zip often > 2 GB). Consumers extract with tar -xJf
+# (see templates/Methods/extractRuntimeArchive.4dm).
+#
+# Release tag: <branch>-<build>  assets: <os>_4D_Server.tar.xz etc.
+# Idempotent: skips when the release already exists (checked BEFORE download).
 #
 # usage: fetch-binaries.sh <branch>
 # env:
@@ -30,6 +35,8 @@ if [[ "${FTP_PRIVATE_SSL:-1}" != "0" ]]; then
 fi
 
 ftp_base="${FTP_PRIVATE_PATH%/}/runtimes/${branch}"
+# GitHub Releases reject assets ≥ 2 GiB.
+MAX_ASSET=$((2147483648 - 1))
 
 ftp_try() {
   # usage: ftp_try URL OUT
@@ -63,48 +70,81 @@ resolve_build_for_os() {
   fi
   [ -n "$resolved_build" ] || return 1
   if [ "$resolved_build" != "$want_build" ]; then
-    echo "::warning::$branch/$os: VERSION wants $want_build but FTP latest is $resolved_build — publishing FTP build"
+    echo "::warning::$branch/$os: VERSION wants $want_build but FTP latest is $resolved_build"
   fi
   return 0
 }
 
-tar_to_zip() {
-  # usage: tar_to_zip TARXZ OUT_ZIP
-  local tarxz="$1" out_zip="$2"
-  local stage="$dir/stage-$$"
-  rm -rf "$stage"
-  mkdir -p "$stage"
-  tar -xJf "$tarxz" -C "$stage"
-  # ZIP root = whatever the factory packed (4D Server.app / 4D Server / …)
-  (cd "$stage" && zip -qr "$out_zip" .)
-  rm -rf "$stage"
-  unzip -tq "$out_zip" >/dev/null
-}
+build_win=""
+build_mac=""
+resolved_build=""
+resolve_build_for_os win && build_win="$resolved_build"
+resolved_build=""
+resolve_build_for_os mac && build_mac="$resolved_build"
+
+if [ -z "$build_win" ] && [ -z "$build_mac" ]; then
+  echo "::warning::$branch: nothing on FTP for win/mac — skipped"
+  exit 0
+fi
+
+# Prefer a build present on BOTH OSes (avoid mixed win/mac in one release tag).
+release_build=""
+if [ -n "$build_win" ] && [ -n "$build_mac" ]; then
+  if [ "$build_win" = "$build_mac" ]; then
+    release_build="$build_win"
+  elif [ "$build_win" = "$want_build" ]; then
+    echo "::warning::$branch: mac FTP is $build_mac, win has VERSION build $want_build — publishing win-only tag $want_build"
+    release_build="$want_build"
+    build_mac=""
+  elif [ "$build_mac" = "$want_build" ]; then
+    echo "::warning::$branch: win FTP is $build_win, mac has VERSION build $want_build — publishing mac-only tag $want_build"
+    release_build="$want_build"
+    build_win=""
+  else
+    # Neither matches VERSION and they differ: pick win latest, drop mac (or vice versa).
+    echo "::warning::$branch: win=$build_win mac=$build_mac differ — publishing win build only"
+    release_build="$build_win"
+    build_mac=""
+  fi
+elif [ -n "$build_win" ]; then
+  release_build="$build_win"
+else
+  release_build="$build_mac"
+fi
+
+tag="$branch-$release_build"
+if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+  # Pre-tar.xz Releases only had .zip assets (often incomplete after the 2 GiB failure).
+  # Recreate when no .tar.xz is present so consumers can move forward.
+  if gh release view "$tag" --repo "$GITHUB_REPOSITORY" --json assets \
+      --jq '[.assets[].name | select(endswith(".tar.xz"))] | length' | grep -qx '0'; then
+    echo "$tag: exists but has no .tar.xz assets — deleting to republish from FTP"
+    gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
+  else
+    echo "$tag: release already exists — skip download"
+    exit 0
+  fi
+fi
 
 files=()
-# One release tag per branch: use max resolved build across OS (they should match).
-release_build=""
-
 for os in win mac; do
-  resolved_build=""
-  resolve_build_for_os "$os" || continue
-  if [ -z "$release_build" ]; then
-    release_build="$resolved_build"
-  elif [ "$release_build" != "$resolved_build" ]; then
-    echo "::warning::$branch: win/mac FTP builds differ ($release_build vs $resolved_build) — using $release_build for tag"
-  fi
+  case "$os" in
+    win) os_build="$build_win" ;;
+    mac) os_build="$build_mac" ;;
+  esac
+  [ -n "$os_build" ] || continue
+  [ "$os_build" = "$release_build" ] || continue
 
-  build_dir="${ftp_base}/${os}/${resolved_build}"
-  # Prefer concrete build folder; if we fell back via latest-build.txt, that folder must exist.
+  build_dir="${ftp_base}/${os}/${os_build}"
   declare -A map=(
-    [4D_Server.tar.xz]="${os}_4D_Server.zip"
-    [4D_Volume_Desktop.tar.xz]="${os}_4D_Volume_Desktop.zip"
-    [4D_Mono.tar.xz]="${os}_4D.zip"
+    [4D_Server.tar.xz]="${os}_4D_Server.tar.xz"
+    [4D_Volume_Desktop.tar.xz]="${os}_4D_Volume_Desktop.tar.xz"
+    [4D_Mono.tar.xz]="${os}_4D.tar.xz"
   )
   for artifact in 4D_Server.tar.xz 4D_Volume_Desktop.tar.xz 4D_Mono.tar.xz; do
     asset="${map[$artifact]}"
-    echo "downloading FTP runtimes/${branch}/${os}/${resolved_build}/$artifact → $asset"
-    if ! ftp_try "${build_dir}/${artifact}" "$dir/$artifact"; then
+    echo "downloading FTP runtimes/${branch}/${os}/${os_build}/$artifact → $asset"
+    if ! ftp_try "${build_dir}/${artifact}" "$dir/$asset"; then
       if [ "$artifact" = "4D_Mono.tar.xz" ]; then
         echo "::warning::$artifact missing on FTP (factory often skips mono without packageManager) — no $asset"
         continue
@@ -112,25 +152,23 @@ for os in win mac; do
       echo "::error::required $artifact missing under $build_dir"
       exit 1
     fi
-    tar_to_zip "$dir/$artifact" "$dir/$asset"
+    size=$(wc -c < "$dir/$asset" | tr -d ' ')
+    if [ "$size" -gt "$MAX_ASSET" ]; then
+      echo "::error::$asset is $size bytes — GitHub Release limit is 2 GiB"
+      exit 1
+    fi
     files+=("$dir/$asset")
-    rm -f "$dir/$artifact"
   done
 done
 
-[ -n "$release_build" ] || { echo "::warning::$branch: nothing on FTP for win/mac — skipped"; exit 0; }
 [ "${#files[@]}" -gt 0 ] || { echo "::warning::$branch: no assets produced — skipped"; exit 0; }
-
-tag="$branch-$release_build"
-if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-  echo "$tag: release already exists"; exit 0
-fi
 
 gh release create "$tag" "${files[@]}" --repo "$GITHUB_REPOSITORY" --latest=false \
   --title "4D $branch build $release_build" \
   --notes "4D Server, 4D Volume Desktop and 4D (when published) for $branch build $release_build.
-Source: PS FTP runtimes/${branch}/{win,mac}/${release_build}/ (installer factory), not product-download ZIPs.
-Used by Build_Application through TOOL4D_DOWNLOAD_REPO."
+Source: PS FTP runtimes/${branch}/{win,mac}/${release_build}/*.tar.xz (installer factory).
+Assets are the factory tar.xz files (not re-zipped — stays under GitHub's 2 GiB limit).
+Extract with tar -xJf. Used by Build_Application through TOOL4D_DOWNLOAD_REPO."
 
 gh release list --repo "$GITHUB_REPOSITORY" --limit 200 --json tagName --jq '.[].tagName' \
   | grep -E "^${branch}-[0-9]+$" | grep -vx "$tag" \

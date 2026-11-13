@@ -27,6 +27,55 @@ CMD = re.compile(
     r'https://product-download\.4d\.com/release/"\+\$version\+"/"\+\$branch\+"/"\+String:C10\(\$build\)\+"/"\+\$os\+"/"\+(?P<zip>\$\w+)\+.*$'
 )
 
+def _patch_extract(methods: Path) -> None:
+    """ZIP Read → extractRuntimeArchive (tar.xz Releases + legacy ZIP fallback)."""
+    # Verbose Server / Components / PackageManager block
+    verbose = re.compile(
+        r"\t\t\$archive:=ZIP Read archive:C1637\(\$file\)\n"
+        r"\t\tIf \(\$archive#Null:C1517\)\n"
+        r"\t\t\tIf \(\$archive\.root#Null:C1517\)\n"
+        r"\t\t\t\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\)\n"
+        r"\t\t\t\tIf \(Is macOS:C1572\)\n"
+        r"\t\t\t\t\t\$file\.delete\(\)\n"
+        r"\t\t\t\tEnd if\n"
+        r"\t\t\tElse\n"
+        r"\t\t\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* Invalid [^\"]+\"\; Error message:K38:3\)\n"
+        r"\t\t\t\treturn\n"
+        r"\t\t\tEnd if\n"
+        r"\t\tElse\n"
+        r"\t\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* Invalid [^\"]+\"\; Error message:K38:3\)\n"
+        r"\t\t\treturn\n"
+        r"\t\tEnd if\n",
+        re.M,
+    )
+    verbose_repl = (
+        "\t\tIf (Not:C34(extractRuntimeArchive($file)))\n"
+        "\t\t\tLOG EVENT:C667(Into system standard outputs:K38:9; \"***ERROR*** Invalid runtime archive\\n\"; Error message:K38:3)\n"
+        "\t\t\treturn\n"
+        "\t\tEnd if\n"
+    )
+    # Short Volume Desktop block
+    short = re.compile(
+        r"\t\t\$archive:=ZIP Read archive:C1637\(\$file\)\n"
+        r"\t\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\)\n",
+        re.M,
+    )
+    short_repl = (
+        "\t\tIf (Not:C34(extractRuntimeArchive($file)))\n"
+        "\t\t\tLOG EVENT:C667(Into system standard outputs:K38:9; \"***ERROR*** Invalid runtime archive\\n\"; Error message:K38:3)\n"
+        "\t\t\treturn\n"
+        "\t\tEnd if\n"
+    )
+    for name in TARGETS:
+        path = methods / f"{name}.4dm"
+        text = path.read_text(encoding="utf-8")
+        text2, n1 = verbose.subn(verbose_repl, text)
+        text3, n2 = short.subn(short_repl, text2)
+        if n1 + n2 == 0 and "extractRuntimeArchive" not in text:
+            sys.exit(f"{name}: no ZIP Read archive block to replace")
+        path.write_text(text3, encoding="utf-8")
+
+
 for name in TARGETS:
     path = methods / f"{name}.4dm"
     out, key_removed, cmd_replaced = [], 0, 0
@@ -66,10 +115,13 @@ if "buildStandalone($config)" not in standalone:
     sys.exit("startup: could not derive the standalone block")
 startup.write_text(text[:block.end()] + "\t\t\t\n" + standalone + text[block.end():], encoding="utf-8")
 
-for helper in ("getEnvVariable", "isPublicAsset", "getDownloadCommand", "buildStandalone"):
+for helper in ("getEnvVariable", "isPublicAsset", "getDownloadCommand", "buildStandalone", "extractRuntimeArchive"):
     shutil.copy(templates / "Methods" / f"{helper}.4dm", methods / f"{helper}.4dm")
+
+# Releases ship tar.xz (GitHub 2 GiB limit); replace ZIP-only extraction.
+_patch_extract(methods)
 
 key = root / "Resources" / "key"
 if key.exists():
     key.unlink()
-print("patched:", ", ".join(TARGETS), "+ startup, buildStandalone")
+print("patched:", ", ".join(TARGETS), "+ startup, buildStandalone, extractRuntimeArchive")
