@@ -1,8 +1,9 @@
 name: Fetch 4D binaries
+run-name: "Fetch 4D binaries${{ inputs.branches != '' && format(' · {0}', inputs.branches) || '' }}"
 
-# Downloads 4D Server / 4D Volume Desktop / 4D for each published version with the 4D API key
-# (secret PRODUCT_DOWNLOAD_TOKEN) and stores them as GitHub Releases, so that Build_Application
-# can fetch them from this repository (TOOL4D_DOWNLOAD_BASE) without ever seeing the key.
+# Pulls 4D Server / Volume Desktop / Mono from the PS FTP runtimes/ factory (tar.xz),
+# repacks ZIP assets, and stores them as GitHub Releases so Build_Application can fetch
+# via TOOL4D_DOWNLOAD_REPO without product-download.4d.com or a 4D API key.
 on:
   schedule:
     - cron: '47 4 * * *'
@@ -55,6 +56,9 @@ jobs:
           persist-credentials: false  # keep github.com requests free of the GITHUB_TOKEN header
       - name: Fetch ${{ matrix.branch }}
         env:
-          PRODUCT_DOWNLOAD_TOKEN: ${{ secrets.PRODUCT_DOWNLOAD_TOKEN }}
+          FTP_PRIVATE_PATH: ${{ secrets.FTP_PRIVATE_PATH }}
+          FTP_PRIVATE_LOGIN: ${{ secrets.FTP_PRIVATE_LOGIN }}
+          FTP_PRIVATE_PASSWORD: ${{ secrets.FTP_PRIVATE_PASSWORD }}
+          FTP_PRIVATE_SSL: ${{ secrets.FTP_PRIVATE_SSL || '1' }}
           GH_TOKEN: ${{ github.token }}
         run: ./scripts/fetch-binaries.sh "${{ matrix.branch }}"

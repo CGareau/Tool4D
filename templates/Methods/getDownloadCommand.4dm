@@ -1,15 +1,15 @@
 //%attributes = {}
 // Builds the curl command used to download a 4D archive (Server, Volume Desktop, 4D).
 //
-// Three sources, chosen with environment variables (no credential is stored in this project):
+// Sources, chosen with environment variables (no credential is stored in this project):
 //  1. TOOL4D_DOWNLOAD_REPO ("owner/repository"): the archive is an asset of the GitHub Release
 //       <tag> of that repository, tag = 21R4-100203 (R) or 21-100624 (LTS), asset = <os>_<zip>
 //     (e.g. win_4D_Server.zip). Public repository: direct download, nothing else needed (a
 //     TOOL4D_GITHUB_TOKEN is ignored). Private repository: TOOL4D_GITHUB_TOKEN is sent as
 //     "Authorization: Bearer" and the asset is looked up through the GitHub API.
 //  2. TOOL4D_DOWNLOAD_BASE (URL): same layout on any HTTP server: <base>/<tag>/<asset>.
-//  3. otherwise product-download.4d.com, which requires TOOL4D_TOKEN
-//     (an API key delivered by 4D, appended as ?token=...).
+// There is no product-download.4d.com fallback: Tool4D Releases are filled from the PS FTP
+// runtimes/ factory (tar.xz → zip). Set TOOL4D_DOWNLOAD_REPO=CGareau/Tool4D (or your fork).
 // The returned command always fails (non zero exit code) when the archive cannot be found.
 #DECLARE($path : Text; $version : Text; $branch : Text; $build : Integer; $os : Text; $zip : Text; $major : Text; $release : Text)->$cmd : Text
 
@@ -74,10 +74,7 @@ Case of
 		$cmd:=$cmd+"-o \""+$path+"\" \""+$base+"/"+$tag+"/"+$asset+"\""
 		
 	Else 
-		$token:=getEnvVariable("TOOL4D_TOKEN")
-		$url:="https://product-download.4d.com/release/"+$version+"/"+$branch+"/"+String($build)+"/"+$os+"/"+$zip
-		If ($token#"")
-			$url:=$url+"?token="+$token
-		End if 
-		$cmd:="curl -fL -o \""+$path+"\" \""+$url+"\""
+		LOG EVENT(Into system standard outputs; "***ERROR*** No download source: set TOOL4D_DOWNLOAD_REPO (e.g. CGareau/Tool4D) or TOOL4D_DOWNLOAD_BASE. product-download.4d.com is no longer used.\n")
+		// 404 on purpose: the caller reports "Download failed"
+		$cmd:="curl -fsS -o \""+$path+"\" \"https://example.invalid/tool4d-missing/"+String($build)+"/"+$os+"/"+$zip+"\""
 End case 

@@ -14,7 +14,7 @@ Everything needed to build **4D applications in CI/CD** — single-user (standal
 | `Build_Application`, `4DBuilder` | build tooling |
 | `VERSION` | branch and 4D build number |
 
-The matching **4D Server**, **4D Volume Desktop** and **4D** archives (Windows and macOS) are published as [Releases](../../releases) named `<branch>-<build>`; `Build_Application` downloads them for you.
+The matching **4D Server**, **4D Volume Desktop** and **4D** archives (Windows and macOS) are published as [Releases](../../releases) named `<branch>-<build>`; `Build_Application` downloads them for you. Those Release assets are built from the private PS FTP `runtimes/` factory (`*.tar.xz` → ZIP), **not** from `product-download.4d.com` ZIPs.
 
 ## Build your application
 
@@ -61,9 +61,11 @@ In a workflow: `actions/checkout` with `repository: CGareau/Tool4D`, `ref: 21R4`
 
 | Environment variable | Value |
 |---|---|
-| `TOOL4D_DOWNLOAD_REPO` | `CGareau/Tool4D` — archives come from the Releases of this repository |
+| `TOOL4D_DOWNLOAD_REPO` | `CGareau/Tool4D` — archives come from the Releases of this repository (**required** for public consumers; there is no `product-download` fallback) |
 | `TOOL4D_GITHUB_TOKEN` | only for a **private** copy of this repository: a token with read access (the archives are then looked up through the GitHub API). **Leave it unset for this public repository**: the Releases are downloaded directly, without any API call, and a token is ignored |
 | `TOOL4D_DOWNLOAD_BASE` | alternative: your own server, layout `<base>/<branch>-<build>/<os>_<archive>` (e.g. `21R4-100203/win_4D_Server.zip`) |
+
+Maintainers: the `Fetch 4D binaries` workflow needs repo secrets `FTP_PRIVATE_PATH`, `FTP_PRIVATE_LOGIN`, `FTP_PRIVATE_PASSWORD` (same FTP as `4eDimension/Tools` runtime factory). `PRODUCT_DOWNLOAD_TOKEN` is no longer used for these archives.
 
 ### 4. Run it
 
