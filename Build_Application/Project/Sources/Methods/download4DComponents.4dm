@@ -64,11 +64,10 @@ Else
 End if 
 
 If ($file.exists)
-	$archive:=ZIP Read archive:C1637($file)
-	$folder:=$archive.root.copyTo($file.parent; fk overwrite:K87:5)
-	If (Is macOS:C1572)
-		$file.delete()
-	End if 
+	If (Not:C34(extractRuntimeArchive($file)))
+		LOG EVENT:C667(Into system standard outputs:K38:9; "***ERROR*** Invalid runtime archive\n"; Error message:K38:3)
+		return
+	End if
 End if 
 
 If ($file.parent.folder("4d").exists)
