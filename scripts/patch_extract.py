@@ -59,7 +59,7 @@ PATTERNS = [
         rf"(?P<indent>\t)Try{SP}\n"
         rf"\t\t\$archive:=ZIP Read archive:C1637\(\$file\){SP}\n"
         rf"\tCatch{SP}\n"
-        rf"\t\tLOG EVENT:C667\(Into system standard outputs:K38:9; \"\*\*\*ERROR\*\*\* \[[^\"]+\"; Error message:K38:3\){SP}\n"
+        rf"\t\tLOG EVENT:C667\(.*\){SP}\n"
         rf"\tEnd try{SP}\n"
         rf"\t\$folder:=\$archive\.root\.copyTo\(\$file\.parent; fk overwrite:K87:5\){SP}\n"
         rf"\tIf \(Is macOS:C1572\){SP}\n"
