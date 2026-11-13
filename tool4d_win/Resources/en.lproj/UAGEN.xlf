@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Translation file for Wakanda products.
+  Copyright (C) 2007-2013 4D SAS.
+  This file is distributed under the same license as the product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+"http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" source-language="en-US" target-language="en-US" product-version="v14">
+    <header>
+      <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+
+	  <group id="2001" resname="UAG Errors">
+      <trans-unit resname="ERR_ugmg_1" id="1">
+        <source>Not Implemented in UAG component</source>
+        <target>Not Implemented in UAG component</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_2" id="2">
+        <source>The directory cannot be loaded</source>
+        <target>The directory cannot be loaded</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_3" id="3">
+        <source>The user name is missing</source>
+        <target>The user name is missing</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_4" id="4">
+        <source>The user name {p1} already exists</source>
+        <target>The user name {p1} already exists</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_5" id="5">
+        <source>The user ID {p1} already exists</source>
+        <target>The user ID {p1} already exists</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_6" id="6">
+        <source>Cannot find user name {p1}</source>
+        <target>Cannot find user name {p1}</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_7" id="7">
+        <source>Cannot find user ID {p1}</source>
+        <target>Cannot find user ID {p1}</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_8" id="8">
+        <source>The group name is missing</source>
+        <target>The group name is missing</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_9" id="9">
+        <source>The group name {p1} already exists</source>
+        <target>The group name {p1} already exists</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_10" id="10">
+        <source>The group ID {p1} already exists</source>
+        <target>The group ID {p1} already exists</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_11" id="11">
+        <source>Cannot find group name {p1}</source>
+        <target>Cannot find group name {p1}</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_12" id="12">
+        <source>Cannot find group ID {p1}</source>
+        <target>Cannot find group ID {p1}</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_13" id="13">
+        <source>The component DB4D is required and missing</source>
+        <target>The component DB4D is required and missing</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_18" id="18">
+        <source>invalid password</source>
+        <target>invalid password</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_19" id="19">
+        <source>The directory file is missing</source>
+        <target>The directory file is missing</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_20" id="20">
+        <source>UAG model is missing</source>
+        <target>UAG model is missing</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_21" id="21">
+        <source>Current session failed permission for group {p1}</source>
+        <target>Current session failed permission for group {p1}</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_22" id="22">
+        <source>Login Listener cannot be found</source>
+        <target>Login Listener cannot be found</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_23" id="23">
+        <source>User name must be not empty</source>
+        <target>User name must be not empty</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_24" id="24">
+        <source>Group name must be not empty</source>
+        <target>Group name must be not empty</target>
+      </trans-unit>
+
+      <trans-unit resname="ERR_ugmg_40" id="40">
+        <source>Could not synchronyse with remote LDAP Directory</source>
+        <target>Could not synchronyse with remote LDAP Directory</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_41" id="41">
+        <source>Group {p1} is not a remote group.</source>
+        <target>Group {p1} is not a remote group.</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_42" id="42">
+        <source>Alias must be not empty.</source>
+        <target>Alias must be not empty.</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_48" id="48">
+        <source>Cannot find the session handler module</source>
+        <target>Cannot find the session handler module</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_49" id="49">
+        <source>The session handler call has failed</source>
+        <target>The session handler call has failed</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_50" id="50">
+        <source>Cannot write the session</source>
+        <target>Cannot write the session</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_51" id="51">
+        <source>Cannot read the session</source>
+        <target>Cannot read the session</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_52" id="52">
+        <source>Cannot read the sessions for user</source>
+        <target>Cannot read the sessions for user</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_53" id="53">
+        <source>The session handler module path must be not empty</source>
+        <target>The session handler module path must be not empty</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_54" id="54">
+        <source>Cannot remove the session</source>
+        <target>Cannot remove the session</target>
+      </trans-unit>
+      <trans-unit resname="ERR_ugmg_55" id="55">
+        <source>A User Session cannot be streamed.</source>
+        <target>A User Session cannot be streamed.</target>
+      </trans-unit>
+
+      <trans-unit resname="ERR_ugmg_56" id="56">
+        <source>Permission type is missing.</source>
+        <target>Permission type is missing.</target>
+      </trans-unit>
+
+      <trans-unit resname="ERR_ugmg_57" id="57">
+        <source>Permission resource path is missing.</source>
+        <target>Permission resource path is missing.</target>
+      </trans-unit>
+
+      <trans-unit resname="ERR_ugmg_58" id="58">
+        <source>Permission verb is invalid.</source>
+        <target>Permission verb is invalid.</target>
+      </trans-unit>
+
+      <trans-unit resname="ERR_ugmg_59" id="59">
+        <source>Permission type is invalid.</source>
+        <target>Permission type is invalid.</target>
+      </trans-unit>
+
+      <trans-unit resname="ERR_ugmg_60" id="60">
+        <source>Permission verb is invalid.</source>
+        <target>Permission verb is invalid.</target>
+      </trans-unit>
+
+      <trans-unit resname="ERR_ugmg_61" id="61">
+        <source>Privilege definition is invalid.</source>
+        <target>Privilege definition is invalid.</target>
+      </trans-unit>
+    </group>
+
+    </body>
+  </file>
+</xliff>
