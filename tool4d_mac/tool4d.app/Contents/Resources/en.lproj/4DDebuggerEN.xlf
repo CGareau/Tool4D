@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0" xmlns:d4="http://www.4d.com">
+  <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="en-US">
+    <header>
+      <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+      <group resname="ContextualMenuWatch" restype="menu">
+        <trans-unit d4:includeIf="writableAndWithDisplaySubmenu" id="29" menu-name="ContextualMenuWatchDisplay">
+          <source>Display</source>
+          <target>Display</target>
+        </trans-unit>
+        <trans-unit id="30" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:command="watchNew" d4:includeIf="writable" id="1">
+          <source>New Expression...</source>
+          <target>New Expression...</target>
+        </trans-unit>
+        <trans-unit d4:includeIf="writable" id="2" menu-name="4dcommands">
+          <source>Insert Command...</source>
+          <target>Insert Command...</target>
+        </trans-unit>
+        <trans-unit id="3" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:command="cut" d4:includeIf="writable" id="26">
+          <source>Cut</source>
+          <target>Cut</target>
+        </trans-unit>
+        <trans-unit d4:command="copy" id="27">
+          <source>Copy</source>
+          <target>Copy</target>
+        </trans-unit>
+        <trans-unit d4:command="paste" d4:includeIf="writable" id="28">
+          <source>Paste</source>
+          <target>Paste</target>
+        </trans-unit>
+        <trans-unit d4:command="watchDeleteAll" d4:includeIf="writable" id="4">
+          <source>Delete All</source>
+          <target>Delete All</target>
+        </trans-unit>
+        <trans-unit d4:command="watchStandard" d4:includeIf="writable" id="5">
+          <source>Standard Expressions</source>
+          <target>Standard Expressions</target>
+        </trans-unit>
+        <trans-unit d4:command="watchCollapseAll" id="6">
+          <source>Collapse All</source>
+          <target>Collapse All</target>
+        </trans-unit>
+        <trans-unit d4:command="watchExpandAll" id="7">
+          <source>Expand All</source>
+          <target>Expand All</target>
+        </trans-unit>
+        <trans-unit id="8" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:command="watchShowTypes" id="9">
+          <source>Show Types</source>
+          <target>Show Types</target>
+        </trans-unit>
+        <trans-unit d4:command="watchShowNumbers" id="10">
+          <source>Show Field and Table Numbers</source>
+          <target>Show Field and Table Numbers</target>
+        </trans-unit>
+        <trans-unit d4:command="watchShowIcons" id="11">
+          <source>Show Icons</source>
+          <target>Show Icons</target>
+        </trans-unit>
+        <trans-unit d4:command="watchSortFields" id="12">
+          <source>Sorted Tables and Fields</source>
+          <target>Sorted Tables and Fields</target>
+        </trans-unit>
+        <trans-unit d4:command="watchShowHexa" id="13">
+          <source>Show Integers in Hexadecimal</source>
+          <target>Show Integers in Hexadecimal</target>
+        </trans-unit>
+        <trans-unit d4:command="watchMonitoring" id="14">
+          <source>Enable activity monitoring</source>
+          <target>Enable activity monitoring</target>
+        </trans-unit>
+      </group>
+
+      <group resname="ContextualMenuDebugCode" restype="menu">
+        <trans-unit d4:command="show_documentation" d4:includeIf="designAllowed" id="26">
+          <source>Show Documentation...</source>
+          <target>Show Documentation...</target>
+        </trans-unit>
+        <trans-unit d4:command="gotoDefinition" d4:includeIf="designAllowed" id="15">
+          <source>Goto Definition...</source>
+          <target>Goto Definition...</target>
+        </trans-unit>
+        <trans-unit d4:command="searchReferences" d4:includeIf="designAllowed" id="16">
+          <source>Search References...</source>
+          <target>Search References...</target>
+        </trans-unit>
+        <trans-unit id="17" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:command="copy" id="18">
+          <source>Copy</source>
+          <target>Copy</target>
+        </trans-unit>
+        <trans-unit d4:command="copyToExpressions" id="19">
+          <source>Copy to Expression Pane</source>
+          <target>Copy to Expression Pane</target>
+        </trans-unit>
+        <trans-unit id="20" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:command="runToCursor" id="21">
+          <source>Run to Cursor</source>
+          <target>Run to Cursor</target>
+        </trans-unit>
+        <trans-unit d4:command="setNextStatement" id="22">
+          <source>Set Next Statement</source>
+          <target>Set Next Statement</target>
+        </trans-unit>
+        <trans-unit id="23" translate="no">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit d4:command="toggleBreakpoint" id="24">
+          <source>Toggle Breakpoint</source>
+          <target>Toggle Breakpoint</target>
+        </trans-unit>
+        <trans-unit d4:command="editBreakpoint" id="25">
+          <source>Edit Breakpoint...</source>
+          <target>Edit Breakpoint...</target>
+        </trans-unit>
+      </group>
+      <group id="851" resname="STR#851">
+        <trans-unit id="1" resname="LineExpressionsLabel">
+          <source>Line Expressions</source>
+          <target>Line Expressions</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>Variables</source>
+          <target>Variables</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>Interprocess</source>
+          <target>Interprocess</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source>Process</source>
+          <target>Process</target>
+        </trans-unit>
+        <trans-unit id="5">
+          <source>Local</source>
+          <target>Local</target>
+        </trans-unit>
+        <trans-unit id="6">
+          <source>Parameters</source>
+          <target>Parameters</target>
+        </trans-unit>
+        <trans-unit id="7">
+          <source>Tables &amp; Fields</source>
+          <target>Tables &amp; Fields</target>
+        </trans-unit>
+        <trans-unit id="8">
+          <source>Semaphores</source>
+          <target>Semaphores</target>
+        </trans-unit>
+        <trans-unit id="9">
+          <source>Sets</source>
+          <target>Sets</target>
+        </trans-unit>
+        <trans-unit id="10">
+          <source>Processes</source>
+          <target>Processes</target>
+        </trans-unit>
+        <trans-unit id="11">
+          <source>Named Selections</source>
+          <target>Named Selections</target>
+        </trans-unit>
+        <trans-unit id="12">
+          <source>Information</source>
+          <target>Information</target>
+        </trans-unit>
+        <trans-unit id="13">
+          <source>Constants</source>
+          <target>Constants</target>
+        </trans-unit>
+        <trans-unit id="14">
+          <source>Requests</source>
+          <target>Requests</target>
+        </trans-unit>
+        <trans-unit id="15">
+          <source>Network</source>
+          <target>Network</target>
+        </trans-unit>
+        <trans-unit id="16">
+          <source>Scheduler</source>
+          <target>Scheduler</target>
+        </trans-unit>
+        <trans-unit id="17">
+          <source>Web</source>
+          <target>Web</target>
+        </trans-unit>
+        <trans-unit id="18" resname="Current Form Data Sources">
+          <source>Current Form Values</source>
+          <target>Current Form Values</target>
+        </trans-unit>
+        <trans-unit id="19" resname="LocaleVariablesLabel">
+          <source>Locale Variables</source>
+          <target>Locale Variables</target>
+        </trans-unit>
+      </group>
+      <group id="852" resname="STR#852">
+        <trans-unit id="1">
+          <source>`new expression</source>
+          <target>`new expression</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>## Error # </source>
+          <target>## Error # </target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>.</source>
+          <target>.</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source> elements </source>
+          <target> elements </target>
+        </trans-unit>
+        <trans-unit id="5">
+          <source>/</source>
+          <target>/</target>
+        </trans-unit>
+        <trans-unit id="6">
+          <source> selected records </source>
+          <target> selected records </target>
+        </trans-unit>
+        <trans-unit id="7">
+          <source>Process: </source>
+          <target>Process: </target>
+        </trans-unit>
+        <trans-unit id="8">
+          <source> record(s) in </source>
+          <target> record(s) in </target>
+        </trans-unit>
+        <trans-unit id="9">
+          <source>&lt;&lt;unused&gt;&gt;</source>
+          <target>&lt;&lt;unused&gt;&gt;</target>
+        </trans-unit>
+        <trans-unit id="10">
+          <source> : </source>
+          <target> : </target>
+        </trans-unit>
+        <trans-unit id="11">
+          <source>Pointer</source>
+          <target>Pointer</target>
+        </trans-unit>
+        <trans-unit id="12">
+          <source>### ### ### ##0 bytes</source>
+          <target>### ### ### ##0 octets</target>
+        </trans-unit>
+        <trans-unit id="13">
+          <source>### ### ### ##0 Kb</source>
+          <target>### ### ### ##0 Ko</target>
+        </trans-unit>
+        <trans-unit id="14">
+          <source>Break List</source>
+          <target>Break List</target>
+        </trans-unit>
+        <trans-unit id="15">
+          <source>, line: </source>
+          <target>, line : </target>
+        </trans-unit>
+        <trans-unit id="16">
+          <source>Add New Catch For</source>
+          <target>Add New Catch For</target>
+        </trans-unit>
+        <trans-unit id="17">
+          <source>Insert Command</source>
+          <target>Insert Command</target>
+        </trans-unit>
+        <trans-unit id="18">
+          <source>Group</source>
+          <target>Group</target>
+        </trans-unit>
+        <trans-unit id="19">
+          <source>Expression</source>
+          <target>Expression</target>
+        </trans-unit>
+        <trans-unit id="20">
+          <source>Value</source>
+          <target>Value</target>
+        </trans-unit>
+        <trans-unit id="21">
+          <source>Break Location</source>
+          <target>Break Location</target>
+        </trans-unit>
+        <trans-unit id="22">
+          <source>Condition</source>
+          <target>Condition</target>
+        </trans-unit>
+        <trans-unit id="23">
+          <source>Call Chain</source>
+          <target>Call Chain</target>
+        </trans-unit>
+        <trans-unit id="24">
+          <source>Caught Commands</source>
+          <target>Caught Commands</target>
+        </trans-unit>
+        <trans-unit id="25">
+          <source>Current Selection</source>
+          <target>Current Selection</target>
+        </trans-unit>
+        <trans-unit id="26">
+          <source>Set:</source>
+          <target>Set:</target>
+        </trans-unit>
+        <trans-unit id="27">
+          <source>Named Selection: </source>
+          <target>Named Selection: </target>
+        </trans-unit>
+        <trans-unit id="28">
+          <source>Variable: </source>
+          <target>Variable: </target>
+        </trans-unit>
+        <trans-unit id="29">
+          <source>Custom Size</source>
+          <target>Custom Size</target>
+        </trans-unit>
+        <trans-unit id="30">
+          <source>Portrait</source>
+          <target>Portrait</target>
+        </trans-unit>
+        <trans-unit id="31">
+          <source>Landscape</source>
+          <target>Landscape</target>
+        </trans-unit>
+        <trans-unit id="32">
+          <source>Format</source>
+          <target>Format</target>
+        </trans-unit>
+        <trans-unit id="33">
+          <source>#0 button(s) could not be placed.</source>
+          <target>#0 button(s) could not be placed.</target>
+        </trans-unit>
+        <trans-unit id="34">
+          <source>Show</source>
+          <target>Show</target>
+        </trans-unit>
+        <trans-unit id="35">
+          <source>Hide</source>
+          <target>Hide</target>
+        </trans-unit>
+        <trans-unit id="36">
+          <source>Commands by Alphabetical Order</source>
+          <target>Commands by Alphabetical Order</target>
+        </trans-unit>
+        <trans-unit id="37">
+          <source>Commands by Themes</source>
+          <target>Commands by Themes</target>
+        </trans-unit>
+        <trans-unit id="38">
+          <source>Headers</source>
+          <target>Headers</target>
+        </trans-unit>
+        <trans-unit id="39">
+          <source>Footers</source>
+          <target>Footers</target>
+        </trans-unit>
+        <trans-unit id="40">
+          <source>points</source>
+          <target>points</target>
+        </trans-unit>
+        <trans-unit id="41">
+          <source>centimeters</source>
+          <target>centimeters</target>
+        </trans-unit>
+        <trans-unit id="42">
+          <source>inches</source>
+          <target>inches</target>
+        </trans-unit>
+        <trans-unit id="43">
+          <source>Paste Page Number</source>
+          <target>Paste Page Number</target>
+        </trans-unit>
+        <trans-unit id="44">
+          <source>Paste Time of Printing</source>
+          <target>Paste Time of Printing</target>
+        </trans-unit>
+        <trans-unit id="45">
+          <source>Paste Date of Printing</source>
+          <target>Paste Date of Printing</target>
+        </trans-unit>
+        <trans-unit id="46">
+          <source>Insert Column</source>
+          <target>Insert Column</target>
+        </trans-unit>
+        <trans-unit id="47">
+          <source>Add Column</source>
+          <target>Add Column</target>
+        </trans-unit>
+        <trans-unit id="48">
+          <source>Subform</source>
+          <target>Subform</target>
+        </trans-unit>
+        <trans-unit id="49" resname="DefaultInputOutputForm">
+          <source>Table ^1 does not have any input or output form.
+                        Do you want to create default forms for this table ?</source>
+          <target>Table ^1 does not have any input or output form.
+Do you want to create default forms for this table?</target>
+        </trans-unit>
+        <trans-unit id="50">
+          <source>External Call Back</source>
+          <target>External Call Back</target>
+        </trans-unit>
+        <trans-unit id="51">
+          <source>(only the first 1000 records are displayed)</source>
+          <target>(only the first 1000 records are displayed)</target>
+        </trans-unit>
+        <trans-unit id="52">
+          <source>Trigger on </source>
+          <target>Trigger on </target>
+        </trans-unit>
+        <trans-unit id="53">
+          <source>None</source>
+          <target>None</target>
+        </trans-unit>
+        <trans-unit id="54">
+          <source>Do you really want to drop this index?</source>
+          <target>Do you really want to drop this index?</target>
+        </trans-unit>
+        <trans-unit id="55">
+          <source>Locked records in </source>
+          <target>Locked records in </target>
+        </trans-unit>
+        <trans-unit id="56">
+          <source>Splitter</source>
+          <target>Splitter</target>
+        </trans-unit>
+        <trans-unit id="57">
+          <source>S</source>
+          <target>S</target>
+        </trans-unit>
+        <trans-unit id="58">
+          <source>Insert Field</source>
+          <target>Insert Field</target>
+        </trans-unit>
+        <trans-unit id="59">
+          <source>Insert Method</source>
+          <target>Insert Method</target>
+        </trans-unit>
+        <trans-unit id="60">
+          <source>4D Printing Job - untitled </source>
+          <target>4D Printing Job - untitled </target>
+        </trans-unit>
+        <trans-unit id="61" resname="Remote Debug Window Title">
+          <source>Remote Debug: </source>
+          <target>Remote Debug: </target>
+        </trans-unit>
+      </group>
+      <group id="855" resname="STR#855">
+        <trans-unit id="1">
+          <source>On Load</source>
+          <target>On Load</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>On During</source>
+          <target>On During</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>On Validate</source>
+          <target>On Validate</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source>On Clicked</source>
+          <target>On Clicked</target>
+        </trans-unit>
+        <trans-unit id="5">
+          <source>On Header</source>
+          <target>On Header</target>
+        </trans-unit>
+        <trans-unit id="6">
+          <source>On Printing Break</source>
+          <target>On Printing Break</target>
+        </trans-unit>
+        <trans-unit id="7">
+          <source>On Printing Footer</source>
+          <target>On Printing Footer</target>
+        </trans-unit>
+        <trans-unit id="8">
+          <source>On Display Detail</source>
+          <target>On Display Detail</target>
+        </trans-unit>
+        <trans-unit id="9">
+          <source>On Before And During</source>
+          <target>On Before And During</target>
+        </trans-unit>
+        <trans-unit id="10">
+          <source>On Outside Call</source>
+          <target>On Outside Call</target>
+        </trans-unit>
+        <trans-unit id="11">
+          <source>On Activate</source>
+          <target>On Activate</target>
+        </trans-unit>
+        <trans-unit id="12">
+          <source>On Deactivate</source>
+          <target>On Deactivate</target>
+        </trans-unit>
+        <trans-unit id="13">
+          <source>On Double Clicked</source>
+          <target>On Double Clicked</target>
+        </trans-unit>
+        <trans-unit id="14">
+          <source>On Losing Focus</source>
+          <target>On Losing Focus</target>
+        </trans-unit>
+        <trans-unit id="15">
+          <source>On Getting Focus</source>
+          <target>On Getting Focus</target>
+        </trans-unit>
+        <trans-unit id="16">
+          <source>On Drop</source>
+          <target>On Drop</target>
+        </trans-unit>
+        <trans-unit id="17">
+          <source>On Before Keystroke</source>
+          <target>On Before Keystroke</target>
+        </trans-unit>
+        <trans-unit id="18">
+          <source>On Menu Selected</source>
+          <target>On Menu Selected</target>
+        </trans-unit>
+        <trans-unit id="19">
+          <source>On Plug in Area</source>
+          <target>On Plug in Area</target>
+        </trans-unit>
+        <trans-unit id="20">
+          <source>On Data Change</source>
+          <target>On Data Change</target>
+        </trans-unit>
+        <trans-unit id="21">
+          <source>On Drag Over</source>
+          <target>On Drag Over</target>
+        </trans-unit>
+        <trans-unit id="22">
+          <source>On Close Box</source>
+          <target>On Close Box</target>
+        </trans-unit>
+        <trans-unit id="23">
+          <source>On Printing Detail</source>
+          <target>On Printing Detail</target>
+        </trans-unit>
+        <trans-unit id="24">
+          <source>On Unload</source>
+          <target>On Unload</target>
+        </trans-unit>
+        <trans-unit id="25">
+          <source>On Open Detail</source>
+          <target>On Open Detail</target>
+        </trans-unit>
+        <trans-unit id="26">
+          <source>On Close Detail</source>
+          <target>On Close Detail</target>
+        </trans-unit>
+        <trans-unit id="27">
+          <source>On Timer</source>
+          <target>On Timer</target>
+        </trans-unit>
+        <trans-unit id="28">
+          <source>On After Keystroke</source>
+          <target>On After Keystroke</target>
+        </trans-unit>
+        <trans-unit id="29">
+          <source>On Resize</source>
+          <target>On Resize</target>
+        </trans-unit>
+        <trans-unit id="30">
+          <source>On After Sort</source>
+          <target>On After Sort</target>
+        </trans-unit>
+        <trans-unit id="31">
+          <source>On Selection Change</source>
+          <target>On Selection Change</target>
+        </trans-unit>
+        <trans-unit id="32">
+          <source>On Column Moved</source>
+          <target>On Column Moved</target>
+        </trans-unit>
+        <trans-unit id="33">
+          <source>On Column Resize</source>
+          <target>On Column Resize</target>
+        </trans-unit>
+        <trans-unit id="34">
+          <source>On Row Moved</source>
+          <target>On Row Moved</target>
+        </trans-unit>
+        <trans-unit id="35">
+          <source>On Mouse Enter</source>
+          <target>On Mouse Enter</target>
+        </trans-unit>
+        <trans-unit id="36">
+          <source>On Mouse Leave</source>
+          <target>On Mouse Leave</target>
+        </trans-unit>
+        <trans-unit id="37">
+          <source>On Mouse Move</source>
+          <target>On Mouse Move</target>
+        </trans-unit>
+        <trans-unit id="38">
+          <source>On Arrow Click</source>
+          <target>On Arrow Click</target>
+        </trans-unit>
+        <trans-unit id="39">
+          <source>On Long Click</source>
+          <target>On Long Click</target>
+        </trans-unit>
+        <trans-unit id="40">
+          <source>On Load Record</source>
+          <target>On Load Record</target>
+        </trans-unit>
+        <trans-unit id="41">
+          <source>On Before Data Entry</source>
+          <target>On Before Data Entry</target>
+        </trans-unit>
+        <trans-unit id="42">
+          <source>On Header Click</source>
+          <target>On Header Click</target>
+        </trans-unit>
+        <trans-unit id="43">
+          <source>On Expand</source>
+          <target>On Expand</target>
+        </trans-unit>
+        <trans-unit id="44">
+          <source>On Collapse</source>
+          <target>On Collapse</target>
+        </trans-unit>
+        <trans-unit id="45">
+          <source>On After Edit</source>
+          <target>On After Edit</target>
+        </trans-unit>
+      </group>
+      <group id="856" resname="STR#856">
+        <trans-unit id="1">
+          <source>Form Event</source>
+          <target>Form Event</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>Stack Space</source>
+          <target>Stack Space</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>Free Memory</source>
+          <target>Free Memory</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source>In Transaction</source>
+          <target>In Transaction</target>
+        </trans-unit>
+        <trans-unit id="5">
+          <source>Self Pointer</source>
+          <target>Self Pointer</target>
+        </trans-unit>
+        <trans-unit id="6">
+          <source>Default Table</source>
+          <target>Default Table</target>
+        </trans-unit>
+        <trans-unit id="7">
+          <source>Automatic Many To One</source>
+          <target>Automatic Many To One</target>
+        </trans-unit>
+        <trans-unit id="8">
+          <source>Automatic One To Many</source>
+          <target>Automatic One To Many</target>
+        </trans-unit>
+        <trans-unit id="9">
+          <source>Query Destination</source>
+          <target>Query Destination</target>
+        </trans-unit>
+        <trans-unit id="10">
+          <source>Trigger Level</source>
+          <target>Trigger Level</target>
+        </trans-unit>
+        <trans-unit id="11">
+          <source>Web File To Send</source>
+          <target>Web File To Send</target>
+        </trans-unit>
+        <trans-unit id="12">
+          <source>Query Limit</source>
+          <target>Query Limit</target>
+        </trans-unit>
+        <trans-unit id="13">
+          <source>Minimal Stack Space</source>
+          <target>Minimal Stack Space</target>
+        </trans-unit>
+        <trans-unit id="14">
+          <source>Memory Load</source>
+          <target>Memory Load</target>
+        </trans-unit>
+        <trans-unit id="15">
+          <source>Web Cache Usage</source>
+          <target>Web Cache Usage</target>
+        </trans-unit>
+        <trans-unit id="16">
+          <source>Web Server Elapsed Time</source>
+          <target>Web Server Elapsed Time</target>
+        </trans-unit>
+        <trans-unit id="17">
+          <source>Web Hits Count</source>
+          <target>Web Hits Count</target>
+        </trans-unit>
+        <trans-unit id="18">
+          <source>Number of active Web processes</source>
+          <target>Number of active Web processes</target>
+        </trans-unit>
+        <trans-unit id="19">
+          <source>Physical Memory Size</source>
+          <target>Physical Memory Size</target>
+        </trans-unit>
+        <trans-unit id="20">
+          <source>Wired Memory</source>
+          <target>Wired Memory</target>
+        </trans-unit>
+        <trans-unit id="21">
+          <source>Used Physical Memory</source>
+          <target>Used Physical Memory</target>
+        </trans-unit>
+        <trans-unit id="22">
+          <source>Used Virtual Memory</source>
+          <target>Used Virtual Memory</target>
+        </trans-unit>
+        <trans-unit id="23">
+          <source>{count} deferred formula(s)</source>
+          <target>{count} deferred formula(s)</target>
+        </trans-unit>
+      </group>
+
+      <group id="860" resname="STR#860">
+        <trans-unit id="1">
+          <source>Classic</source>
+          <target>Classic</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>Web Aware</source>
+          <target>Web Aware</target>
+        </trans-unit>
+        <trans-unit id="3" translate="no">
+          <source>Simple</source>
+          <target>Simple</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source>HighTech</source>
+          <target>HighTech</target>
+        </trans-unit>
+        <trans-unit id="5">
+          <source>3D Look</source>
+          <target>3D Look</target>
+        </trans-unit>
+        <trans-unit id="6">
+          <source>3D Look Plus</source>
+          <target>3D Look Plus</target>
+        </trans-unit>
+        <trans-unit id="7">
+          <source>Banner</source>
+          <target>Banner</target>
+        </trans-unit>
+      </group>
+      <group id="868" resname="STR#868">
+        <trans-unit id="1">
+          <source>Master Table</source>
+          <target>Master Table</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>Related Tables</source>
+          <target>Related Tables</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>All Tables</source>
+          <target>All Tables</target>
+        </trans-unit>
+      </group>
+      <group id="870" resname="STR#870">
+        <trans-unit id="1">
+          <source>Stepping into a new process</source>
+          <target>Stepping into a new process</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>TRACE Command</source>
+          <target>TRACE Command</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>User Interrupt</source>
+          <target>User Interrupt</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source>Breakpoint Reached</source>
+          <target>Breakpoint Reached</target>
+        </trans-unit>
+        <trans-unit id="5">
+          <source>Caught a call to: </source>
+          <target>Caught a call to: </target>
+        </trans-unit>
+        <trans-unit id="6">
+          <source>Go to Design Mode</source>
+          <target>Go to Design Mode</target>
+        </trans-unit>
+      </group>
+      <group id="871" resname="STR#871">
+        <trans-unit id="1">
+          <source>Good</source>
+          <target>Good</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>Still good</source>
+          <target>Still good</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>Poor</source>
+          <target>Poor</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source>4D needs more RAM!</source>
+          <target>4D needs more RAM!</target>
+        </trans-unit>
+      </group>
+      <group id="872" resname="STR#872">
+        <trans-unit id="1">
+          <source>A left brace is missing.</source>
+          <target>A left brace is missing.</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>A right brace is missing.</source>
+          <target>A right brace is missing.</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>A left parenthesis is missing.</source>
+          <target>A left parenthesis is missing.</target>
+        </trans-unit>
+        <trans-unit id="4">
+          <source>A right parenthesis is missing.</source>
+          <target>A right parenthesis is missing.</target>
+        </trans-unit>
+        <trans-unit id="5">
+          <source>A left string delimiter is missing.</source>
+          <target>A left string delimiter is missing.</target>
+        </trans-unit>
+        <trans-unit id="6">
+          <source>A right string delimiter is missing.</source>
+          <target>A right string delimiter is missing.</target>
+        </trans-unit>
+        <trans-unit id="7">
+          <source>Do you really mean to put a comment here ?!</source>
+          <target>Do you really mean to put a comment here ?!</target>
+        </trans-unit>
+        <trans-unit id="8">
+          <source>Syntax error (unknown table/field name ?).</source>
+          <target>Syntax error (unknown table/field name ?).</target>
+        </trans-unit>
+        <trans-unit id="9">
+          <source>You cannot put an assignment operator in a boolean expression.</source>
+          <target>You cannot put an assignment operator in a boolean expression.</target>
+        </trans-unit>
+        <trans-unit id="10">
+          <source>You cannot use control statements.</source>
+          <target>You cannot use control statements.</target>
+        </trans-unit>
+        <trans-unit id="11">
+          <source>This control statement must be used on its own.</source>
+          <target>This control statement must be used on its own.</target>
+        </trans-unit>
+        <trans-unit id="12">
+          <source>This control statement must be at the beginning of the line.</source>
+          <target>This control statement must be at the beginning of the line.</target>
+        </trans-unit>
+        <trans-unit id="13">
+          <source>missing %1</source>
+          <target>missing %1</target>
+        </trans-unit>
+        <trans-unit id="14">
+          <source>%1 expected</source>
+          <target>%1 expected</target>
+        </trans-unit>
+        <trans-unit id="15">
+          <source>missing %1 or %2</source>
+          <target>missing %1 or %2</target>
+        </trans-unit>
+        <trans-unit id="16" resname="Warning_class_function_declaration">
+          <source>Syntax error in function declaration</source>
+          <target>Syntax error in function declaration</target>
+        </trans-unit>
+        <trans-unit id="17" resname="Warning_class_constructor_declaration">
+          <source>Syntax error in constructor declaration</source>
+          <target>Syntax error in constructor declaration</target>
+        </trans-unit>
+        <trans-unit id="18" resname="Warning_var_declaration_type">
+          <source>Variable declared with unknown type.</source>
+          <target>Variable declared with unknown type.</target>
+        </trans-unit>
+        <trans-unit id="19" resname="Warning_method_parameters_declaration">
+          <source>Syntax error in the parameters declaration.</source>
+          <target>Syntax error in the parameters declaration.</target>
+        </trans-unit>
+        <trans-unit id="20" resname="Warning_method_parameters_declaration_class">
+          <source>Declaration of parameters incompatible with classes.</source>
+          <target>Declaration of parameters incompatible with classes</target>
+        </trans-unit>
+        <trans-unit id="21" resname="Warning_method_parameters_declaration_first">
+          <source>Declaration of parameters should be the first instruction.</source>
+          <target>Declaration of parameters should be the first instruction.</target>
+        </trans-unit>
+      </group>
+      <group id="875" resname="STR#875">
+        <trans-unit id="1">
+          <source>http://www.4D.com/docs/</source>
+          <target>http://www.4D.com/docs/</target>
+        </trans-unit>
+        <trans-unit id="2">
+          <source>:Documentation:</source>
+          <target>:Documentation:</target>
+        </trans-unit>
+        <trans-unit id="3">
+          <source>CMU/CMU%05d.HTM</source>
+          <target>CMU/CMU%05d.HTM</target>
+        </trans-unit>
+      </group>
+      <group resname="ContextualMenuWatchDisplay" restype="menu">
+        <trans-unit d4:command="watchShowLocalVariable" d4:includeIf="writable" id="1">
+          <source>Local Variables</source>
+          <target>Local Variables</target>
+        </trans-unit>
+        <trans-unit d4:command="watchShowLineExpression" d4:includeIf="writable" id="2">
+          <source>Line Expressions</source>
+          <target>Line Expressions</target>
+        </trans-unit>
+        <trans-unit d4:command="watchShowExpression" d4:includeIf="writable" id="3">
+          <source>Expressions</source>
+          <target>Expressions</target>
+        </trans-unit>
+      </group>
+      <group id="541" resname="STR#541">
+        <trans-unit id="1">
+          <source>Cache Statistics</source>
+          <target>Cache Statistics</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
