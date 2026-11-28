@@ -1,0 +1,29 @@
+{
+	". .  classes": {
+		"classes": [
+			"_core",
+			"Client",
+			"CompiledProject",
+			"Component",
+			"Server",
+			"Standalone"
+		]
+	},
+	". .  methods": {
+		"groups": [
+			"coop -> preempt"
+		],
+		"methods": [
+			"onError",
+			"onStartup"
+		]
+	},
+	"trash": {
+		"groups": [
+			"(____ franck)",
+			"(____ test methods)",
+			"(. . settings private classes)",
+			"(. . test class)"
+		]
+	}
+}

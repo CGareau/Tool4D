@@ -1,0 +1,4 @@
+branch=21
+version=21.2
+build=100657
+source=fix(build): wire project Components into buildStandalone compilation

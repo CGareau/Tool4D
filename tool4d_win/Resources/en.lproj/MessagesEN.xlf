@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <!--                  
+   Translation file for 4D products.
+   Copyright (C) 2014 4D SAS.
+   This file is distributed under the same license as the 4D product package.
+-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="en">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+            <prop prop-type="prefix">MSC6_</prop>
+         </prop-group>
+         <note>The character &quot;%&quot; (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+         <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable&apos;s name and must not be localised</note>
+         <note>\r, \t and \n are meta-characters.</note>
+      </header>
+      <body>
+
+        <group id="8004" resname="MSC04 (compactage)">
+            <trans-unit id="37" resname="MSC4_ConfirmRestart">
+               <source>Attention, this operation will cause the database to be closed and then reopened in maintenance mode.</source>
+               <target>Attention, this operation will cause the database to be closed and then reopened in maintenance mode.</target>
+            </trans-unit>
+        </group>
+        
+    	<group id="8021" resname="MSC07 (RollBack)">
+            <trans-unit id="1" resname="MSC_CurrentJournalFile">
+               <source>Current log file</source>
+               <target>Current log file</target>
+            </trans-unit>
+            <trans-unit id="2" resname="MSC_LeaveJournalAnalyse">
+               <source>The current log file analysis will be lost. Are you sure you want to leave this page?</source>
+               <target>The current log file analysis will be lost. Are you sure you want to leave this page?</target>
+            </trans-unit>    
+         </group>
+
+    	<group id="10" resname="UnlockFiles">
+            <trans-unit id="1" resname="Alert_Unlock">
+               <source>Do you want to unlock this file?</source>
+               <target>Do you want to unlock this file?</target>
+            </trans-unit>   
+			<trans-unit id="2" resname="Alert_Unlock_Unable">
+               <source>Unable to unlock file {file_path}.</source>
+               <target>Unable to unlock file {file_path}.</target>
+            </trans-unit>			
+         </group>
+
+		 <group id="11" resname="ReloadFile">
+			 <trans-unit id="1" resname="Alert_Reload_title">
+				 <source>The file has been modified by another program. Do you want to reload it?</source>
+				 <target>The file has been modified by another program. Do you want to reload it?</target>
+			 </trans-unit>
+            <trans-unit id="2" resname="Alert_Reload">
+               <source>By accepting you lose the changes made in the editor.</source>
+               <target>By accepting you lose the changes made in the editor.</target>
+            </trans-unit>
+         </group> 		 
+
+      </body>
+   </file>
+</xliff>
