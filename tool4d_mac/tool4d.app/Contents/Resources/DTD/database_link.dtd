@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    is_remote             : tells if 4D connect to remote database or open local database          
+    user_name             : user name
+    password              : password
+    md5_password          : encrypted password
+    structure_opening_mode: 0 -> normal
+                            1 -> interpreted
+                            2 -> compiled
+  
+  - the following attributs are valid only if "is_remote" is true.
+  
+    server_database_name  : server database name without extension
+    server_path           : coulde be IP adresse or dns        
+    open_login_dialog     : if true open user login dialog  
+  
+  - the following attributs are valid only if "is_remote" is false.
+  
+    open_in_custom_mode    : open database in custom mode
+    open_tools             : open MSC dialog
+    create_structure_file  : tells if 4D create or open structure file
+    structure_file         : structure file path
+    create_data_file       : tells if 4D create or open data file
+    data_file              : data file path
+    skip_onstartup_method  : skip execution of startup database methods
+    startup_method         : name of project method to execute after startup database methods
+    definition_import_file : definition import file path
+    resources_import_file  : resources import file path
+	explorer_groups_file   : json file to be used to define explorer groups when creating a new structure 
+    data_opening_mode      : 1 -> default data file
+                             2 -> select other data file
+                             3 -> create new data file 
+    data_conversion_mode   : 0 -> display data conversion dialog
+                             1 -> not display data conversion dialog, no data conversion
+                             2 -> convert data without displaying data conversion dialog
+    structure_conversion_mode   : 0 -> display structure conversion dialog
+                                  1 -> not display structure conversion dialog, no structure conversion
+                                  2 -> convert structure without displaying structure conversion dialog 
+    reopen_design_windows	: tells if 4D development environment should reopen editor windows at startup
+  	user_param				: arbitratry string accessible to 4D code using Get database parameter(108) 
+    remote_shared_resources : [engined use-case] All client on the same machine uses the same cache folder
+  -->
+    <!ELEMENT database_shortcut EMPTY>
+    <!ATTLIST database_shortcut 
+  is_remote                 (true | false) "false"
+  user_name                 CDATA ""
+  password                  CDATA ""
+  md5_password              CDATA ""
+  structure_opening_mode    (0 | 1 | 2) "0"
+
+  server_database_name      CDATA ""
+  server_path               CDATA ""
+  cache_folder_name         CDATA ""
+  open_login_dialog         (true | false) "false"
+
+  data_opening_mode         (1 | 2 | 3) "1"
+  data_conversion_mode      (0 | 1 | 2) "0"
+  structure_conversion_mode (0 | 1 | 2) "0"
+  open_tools                (true | false) "false"
+  open_in_custom_mode       (true | false) "false"
+  create_structure_file     (true | false) "false"
+  structure_file            CDATA ""
+  create_data_file          (true | false) "false"
+  data_file                 CDATA ""
+  skip_onstartup_method     (true | false) "false"
+  startup_method            CDATA ""
+  definition_import_file    CDATA ""
+  resources_import_file     CDATA "" 
+  reopen_design_windows     (true | false) "true"
+  explorer_groups_file      CDATA ""
+  use_journal_file          (true | false) "true"
+  user_param                CDATA ""
+  remote_shared_resources   (true | false) "false"
+>
