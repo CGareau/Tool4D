@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="en-US">
+    <header>
+      <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+      <group>
+        <trans-unit id="300" resname="BuildApp_success">
+          <source>Build successful!</source>
+          <target>Build successful!</target>
+        </trans-unit>
+        <trans-unit id="301" resname="BuildApp_failure">
+          <source>Some errors occurred during the build, please see the log file for details.</source>
+          <target>Some errors occurred during the build, please see the log file for details.</target>
+        </trans-unit>
+        <trans-unit id="302" resname="BuildApp_confirmOpenLog">
+          <source>Do you want to open the log file?</source>
+          <target>Do you want to open the log file?</target>
+        </trans-unit>
+        <trans-unit id="303" resname="BuildApp_targets">
+          <source>Generated targets:</source>
+          <target>Generated targets:</target>
+        </trans-unit>
+      </group>
+      <group id="P0" resname="BuildApp0">
+        <trans-unit id="135" resname="BuildApp0_ApplicationName">
+          <source>Application Name:</source>
+          <target>Application Name:</target>
+        </trans-unit>
+        <trans-unit id="136" resname="BuildApp0_DestinationFolder">
+          <source>Destination Folder:</source>
+          <target>Destination Folder:</target>
+        </trans-unit>
+        <trans-unit id="144" resname="BuildApp0_Build">
+          <source>Build</source>
+          <target>Build</target>
+        </trans-unit>
+        <trans-unit id="168" resname="BuildApp0_Cancel">
+          <source>Cancel</source>
+          <target>Cancel</target>
+        </trans-unit>
+        <trans-unit id="169" resname="BuildApp0_SaveSettings">
+          <source>Save settings</source>
+          <target>Save settings</target>
+        </trans-unit>
+        <trans-unit id="170" resname="BuildApp0_Application">
+          <source>Application</source>
+          <target>Application</target>
+        </trans-unit>
+        <trans-unit id="171" resname="BuildApp0_CompiledStructure">
+          <source>Compiled structure</source>
+          <target>Compiled structure</target>
+        </trans-unit>
+        <trans-unit id="172" resname="BuildApp0_ClientServer">
+          <source>Client/Server</source>
+          <target>Client/Server</target>
+        </trans-unit>
+        <trans-unit id="173" resname="BuildApp0_Plugins">
+          <source>Plugins &amp; components</source>
+          <target>Plugins &amp; components</target>
+        </trans-unit>
+        <trans-unit id="174" resname="BuildApp0_Licenses">
+          <source>Licenses</source>
+          <target>Licenses</target>
+        </trans-unit>
+        <trans-unit id="59" resname="BuildApp0_WindowTitle">
+          <source>Build Application</source>
+          <target>Build Application</target>
+        </trans-unit>
+      </group>
+      <group id="P1" resname="BuildApp2">
+        <trans-unit id="78" resname="BuildApp1_Infos1">
+          <source>This operation can be used to build an application from your compiled structure by integrating a "4D Volume Desktop".</source>
+          <target>This operation can be used to build an application from your compiled structure by integrating a "4D Volume Desktop".</target>
+        </trans-unit>
+        <trans-unit id="79" resname="BuildApp1_ApplicationType">
+          <source>Application type</source>
+          <target>Application type</target>
+        </trans-unit>
+        <trans-unit id="80" resname="BuildApp1_Application">
+          <source>Build stand-alone Application</source>
+          <target>Build stand-alone Application</target>
+        </trans-unit>
+        <trans-unit id="81" resname="BuildApp1_4DRuntimeVolumeLicenseLocation">
+          <source>4D Volume Desktop Location:</source>
+          <target>4D Volume Desktop Location:</target>
+        </trans-unit>
+        <trans-unit id="82" resname="BuildApp1_ApplicationLight">
+          <source>Build light stand-alone Application</source>
+          <target>Build light stand-alone Application</target>
+        </trans-unit>
+        <trans-unit id="86" resname="BuildApp1_Infos2">
+          <source>The application will be built in a "Final application" folder inside the destination folder.
+						The "Plugins", "Resources", "Extras" and "Components" folders located next to the structure will also be copied into it.</source>
+          <target>The application will be built in a "Final application" folder inside the destination folder.
+						The "Plugins", "Resources", "Extras" and "Components" folders located next to the structure will also be copied into it.</target>
+        </trans-unit>
+        <trans-unit id="87" resname="BuildApp1_Infos3">
+          <source>The application will be built in a "Application light" folder inside the destination folder.
+						The "Plugins", "Resources", "Extras" and "Components" folders located next to the structure will also be copied into it.</source>
+          <target>The application will be built in a "Application light" folder inside the destination folder.
+						The "Plugins", "Resources", "Extras" and "Components" folders located next to the structure will also be copied into it.</target>
+        </trans-unit>
+        <trans-unit id="52" resname="BuildApp1_TxtAlertRVL">
+          <source>In order to build a double-clickable application, you must select a 4D Volume Desktop</source>
+          <target>In order to build a double-clickable application, you must select a 4D Volume Desktop</target>
+        </trans-unit>
+        <trans-unit id="56" resname="BuildApp1_SelectRVL">
+          <source>Select a 4D Volume Desktop</source>
+          <target>Select a 4D Volume Desktop</target>
+        </trans-unit>
+      </group>
+      <group id="P2" resname="BuildApp1">
+        <trans-unit id="104" resname="BuildApp2_Infos0">
+          <source>This operation is used to create a "compiled structure" or a "component".</source>
+          <target>This operation is used to create a "compiled structure" or a "component".</target>
+        </trans-unit>
+        <trans-unit id="105" resname="BuildApp2_Infos1">
+          <source>A compiled structure can be opened by 4D Developer, 4D Desktop or 4D Server.
+						Source code will be removed from compiled structure.</source>
+          <target>A compiled structure can be opened by 4D Developer, 4D Desktop or 4D Server.
+						Source code will be removed from compiled structure.</target>
+        </trans-unit>
+        <trans-unit id="106" resname="BuildApp2_Infos2">
+          <source>A component is intended to be used by another structure and must be placed
+						in the "Components" folder of this structure.</source>
+          <target>A component is intended to be used by another structure and must be placed
+						in the "Components" folder of this structure.</target>
+        </trans-unit>
+        <trans-unit id="127" resname="BuildApp2_CompiledApplication">
+          <source>Build compiled structure</source>
+          <target>Build compiled structure</target>
+        </trans-unit>
+        <trans-unit id="128" resname="BuildApp2_IncludeFolders">
+          <source>Include related folders</source>
+          <target>Include related folders</target>
+        </trans-unit>
+        <trans-unit id="130" resname="BuildApp2_Infos3">
+          <source>The compiled structure will be built in the "Compiled" folder.</source>
+          <target>The compiled structure will be built in the "Compiled" folder.</target>
+        </trans-unit>
+        <trans-unit id="130" resname="BuildApp2_Infos4">
+          <source>This option allows to copy the "Plugins", "Resources", "Components" and "Extras" folders beside the compiled structure.</source>
+          <target>This option allows to copy the "Plugins", "Resources", "Components" and "Extras" folders beside the compiled structure.</target>
+        </trans-unit>
+        <trans-unit id="127" resname="BuildApp2_Component">
+          <source>Build component</source>
+          <target>Build component</target>
+        </trans-unit>
+        <trans-unit id="130" resname="BuildApp2_Infos5">
+          <source>The compiled structure will be built in the "Components" folder. It will be included in a "package" suffixed ".4dbase".
+						The "Resources" and "Extras" folders will also be copied into this package.</source>
+          <target>The compiled structure will be built in the "Components" folder. It will be included in a "package" suffixed ".4dbase".
+						The "Resources" and "Extras" folders will also be copied into this package.</target>
+        </trans-unit>
+        <trans-unit id="134" resname="BuildApp2_CompiledStructureType">
+          <source>Compiled structure type</source>
+          <target>Compiled structure type</target>
+        </trans-unit>
+      </group>
+      <group id="P3" resname="BuildApp3">
+        <trans-unit id="51" resname="BuildApp3_ClientAndServerApplications">
+          <source>Client and server applications</source>
+          <target>Client and server applications</target>
+        </trans-unit>
+        <trans-unit id="52" resname="BuildApp3_CurrentVersion">
+          <source>Current version:</source>
+          <target>Current version:</target>
+        </trans-unit>
+        <trans-unit id="53" resname="BuildApp3_BuildServerApplication">
+          <source>Build server application</source>
+          <target>Build server application</target>
+        </trans-unit>
+        <trans-unit id="54" resname="BuildApp3_BuildClientApplication">
+          <source>Build client application</source>
+          <target>Build client application</target>
+        </trans-unit>
+        <trans-unit id="55" resname="BuildApp3_InfosServer">
+          <source>The server will be built for the current platform and can only be launched on it.
+						Macintosh and Windows clients will be able to connect to it.</source>
+          <target>The server will be built for the current platform and can only be launched on it.
+						Macintosh and Windows clients will be able to connect to it.</target>
+        </trans-unit>
+        <trans-unit id="56" resname="BuildApp3_InfosClient">
+          <source>The client will be built for the current platform and can only be launched on it.
+						It can connect to a server running on either Macintosh or Windows.</source>
+          <target>The client will be built for the current platform and can only be launched on it.
+						It can connect to a server running on either Macintosh or Windows.</target>
+        </trans-unit>
+        <trans-unit id="57" resname="BuildApp3_4DServerLocation">
+          <source>4D Server location:</source>
+          <target>4D Server location:</target>
+        </trans-unit>
+        <trans-unit id="58" resname="BuildApp3_4DClientLocation">
+          <source>4D Client location:</source>
+          <target>4D Client location:</target>
+        </trans-unit>
+        <trans-unit id="59" resname="BuildApp3_CopyClientsInsideServer">
+          <source>Copy of client applications inside the server application</source>
+          <target>Copy of client applications inside the server application</target>
+        </trans-unit>
+        <trans-unit id="60" resname="BuildApp3_InfosClientsUpadte">
+          <source>This operation allows the server to automatically send the client applications each time they are updated.</source>
+          <target>This operation allows the server to automatically send the client applications each time they are updated.</target>
+        </trans-unit>
+        <trans-unit id="61" resname="BuildApp3_AllowUpdateMac">
+          <source>Allow automatic update of Macintosh client application </source>
+          <target>Allow automatic update of Macintosh client application </target>
+        </trans-unit>
+        <trans-unit id="62" resname="BuildApp3_AllowUpdateWin">
+          <source>Allow automatic update of Windows client application </source>
+          <target>Allow automatic update of Windows client application </target>
+        </trans-unit>
+        <trans-unit id="63" resname="BuildApp3_ClientLocationMac">
+          <source>4D Volume Desktop Macintosh location:</source>
+          <target>4D Volume Desktop Macintosh location:</target>
+        </trans-unit>
+        <trans-unit id="64" resname="BuildApp3_ClientLocationWin">
+          <source>4D Volume Desktop Windows location:</source>
+          <target>4D Volume Desktop Windows location:</target>
+        </trans-unit>
+        <trans-unit id="51" resname="BuildApp3_Infos0">
+          <source>This operation is used to create a server and a client, and to associate them.</source>
+          <target>This operation is used to create a server and a client, and to associate them.</target>
+        </trans-unit>
+        <trans-unit id="53" resname="BuildApp3_TxtAlertCS">
+          <source>In order to build a client-server application, you must select a 4D Server (above) and a 4D Client (below).</source>
+          <target>In order to build a client-server application, you must select a 4D Server (above) and a 4D Client (below).</target>
+        </trans-unit>
+        <trans-unit id="53" resname="BuildApp3_SelectClient_Mac">
+          <source>Select the Macintosh client application</source>
+          <target>Select the Macintosh client application</target>
+        </trans-unit>
+        <trans-unit id="55" resname="BuildApp3_SelectClient_Win">
+          <source>Select the Wndows client application</source>
+          <target>Select the Wndows client application</target>
+        </trans-unit>
+        <trans-unit id="56" resname="BuildApp3_SelectServer">
+          <source>Select a 4D Server</source>
+          <target>Select a 4D Server</target>
+        </trans-unit>
+        <trans-unit id="56" resname="BuildApp3_SelectClient">
+          <source>Select a 4D Client</source>
+          <target>Select a 4D Client</target>
+        </trans-unit>
+        <trans-unit id="57" resname="BuildApp3_4DRuntimeVolumeLicenseLocation">
+          <source>4D Volume Desktop Location:</source>
+          <target>4D Volume Desktop Location:</target>
+        </trans-unit>
+      </group>
+      <group resname="BuildApp4">
+        <trans-unit id="65" resname="BuildApp4_Active">
+          <source>Active</source>
+          <target>Active</target>
+        </trans-unit>
+        <trans-unit id="66" resname="BuildApp4_PluginsAndComponents">
+          <source>Plugins and components</source>
+          <target>Plugins and components</target>
+        </trans-unit>
+        <trans-unit id="67" resname="BuildApp4_ID">
+          <source>ID</source>
+          <target>ID</target>
+        </trans-unit>
+        <trans-unit id="68" resname="BuildApp4_Type">
+          <source>Type</source>
+          <target>Type</target>
+        </trans-unit>
+        <trans-unit id="60" resname="BuildApp4_Infos1">
+          <source>The selected plugins and components will be integrated in the application.</source>
+          <target>The selected plugins and components will be integrated in the application.</target>
+        </trans-unit>
+      </group>
+      <group id="P5" resname="BuildApp5">
+        <trans-unit id="69" resname="BuildApp5_Product">
+          <source>Product #</source>
+          <target>Product #</target>
+        </trans-unit>
+        <trans-unit id="70" resname="BuildApp5_Expansion">
+          <source>Expansion #</source>
+          <target>Expansion #</target>
+        </trans-unit>
+        <trans-unit id="71" resname="BuildApp5_Date">
+          <source>Date</source>
+          <target>Date</target>
+        </trans-unit>
+        <trans-unit id="72" resname="BuildApp5_Master">
+          <source>Master</source>
+          <target>Master</target>
+        </trans-unit>
+        <trans-unit id="73" resname="BuildApp5_Path">
+          <source>Path</source>
+          <target>Path</target>
+        </trans-unit>
+        <trans-unit id="61" resname="BuildApp5_Infos1">
+          <source>The licenses of the array above will be integrated in the application.</source>
+          <target>The licenses of the array above will be integrated in the application.</target>
+        </trans-unit>
+      </group>
+			
+      <group id="190" resname="Build_App_Log">
+        <trans-unit id="1" resname="Build_App_Log_Err_library_Not_Loaded">
+          <source>4D Compiler extension is incorrect.
+						Could not load the Library.</source>
+          <target>4D Compiler extension is incorrect.
+						Could not load the Library.</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Build_App_Log_Err_library_Not_Found">
+          <source>The 4D Compiler Library cannot be found in the 4D Extensions folder.</source>
+          <target>The 4D Compiler Library cannot be found in the 4D Extensions folder.</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Build_App_Log_Err_methodIsBeingEdited">
+          <source>One compiler method could not be updated because it is being edited.</source>
+          <target>One compiler method could not be updated because it is being edited.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Build_App_Log_doYouWantToRecompileTheDatabase">
+          <source>Do you want to recompile this project?</source>
+          <target>Do you want to recompile this project?</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Build_App_Log_doYouWantToOpenTheDatabaseInCompiledMode">
+          <source>Do you want to open this project in compiled mode?</source>
+          <target>Do you want to open this project in compiled mode?</target>
+        </trans-unit>
+        <trans-unit id="6" resname="Build_App_Log_CheckSyntaxElipsis">
+          <source>Check Syntax...</source>
+          <target>Check Syntax...</target>
+        </trans-unit>
+        <trans-unit id="7" resname="Build_App_Log_Err_Foreign_Windows_Engine_Not_Found">
+          <source>Compilation process ended successfully.</source>
+          <target>Compilation process ended successfully.</target>
+        </trans-unit>
+        <trans-unit id="8" resname="Build_App_Log_compilationEndedWithErrors">
+          <source>Compilation ended with errors</source>
+          <target>Compilation ended with errors</target>
+        </trans-unit>
+        <trans-unit id="9" resname="Build_App_Log_Interpreted">
+          <source>Interpreted</source>
+          <target>Interpreted</target>
+        </trans-unit>
+        <trans-unit id="10" resname="Build_App_Log_Compiled">
+          <source>Compiled.</source>
+          <target>Compiled.</target>
+        </trans-unit>
+        <trans-unit id="14" resname="Build_App_Log_DoYouWantToRecompile ">
+          <source>Your project is not compiled or the compiled code does not correspond to the interpreted code. Do you want to (re)compile it?</source>
+          <target>Your project is not compiled or the compiled code does not correspond to the interpreted code. Do you want to (re)compile it?</target>
+        </trans-unit>
+        <trans-unit id="15" resname="Build_App_Log_UnableToCreateDestinationFolder">
+          <source>Unable to create the destination folder.</source>
+          <target>Unable to create the destination folder.</target>
+        </trans-unit>
+        <trans-unit id="16" resname="Build_App_Log_UnableToFind4DVolumeDesktop">
+          <source>Unable to find 4D Volume Desktop.</source>
+          <target>Unable to find 4D Volume Desktop.</target>
+        </trans-unit>
+        <trans-unit id="17" resname="Build_App_Log_Compile">
+          <source>Compile</source>
+          <target>Compile</target>
+        </trans-unit>
+        <trans-unit id="18" resname="Build_App_Log_resume">
+          <source>Resume</source>
+          <target>Resume</target>
+        </trans-unit>
+        <trans-unit id="19" resname="Build_App_Log_Suspend">
+          <source>Suspend</source>
+          <target>Suspend</target>
+        </trans-unit>
+        <trans-unit id="20" resname="Build_App_Log_checkSyntax">
+          <source>Check Syntax</source>
+          <target>Check Syntax</target>
+        </trans-unit>
+        <trans-unit id="21" resname="Build_App_Log_compilerPreference">
+          <source>Compiler Preferences</source>
+          <target>Compiler Preferences</target>
+        </trans-unit>
+        <trans-unit id="22" resname="Build_App_Log_stop">
+          <source>Stop</source>
+          <target>Stop</target>
+        </trans-unit>
+        <trans-unit id="23" resname="Build_App_Log_showHideWarnings">
+          <source>Show/Hide Warnings</source>
+          <target>Show/Hide Warnings</target>
+        </trans-unit>
+        <trans-unit id="24" resname="Build_App_Log_countErrors">
+          <source>&lt;vCountErrors&gt; error(s)</source>
+          <target>&lt;vCountErrors&gt; error(s)</target>
+        </trans-unit>
+        <trans-unit id="25" resname="Build_App_Log_incorrectApplicationName">
+          <source>Incorrect Application Name: it should not contain any dots (.)</source>
+          <target>Incorrect Application Name: it should not contain any dots (.).</target>
+        </trans-unit>
+        <trans-unit id="26" resname="Build_App4dVolumeDesktopNotCompatible">
+          <source>The 4D Volume Desktop version is not compatible with 4D.</source>
+          <target>The 4D Volume Desktop version is not compatible with 4D.</target>
+        </trans-unit>
+        <trans-unit id="27" resname="Build_ApppackageIsNotA4DvolumeDesktop">
+          <source>The selected package is not a 4D Volume Desktop.</source>
+          <target>The selected package is not a 4D Volume Desktop.</target>
+        </trans-unit>
+        <trans-unit id="28" resname="Build_AppnoLicenseIsInstalled">
+          <source>No license is installed.</source>
+          <target>No license is installed.</target>
+        </trans-unit>
+        <trans-unit id="29" resname="Build_AppInvalidLisences">
+          <source>Invalid Licenses.</source>
+          <target>Invalid Licenses.</target>
+        </trans-unit>
+        <trans-unit id="30" resname="Build_ApplisensesLogtxt">
+          <source>Licenses_log.txt</source>
+          <target>Licenses_log.txt</target>
+        </trans-unit>
+        <trans-unit id="31" resname="Build_Appno4DVolumeDesktopLisenseHasBeenFound">
+          <source>No 4D Volume Desktop license number has been found</source>
+          <target>No 4D Volume Desktop license number has been found. </target>
+        </trans-unit>
+        <trans-unit id="32" resname="Build_App_Unlimited">
+          <source>Unlimited</source>
+          <target>Unlimited</target>
+        </trans-unit>
+        <trans-unit id="33" resname="Build_App_InvalidApplicationName">
+          <source>Invalid Application Name</source>
+          <target>Invalid Application Name</target>
+        </trans-unit>
+        <trans-unit id="34" resname="Build_App_BuildFailed">
+          <source>Build failed</source>
+          <target>Build failed</target>
+        </trans-unit>
+        <trans-unit id="36" resname="Build_App_GenerateTyping">
+          <source>Generate Typing</source>
+          <target>Generate Typing</target>
+        </trans-unit>
+        <trans-unit id="37" resname="Build_App_ClearCompiledCode">
+          <source>Clear compiled code</source>
+          <target>Clear compiled code</target>
+        </trans-unit>
+        <trans-unit id="38" resname="Build_App_Log_CompilationFailed">
+          <source>Compilation failed</source>
+          <target>Compilation failed</target>
+        </trans-unit>
+        <trans-unit id="39" resname="Build_App_Log_CompilationSuccessful">
+          <source>Compilation successful</source>
+          <target>Compilation successful</target>
+        </trans-unit>
+        <trans-unit id="40" resname="Build_App_Log_DestinationFolderDoesNotExist">
+          <source>The Destination Folder does not exist.</source>
+          <target>The Destination Folder does not exist.</target>
+        </trans-unit>
+        <trans-unit id="41" resname="Build_App_Log_4DBaseEngineIcns">
+          <source>4DBaseEngine.icns</source>
+          <target>4DBaseEngine.icns</target>
+        </trans-unit>
+        <trans-unit id="42" resname="Build_App_Log_SyntaxCheckFailed">
+          <source>Syntax check failed</source>
+          <target>Syntax check failed</target>
+        </trans-unit>
+        <trans-unit id="43" resname="Build_App_SyntaxCheckSuccessful">
+          <source>Syntax check successful</source>
+          <target>Syntax check successful</target>
+        </trans-unit>
+        <trans-unit id="44" resname="Build_App_destinationVolumeIsNotValid">
+          <source>The destination volume is not valid</source>
+          <target>The destination volume is not valid</target>
+        </trans-unit>
+        <trans-unit id="45" resname="Build_App_CopyingFiles">
+          <source>Copying files...</source>
+          <target>Copying files...</target>
+        </trans-unit>
+        <trans-unit id="46" resname="Build_App_fileOrFolderLocked">
+          <source>At least one file or folder is locked.</source>
+          <target>At least one file or folder is locked.</target>
+        </trans-unit>
+        <trans-unit id="47" resname="Build_App_UnknownError">
+          <source>Unknown error</source>
+          <target>Unknown error</target>
+        </trans-unit>
+        <trans-unit id="48" resname="Build_App_Build">
+          <source>Build</source>
+          <target>Build</target>
+        </trans-unit>
+        <trans-unit id="49" resname="Build_App_CompiledDatabaseBeingBuilt">
+          <source>Compiled project being built...</source>
+          <target>Compiled project being built...</target>
+        </trans-unit>
+        <trans-unit id="50" resname="Build_App_ApplicationBeingBuilt">
+          <source>Application (license) being built...</source>
+          <target>Application (license) being built...</target>
+        </trans-unit>
+        <trans-unit id="51" resname="Build_App_Log_stopApplicationDdemoBeingBuilt">
+          <source>Application (demo) being built...</source>
+          <target>Application (demo) being built...</target>
+        </trans-unit>
+        <trans-unit id="52" resname="Build_App_SelectThe4DVolumeDesktop">
+          <source>&lt;Select the 4D Volume Desktop folder to build the double-clickable application(s)&gt;</source>
+          <target>&gt;Select the 4D Volume Desktop folder to build the double-clickable application(s)&gt;</target>
+        </trans-unit>
+        <trans-unit id="53" resname="Build_App_Compiler">
+          <source>Compiler</source>
+          <target>Compiler</target>
+        </trans-unit>
+        <trans-unit id="54" resname="Build_App_warningsCount">
+          <source>&lt;vCountWarnings&gt; warning(s)</source>
+          <target>&lt;vCountWarnings&gt; warning(s)</target>
+        </trans-unit>
+        <trans-unit id="55" resname="Build_App_Options">
+          <source>Options</source>
+          <target>Options</target>
+        </trans-unit>
+        <trans-unit id="56" resname="Build_App_noMethodToCompile">
+          <source>There is no method to compile in the project.</source>
+          <target>There is no method to compile in the project.</target>
+        </trans-unit>
+        <trans-unit id="57" resname="Build_App_methodCouldnotbeupdated">
+          <source>One compiler method could not be updated because it is a private or protected method of a component.</source>
+          <target>One compiler method could not be updated because it is a private or protected method of a component.</target>
+        </trans-unit>
+        <trans-unit id="58" resname="Build_App_Typingmethodgenerationsuccessful">
+          <source>Typing method generation successful</source>
+          <target>Typing method generation successful</target>
+        </trans-unit>
+        <trans-unit id="59" resname="Build_App_Typingmethodgenerationfailed">
+          <source>Typing method generation failed</source>
+          <target>Typing method generation failed</target>
+        </trans-unit>
+        <trans-unit id="60" resname="Build_App_GeneralError">
+          <source>General Error: no method can be opened</source>
+          <target>General Error: no method can be opened</target>
+        </trans-unit>
+        <trans-unit id="62" resname="Build_App_BuildClientServerexecutable">
+          <source>Build Client Server executable</source>
+          <target>Build Client Server executable</target>
+        </trans-unit>
+        <trans-unit id="63" resname="Build_App_Compression">
+          <source>Compression</source>
+          <target>Compression</target>
+        </trans-unit>
+        <trans-unit id="64" resname="Build_App_selectedpackageisnot4DVolumeDesktop">
+          <source>The selected package is not a 4D Volume Desktop</source>
+          <target>The selected package is not a 4D Volume Desktop</target>
+        </trans-unit>                 
+        <trans-unit id="65" resname="Build_App_Log_Err_Foreign_Windows_Engine_Not_Found">
+          <source>4D Volume Desktop for Windows not found.</source>
+          <target>4D Volume Desktop for Windows not found.</target>
+        </trans-unit>
+        <trans-unit id="66" resname="Build_App_Log_Err_Foreign_MacOS_Engine_Not_Found">
+          <source>4D Volume Desktop for MacOS not found.</source>
+          <target>4D Volume Desktop for MacOS not found.</target>
+        </trans-unit>
+        <trans-unit id="67" resname="Build_AppUnableToFind4DServer">
+          <source>Unable to find 4D Server</source>
+          <target>Unable to find 4D Server</target>
+        </trans-unit>
+        <trans-unit id="68" resname="Build_selectedpackageisnota4DServer">
+          <source>The selected package is not a 4D Server</source>
+          <target>The selected package is not a 4D Server</target>
+        </trans-unit>
+        <trans-unit id="69" resname="Build_IncorrectTarget">
+          <source>Incorrect target</source>
+          <target>Incorrect target</target>
+        </trans-unit>
+        <trans-unit id="70" resname="Build_Projectfilenotfound">
+          <source>Project file not found</source>
+          <target>Project file not found</target>
+        </trans-unit>
+        <trans-unit id="71" resname="Build_AppCompressionFailed">
+          <source>Compression failed</source>
+          <target>Compression failed</target>
+        </trans-unit>
+        <trans-unit id="72" resname="Build_AppCouldnotopenresourcefile">
+          <source>Could not open resource file</source>
+          <target>Could not open resource file</target>
+        </trans-unit>
+        <trans-unit id="73" resname="Build_Incorrect4DVolumeDesktoppackage">
+          <source>Incorrect 4D Volume Desktop package</source>
+          <target>Incorrect 4D Volume Desktop package</target>
+        </trans-unit>
+        <trans-unit id="74" resname="Build_AppFile copying error">
+          <source>File copying error</source>
+          <target>File copying error</target>
+        </trans-unit>
+        <trans-unit id="75" resname="Build_AppCompiledtargetfailed">
+          <source>"Compiled" target failed</source>
+          <target>"Compiled" target failed</target>
+        </trans-unit>
+        <trans-unit id="76" resname="Build_AppDemonstrationtargetFailed">
+          <source>"Demonstration" target failed</source>
+          <target>"Demonstration" target failed</target>
+        </trans-unit>
+        <trans-unit id="77" resname="Build_AppApplicationTargetFailed">
+          <source>"Application" target failed</source>
+          <target>"Application" target failed</target>
+        </trans-unit>
+        <trans-unit id="78" resname="Build_AppClientServerApplicationtargetfailed">
+          <source>"Client Server Application" target failed</source>
+          <target>"Client Server Application" target failed</target>
+        </trans-unit>
+        <trans-unit id="79" resname="Build_AppCouldNotDeleteFolder">
+          <source>Could not delete folder</source>
+          <target>Could not delete folder</target>
+        </trans-unit>
+        <trans-unit id="80" resname="Build_AppCouldnotmodifyclient">
+          <source>Could not modify client</source>
+          <target>Could not modify client</target>
+        </trans-unit>
+        <trans-unit id="81" resname="Build_AppStartCopyingFiles">
+          <source>Start copying files</source>
+          <target>Start copying files</target>
+        </trans-unit>
+        <trans-unit id="82" resname="Build_AppEndcopyingfiles">
+          <source>End copying files</source>
+          <target>End copying files</target>
+        </trans-unit>
+        <trans-unit id="83" resname="Build_AppUserStop">
+          <source>User stop</source>
+          <target>User stop</target>
+        </trans-unit>
+        <trans-unit id="84" resname="Build_AppStartCompilation">
+          <source>Start compilation</source>
+          <target>Start compilation</target>
+        </trans-unit>
+        <trans-unit id="85" resname="Build_AppEndCompilation">
+          <source>End compilation</source>
+          <target>End compilation</target>
+        </trans-unit>
+        <trans-unit id="86" resname="Build_AppStartDemonstrationtargetbuild">
+          <source>Start "Demonstration" target build</source>
+          <target>Start "Demonstration" target build</target>
+        </trans-unit>
+        <trans-unit id="87" resname="Build_AppEndDemonstrationtarget build">
+          <source>End "Demonstration" target build</source>
+          <target>End "Demonstration" target build</target>
+        </trans-unit>
+        <trans-unit id="88" resname="Build_AppStartApplicationtargetbui">
+          <source>Start "Application" target build</source>
+          <target>Start "Application" target build</target>
+        </trans-unit>
+        <trans-unit id="89" resname="Build_AppEndApplicationTargetbuild">
+          <source>End "Application" target build</source>
+          <target>End "Application" target build</target>
+        </trans-unit>
+        <trans-unit id="90" resname="Build_AppStartClientServerApplicationtargetbuild">
+          <source>Start "Client Server Application" target build</source>
+          <target>Start "Client Server Application" target build</target>
+        </trans-unit>
+        <trans-unit id="91" resname="Build_AppEndClientServerApplicationtargetbuild">
+          <source>End "Client Server Application" target build</source>
+          <target>End "Client Server Application" target build</target>
+        </trans-unit>
+        <trans-unit id="92" resname="Build_AppStartmakingClientApplicationSelfUpgradeable">
+          <source>Start making Client Application Self Upgradeable</source>
+          <target>Start making Client Application Self Upgradeable</target>
+        </trans-unit>
+        <trans-unit id="93" resname="Build_AppEndmakingClientApplicationSelfUpgradeable">
+          <source>End making Client Application Self Upgradeable</source>
+          <target>End making Client Application Self Upgradeable</target>
+        </trans-unit>
+        <trans-unit id="94" resname="Build_AppYoudonothaveanOEMserialnumber">
+          <source>You do not have an OEM serial number. XML keys will be ignored.</source>
+          <target>You do not have an OEM serial number. XML keys will be ignored.</target>
+        </trans-unit>
+        <trans-unit id="95" resname="Build_AppAll">
+          <source>All</source>
+          <target>All</target>
+        </trans-unit>
+        <trans-unit id="96" resname="Build_AppVolumeDesktop">
+          <source>Volume Desktop</source>
+          <target>Volume Desktop</target>
+        </trans-unit>
+        <trans-unit id="97" resname="Build_AppServer">
+          <source>Server</source>
+          <target>Server</target>
+        </trans-unit>
+        <trans-unit id="98" resname="Build_AppLicensefilenotfound">
+          <source>License file not found</source>
+          <target>License file not found</target>
+        </trans-unit>
+        <trans-unit id="99" resname="Build_AppHideWarnings">
+          <source>Hide warnings</source>
+          <target>Hide warnings</target>
+        </trans-unit>
+        <trans-unit id="100" resname="Build_AppLicenceFileAlreadySelected">
+          <source>Licence file already selected</source>
+          <target>Licence file already selected</target>
+        </trans-unit>
+        <trans-unit id="101" resname="Build_AppCompilerEllipsis">
+          <source>Compiler...</source>
+          <target>Compiler...</target>
+        </trans-unit>
+        <trans-unit id="102" resname="Build_Appnameoftheapplicationistoolong">
+          <source>The name of the application is too long and it was truncated to 28 characters.</source>
+          <target>The name of the application is too long and it was truncated to 28 characters.</target>
+        </trans-unit>
+        <trans-unit id="103" resname="Build_App_Log_Err_Compacting">
+          <source>Compacting error %1. Error code is %2. Use MSC to verify/repair this file or increase the cache size.</source>
+          <target>Compacting error %1. Error code is %2. Use MSC to verify/repair this file or increase the cache size.</target>
+        </trans-unit>
+        <trans-unit id="104" resname="Build_App_Log_Message_Copy_Licence_File">
+          <source>License file copying from %1 to %2.</source>
+          <target>License file copying from %1 to %2.</target>
+        </trans-unit>
+        <trans-unit id="105" resname="Build_App_Log_Warning_Plug_Already_Exists">
+          <source>Plug-in %1 already exists.</source>
+          <target>Plug-in %1 already exists.</target>
+        </trans-unit>
+        <trans-unit id="106" resname="Build_App_Log_Message_Copy_Plug_Resource_File">
+          <source>Plug-in resource file copying from %1 to %2.</source>
+          <target>Plug-in resource file copying from %1 to %2.</target>
+        </trans-unit>
+        <trans-unit id="107" resname="Build_App_Log_Message_Copy_Plug">
+          <source>Plug-in copying from %1 to %2.</source>
+          <target>Plug-in copying from %1 to %2.</target>
+        </trans-unit>
+        <trans-unit id="108" resname="Build_App_Log_Message_Copy_Component">
+          <source>Component copying from %1 to %2.</source>
+          <target>Component copying from %1 to %2.</target>
+        </trans-unit>
+        <trans-unit id="109" resname="Build_App_Log_Warning_Component_Already_Exists">
+          <source>The component %1 already exists.</source>
+          <target>The component %1 already exists.</target>
+        </trans-unit>
+        <trans-unit id="110" resname="Build_App_Log_Err_Not_BuildApp_Xml_File">
+          <source>It's not a BuildApp xml file.</source>
+          <target>It's not a BuildApp xml file.</target>
+        </trans-unit>
+        <trans-unit id="111" resname="Build_App_Log_Err_Incompatible_Server_Version">
+          <source>The selected 4D server package is not compatible with this 4D version</source>
+          <target>The selected 4D server package is not compatible with this 4D version</target>
+        </trans-unit>
+        <trans-unit id="112" resname="Build_App_Log_Err_Code_Signing_Tool_Not_Found">
+          <source>Signature failed: the code signing tool was not found</source>
+          <target>Signature failed: the code signing tool was not found</target>
+        </trans-unit>
+        <trans-unit id="113" resname="Build_App_Log_Err_Code_Signing_Failed">
+          <source>Code signature failed</source>
+          <target>Code signature failed</target>
+        </trans-unit>
+        <trans-unit id="114" resname="Build_App_Log_Err_Certificate_Not_Specified">
+          <source>The certificate name is not specified</source>
+          <target>The certificate name is not specified</target>
+        </trans-unit>
+        <trans-unit id="115" resname="Build_App_Log_Err_App_Signature_Not_Found">
+          <source>Application signature not found. Please check certificate name.</source>
+          <target>Application signature not found. Please check certificate name.</target>
+        </trans-unit>
+        <trans-unit id="116" resname="Build_App_Log_Err_Resource_Rules_File_Not_Found">
+          <source>Signature failed: resource-signing rule file not found.</source>
+          <target>Signature failed: resource-signing rule file not found.</target>
+        </trans-unit>
+        <trans-unit id="117" resname="Build_App_Log_Err_Failed_To_Set_Manifest">
+          <source>Cannot install the updater tool's manifest.</source>
+          <target>Cannot install the updater tool's manifest.</target>
+        </trans-unit>
+        <trans-unit id="118" resname="Build_App_Log_Err_Engine_Incompatible_To_Build_Mac_Client_Update">
+          <source>The selected  4D Volume Desktop for Macintosh is not valid to build a client application update</source>
+          <target>The selected  4D Volume Desktop for Macintosh is not valid to build a client application update</target>
+        </trans-unit>
+        <trans-unit id="119" resname="Build_App_Log_Err_Engine_Incompatible_To_Build_Win_Client_Update">
+          <source>The selected  4D Volume Desktop for Windows is not valid to build a client application update</source>
+          <target>The selected  4D Volume Desktop for Windows is not valid to build a client application update</target>
+        </trans-unit>
+        <trans-unit id="120" resname="Build_App_Log_Err_Current_Application_Version_Must_Be_Positive">
+          <source>The built application's current version number must be positive</source>
+          <target>The built application's current version number must be positive</target>
+        </trans-unit>
+        <trans-unit id="121" resname="Build_App_Log_Err_Application_Version_Numbers_Must_Be_Positive">
+          <source>The built application's minimum, maximum and current version numbers must be positive</source>
+          <target>The built application's minimum, maximum and current version numbers must be positive</target>
+        </trans-unit>
+        <trans-unit id="122" resname="Build_App_Log_Err_Current_Application_Version_Not_In_Range">
+          <source>The built application current version is not in the authorized range</source>
+          <target>The built application current version is not in the authorized range</target>
+        </trans-unit>
+        <trans-unit id="123" resname="Build_App_Log_Err_Signature_Interrupted">
+          <source>Application code signing has been interrupted</source>
+          <target>Application code signing has been interrupted</target>
+        </trans-unit>
+        <trans-unit id="124" resname="Build_App_Log_Err_Failed_To_Transfer_Deployment_License">
+          <source>Cannot build deployment license from '%1' </source>
+          <target>Cannot build deployment license from '%1' </target>
+        </trans-unit>
+        <trans-unit id="125" resname="Build_App_Log_Err_Failed_To_Read_License">
+          <source>Cannot read information from license file '%1'</source>
+          <target>Cannot read information from license file '%1'</target>
+        </trans-unit>
+        <trans-unit id="126" resname="Build_App_Log_Err_Data_File_Lookup_Mode_Invalid">
+          <source>'{%1}' is not a valid value for the application's data file lookup mode.</source>
+          <target>'{%1}' is not a valid value for the application's data file lookup mode.</target>
+        </trans-unit>
+        <trans-unit id="127" resname="Build_App_Log_Err_Data_File_Lookup_Mode_Invalid_For_Read_Only_Application">
+          <source>'{%1}' is not a valid value for a read-only application's data file lookup mode.</source>
+          <target>'{%1}' is not a valid value for a read-only application's data file lookup mode.</target>
+        </trans-unit>
+        <trans-unit id="128" resname="Build_App_Log_Err_Server_Runtime_Arch_Not_Supported">
+          <source>The project is not compiled for the selected 4D Server.</source>
+          <target>The project is not compiled for the selected 4D Server.</target>
+        </trans-unit>
+        <trans-unit id="129" resname="Build_App_Log_Err_Volume_Desktop_Arch_Not_Supported">
+          <source>The project is not compiled for the selected 4D Volume Desktop.</source>
+          <target>The project is not compiled for the selected 4D Volume Desktop.</target>
+        </trans-unit>
+        <trans-unit id="130" resname="Build_App_Log_Err_Windows_Client_Runtime_Arch_Not_Supported">
+          <source>The project is not compiled for the selected 4D Volume Desktop (Windows client).</source>
+          <target>The project is not compiled for the selected 4D Volume Desktop (Windows client).</target>
+        </trans-unit>
+        <trans-unit id="131" resname="Build_App_Log_Err_Windows_Client_Update_Runtime_Arch_Not_Supported">
+          <source>The project is not compiled for the selected 4D Volume Desktop (Windows client update).</source>
+          <target>The project is not compiled for the selected 4D Volume Desktop (Windows client update).</target>
+        </trans-unit>
+        <trans-unit id="132" resname="Build_App_Log_Err_OSX_Client_Runtime_Arch_Not_Supported">
+          <source>The project is not compiled for the selected 4D Volume Desktop (OSX client).</source>
+          <target>The project is not compiled for the selected 4D Volume Desktop (OSX client).</target>
+        </trans-unit>
+        <trans-unit id="133" resname="Build_App_Log_Err_OSX_Client_Update_Runtime_Arch_Not_Supported">
+          <source>The project is not compiled for the selected 4D Volume Desktop (OSX client update).</source>
+          <target>The project is not compiled for the selected 4D Volume Desktop (OSX client update).</target>
+        </trans-unit>
+        <trans-unit id="134" resname="Build_App_Log_Err_OSX_NO_ARM_BUILD">
+          <source>The project is not compiled for Silicon Mac. Compile your project on a Mac with compilation target option set at "All processors (Intel/AMD, Silicon Mac)" before building your application if you want a Silicon-compatible application.</source>
+          <target>The project is not compiled for Silicon Mac. Compile your project on a Mac with compilation target option set at "All processors (Intel/AMD, Silicon Mac)" before building your application if you want a Silicon-compatible application.</target>
+        </trans-unit>
+        <trans-unit id="135" resname="Build_App_Log_Err_CrossArchive_Not_Found">
+          <source>Cross OS update 4darchive file not found</source>
+          <target>Cross OS update 4darchive file not found</target>
+        </trans-unit>
+        <trans-unit id="136" resname="Build_App_Log_Err_CrossCompiledDB_Not_Found">
+          <source>MacOS database folder not found.</source>
+          <target>MacOS database folder not found.</target>
+        </trans-unit>
+        <trans-unit id="137" resname="Build_App_Log_Err_CrossCompiledDylib_Not_Found">
+          <source>Dylib not found in MacOS database folder.</source>
+          <target>Dylib not found in MacOS database folder.</target>
+        </trans-unit>
+        <trans-unit id="138" resname="Build_App_Log_Err_CrossCompiled4DZ_Not_Found">
+          <source>4DZ not found in MacOS database folder or it doesn't match the application name.</source>
+          <target>4DZ not found in MacOS database folder or it doesn't match the application name.</target>
+        </trans-unit>
+        <trans-unit id="139" resname="Build_App_Log_Err_CantReadMachoUUID">
+          <source>Can't read mach-o uuid'. Provided '4D Volume Desktop' or '4D Server' app is probably wrong.</source>
+          <target>Can't read mach-o uuid'. Provided '4D Volume Desktop' or '4D Server' app is probably wrong.</target>
+        </trans-unit>
+        <trans-unit id="140" resname="Build_App_Log_Err_CantWriteMachoUUID">
+          <source>Can't write mach-o uuid'. Provided '4D Volume Desktop' or '4D Server' app is probably wrong.</source>
+          <target>Can't write mach-o uuid'. Provided '4D Volume Desktop' or '4D Server' app is probably wrong.</target>
+        </trans-unit>
+
+        <trans-unit id="150" resname="Build_App_Log_Warn_Building4DDesktopApp">
+          <source>Standalone application : Will need a license on the machine.</source>
+          <target>Standalone application : Will need a license on the machine.</target>
+        </trans-unit>
+        <trans-unit id="151" resname="Build_App_Log_Warn_BuildingLicHolderApp">
+          <source>Standalone evaluation : Will request license on network at first launch.</source>
+          <target>Standalone evaluation : Will request license on network at first launch.</target>
+        </trans-unit>
+        <trans-unit id="152" resname="Build_App_Log_Warn_BuildingLicHolderServer">
+          <source>Server evaluation : Will request license on network at first launch.</source>
+          <target>Server evaluation : Will request license on network at first launch.</target>
+        </trans-unit>
+        <trans-unit id="153" resname="Build_App_Log_Warn_BuildingNoOEMServer">
+          <source>Server : Will need a license on the machine.</source>
+          <target>Server : Will need a license on the machine.</target>
+        </trans-unit>
+        <trans-unit id="154" resname="Build_App_NoTarget">
+          <source>No target selected : Nothing to build.</source>
+          <target>No target selected : Nothing to build.</target>
+        </trans-unit>
+        <trans-unit id="155" resname="Build_App_No_OEMServerLicense">
+          <source>IsOEM = True : Can't find OEMServer license.</source>
+          <target>IsOEM = True : Can't find OEMServer license.</target>
+        </trans-unit>
+        <trans-unit id="156" resname="Build_App_No_EngineLicense">
+          <source>Can't find license to embed in Standalone.</source>
+          <target>Can't find license to embed in Standalone.</target>
+        </trans-unit>
+
+        <trans-unit id="159" resname="Build_App_OEMXMLKeyLicense">
+          <source>Server OEM : Using OEMXMLKey "{oemXMLKey}"</source>
+          <target>Server OEM : Using OEMXMLKey "{oemXMLKey}"</target>
+        </trans-unit>
+        <trans-unit id="160" resname="Build_App_ServerLicense">
+          <source>Server OEM : Using OEMServer license "{oemServer}"</source>
+          <target>Server OEM : Using OEMServer license "{oemServer}"</target>
+        </trans-unit>
+        <trans-unit id="161" resname="Build_App_ApplicationLicense">
+          <source>Application : Using build license "{appLicense}"</source>
+          <target>Application : Using build license "{appLicense}"</target>
+        </trans-unit>
+
+        <trans-unit id="166" resname="BALIC_WARN_USELESS">
+          <source>Useless licence file for this build : "{filePath}"</source>
+          <target>Useless licence file for this build : "{filePath}"</target>
+        </trans-unit>
+
+        <trans-unit id="200" resname="Build_App_Log_String_Code_Signing_Tool_Status">
+          <source>Signing tool return status: {statusCode}</source>
+          <target>Signing tool return status: {statusCode}</target>
+        </trans-unit>
+        <trans-unit id="201" resname="Build_App_Log_String_Code_Signing_Tool_Cmd_Line">
+          <source>Launching code signing tool: '{commandLine}'</source>
+          <target>Launching code signing tool: '{commandLine}'</target>
+        </trans-unit>
+        <trans-unit id="202" resname="Build_App_Log_String_Code_Signing_Tool_Not_Found">
+          <source>The code signing tool '{toolPath}' was not found</source>
+          <target>The code signing tool '{toolPath}' was not found</target>
+        </trans-unit>
+        <trans-unit id="203" resname="Build_App_Log_Err_Foreign_Windows_Engine_Not_Found">
+          <source>4D Volume Desktop for Windows not found at specified location ({RunTimePath}).</source>
+          <target>4D Volume Desktop for Windows not found at specified location ({RunTimePath}).</target>
+        </trans-unit>
+        <trans-unit id="204" resname="Build_App_Log_Err_Foreign_MacOS_Engine_Not_Found">
+          <source>4D Volume Desktop for MacOS not found at specified location ({RunTimePath}).</source>
+          <target>4D Volume Desktop for MacOS not found at specified location ({RunTimePath}).</target>
+        </trans-unit>
+        <trans-unit id="205" resname="Build_App_Log_String_Code_Signing_Tool_Status_With_Tool_Returned_Info">
+          <source>Signing tool return status: {statusCode}. Tool returned info '{extraToolInfo}'</source>
+          <target>Signing tool return status: {statusCode}. Tool returned info '{extraToolInfo}'</target>
+        </trans-unit>
+        <trans-unit id="206" resname="Build_App_Log_String_building_client_server_apps">
+          <source>Building application(s)</source>
+          <target>Building application(s)</target>
+        </trans-unit>
+        <trans-unit id="207" resname="Build_App_Log_String_building_client_app">
+          <source>Building client application</source>
+          <target>Building client application</target>
+        </trans-unit>
+        <trans-unit id="208" resname="Build_App_Log_String_building_server_app">
+          <source>Building server application</source>
+          <target>Building server application</target>
+        </trans-unit>
+        <trans-unit id="209" resname="Build_App_Log_String_building_windows_client_app">
+          <source>Building client application for Windows</source>
+          <target>Building client application for Windows</target>
+        </trans-unit>
+        <trans-unit id="210" resname="Build_App_Log_String_building_osx_client_app">
+          <source>Building client application for OS X</source>
+          <target>Building client application for OS X</target>
+        </trans-unit>
+        <trans-unit id="211" resname="Build_App_Log_String_building_compiled_package">
+          <source>Building compiled package</source>
+          <target>Building compiled package</target>
+        </trans-unit>
+        <trans-unit id="212" resname="Build_App_Log_String_building_db_component">
+          <source>Building project component</source>
+          <target>Building project component</target>
+        </trans-unit>
+        <trans-unit id="213" resname="Build_App_Log_String_building_standalone_app">
+          <source>Building standalone application</source>
+          <target>Building standalone application</target>
+        </trans-unit>
+        <trans-unit id="214" resname="Build_App_Log_String_copying_resources_folder">
+          <source>Copying resources</source>
+          <target>Copying resources</target>
+        </trans-unit>
+        <trans-unit id="215" resname="Build_App_Log_String_copying_extras_folder">
+          <source>Copying extras</source>
+          <target>Copying extras</target>
+        </trans-unit>
+        <trans-unit id="216" resname="Build_App_Log_String_copying_plugins">
+          <source>Copying plug-ins</source>
+          <target>Copying plug-ins</target>
+        </trans-unit>
+        <trans-unit id="217" resname="Build_App_Log_String_copying_plugin">
+          <source>Copying plug-in</source>
+          <target>Copying plug-in</target>
+        </trans-unit>
+        <trans-unit id="218" resname="Build_App_Log_String_copying_engine">
+          <source>Copying application engine</source>
+          <target>Copying application engine</target>
+        </trans-unit>
+        <trans-unit id="220" resname="Build_App_Log_String_signing_server_application">
+          <source>Signing server application</source>
+          <target>Signing server application</target>
+        </trans-unit>
+        <trans-unit id="221" resname="Build_App_Log_String_signing_client_application">
+          <source>Signing client application</source>
+          <target>Signing client application</target>
+        </trans-unit>
+        <trans-unit id="222" resname="Build_App_Log_String_signing_application">
+          <source>Signing application(s)</source>
+          <target>Signing application(s)</target>
+        </trans-unit>
+        <trans-unit id="223" resname="Build_App_Log_String_signing_application_file">
+          <source>Signed file: {path}</source>
+          <target>Signed file: {path}</target>
+        </trans-unit>
+        <trans-unit id="224" resname="Build_App_Log_String_copying_documentation_folder">
+          <source>Copying documentation</source>
+          <target>Copying documentation</target>
+        </trans-unit>
+        <trans-unit id="225" resname="Compiler_multiple_class_extends">
+          <source>Duplicate 'Class extends' statements</source>
+          <target>Duplicate 'Class extends' statements</target>
+        </trans-unit>
+        <trans-unit id="226" resname="Compiler_class_code_out_of_function">
+          <source>Class code out of any function</source>
+          <target>Class code out of any function</target>
+        </trans-unit>
+        <trans-unit id="227" resname="Compiler_extended_class_doesnt_exists">
+          <source>Can't find class '{class}'</source>
+          <target>Can't find class '{class}'</target>
+        </trans-unit>
+        <trans-unit id="228" resname="Compiler_class_declaration_syntax_error">
+          <source>Class declaration syntax error</source>
+          <target>Class declaration syntax error</target>
+        </trans-unit>
+        <trans-unit id="229" resname="Compiler_class_recursive_inheritance">
+          <source>Recursive class inheritance</source>
+          <target>Recursive class inheritance</target>
+        </trans-unit>
+        <trans-unit id="230" resname="Compiler_class_override_final_function">
+          <source>This function cannot override its superclass function '{function}'.</source>
+          <target>This function cannot override its superclass function '{function}'.</target>
+        </trans-unit>
+        <trans-unit id="231" resname="Compiler_class_override_function_different_case">
+          <source>Superclass function '{function}' has an almost identical name.</source>
+          <target>Superclass function '{function}' has an almost identical name.</target>
+        </trans-unit>
+        <trans-unit id="232" resname="Compiler_class_forbidden_constructor">
+          <source>Superclass '{class}' forbids to declare a constructor for its subclasses.</source>
+          <target>Superclass '{class}' forbids to declare a constructor for its subclasses</target>
+        </trans-unit>
+        <trans-unit id="233" resname="Compiler_class_extends_Entity">
+          <source>To extend data model class 'Entity' the class '{class}' must have the name of a dataclass followed by 'Entity'.</source>
+          <target>To extend data model class 'Entity' the class '{class}' must have the name of a dataclass followed by 'Entity'.</target>
+        </trans-unit>
+        <trans-unit id="234" resname="Compiler_class_extends_EntitySelection">
+          <source>To extend data model class 'EntitySelection' the class '{class}' must have the name of a dataclass followed by 'Selection'.</source>
+          <target>To extend data model class 'EntitySelection' the class '{class}' must have the name of a dataclass followed by 'Selection'.</target>
+        </trans-unit>
+        <trans-unit id="235" resname="Compiler_class_extends_DataClass">
+          <source>To extend data model class 'DataClass' the class '{class}' must have the name of a dataclass.</source>
+          <target>To extend data model class 'DataClass' the class '{class}' must have the name of a dataclass.</target>
+        </trans-unit>
+        <trans-unit id="236" resname="Compiler_class_extends_DataStoreImplementation">
+          <source>To extend data model class 'DataStoreImplementation' the class '{class}' must be named 'DataStore'.</source>
+          <target>To extend data model class 'DataStoreImplementation' the class '{class}' must be named 'DataStore'.</target>
+        </trans-unit>
+        <trans-unit id="237" resname="Compiler_class_suspicious">
+          <source>The name of class '{class}' looks like a data model class but doesn't extend the appropriate superclass.</source>
+          <target>The name of class '{class}' looks like a data model class but doesn't extend the appropriate superclass.</target>
+        </trans-unit>
+        <trans-unit id="238" resname="Compiler_class_function_keyword_requires_orda">
+          <source>Function '{function}' has keyword '{keyword}' which is usable only in a data model class.</source>
+          <target>Function '{function}' has keyword '{keyword}' which is usable only in a data model class.</target>
+        </trans-unit>
+        <trans-unit id="239" resname="Compiler_class_function_keyword_duplicate">
+          <source>Duplicate keyword '{keyword}' in function '{function}'.</source>
+          <target>Duplicate keyword '{keyword}' in function '{function}'.</target>
+        </trans-unit>
+        <trans-unit id="240" resname="Compiler_clang_macOS_too_old">
+          <source>Compiling for Apple Silicon requires macOS 10.15 or greater.</source>
+          <target>Compiling for Apple Silicon requires macOS 10.15 or greater.</target>
+        </trans-unit>
+        <trans-unit id="241" resname="Compiler_clang_too_old">
+          <source>Installed version of clang is too old to compile (requires clang 12 or greater)</source>
+          <target>Installed version of clang is too old to compile (requires clang 12 or greater)</target>
+        </trans-unit>
+        <trans-unit id="242" resname="Compiler_macos_sdk_bad_arch">
+          <source>Selected macOS SDK doesn't support target architecture. SDK: {path}</source>
+          <target>Selected macOS SDK doesn't support target architecture. SDK: {path}</target>
+        </trans-unit>
+        <trans-unit id="243" resname="Compiler_cpplang_failed">
+          <source>Internal error while compiling with clang</source>
+          <target>Internal error while compiling with clang</target>
+        </trans-unit>
+        <trans-unit id="244" resname="Compiler_pass_objects">
+          <source>Compiling cpp files</source>
+          <target>Compiling</target>
+        </trans-unit>
+        <trans-unit id="245" resname="Compiler_pass_link">
+          <source>Linking cpp files</source>
+          <target>Linking</target>
+        </trans-unit>
+        <trans-unit id="246" resname="Compiler_requires_dot_notation">
+          <source>Please activate 'Save methods in unicode' and 'Use object notation' database compatibility settings</source>
+          <target>Please activate 'Save methods in unicode' and 'Use object notation' database compatibility settings</target>
+        </trans-unit>
+        <trans-unit id="247" resname="Compiler_requires_project">
+          <source>Can't compile a binary database for Apple Silicon. Please convert your database to project first</source>
+          <target>Can't compile a binary database for Apple Silicon. Please convert your database to project first</target>
+        </trans-unit>
+        <trans-unit id="248" resname="Compiler_devtools_misconfigured">
+          <source>Couldn't find active developer tools, or it is outdated or misconfigured.</source>
+          <target>Couldn't find active developer tools, or it is outdated or misconfigured.</target>
+        </trans-unit>
+        <trans-unit id="249" resname="Compiler_use_latest_xcode">
+          <source>Do you want to use your latest Xcode as your active developer tools?</source>
+          <target>Do you want to use your latest Xcode as your active developer tools?</target>
+        </trans-unit>
+        <trans-unit id="250" resname="Compiler_xcode_select">
+          <source>xcode-select will be called to switch to:</source>
+          <target>xcode-select will be called to switch to:</target>
+        </trans-unit>
+        <trans-unit id="251" resname="Compiler_xcode_install">
+          <source>Please install Xcode.</source>
+          <target>Please install Xcode.</target>
+        </trans-unit>
+        <trans-unit id="252" resname="Compiler_xcode_upgrade">
+          <source>Please upgrade your Xcode to latest version (version 12.4 minimum).</source>
+          <target>Please upgrade your Xcode to latest version (version 12.4 minimum).</target>
+        </trans-unit>
+        <trans-unit id="253" resname="Compiler_pch_fail">
+          <source>Failed to build precompiled header</source>
+          <target>Failed to build precompiled header</target>
+        </trans-unit>
+        <trans-unit id="254" resname="Compiler_project_not_writable">
+          <source>Can't compile project because it is not writable</source>
+          <target>Can't compile project because it is not writable</target>
+        </trans-unit>
+        <trans-unit id="255" resname="Compiler_not_a_project">
+          <source>The command 'Compile project' cannot compile a binary database</source>
+          <target>The command 'Compile project' cannot compile a binary database</target>
+        </trans-unit>
+        <trans-unit id="256" resname="Compiler_missing_license">
+          <source>Missing license to compile</source>
+          <target>Missing license to compile</target>
+        </trans-unit>
+        <trans-unit id="257" resname="Compiler_cant_load_project">
+          <source>Failed to load project (path: {path})</source>
+          <target>Failed to load project (path: {path})</target>
+        </trans-unit>
+        <trans-unit id="258" resname="Compiler_already_compiling">
+          <source>The compiler is already in use</source>
+          <target>The compiler is already in use</target>
+        </trans-unit>
+        <trans-unit id="259" resname="Compiler_project_open_compiled">
+          <source>Can't compile a project opened in compiled mode</source>
+          <target>Can't compile a project opened in compiled mode</target>
+        </trans-unit>
+        <trans-unit id="260" resname="Build_App_Log_String_copying_cross_os_compiled_db">
+          <source>Copying compiled database from MacOS.</source>
+          <target>Copying compiled database from MacOS.</target>
+        </trans-unit>
+        <trans-unit id="261" resname="Compiler_class_function_bad_declaration">
+          <source>Function '{function}' declaration syntax error.</source>
+          <target>Function '{function}' declaration syntax error.</target>
+        </trans-unit>
+        <trans-unit id="262" resname="Compiler_class_function_orda_requires_getter">
+          <source>Function '{function}' requires a computed attribute defined by a function '{getter}' which is missing.</source>
+          <target>Function '{function}' requires a computed attribute defined by a function '{getter}' which is missing.</target>
+        </trans-unit>
+        <trans-unit id="263" resname="Compiler_class_function_orda_getter_override">
+          <source>Getter function '{function}' can't override an existing attribute.</source>
+          <target>Getter function '{function}' can't override an existing attribute.</target>
+        </trans-unit>
+        <trans-unit id="264" resname="Compiler_class_function_orda_getter_bad_return_type">
+          <source>Getter function '{function}' has invalid return type.</source>
+          <target>Getter function '{function}' has invalid return type.</target>
+        </trans-unit>
+        <trans-unit id="265" resname="Compiler_class_function_invalid_prefix">
+          <source>Function {function} has a prefix only possible in an Entity data model class.</source>
+          <target>Function {function} has a prefix only possible in an Entity data model class.</target>
+        </trans-unit>
+        <trans-unit id="266" resname="Compiler_class_alias_bad_keyword">
+          <source>Alias '{alias}' has an unsupported or duplicate keyword.</source>
+          <target>Alias '{alias}' has an unsupported or duplicate keyword.</target>
+        </trans-unit>
+        <trans-unit id="267" resname="Compiler_class_alias_bad_path">
+          <source>Alias '{alias}' has an invalid path.</source>
+          <target>Alias '{alias}' has an invalid path.</target>
+        </trans-unit>
+        <trans-unit id="268" resname="Compiler_class_alias_duplicate">
+          <source>Duplicate Alias '{alias}' definition.</source>
+          <target>Duplicate Alias '{alias}' definition.</target>
+        </trans-unit>
+        <trans-unit id="269" resname="Compiler_class_alias_not_entity">
+          <source>Alias definition is only possible in Entity classes.</source>
+          <target>Alias definition is only possible in Entity classes.</target>
+        </trans-unit>
+        <trans-unit id="270" resname="Compiler_class_alias_in_function">
+          <source>Alias '{alias}' must be defined before all functions.</source>
+          <target>Alias '{alias}' must be defined before all functions.</target>
+        </trans-unit>
+        <trans-unit id="271" resname="Compiler_class_alias_name_conflict">
+          <source>Alias '{alias}' have the same name as a non alias dataclass attribute.</source>
+          <target>Alias '{alias}' have the same name as a non alias dataclass attribute.</target>
+        </trans-unit>
+        <trans-unit id="272" resname="Compiler_class_duplicate_function">
+          <source>Duplicate class function '{function}'.</source>
+          <target>Duplicate class function '{function}'.</target>
+        </trans-unit>
+        <trans-unit id="273" resname="Compiler_class_duplicate_constructor">
+          <source>Duplicate constructor for class '{class}'.</source>
+          <target>Duplicate constructor for class '{class}'.</target>
+        </trans-unit>
+        <trans-unit id="274" resname="Compiler_clang_not_found">
+          <source>Clang not found on this computer (please check the documentation to know how to tell 4D where it is).</source>
+          <target>Clang not found on this computer (please check the documentation to know how to tell 4D where it is).</target>
+        </trans-unit>
+        <trans-unit id="275" resname="Compiler_linker_not_found">
+          <source>lld-link.exe not found in clang++.exe folder.</source>
+          <target>lld-link.exe not found in clang++.exe folder.</target>
+        </trans-unit>
+        <trans-unit id="276" resname="Compiler_clang_not_in_clang_path">
+          <source>clang not found in the clang_path preferences.</source>
+          <target>clang not found in the clang_path preferences.</target>
+        </trans-unit>
+        <trans-unit id="277" resname="Compiler_class_property_in_function">
+          <source>Class property must be defined before all functions.</source>
+          <target>Class property must be defined before all functions.</target>
+        </trans-unit>
+        <trans-unit id="278" resname="Compiler_class_property_in_function_duplicate">
+          <source>Class property {property} has already been declared.</source>
+          <target>Class property {property} has already been declared.</target>
+        </trans-unit> 
+        <trans-unit id="279" resname="Compiler_class_property_in_orda_class">
+          <source>Class property cannot be declared in a data model class.</source>
+          <target>Class property cannot be declared in a data model class.</target>
+        </trans-unit>
+        <trans-unit id="280" resname="Compiler_class_function_keyword_illegal">
+          <source>Illegal keyword '{keyword}' in function '{function}'.</source>
+          <target>Illegal keyword '{keyword}' in function '{function}'.</target>
+        </trans-unit>
+        <trans-unit id="281" resname="Compiler_class_function_keyword_illegal_orda">
+          <source>The keyword '{keyword}' in function '{function}' is illegal in a data model class.</source>
+          <target>The keyword '{keyword}' in function '{function}' is illegal in a data model class.</target>
+        </trans-unit>
+        <trans-unit id="282" resname="Compiler_shared_class_extends_non_shared_class">
+          <source>Can't make shared this class because it is extending class '{class}' which is not shared.</source>
+          <target>Can't make shared this class because it is extending class '{class}' which is not shared.</target>
+        </trans-unit>
+        <trans-unit id="283" resname="Compiler_class_property_multiple_assignation">
+          <source>Cannot assign an expression to multiple properties.</source>
+          <target>Cannot assign an expression to multiple properties.</target>
+        </trans-unit>
+        <trans-unit id="284" resname="Compiler_class_property_typeMismatch">
+          <source>Cannot make an assignment with those types.</source>
+          <target>Cannot make an assignment with those types.</target>
+        </trans-unit>
+        <trans-unit id="285" resname="Compiler_class_property_type_cannot_be_inferred">
+          <source>Type cannot be inferred, {name1} will be typed as a Variant.</source>
+          <target>Type cannot be inferred, {name1} will be typed as a Variant.</target>
+        </trans-unit>
+        <trans-unit id="286" resname="Compiler_class_duplicate_identifier">
+          <source>Duplicate identifier '{function}'.</source>
+          <target>Duplicate identifier '{function}'.</target>
+        </trans-unit>
+        <trans-unit id="287" resname="Compiler_class_function_exposed_illegal">
+          <source>Function '{function}' has keyword '{keyword}' which is usable only on a regular function or computed attribute, in a data model class or a shared or session singleton class.</source>
+          <target>Function '{function}' has keyword '{keyword}' which is usable only on a regular function or computed attribute, in a data model class or a shared or session singleton class.</target>
+        </trans-unit>
+        <trans-unit id="288" resname="Compiler_class_same_namespace">
+          <source>The class {class_name} shares a name with the namespace of a component.</source>
+          <target>The class {class_name} shares a name with the namespace of a component.</target>
+        </trans-unit>
+        <trans-unit id="289" resname="Compiler_class_function_keyword_onHTTPGet_requires_exposed">
+          <source>Function '{function}' has keyword '{keyword}' which requires the 'exposed' keyword.</source>
+          <target>Function '{function}' has keyword '{keyword}' which requires the 'exposed' keyword.</target>
+        </trans-unit>
+        <trans-unit id="290" resname="Compiler_class_function_keyword_session_requires_singleton">
+          <source>Function '{function}' has keyword '{keyword}' which requires the 'singleton' keyword.</source>
+          <target>Function '{function}' has keyword '{keyword}' which requires the 'singleton' keyword.</target>
+        </trans-unit>
+        <trans-unit id="291" resname="Compiler_class_function_event_illegal">
+          <source>Illegal event '{event}' in function '{function}'.</source>
+          <target>Illegal event '{event}' in function '{function}'.</target>
+        </trans-unit>
+        <trans-unit id="292" resname="Compiler_class_function_event_touched_attribute">
+          <source>Unknown attribute '{attribute}' in event 'touched' in function '{function}'.</source>
+          <target>Unknown attribute '{attribute}' in event 'touched' in function '{function}'.</target>
+        </trans-unit>
+        <trans-unit id="293" resname="Compiler_field_class_doesnt_exists">
+          <source>Unknown class '{class}' declared for object field {field}.</source>
+          <target>Unknown class '{class}' declared for object field {field}.</target>
+        </trans-unit>
+        <trans-unit id="294" resname="Compiler_class_function_server_local_illegal">
+          <source>Function '{function}' has keyword '{keyword}' which is usable only on a regular function or computed attribute, in a data model class or a shared or session singleton class.</source>
+          <target>Function '{function}' has keyword '{keyword}' which is usable only on a regular function or computed attribute, in a data model class or a shared or session singleton class.</target>
+        </trans-unit>
+        <trans-unit id="295" resname="Compiler_class_function_server_local_exclusive">
+          <source>Function '{function}' has keywords 'server' and 'local' which are mutually exclusive.</source>
+          <target>Function '{function}' has keywords 'server' and 'local' which are mutually exclusive.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v14" source-language="en-US" target-language="en-US">
+    <header>
+      <note>The character "%" (out of a numerical context) is a meta-character that will be replaced (often by a numeric value) before the string is displayed</note>
+      <note>Text between less than (&lt;) and greater than (&gt;) symbols is a variable's name and must not be localised</note>
+      <note>\r, \t and \n are meta-characters.</note>
+    </header>
+    <body>
+
+      <group resname="MenuRecords">
+        <trans-unit id="1" resname="No Table">
+          <source>No Table</source>
+          <target>No Table</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Show Current Table">
+          <source>Show Current Table</source>
+          <target>Show Current Table</target>
+        </trans-unit>
+      </group>
+
+      <group resname="MenuRunSQL">
+        <trans-unit id="1" resname="Start SQL Server">
+          <source>Start SQL Server</source>
+          <target>Start SQL Server</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Stop SQL Server">
+          <source>Stop SQL Server</source>
+          <target>Stop SQL Server</target>
+        </trans-unit>
+      </group>
+
+      <group id="401" resname="MenuWebServer">
+        <trans-unit id="31" resname="StartWebServer">
+          <source>Start Web Server</source>
+          <target>Start Web Server</target>
+        </trans-unit>
+        <trans-unit id="32" resname="StopWebServer">
+          <source>Stop Web Server</source>
+          <target>Stop Web Server</target>
+        </trans-unit>
+      </group>
+
+      <group resname="MenuOpenRecent">
+        <trans-unit id="7" resname="Local databases">
+          <source>Local databases</source>
+          <target>Local databases</target>
+        </trans-unit>
+        <trans-unit id="8" resname="Remote databases">
+          <source>Remote databases</source>
+          <target>Remote databases</target>
+        </trans-unit>
+      </group>
+         
+      <group id="13" resname="MenuHelp">
+        <!-- 1, 12, 17 & 18 are from STR#13-->
+        <trans-unit id="1" resname="Help_About">
+          <source>About {Application}...</source>
+          <target>About {Application}...</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Help_OnlineDocumentation">
+          <source>Online documentation</source>
+          <target>Online documentation</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Menu_HelpOnlineURL">
+          <source>https://developer.4d.com/docs/</source>
+          <target>https://developer.4d.com/docs/</target>
+        </trans-unit>
+        <trans-unit id="8" resname="Help_WizardDialog">
+          <source>Welcome Wizard</source>
+          <target>Welcome Wizard</target>
+        </trans-unit>
+        <trans-unit id="9" resname="MonitoringMenuItem">
+          <source>Administration Window</source>
+          <target>Administration Window</target>
+        </trans-unit>
+        <trans-unit id="12" resname="Help_helpfor">
+          <source>Help for </source>
+          <target>Help for </target>
+        </trans-unit>
+        <trans-unit id="17" resname="Help_UpdateLicences">
+          <source>Licenses manager...</source>
+          <target>License Manager...</target>
+        </trans-unit>
+        <trans-unit id="18" resname="Help_MCSC">
+          <source>Maintenance &amp; Security Center</source>
+          <target>Maintenance &amp; Security Center</target>
+        </trans-unit>
+           
+      </group>
+
+      <group resname="DatabaseSettings">
+        <trans-unit id="1" resname="MenuUserSettings">
+          <source>User Settings...</source>
+          <target>User Settings...</target>
+        </trans-unit>
+        <trans-unit id="2" resname="MenuStructureSettings">
+          <source>Structure Settings...</source>
+          <target>Structure Settings...</target>
+        </trans-unit>
+        <!-- Defined for feature 15593, complements MenuUserStructureSettings in 32-bit 4D-->
+        <trans-unit id="4" resname="MenuUserDataFileSettings">
+          <source>User Settings for Data file...</source>
+          <target>User Settings for Data file...</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
