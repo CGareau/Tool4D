@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="12">
+	<com.4d>
+		<interface>
+			<developper display_toolbar="true"/>
+		</interface>
+		<general execute_host_database_event="true" startup_environnement="1"/>
+		<compiler>
+			<options compilation_path="2" target="active"/>
+			<typage default_for_button="2"/>
+			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
+		</compiler>
+		<server>
+			<network>
+				<options use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<database>
+			<misc mac_use_lf="true" no_bom="true" standard_xpath="false" use_ast_interpreter="false"/>
+		</database>
+	</com.4d>
+</preferences>
